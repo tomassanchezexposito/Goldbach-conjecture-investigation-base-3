@@ -1,0 +1,18 @@
+{
+  "aggregate_extremizers_checked": 48,
+  "aggregate_grid_cases": 22140,
+  "all_assertions_passed": true,
+  "classification": "EXACT FINITE PYTHON VERIFICATION ONLY",
+  "four_distinct_configurations": 49144,
+  "limitations": [
+    "Finite identities and examples only.",
+    "No pointwise asymptotic prime estimate or Goldbach coverage is proved."
+  ],
+  "ordered_cross_target_cases": 3422,
+  "prime_method": "Eratosthenes sieve and unordered representation-set intersections",
+  "shared_position_configurations": 9510,
+  "target_range_even": [
+    4,
+    120
+  ]
+}

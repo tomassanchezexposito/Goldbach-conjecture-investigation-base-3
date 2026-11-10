@@ -1,0 +1,22 @@
+{
+  "aggregate_rational_vector_cases": 8400,
+  "all_assertions_passed": true,
+  "classification": "INDEPENDENT SAGEMATH EXACT FINITE VERIFICATION",
+  "four_distinct_configurations": 23554,
+  "frame_gram_eigenvalues": "1 (multiplicity m-1), m+1 (multiplicity 1)",
+  "frame_gram_sizes": 8,
+  "limitations": [
+    "Finite exact algebra checks only; no asymptotic or pointwise estimate.",
+    "No universal Goldbach or residual-set coverage is claimed."
+  ],
+  "lipschitz_formula_cases": 260,
+  "ordered_cross_target_cases": 2352,
+  "prime_test": "Sage prime_range and direct set intersections",
+  "runtime_seconds": 10.407676696777344,
+  "sage_version": "10.9",
+  "shared_position_configurations": 5572,
+  "target_range_even": [
+    4,
+    100
+  ]
+}

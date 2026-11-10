@@ -1,32 +1,54 @@
-# NEXT TASK — Stage 66: target-uniform signed shift modulus
+# NEXT TASK — Stage 67: rational-arc increment geometry
 
-**Status:** universal coverage of the original three-case conjecture remains OPEN. Continue from the verified Stage 65 branch and preserve all earlier results. All repository material must be in English.
+**Research status:** The original three-case conjecture remains open. Stage 66 proved sharp deterministic local and aggregate energy inequalities, but obtained no pointwise arithmetic modulus for genuine prime correlations. Preserve the complete history and work only on the pre-created branch `cocalc/stage67-rational-arc-increment-gram`; do not merge into `main`.
 
-## Objective
+## 1. Safe start and required audit
 
-Investigate whether the exact Fejér localization criterion in `results/stage65/01_localized_kernel_identities.md` and `05_new_analytic_attempt.md` can be closed by a non-circular, target-uniform arithmetic estimate for the genuine-prime signed minor-arc coefficient
+1. In `/home/user/goldbach-research-github`, verify the working tree is clean and fetch using the existing dedicated GitHub SSH deploy key with `IdentitiesOnly=yes`. Never disclose private key contents.
+2. Check out the existing Stage 67 branch without overwriting local or remote work.
+3. Read the Stage 66 final report, independent audit, exact result files, source manifest, and Stage 67 task setup. Rerun all Stage 66 Python and SageMath verifiers before extending the analysis.
+4. Verify the exact Fourier convention and retain `S_w^2` for prime sums. `|S_w|^2` encodes prime differences and must not be substituted.
+
+## 2. Main theorem target: rational-arc Gram geometry
+
+For a finite set of distinct nonzero integer shifts `J` and a measurable arc union `E` on the circle, study the vectors
+\[
+g_j(\alpha)=e(-N\alpha)(e(-j\alpha)-1),\qquad j\in J.
+\]
+Derive the exact restricted Gram matrix
+\[
+G_E(j,k)=\int_E g_j(\alpha)\overline{g_k(\alpha)}\,d\alpha
+\]
+and its operator norm. Determine its dependence on arc centers, widths, rational denominators, and shift residues. In particular, separate reduced centers `a/q` with `q | j` from those for which the multiplier at the center is nonzero.
+
+Prove any proposed Gram bound, identify equality cases or sharp counterexamples, and compare it to the full-circle matrix `I+11*` and the exact Stage 66 energy threshold. State whether any gain survives uniformly over the complete minor-arc set used by the cited prime theorem.
+
+## 3. Arithmetic application and falsification
+
+1. Apply the exact geometry to the genuine-prime coefficient
 \[
 m_w(N)=\int_{\mathfrak m}S_w(\alpha)^2e(-N\alpha)\,d\alpha.
 \]
-The first task is to determine the weakest weighted shift-modulus condition that, together with the global fourth moment and a valid positive major-arc estimate, forces $m_w(N)>-a_w(N)$. Do not assume a prime-pair representation at $N$ or any neighboring target.
+Keep the target phase and signed multiplier. Do not assume a representation exists at the target.
+2. Determine whether the conditional global fourth moment, any cited localized moment, and the arc Gram operator can give a target-specific increment or block-energy estimate strong enough to exclude an isolated zero representation.
+3. State exact uniformity in `N`, shifts, `X`, weights, arcs, constants, and zero-free hypotheses for every conditional claim.
+4. Construct abstract extremizers whenever the available norm data allow an isolated bad target. Separate such countermodels from true prime counterexamples.
+5. Keep the original residual set and three-case formulation unchanged. Wheel admissibility and singular-series predictions are not primality.
 
-## Required work
+## 4. Deliverables
 
-1. Independently verify Stage 65's exact Fourier, Fejér, countermodel, and conditional-criterion formulas; rerun the Stage 65 Python and Sage verifiers.
-2. Derive necessary and sufficient coefficient conditions for a finite shift kernel to detect a negative central coefficient under a global $\ell^2$ constraint. Distinguish arbitrary sequences from genuine prime coefficients.
-3. Investigate whether a weighted average of increments, a localized energy, a covariance inequality, or a short-shift exponential-sum estimate can provide the missing bound. State exact ranges and constants.
-4. Compare each proposed estimate with the audited conditional moment/major-arc results in `results/stage65/04_primary_literature.md`. Preserve all zero-free hypotheses and publication-status qualifications.
-5. Actively find counterexamples, sign errors, target-index issues, invalid swaps between $S_w^2$ and $|S_w|^2$, and circular uses of $R(N)>0$.
-6. If no usable arithmetic estimate follows, prove a precise no-go theorem for the relevant family of localization functionals and identify a concrete alternative analytic input.
-7. Record proven results, failed inequalities, conditional consequences, exact reproducible computations, resource use, and remaining proof obligations under a new `results/stage66/` directory. Use independent exact verification when finite identities are checked.
-8. Work on `cocalc/stage66-weighted-shift-modulus`, based on the latest verified research branch. Fetch with the existing dedicated SSH identity and `IdentitiesOnly=yes`; never overwrite or delete historical work. Commit and push only to Stage 66, and do not modify `main`.
+Save under `results/stage67/`:
 
-## Mathematical limits
+- a rigorous report with proofs, hypotheses, counterexamples, and the first remaining analytic estimate;
+- a reproducible Python/SageMath implementation and independent verifier for new exact identities;
+- machine-readable exact data and a SHA-256 provenance manifest;
+- an adversarial review recording invalid implications and circularity checks;
+- a concise final assessment and the next justified research question.
 
-The original residual set is
-\[
-H=\{N\geq4:N\text{ even},\ N-1\text{ composite},\ N/2\text{ composite}\}.
-\]
-The original cases $N=p+1$, $N=2p$, and $N=p+q$ for distinct primes remain the objective. Modular admissibility and singular-series density are not primality. Averages do not imply pointwise positivity without a stated localization theorem. Do not claim universal coverage without a complete, rigorous, non-circular proof.
+Use exact rational or algebraic arithmetic for finite identities. Record commands, tested ranges, runtime, memory where available, and limitations. Do not expand finite Goldbach searches unless they test a new mathematical inequality.
 
-Do not install software, incur costs, modify GitHub permissions, force-push, or modify `main`.
+## 5. Completion criteria
+
+Complete all feasible milestones without routine check-ins: verify inherited work; prove the arc-Gram identities; test localization claims and sharpness; compare against actual prime-correlation inputs; document the remaining gap; independently reproduce results; commit and push only to the Stage 67 branch. Do not force-push, modify `main`, install software, incur costs, delete files, or claim universal coverage without a complete non-circular proof.
+
+All repository content must be written in English.
