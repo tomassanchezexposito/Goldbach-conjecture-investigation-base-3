@@ -1,0 +1,47 @@
+{
+  "title": "Stage 60 reproducibility and verification manifest",
+  "evidence_status": "Hashes identify the saved deliverables; finite computations verify only their stated domains.",
+  "source_provenance": {
+    "integration_base": "156c6acaa89825cd70dd3f3742bf98de8e90434c",
+    "stage58_source": "689c3d696ce750610bed6ad69cdd476fdcaee464",
+    "stage58_integration_commit": "d847c3a88d441d2332585c72b468498612ba190e",
+    "stage59_local_source": "900cae804b76e09992aba555932bc0fd866737af",
+    "stage59_sharp_merge_source": "60fed50ca43342bd10384a05813202c79c57eab3",
+    "stage59_merge_commit": "4a4064734074357ef8ee5b34b9af857d1f14f4c4"
+  },
+  "environment": {
+    "python": "3.14.4",
+    "platform": "Linux-7.0.0-1017-gcp-x86_64-with-glibc2.43",
+    "dependencies": "Python standard library only"
+  },
+  "parameters": {
+    "even_centers_inclusive": [
+      8,
+      300
+    ],
+    "step": 2,
+    "wheel_modulus": 210,
+    "exact_arithmetic": "Python integers and fractions.Fraction"
+  },
+  "reproduction_commands_from_repository_root": [
+    "python3 results/stage60/compute_stage60.py",
+    "python3 results/stage60/verify_stage60.py",
+    "python3 results/stage60/make_manifest.py"
+  ],
+  "verification_outcomes": {
+    "compute": "passed; 147 centers, 62 residual centers, 441 wheel target checks",
+    "independent_verifier": "passed; trial division, direct modulo-210 enumeration, five-class product checks, 256 zero-center triples",
+    "observed_runtime": "compute 0.236 s wall; verifier 0.244 s wall in the recorded run (shell time; hardware-dependent)",
+    "universal_positivity": "not established"
+  },
+  "sha256": {
+    "compute_stage60.py": "a1973133953318cab55e664b2f9d2c718faa2d18adda542633a0da1ba894696f",
+    "verify_stage60.py": "e1c9ca2c36d49ee50ccef25f7cdfc3e4c88bca2ccee02a9a82b73105834aa355",
+    "make_manifest.py": "9115b80bd770ea250a31c3f07bf3b7c9bbb3c182a926c9b5f011575f0aafbf88",
+    "stage60_exact_results.json": "c1dc63fdf74f3d05d7e95dd1fb51c27caa0db6a49a564e227f1b622ab651ae9c",
+    "report.md": "8cb8557f4d5f4a81216f92bbfabd1b30a6113972ad66384af9a90785d2cab0be",
+    "integration_review.md": "cb02294ed811016ceff1c0f2ace8f0ce70951cc16113a0f309ac62988a31ba4f",
+    "summary.md": "d521d45c7a90c8331bbb6a3292b0a7a37f5ee1db4f310ff3f55ce0ee4aa49d22"
+  },
+  "manifest_excludes_its_own_hash": true
+}
