@@ -1,0 +1,39 @@
+{
+  "finite_block_moment_checks": {
+    "202-300": {
+      "centered_sum_squares": "203993/1080000",
+      "centered_to_zero_threshold_ratio": "58749984/84695209",
+      "mean": "9203/18000",
+      "residual_count": 25,
+      "second_moment": "139429/518400",
+      "zero_count": 0
+    },
+    "50-150": {
+      "centered_sum_squares": "5363/56700",
+      "centered_to_zero_threshold_ratio": "1716160/1568187",
+      "mean": "241/840",
+      "residual_count": 21,
+      "second_moment": "6751/77760",
+      "zero_count": 0
+    },
+    "50-200": {
+      "centered_sum_squares": "18416/66825",
+      "centered_to_zero_threshold_ratio": "37715968/15928081",
+      "mean": "3991/11880",
+      "residual_count": 33,
+      "second_moment": "34559/285120",
+      "zero_count": 0
+    }
+  },
+  "method": "Python standard-library Eratosthenes sieve and fractions.Fraction",
+  "pair_list_vs_direct_scan_category_counts": "all equal row by row",
+  "positive_shift_rows_checked": 620,
+  "residual_anchors_checked": 62,
+  "runtime": "3.14.4",
+  "same_target_even_targets_checked": 149,
+  "status": "all independent exact checks passed",
+  "universal_claim": false,
+  "weighted_sharp_equality_cases_checked": 7,
+  "weighted_zero_coordinate_vectors_checked": 320,
+  "wheel_targets_checked": 249
+}
