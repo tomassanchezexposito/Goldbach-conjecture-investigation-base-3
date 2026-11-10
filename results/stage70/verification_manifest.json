@@ -1,0 +1,56 @@
+{
+  "stage": 70,
+  "date": "2026-11-10",
+  "branch": "cocalc/stage70-positive-spectrum-cone-audit",
+  "execution": "Independent local Python standard-library arithmetic; no CoCalc/Codex usage",
+  "mathematical_status": {
+    "positive_spectrum_cone_bound": "PROVED for finite nonnegative-spectrum polynomials on reflection-symmetric sets",
+    "matching_pruning": "PROVED for finite positive weights supported on genuine primes, without prime diagonal",
+    "full_circle_energy_lower_bound": "KNOWN CONSEQUENCE of classical PNT, proved from positive smooth weights",
+    "prime_target_universal_coverage": "OPEN"
+  },
+  "script": {
+    "path": "results/stage70/verify_stage70.py",
+    "sha256": "4de02e7b7ec374956702141693d751899569b5826e9a8b7374198250a03b561e",
+    "git_blob_sha1": "aa6be24d6bf6968e28c1dac3187c849c7f2ab7ed"
+  },
+  "output": {
+    "path": "results/stage70/exact_results.json",
+    "sha256": "20521ee2123873cd5caaf9def67c0d29f943186577c0a70a17fe0b1a66acc691",
+    "git_blob_sha1": "87b16d30200907e039f8910019111367614b3991"
+  },
+  "reproduction_command": "python3 -B results/stage70/verify_stage70.py",
+  "test_scope": {
+    "cyclic_model": {
+      "size": 12,
+      "exact_free_energy": "36/5",
+      "exact_positive_cone_energy": "9"
+    },
+    "pruning_targets": [
+      50,
+      100,
+      120,
+      256,
+      300
+    ],
+    "prune_support_primes_below": 201,
+    "exact_integer_weights": "p+(p mod 7)^2",
+    "verification": "PASS"
+  },
+  "source_status": [
+    {
+      "url": "https://arxiv.org/abs/2610.26756",
+      "type": "2026 arXiv preprint; conditional fourth moment, not a full-circle L4 bound"
+    },
+    {
+      "url": "https://doi.org/10.1007/s10476-026-00191-z",
+      "type": "peer-reviewed 2026 journal survey and major-arc formula, not binary Goldbach"
+    }
+  ],
+  "caveats": [
+    "The cyclic Fourier test is not asserted to be a continuous-rational-arc or prime-square example.",
+    "The pruned model deliberately zeros some genuine-prime coefficients, so it is not the fixed actual-prime polynomial.",
+    "One finite program is a regression, not a general number-theoretic proof.",
+    "Goldbach coverage is OPEN and no Codex/background execution was started."
+  ]
+}
