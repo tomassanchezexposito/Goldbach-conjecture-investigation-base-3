@@ -47,3 +47,22 @@ This is a deterministic theorem, NOT the missing arithmetic bound.
 Keep all repository files, comments, code and commit messages in English. Separate proved lemmas, assumptions, conditional conclusions, finite observations, counterexamples and open obligations. Seek an actual proof for *every* N in H, not a positive average. Do not claim Goldbach or the user's universal statement has been proved without a complete non-circular proof.
 
 Do not install software, incur additional charges, delete files, or publish externally without approval.
+
+
+## Extension: E59-T4 multi-shift graph energies (priority)
+
+The research note now includes the **sharp discrete graph-Sobolev certificate** with Laplacian L, mean-zero vector a_j=e_j-(1/k)1, and constant C_(G,j)=a_j^T L^+ a_j. This is classical graph theory adapted to the project's prime correlation setting; do not claim novelty for the graph inequality itself.
+
+Run and independently review `results/stage59/verify_graph_energy.py` in addition to the other two scripts. It uses exact rational elimination for k=51 and graph edges of index lengths 1..h, h in {1,2,5,10,50}, with even-target step 2 or 210. The independently computed finite table is:
+
+| h | Step 2 | Step 210 |
+|---|---:|---:|
+| 1 | 10/295 | 72/295 |
+| 2 | 287/295 | 294/295 |
+| 5 | 295/295 | 295/295 |
+| 10 | 295/295 | 295/295 |
+| 50 | 295/295 | 10/295 |
+
+Verify the exact zero-coordinate equality witness for sharpness, particularly for the h=5 constant shown in the research note. Investigate whether intermediate graph weights reduce the bound relative to complete graphs, but **do not optimize edge weights using the unknown target prime-pair count to prove positivity**.
+
+The mathematical objective is to derive independent, **uniform in the target N**, lower/upper bounds on the mean and graph energy involving multiple same-target and shifted four-prime correlations. Record the first missing non-circular arithmetic estimate if existing theorems only provide averages or upper-bound sieve survivors.
