@@ -1,0 +1,182 @@
+{
+  "base_commit": "2a4c74df4c862aa0d1b46e734ceb0504d72a7008",
+  "branch": "cocalc/stage58-pointwise-analytic-certificate",
+  "evidence_status": "open analytic proof obligation; targeted finite checks only",
+  "files_sha256": {
+    "report": "e16fd477bfb9c35a99cb283156f943e08e2c6b6638694273cd1abb03c3f40de6",
+    "verification_output": "ac71c238702e455b602eb7185f70b2a2e35733032251be0badd4151b5db6025d",
+    "verifier": "fdf1e79787112043248ede701e007e08d2011a3b01eb79f54ac7fb2981f31f78"
+  },
+  "parameters": {
+    "fourier_diagonal_targets_inclusive": [
+      4,
+      300
+    ],
+    "large_goldbach_sweep": false,
+    "moment_vectors": {
+      "entry_values": [
+        0,
+        3
+      ],
+      "lengths": [
+        2,
+        6
+      ]
+    },
+    "shifted_covariance_counterexample": {
+      "anchor_interval": [
+        262,
+        362
+      ],
+      "h": 1
+    },
+    "variance_counterexample_interval": [
+      50,
+      150
+    ],
+    "wheel_even_targets_inclusive": [
+      4,
+      500
+    ]
+  },
+  "repository": "tomassanchezexposito/Goldbach-conjecture-investigation-base-3",
+  "runtime": {
+    "dependencies": "Python standard library only",
+    "implementation": "CPython",
+    "python": "3.14.4"
+  },
+  "stage": 58,
+  "title": "Non-circular pointwise positivity certificate audit",
+  "verification_summary": {
+    "block_moment_implication": {
+      "all_implications_hold": true,
+      "entries": [
+        0,
+        3
+      ],
+      "lengths": [
+        2,
+        6
+      ],
+      "vectors_tested": 5456
+    },
+    "classification": "finite computational checks; no universal prime-pair claim",
+    "exact_arithmetic": true,
+    "large_sweep_performed": false,
+    "ordered_pair_diagonal_identity": {
+      "all_equal": true,
+      "even_targets": 149,
+      "identity": "ordered_count = 2*R_distinct + 1_(N/2 prime)",
+      "range": [
+        4,
+        300
+      ]
+    },
+    "positive_shift_average_countermodel": {
+      "all_nonzero_shift_means_positive": true,
+      "cyclic_length": 10,
+      "mean": "9/10",
+      "shift_records": [
+        {
+          "covariance": "-1/100",
+          "cyclic_shift": 1,
+          "mean_product": "4/5",
+          "product_of_means": "81/100"
+        },
+        {
+          "covariance": "-1/100",
+          "cyclic_shift": 2,
+          "mean_product": "4/5",
+          "product_of_means": "81/100"
+        },
+        {
+          "covariance": "-1/100",
+          "cyclic_shift": 3,
+          "mean_product": "4/5",
+          "product_of_means": "81/100"
+        },
+        {
+          "covariance": "-1/100",
+          "cyclic_shift": 4,
+          "mean_product": "4/5",
+          "product_of_means": "81/100"
+        },
+        {
+          "covariance": "-1/100",
+          "cyclic_shift": 5,
+          "mean_product": "4/5",
+          "product_of_means": "81/100"
+        },
+        {
+          "covariance": "-1/100",
+          "cyclic_shift": 6,
+          "mean_product": "4/5",
+          "product_of_means": "81/100"
+        },
+        {
+          "covariance": "-1/100",
+          "cyclic_shift": 7,
+          "mean_product": "4/5",
+          "product_of_means": "81/100"
+        },
+        {
+          "covariance": "-1/100",
+          "cyclic_shift": 8,
+          "mean_product": "4/5",
+          "product_of_means": "81/100"
+        },
+        {
+          "covariance": "-1/100",
+          "cyclic_shift": 9,
+          "mean_product": "4/5",
+          "product_of_means": "81/100"
+        }
+      ],
+      "vector": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "zero_coordinate_present": true
+    },
+    "runtime": "3.14.4",
+    "stage56_variance_counterexample": {
+      "even_interval": [
+        50,
+        150
+      ],
+      "ratio": "1716160/1568187",
+      "residual_count": 21,
+      "threshold": "58081/672000",
+      "variance": "5363/56700",
+      "zero_representation_count": 0
+    },
+    "stage57_shifted_covariance_counterexample": {
+      "anchor_interval": [
+        262,
+        362
+      ],
+      "covariance": "-127/3000000",
+      "mean_product": "4859/15000",
+      "product_of_means": "971927/3000000",
+      "residual_anchor_count": 25,
+      "shift_h": 1
+    },
+    "title": "Stage 58 exact targeted verification",
+    "wheel_formula_vs_residue_scan": {
+      "all_equal": true,
+      "even_targets": 249,
+      "range": [
+        4,
+        500
+      ]
+    }
+  }
+}
