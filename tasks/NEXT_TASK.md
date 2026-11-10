@@ -1,58 +1,35 @@
-# NEXT TASK — Stage 70 (QUEUED, NOT RUNNING): prime-support separation from abstract Fourier one-hole extremizers
+# NEXT TASK — Stage 71 (QUEUED, NOT RUNNING): arithmetic information robust enough to prevent a target-specific sparse deletion
 
-**Project research status:** universal Goldbach coverage of the original three-case residual set H remains OPEN.  
-**Stage 69 M0–M9 internal documentary review:** closed on \`cocalc/stage69-deep-prime-specific-localization\`.  
-**IMPORTANT RESOURCE CONTROL:** the user's weekly Codex quota is nearly exhausted. **Do not start CoCalc/Codex or enable a Goal automatically.** This task is a stored scientific proposal only; launch it only after a later explicit user request and available allowance.
+**State:** Stage 70's independent mathematical research is internally complete (Theorems 70.1–70.5 and Corollaries 70.5a–b). **The original universal three-case Goldbach coverage remains OPEN.** No CoCalc/Codex, Goals, or future automations have been started. The user's remaining Codex weekly allowance was limited: do not launch a new long agent run without an explicit later authorization.
 
-## Required starting state when the user authorizes work
+## Required read-only recovery
 
-1. Read \`results/stage69/final_report.md\`, \`results/stage69/08_adversarial_review.md\`, \`results/stage69/09_final_synthesis.md\`, \`results/stage69/theorem_dependency_ledger.md\`, and \`results/stage69/review_verification_manifest.json\`.
-2. Preserve and read the true mathematical definitions:
-   \[
-   H=\{N\ge4:N\text{ even},\ N-1\text{ composite},\ N/2\text{ composite}\},\qquad
-   R(N)=\#\{p<q:p,q\text{ prime},\ p+q=N\}.
-   \]
-   The author's \(p=3+2a\) for odd primes is a position coordinate, not ternary digits, congruence modulo 3, or simultaneous primality.
-3. Follow \`docs/cocalc_github_pr_workflow.md\`. Use Git SSH and the already dedicated identity; no \`gh\` install, private API token, new credentials, branch deletion, force push, \`main\` merge, added subscriptions or costs.
-4. On explicit authorization, create a **new Stage 70 branch from the audited Stage 69 head**, not from the historically incomplete handoff or Stage 68. Do not run until authorized.
+Read \`results/stage70/final_report.md\`, \`03_actual_arc_cone_nogo.md\`, \`04_actual_arc_adversarial_review.md\`, \`05_vanishing_mass_prime_deletion.md\`, and \`results/stage69/09_final_synthesis.md\` before new work. Preserve the base-3 odd-prime position coordinate \(p=3+2a\) and the exact residual target \(H=\{N\ge4:N\text{ even},\,N-1,\,N/2\text{ composite}\}\). No changes to \`main\` or prior research branches.
 
-## Focused mathematical question
+## Why Stage 71 must pivot
 
-Stage 69 proves that an unrestricted \(L^2\) function on a major/minor partition of measures \(\nu,\mu>0\), with prescribed major Fourier coefficient \(a\) and zero full coefficient, must spend energy at least
-\[
-\int_{\mathbb T}|F|^2\ge\frac{|a|^2}{\mu\nu}.
-\]
-That extremal function is typically not the square of a finite polynomial with nonnegative weights on **genuine prime frequencies**. A *qualitative* exclusion from a polynomial subspace does not produce a uniform arithmetic saving.
+Theorem 70.4 proves that the **entire-even-band full-circle positive-spectrum certificate** cannot succeed asymptotically, **even with exact actual fourth moment and major coefficient**. Optimizing its constants is no longer a useful Goldbach research task.
 
-The **single research challenge** is to quantify the gap between (a) an abstract complex \(L^2\) one-hole extremizer and (b) the actual prime-supported square
-\[
-S_w(\alpha)^2,\qquad S_w(\alpha)=\sum_{p\ {\rm prime}}(\log p)w(p/X)e(p\alpha),
-\]
-in such a way that its effect on a **specific residual coefficient \(N\)** is sufficient to rule out \(R(N)=0\), without assuming a pair exists at N.
+Theorem 70.5, using the **unconditional published upper sieve** of Wu and the classical PNT, proves that an adversarial removal of only \(O_w(X\log\log X/\log X)=o(X)\) weighted genuine-prime mass can annihilate a prescribed target coefficient while preserving nonnegative prime-supported weights and a nonincreasing full-circle fourth moment. The classical Siegel–Walfisz theorem further shows that the same modified support preserves uniform first-order weighted prime distribution in reduced classes for all \(q\le(\log X)^{1-\varepsilon}\), each fixed \(\varepsilon>0\). This construction is NOT the actual fixed prime polynomial and does NOT refute Goldbach.
 
-### Scientific milestones (depth, not more brute-force)
+A successful future proof therefore requires information **not invariant under** such targeted coefficient deletions: exact fixed prime coefficients, genuinely target-anchored joint primality distribution, or signed minor-arc cancellation proved independently.
 
-**I. Functional-analytic proof of the exact restricted variational problem.** Define a fixed finite frequency-support space and its coefficient Gram/Toeplitz operator on the actual major and minor sets. Derive sharp norm/cancellation bounds for a *general* finite polynomial \(S=\sum_{p\in \mathcal P_X}s_pe(p\alpha)\) with \(s_p\ge0\), \(0\le s_p\le(\log p)\), separating the variable cone from the **fixed actual** weights \((\log p)w(p/X)\). Determine equality and all dependence on X, major-arc measure and support dimension. **Do not replace the nonlinear square constraint by an unconstrained Fourier polynomial without recording the resulting loss.**
+## Focused next research question
 
-**II. Quantitative separation or rigorous limitation.** Try to prove a uniform inequality of the form
-\[
-\inf_{\text{admissible prime-square inputs with specified a and }r(N)=0}
-\frac{\int_{\mathbb T}|S|^4}{|a|^2/(\mu\nu)}\ge1+\delta_X,
-\]
-with exactly specified class, normalization, \(\delta_X\), and nonemptiness convention. Determine the **minimum asymptotic scale** \(\delta_X\) needed to beat the currently known fourth-moment bounds. If the infimum is over an empty class because fixed weights already represent N, **do not claim to have proved Goldbach**: proving emptiness requires independent arithmetic information. For a broad nonnegative coefficient cone, construct any valid counterexample to a claimed uniform gap, keeping the actual-prime case distinct.
+**Identify the weakest independently provable, quantitatively specified genuine-prime statistic that separates the true fixed coefficient family from *every* deletion model erasing one residual target, and whose current estimates can be verified without assuming a representation.**
 
-**III. Bilinear arithmetic content.** Identify whether the hypothetical separation can be reduced to a *genuine-prime* signed short-shift correlation, a Type I/II bilinear exponential sum, or an exact support-restricted Toeplitz quadratic form. For each attempted reduction give the first missing theorem with fixed variables, denominators, shifts, weights, error size and strict margin. Do not assert Hardy–Littlewood asymptotics, positive wheel residues or a target anchor pair as proved facts.
+Investigate rigorously:
 
-**IV. Independent proof route and literature.** Independently pursue a target-indexed circle-method signed estimate that preserves the phase \(e(-N\alpha)\), and compare mathematically with the positivity-constrained polynomial route. Recheck the original paper hypotheses for 2026 conditional fourth-moment and exceptional-set estimates before claiming an implication. Explain why a positive-power exceptional-set bound never excludes one target.
+1. **Quantitative stability/sensitivity:** write an exact perturbation formula for the prime polynomial's target coefficient under deleting a set of primes. Derive best possible upper bounds in terms of removed prime mass, \(\ell^2\) energy, and reflected pair incidences. Prove that generic \(\ell^1\)-smallness does not force representation existence. Explicitly identify which norm or bilinear target interaction fails.
+2. **Arithmetic-progressions boundary:** independently verify the uniform Siegel–Walfisz inheritance through \(q\le(\log X)^{1-\varepsilon}\), and determine what information on genuinely **growing power-size moduli** would distinguish the thinned support. Do not assert that Bombieri–Vinogradov automatically persists after adversarial deletion or that it implies binary Goldbach at a specific target.
+3. **Signed circle-method route:** formulate the exact signed prime-only minor-arc error needed for every residual N and compare with the current fourth moment and published exceptional-set bounds. Test whether a non-circular target-localized bilinear estimate can be **proved**, rather than simply renaming the desired conclusion.
+4. **Matching-cover arithmetic:** use the exact complement matching graph and external sieve upper estimates to quantify the *minimum* weight removal needed to kill all true representations; distinguish knowing/estimating this minimum from already knowing \(R(N)>0\). An estimate bounded away from zero would imply Goldbach and needs a genuinely independent proof.
+5. **Adversarial critique:** search for abstract and actual-prime countermodels, edge cases \(2,3,p=q\), full versus minor energy swaps, smoothed-weight support zeros, and errors involving base-3 coordinates. Preserve exact domain conditions and strict inequalities.
 
-**V. Adversarial review.** Search for the first false step in each failed approach; handle \(p=q\), prime 2, prime 3, weight support zeros, even shift parity, real-versus-complex arc coefficients, exact versus upper energy bounds, and the Stage 69 low-denominator minor-arc erratum. Two distinct derivations for any claimed theorem and a genuinely independent reviewer check are required.
+Only claim **PROVED** when the whole statement is independently derived. Distinguish **EXTERNAL**, **CONDITIONAL**, **FINITE**, **REFUTED**, and **OPEN**. Save proofs, assumptions, source-level citations and at most a few decisive exact checks, not bigger brute-force Goldbach sweeps.
 
-**VI. Completion and handoff.** Publish exact theorems/conditional propositions, countermodels, source ledger, minimal focused verification, SHA-256 manifest, failure analysis and the next precise open obligation to a new Stage 70 research branch; keep every prior stage unchanged.
+## Publication and resource protocol
 
-## Evidence and success standard
+Stage 71 is a research **proposal only**. When and only when the user asks to begin that stage, create a branch descending from \`cocalc/stage70-positive-spectrum-cone-audit\`, complete a meaningful theoretical milestone in the current session, commit to GitHub and keep a draft PR. No paid resources, package installs, credential changes, history rewrites, or merges. GitHub CLI is not necessary.
 
-Success means **a mathematically non-circular prime-specific bound with a demonstrable strict gain at each N**, or a rigorous negative theorem showing a carefully defined broad input class cannot supply such a gain, narrowing the true-prime problem. An abstract inequality that merely rephrases \(r_w(N)>0\), a longer list of finite Goldbach checks, or a restatement of the unchanged global fourth moment is **not** progress.
-
-Classify every item as **PROVED**, **EXTERNAL**, **CONDITIONAL**, **FINITE**, **REFUTED**, or **OPEN**. Never present the hypothesis \(R(N)>0\) or a positive anchored product as an input in its own proof.
-
-**Status: PREPARED ONLY. No Codex session, remote background agent or scheduled automation is running because of this file.**
+**Success criterion:** a new true-prime estimate whose established strength genuinely exceeds the deletion model, or a sharp proved limitation clarifying which proposed statistics cannot do so. No automatic Goldbach-proof headline or universal positivity claim.
