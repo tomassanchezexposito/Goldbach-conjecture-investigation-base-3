@@ -87,3 +87,48 @@ Bhowmik and Grimmelt (2026), "The exceptional set of the Goldbach problem", Anal
 Grimmelt and Teräväinen, "The Exceptional Set in Goldbach's Problem with two Chen Primes", arXiv:2508.16400 (2025, revised 2026), concerns Chen primes and exceptional sets; it is not a proof of the binary Goldbach conjecture.
 
 **Status:** three combinatorial lemmas PROVED; computations finite; universal pointwise energy estimate OPEN; the author's universal coverage claim NOT PROVED.
+
+
+## E59-T4: sharp *multi-shift graph-energy* certificate — PROVED (classical discrete Sobolev form)
+
+The path inequality above is a special case of classical discrete Sobolev / graph-Laplacian inequalities, not a new graph-theoretic theorem. Relevant prior work: K. Takemura, A. Nagai and Y. Kametaka, "Two types of discrete Sobolev inequalities on a weighted Toeplitz graph", *Linear Algebra and its Applications* **507** (2016), 344–355, DOI https://doi.org/10.1016/j.laa.2016.06.029 . Here we apply the method to wheel-210-normalized prime-pair counts.
+
+Let G=(V,E) be a connected undirected graph on k indexed even targets, with strictly positive edge conductances w_uv and graph Laplacian L. Define
+
+- x in R^k with components x_i=R(n_i)/A_210(n_i).
+- mu=(1/k) sum_i x_i.
+- graph energy E_G=sum_{uv in E} w_uv (x_u-x_v)^2 = x^T L x.
+- a_j=e_j-(1/k)1 and sharp constant C_(G,j)=a_j^T L^+ a_j, where L^+ is the Moore–Penrose pseudoinverse.
+
+**Theorem:** (x_j-mu)^2 <= C_(G,j)*E_G. Consequently, mu^2>C_(G,j)*E_G implies the genuine target count R(n_j)>0.
+
+**Proof:** L is positive semidefinite with kernel spanned by 1. Since a_j is orthogonal to 1, a_j=L L^+a_j. Hence a_j^Tx=(L^+a_j)^T Lx. Apply Cauchy–Schwarz in the L-seminorm to obtain the displayed inequality.
+
+**Sharpness for nonnegative sequences with a zero:** Choose v=L^+a_j (mean zero). At every vertex i≠j, (Lv)_i=-1/k<0. If a maximum occurred at i≠j, the Laplacian maximum principle would force (Lv)_i>=0, a contradiction; hence v_j is maximal. Define x_i=v_j-v_i>=0. Then x_j=0, its mean equals v_j=C_(G,j), its energy equals C_(G,j), and equality holds. This proves optimality without assuming any genuine prime pair.
+
+### Exact finite multi-shift feasibility experiment
+
+Construct the unit-conductance graph on k=51 consecutive index positions, connecting every pair of indices with separation at most h, for h=1,2,5,10,50. Choose target position j=25. The sharp constant was computed by exact rational elimination of (k L + J)v=k e_j-1; its value for h=5 is
+
+    C_(51,25,h=5) =
+    38683159850948518167722 / 265567883438518147239561.
+
+On the same 295 residual target centers in the finite grid {10000,10020,...,17980}, all comparisons used exact rational arithmetic:
+
+| Maximum connected index lag h | Even-number spacing 2 | Even-number spacing 210 |
+|---:|---:|---:|
+| 1 (path only) | 10/295 | 72/295 |
+| 2 | 287/295 | 294/295 |
+| 5 | **295/295** | **295/295** |
+| 10 | **295/295** | **295/295** |
+| 50 (complete graph) | 295/295 | 10/295 |
+
+The complete graph reproduces the classical variance criterion, while the path graph recovers E59-T1. An intermediate graph outperformed both endpoints on this finite sample. Its edge energies incorporate **multiple shifted four-prime correlations**: each (x_i-x_j)^2 contributes two same-target second moments and one shifted correlation, including the shared-prime and four-distinct terms classified in Stage 57.
+
+**Critical limitation:** this is a finite experiment and the certificate uses measured genuine prime-pair counts. We have not established independent analytic estimates for mu or E_G, so no universal prime-pair positivity follows. There is no proof that h=5 is optimal outside this sample.
+
+**Code:** \`results/stage59/verify_graph_energy.py\` uses exact Fraction elimination, verifies the sharp constant with a nonnegative zero-coordinate equality witness, and checks every finite window. It writes \`results/stage59/graph_energy_pilot.json\` when run.
+
+### Next analytical obligation
+
+Study whether a weighted multi-shift graph G_N, chosen **without knowing whether R(N)>0**, admits unconditional lower/upper bounds mu_N>=m_N>0 and E_(G_N)<=U_N for every sufficiently large N in H, with m_N²>C_(G_N,j)U_N. Determine whether published major/minor-arc or sieve correlation bounds can control the **signed sum of several four-prime correlations** with this required precision. If only average-in-N bounds are available, state that the isolated-zero exclusion remains unproved.
