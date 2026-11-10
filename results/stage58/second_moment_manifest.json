@@ -1,0 +1,91 @@
+{
+  "algorithms": {
+    "independent_verifier": "Python standard library; Eratosthenes sieve and Fraction; independent pair-list products and direct nested scan; direct enumeration of all 210 wheel residues",
+    "no_large_goldbach_sweep": true,
+    "sage_computation": "SageMath 10.9 primality and QQ; explicit representation-pair Cartesian products and a separate direct nested scan over candidate low positions p,r"
+  },
+  "branch": "cocalc/stage58-pointwise-second-moment",
+  "branch_base_commit": "31dd572197877d877b96b06df383715e3e521d60",
+  "definitions": {
+    "normalization": "X_N=R(N)/A_210(N)",
+    "representation_count": "unordered distinct prime pairs p<q with p+q=N",
+    "residual_set": "even N >= 4 with N-1 composite and N/2 composite",
+    "wheel_factor": "A_210(N)=product over ell in {2,3,5,7} of ell-nu_ell(N), nu=1 if ell divides N and 2 otherwise"
+  },
+  "deliverable_sha256": {
+    "results/stage58/compute_second_moment.sage.py": "0bd1900eac5de70514393cc07d4cdf113e41fe5d428bb8647092984c48e3ec02",
+    "results/stage58/pointwise_second_moments.md": "12d6d9611e80b4700d8df6fe5b7e3637f224b9c78cf86f258c9fa9cfbd31907c",
+    "results/stage58/second_moment_exact.json": "03821d3e8045f73ff93c04d7c19087ac6ee5e088cb37004690d763d7d250605e",
+    "results/stage58/second_moment_verification.json": "d4df19d0d9562b26f9859e8961eaba0d55d1ebd27a0b16c3ec27a672f4c4e993",
+    "results/stage58/summary.md": "22663d4bbf56befe963a884c123edc86462e998f819f7ecb82602cb9ec3f587d",
+    "results/stage58/verify_second_moment.py": "53cb2336ed767b68cf797730cc3bc7625eae8fd4610d04b6dae688e91dfcbd36"
+  },
+  "evidence_status": "proved elementary identities plus bounded exact observations; universal positivity remains open",
+  "exact_results": {
+    "finite_zero_representation_counts": 0,
+    "residual_targets_checked": 62,
+    "same_target_even_targets_checked": 149,
+    "shifted_rows_checked": 620,
+    "weighted_test_vectors": 320,
+    "wheel_even_targets_checked": 249
+  },
+  "main_commit": "e6bb22bedea55953a6fe3efa3cbd645288b87ba3",
+  "manifest_sha256_excludes_self": true,
+  "parameters": {
+    "diagonal_even_targets_inclusive": [
+      4,
+      300
+    ],
+    "positive_shifts_h": [
+      1,
+      10
+    ],
+    "residual_anchor_even_targets_inclusive": [
+      4,
+      300
+    ],
+    "shifted_targets_maximum": 320,
+    "small_exceptional_prime_cutoff": 7,
+    "wheel_even_targets_inclusive": [
+      4,
+      500
+    ]
+  },
+  "provenance_input_sha256": {
+    "README.md": "6693551f96079bd75c3b2bf58dd3506180e6548f1d7b2ddf710c4a03fe638ad3",
+    "docs/research_protocol.md": "0e6c89ce7ec191e5f6de1032bd4d9d81c5623426c2226fafb773d0e9ae867d0d",
+    "docs/research_statement.md": "84c3c6dace2ed7da0028c9fbb7a35d439ae6d8a779a0e018b554e5f5bc707c7c",
+    "results/stage56/stage56_pointwise_second_moment_report.md": "73a930b59af61790e28b9a10bfd33befbea105e3ab3cb0611a5c935fbc1b0461",
+    "results/stage57/manifest.json": "85ed641d71cabc3d1764afea6ecd26b90f285f156c790c97077e5065288c06ef",
+    "results/stage57/report.md": "818ead4053391b3a4f94fae0fe78389743060a1011d7e329505bc45d8f8c2d56",
+    "results/stage57/shifted_correlations.json": "cea15615a398da224e5d44011815cbf35383f4e05568ac0be74161f098e4c1ba",
+    "results/stage58/manifest.json": "52347f7d2bb359fc44a313528868b7e212e5bba9270ae610d5f5992c292d0c0e",
+    "results/stage58/report.md": "e16fd477bfb9c35a99cb283156f943e08e2c6b6638694273cd1abb03c3f40de6",
+    "results/stage58/verify_stage58.py": "fdf1e79787112043248ede701e007e08d2011a3b01eb79f54ac7fb2981f31f78"
+  },
+  "remote": "git@github.com:tomassanchezexposito/Goldbach-conjecture-investigation-base-3.git",
+  "remote_fetch_attempt": {
+    "command": "git fetch origin --prune",
+    "result": "failed: Permission denied (publickey); remote freshness could not be confirmed"
+  },
+  "repository": "tomassanchezexposito/Goldbach-conjecture-investigation-base-3",
+  "runtime": {
+    "compute_child_max_rss_kb": 234696,
+    "compute_elapsed_seconds": 3.394,
+    "independent_verifier_elapsed_seconds": 0.192,
+    "python": "3.14.4",
+    "sagemath": "10.9",
+    "verifier_child_max_rss_kb": 18472
+  },
+  "stage": 58,
+  "stage57_commit": "e77e3d0e3c4c3bb005c37e3d30396131598003a2",
+  "stage57_merged_into_main": false,
+  "title": "Pointwise second moments and shifted four-prime positions",
+  "verification": {
+    "existing_stage57_verifier": "passed; 5616 rows, 564 residual targets, and 999 wheel values",
+    "existing_stage58_verifier": "passed; all targeted assertions",
+    "new_independent_verification_json": "results/stage58/second_moment_verification.json",
+    "new_independent_verifier": "passed; all shifted category rows, same-target identities, wheel values, and exact moments agree",
+    "repository_unit_tests": "passed; 4 tests"
+  }
+}

@@ -40,3 +40,7 @@ suffices for \(R(N)>0\), but is not known unconditionally for \(N\in H\). Exact 
 ## Acceptance
 
 The result must either establish a uniform independent pointwise inequality with a positive margin and proof, or explicitly identify and quantify the first missing non-circular error estimate. Do not label any universal coverage statement proved merely because the sharp local certificate is satisfied in a long finite range.
+
+## Stage 60 integration resolution
+
+This parent-branch Stage 60 objective remains the governing task. The conflicting Stage 59 task protocols are cited in their source commits: `cocalc/stage59-local-second-moment` at `900cae804b76e09992aba555932bc0fd866737af` and `cocalc/stage59-sharp-local-energy` at `60fed50ca43342bd10384a05813202c79c57eab3`. Their distinct reports, experiments, proofs, and verifiers are retained under `results/stage59/`.
