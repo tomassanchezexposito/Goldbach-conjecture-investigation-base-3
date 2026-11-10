@@ -1,0 +1,15 @@
+{
+  "all_assertions_passed": true,
+  "classification": "INDEPENDENT SAGEMATH EXACT CYCLOTOMIC-FIELD VERIFICATION",
+  "full_circle_entries_checked": 21,
+  "hermitian_entries_checked": 50,
+  "interval_gram_entries_compared": 50,
+  "limitations": [
+    "The exact computations verify finite algebraic identities, not an asymptotic estimate.",
+    "Positive semidefiniteness follows from the integral Gram representation proved in report.md.",
+    "No universal prime representation or pointwise prime saving is established."
+  ],
+  "reduced_center_shift_tests": 1651,
+  "runtime_seconds": 13.359011786000337,
+  "sage_version": "10.9"
+}

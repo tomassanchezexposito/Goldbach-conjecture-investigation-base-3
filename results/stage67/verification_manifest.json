@@ -1,0 +1,93 @@
+{
+  "authentication": {
+    "identity_path": "/home/user/.ssh/id_ed25519_goldbach-investigacion-base-3",
+    "private_key_contents_disclosed": false,
+    "ssh_option": "IdentitiesOnly=yes",
+    "transport": "SSH"
+  },
+  "base_commit": "b491a942113f63989b236bcaad826c5742b67e08",
+  "base_remote_ref": "origin/cocalc/stage67-rational-arc-increment-gram",
+  "branch": "cocalc/stage67-rational-arc-increment-gram",
+  "deliverable_sha256": {
+    "results/stage67/adversarial_review.md": "b6c793e61ad80fe3042c10e0aedd69ddb56354b05b1c40b3dbacdcfe69c587f1",
+    "results/stage67/final_assessment.md": "c2da676baafbe7b60678858afe37aeab507165ffe265d4f3acfa6cd8b5e98a60",
+    "results/stage67/rational_arc_python_results.json": "d70523120682c2bb3923dd8ac1335a26de046199dbffcc3a87ef210f2207b629",
+    "results/stage67/rational_arc_sage_results.json": "df93e3ecf64c42a179dfb6ce91c3167cee75124aa30e7e11ed79627b147b0838",
+    "results/stage67/report.md": "53a43280c901c79a1146bcf583d38642b3361a4fa8d61dd7cf5b3c85b30906ce",
+    "results/stage67/verify_rational_arc_gram.py": "cd6a19749998dc8a828f2ec99119a83211e26525398586dacf93cb550ae0c970",
+    "results/stage67/verify_rational_arc_gram_sage.py": "035b396ef12797358f6d67a08da01135396ab0b7e218bdd5ec756cf9a2044e42"
+  },
+  "environment": {
+    "python": "3.14.4",
+    "sage": "10.9"
+  },
+  "manifest_self_hash": "omitted by design",
+  "mathematical_status": {
+    "major_arc_literature_audit": "inherited from results/stage64/01_2026_primary_sources.md; not independently refreshed in Stage 67",
+    "not_proved": [
+      "target-specific signed arithmetic saving for genuine primes",
+      "universal positivity on the residual set"
+    ],
+    "proved": [
+      "exact restricted Gram identity and PSD",
+      "rational-center divisibility resonance criterion",
+      "finite-width perturbation bound",
+      "complete-minor-set Gram convergence to full-circle matrix for fixed shifts"
+    ]
+  },
+  "reproducibility": [
+    "python3 -B results/stage67/verify_rational_arc_gram.py",
+    "sage -python results/stage67/verify_rational_arc_gram_sage.py"
+  ],
+  "stage": 67,
+  "title": "Rational-arc Gram geometry and pointwise prime-correlation gap",
+  "verification_runs": [
+    {
+      "checks": {
+        "arc_matrix_entries": 13500,
+        "full_circle_entries": 21,
+        "major_arc_measure_inequalities": 100,
+        "reduced_center_shift_tests": 495
+      },
+      "command": "python3 -B results/stage67/verify_rational_arc_gram.py",
+      "peak_child_rss_kb": 17936,
+      "result": "PASS",
+      "script_runtime_seconds": 4.821887054,
+      "wall_seconds_including_process_startup": 4.883
+    },
+    {
+      "checks": {
+        "full_circle_entries": 21,
+        "hermitian_entries": 50,
+        "interval_gram_entries": 50,
+        "reduced_center_shift_tests": 1651
+      },
+      "command": "sage -python results/stage67/verify_rational_arc_gram_sage.py",
+      "peak_child_rss_kb": 243176,
+      "result": "PASS",
+      "sage_version": "10.9",
+      "script_runtime_seconds": 13.359011786,
+      "wall_seconds_including_process_startup": 16.702
+    },
+    {
+      "checks": {
+        "aggregate_python_rational_vectors": 22140,
+        "lipschitz_cases": 300,
+        "python_prime_pair_cases": 3422,
+        "sage_aggregate_rational_vectors": 8400,
+        "sage_gram_cases": 8,
+        "sage_lipschitz_cases": 260,
+        "sage_prime_partition_cases": 2352
+      },
+      "combined_wall_seconds": 14.25,
+      "commands": [
+        "python3 -B results/stage66/verify_stage66.py",
+        "python3 -B results/stage66/verify_stage66_aggregate.py",
+        "sage -python results/stage66/verify_stage66_sage.py"
+      ],
+      "note": "The Stage 66 Sage verifier rewrote a tracked runtime_seconds field during verification; the generated-only change was reverted so all historical Stage 66 files remain byte-for-byte unchanged.",
+      "peak_child_rss_kb": 234792,
+      "result": "PASS"
+    }
+  ]
+}
