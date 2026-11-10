@@ -10,9 +10,9 @@ with the smooth weight and major/minor arcs specified in `01_2026_primary_source
 \[
 r_w(N)=\int_{\mathbb R/\mathbb Z}S_w(\alpha)^2e(-N\alpha)\,d\alpha,
 \quad
-m_w(N)=\int_{\mathfrak m}|S_w(\alpha)|^2e(-N\alpha)\,d\alpha,
+m_w(N)=\int_{\mathfrak m}S_w(\alpha)^2e(-N\alpha)\,d\alpha,
 \quad
-a_w(N)=\int_{\mathfrak M}|S_w(\alpha)|^2e(-N\alpha)\,d\alpha.
+a_w(N)=\int_{\mathfrak M}S_w(\alpha)^2e(-N\alpha)\,d\alpha.
 \]
 These are exact complex Fourier coefficients and $r_w(N)=a_w(N)+m_w(N)$. The prime sum is finite because $w$ is compactly supported in $(0,1)$. Conjugate symmetry makes these coefficients real for integer $N$.
 
@@ -24,6 +24,9 @@ a_w(N)=\mathfrak S(N)I_w^+(N)+O_{w,\Theta,\kappa}(X^{1-c}),
 They establish $I_w^+(N)\geq X/4+O(1)$ and $\mathfrak S(N)\geq 2C_2>0$, where $C_2=\prod_{p>2}(1-(p-1)^{-2})$. Hence $a_w(N)\geq c_wX$ for sufficiently large $X$, uniformly in the displayed interval. If there is no prime pair, then $r_w(N)=0$; consequently $m_w(N)=-a_w(N)$ and $|m_w(N)|\geq c_wX$. This implication is non-circular: it uses absence only to infer vanishing of the exact prime coefficient, then compares with the independently established major arc.
 
 The issue is how to prove the contrary pointwise estimate on $m_w(N)$.
+
+
+**Stage 65 mathematical erratum (2026-11-10).** A previous revision incorrectly wrote \(|S_w(\alpha)|^2\) in both the major- and minor-arc coefficient definitions while using \(S_w(\alpha)^2\) for the full coefficient. The wrong integrals are coefficients of *prime differences*, not sums, and therefore do not partition \(r_w(N)\). Both definitions above have been corrected to \(S_w^2\), without altering the valid fourth-moment integrand \(|S_w|^4\) in Parseval. Explicit counterexample: \(S=e(3\alpha)+e(5\alpha)\) has the \(N=8\) Fourier coefficient of \(S^2\) equal to 2, while the \(N=8\) coefficient of \(|S|^2\) equals 0. See \`results/stage65/00_erratum.md\` and the independently exact regression script in that directory. The original Stage 64 Git history remains preserved.
 
 ## Exact Parseval calculation and exponents
 
