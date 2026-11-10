@@ -1,0 +1,86 @@
+{
+  "base_commit": "21cb30c1aec69e22ee3eb12eea51a7afee9c0607",
+  "branch": "cocalc/stage68-optimal-arc-allocation-and-pointwise-obstruction",
+  "checkpoint_1_commit": "dae587f0ac3b481f4b0678966cc60f1cd88de3c9",
+  "checkpoint_1_remote_push": "verified by explicit-identity git ls-remote before final documentation checkpoint",
+  "environment": {
+    "platform": "Linux-7.0.0-1017-gcp-x86_64-with-glibc2.43",
+    "python": "3.14.4",
+    "sage": "SageMath version 10.9, Release Date: 2026-05-04",
+    "sympy": "1.14.0"
+  },
+  "hash_scope": "SHA-256 for every regular file in results/stage68 and tasks/NEXT_TASK.md at manifest-generation time. This manifest is deliberately excluded from its own hash list.",
+  "literature_audit": {
+    "date": "2026-11-10",
+    "pdf_sha256": {
+      "arXiv:2610.15559v1": "adfca5b1b8b5b1c0ce350bdbaa08bb9fb288f41c2fad1db8bf5cd4d8d93412ec",
+      "arXiv:2610.26756v1": "dfc50df01f80c0493c29170e748cc5af608d66d0252b7c15209524104f4f0153",
+      "arXiv:2611.09386v1": "3e6af1b24fdaa91131dd349d8c60d1add45028a251eac51e875251192cece89"
+    },
+    "scope": "fresh statement-level and relevant-dependency inspection of three current arXiv v1 PDFs; not line-by-line proof verification"
+  },
+  "mathematical_status": {
+    "arc_allocation_theorems": "proved under stated finite-dimensional Hilbert-space hypotheses",
+    "prime_specific_signed_pointwise_estimate": "open",
+    "universal_three_case_coverage": "open; no proof claim"
+  },
+  "repository": "tomassanchezexposito/Goldbach-conjecture-investigation-base-3",
+  "resource_notes": {
+    "additional_software_installed": false,
+    "peak_memory": "not measured",
+    "prime_search_performed": false,
+    "wall_time_recorded": true
+  },
+  "sha256": {
+    "results/stage68/00_operator_allocation_and_uniform_gram.md": "6e8a1f850987e9161e3591551e3e0bc9c8b3945936e902fd645901fe040298a1",
+    "results/stage68/01_dependency_audit.md": "fa39a1615c5dff7fb0aa308903c1496f9f671731a9eb1b4e89c3f7fa74018ef7",
+    "results/stage68/02_exact_budget_optimization.md": "b890badc435c7ffd975e7cb4319f3dd730cf6ead57c34ffa0ad24cca6b1e2b84",
+    "results/stage68/03_uniform_spectral_no_gain.md": "f35530fe8e53f04904d6866dd692bfca96e0c7662460a6e62f1fd91eaa25c80b",
+    "results/stage68/04_arc_budget_feasibility.md": "8b267f39308b6eb963d108ea27d4452b46eab567c9da4393b79c62496706e8c1",
+    "results/stage68/04_proof_obligations.json": "6431d186cfbff5dae0442e2f739ba6f3190e54c7f465c358194b6b5f3e5eaad2",
+    "results/stage68/05_prime_specific_structure.md": "106fa3b36992d364bf8c82637c86b21a29029a25a5d1300357746c2fa19603ac",
+    "results/stage68/06_literature_and_theorem_strength.md": "b3fdab5332a77b6d5ed54c115ece7a542d283722c1b0bf813af14142b4ce8448",
+    "results/stage68/06_sources.json": "02ce776e07923970cf0565fd94e75fa3f8b16b56c718c4fa840004350a5aa6b2",
+    "results/stage68/07_primary_analytic_attempt.md": "6940cc42ba82c146f86250ecdf2c99299a212f4f3b72ab06392a8bd174bab28d",
+    "results/stage68/08_adversarial_review.md": "f43634b58a0eb2b14664cbc5c41c25cd9dd6a21f868b3e96265abf50a9b0ff40",
+    "results/stage68/checkpoint_log.md": "5ba4d4d934ceb14c1c42eefc7e799b3ceba0e3b7a083fd5b25ad401b8c2a21a0",
+    "results/stage68/final_report.md": "40647c5168d106d626e039660bf4a5935142f1b7077bab1b46daf93b72c69436",
+    "results/stage68/stage68_exact_results.json": "36ad191348ecdbf8833141aeb7a67cc92aa972091e52905c660ffce4b8095ca2",
+    "results/stage68/stage68_sage_results.json": "7ed454968a8a43724403aab8c03bf2c0aec41e1daf7bcf754943400be02628f1",
+    "results/stage68/task_snapshot.md": "e805120c607e309c8eb93a460e4b83e3ac6cc700f5697c2eabb8035986d254da",
+    "results/stage68/theorem_dependency_ledger.md": "0acac3ec426be9983dc085dea91a11c8b259c84ce9a91c271a82d681d07f279e",
+    "results/stage68/verify_stage68.py": "3767d66f07ffdeb3c5aaf2d7357ceb828f6a993d5ae456b35d51a788dfb83ce5",
+    "results/stage68/verify_stage68_sage.py": "ad07ae767c10c4977f8ce5d254bcb54129fa9499c0da34e45b20cd01e9fec3a2",
+    "tasks/NEXT_TASK.md": "f39420f46c060264dc4e6f6b089a1dbfc029bed3ef06f1e14c8df9d72a63f31e"
+  },
+  "ssh_identity": {
+    "authentication": "GitHub SSH authentication succeeded; ssh -T returned expected exit code 1 after its success greeting",
+    "fetch_and_push_use": "GIT_SSH_COMMAND=ssh -o IdentitiesOnly=yes -i /home/user/.ssh/id_ed25519_goldbach-investigacion-base-3",
+    "private_key_content_exposed": false,
+    "private_key_path": "/home/user/.ssh/id_ed25519_goldbach-investigacion-base-3",
+    "public_key_fingerprint": "SHA256:1tt9g8Q3RZLv3B9HFSKihQp6YteXn7aYYy659+b1Zyg"
+  },
+  "stage": 68,
+  "verification": [
+    {
+      "command": "python3 results/stage68/verify_stage68.py",
+      "scope": "exact symbolic Gram and commutator identities, full-circle Gram checks, sparse-polynomial countermodel",
+      "status": "PASS",
+      "wall_seconds": 1.423
+    },
+    {
+      "command": "sage -python results/stage68/verify_stage68_sage.py",
+      "scope": "independent exact verification of interval Gram identities and spectral examples",
+      "status": "PASS",
+      "wall_seconds": 4.588
+    },
+    {
+      "command": "git diff --check",
+      "status": "PASS"
+    },
+    {
+      "command": "JSON parsing of stage68 result/source files",
+      "status": "PASS"
+    }
+  ]
+}

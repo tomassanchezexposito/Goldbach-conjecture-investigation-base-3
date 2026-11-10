@@ -12,8 +12,15 @@
 
 ## Reproduction record
 
-- `python3 results/stage68/verify_stage68.py` — PASS, Python 3.14.4 / SymPy exact symbolic arithmetic, 1.536 s wall time.
-- `sage -python results/stage68/verify_stage68_sage.py` — PASS, SageMath 10.9 exact symbolic arithmetic, 4.717 s wall time.
+- `python3 results/stage68/verify_stage68.py` — PASS, Python 3.14.4 / SymPy exact symbolic arithmetic; final rerun 1.423 s wall time.
+- `sage -python results/stage68/verify_stage68_sage.py` — PASS, SageMath 10.9 exact symbolic arithmetic; final rerun 4.588 s wall time.
 - `git diff --check` — PASS.
 
 The scripts verify targeted exact identities and examples; the all-parameter operator results are proved in the Markdown report. The checks do not search prime representations. Checkpoint commit identifiers and push status are added in the final verification record; the final commit is reported separately because a commit cannot contain its own hash.
+
+## Checkpoint and completion record
+
+- Checkpoint 1: `dae587f0ac3b481f4b0678966cc60f1cd88de3c9`, parent `21cb30c1aec69e22ee3eb12eea51a7afee9c0607`; pushed to the Stage 68 branch using the existing dedicated SSH identity.
+- Final checkpoint: includes the source-level literature refresh, candidate-estimate analysis, adversarial audit, integrated report, source/dependency ledger, reproducibility manifest, and the complete Stage 68 task snapshot. The Stage 69 assignment is now in `tasks/NEXT_TASK.md`.
+- The final verifier reruns passed after the documentation pass and regenerated their exact result JSON files; source code is unchanged from checkpoint 1. All remaining files are reviewed as intended Stage 68 deliverables or the explicit Stage 69 task rollover.
+- The exact final commit SHA and remote ref are recorded in the chat report and can be checked against `git ls-remote`; the manifest records checkpoint 1 because a commit cannot contain its own object hash.

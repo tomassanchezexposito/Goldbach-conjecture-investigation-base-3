@@ -1,0 +1,112 @@
+{
+  "title": "Stage 68 external-source provenance ledger",
+  "inspection_date": "2026-11-10",
+  "inspection_scope": "Freshly downloaded current arXiv v1 PDFs for the three 2026 preprints listed below and checked theorem statements and cited dependencies relevant to this report. This is not a line-by-line proof audit. Other sources and the OpenAI manuscript remain inherited from Stage 64.",
+  "sources": [
+    {
+      "authors": "H. Li and Z. Liu",
+      "title": "Fourth moments of prime exponential sums and exceptional sets for sums and differences of primes",
+      "identifier": "arXiv:2610.26756v1",
+      "version_date": "2026-10-19",
+      "url": "https://arxiv.org/abs/2610.26756",
+      "pdf_sha256": "dfc50df01f80c0493c29170e748cc5af608d66d0252b7c15209524104f4f0153",
+      "theorem_labels": [
+        "Theorems 1 and 2",
+        "Proposition 4.1"
+      ],
+      "hypotheses": [
+        "Q_Theta: every nontrivial zero of every primitive Dirichlet L-function has real part at most fixed Theta, with 1/2 <= Theta; Theorem 1 establishes the stated range Theta < 11/12",
+        "fixed smooth Gevrey prime weight w, with 0 <= w <= 1 and w=1 on [1/8,7/8]",
+        "major rational cores with P=X^kappa and fixed kappa in the paper's stated range; arcs are disjoint for sufficiently large X"
+      ],
+      "relevant_conclusions": [
+        "global minor fourth moment is O(X^(5/2)(log X)^100) under the theorem's hypotheses",
+        "Theorem 2 exceptional-set estimate is O(X^(1/2)(log X)^100)",
+        "Proposition 4.1 gives a uniform major-coefficient asymptotic with positive real main term for even N in [X/2,X], under its stated assumptions"
+      ],
+      "stage68_relevance": "These are global moment and major-arc/exceptional-set statements. They do not state a target-uniform signed minor coefficient or the required localized increment-energy estimate.",
+      "local_copy": "Downloaded during Stage 68 to temporary storage; no repository PDF added."
+    },
+    {
+      "authors": "J. Pintz and I. Althöfer",
+      "title": "The Goldbach exceptional set: an exponent 7/12 and conditional refinement",
+      "identifier": "arXiv:2610.15559v1",
+      "version_date": "2026-10-11",
+      "url": "https://arxiv.org/abs/2610.15559",
+      "pdf_sha256": "adfca5b1b8b5b1c0ce350bdbaa08bb9fb288f41c2fad1db8bf5cd4d8d93412ec",
+      "theorem_labels": [
+        "Theorems 1 and 3",
+        "Corollary 2"
+      ],
+      "hypotheses": [
+        "Theorem 1 uses a common zero-free half-plane for all Dirichlet L-functions and the paper's explicit-formula/prime-exponential-sum inputs",
+        "Theorem 3's H_theta range is 1/2 <= theta <= 2/3 and uses the paper's stated classical fixed-modulus zero-density inputs"
+      ],
+      "relevant_conclusions": [
+        "Theorem 1 gives exceptional-set size O_epsilon(X^(7/12+epsilon))",
+        "Theorem 3 gives exponent g(theta)=theta(5-4theta)/(2(2-theta)) in its stated range"
+      ],
+      "stage68_relevance": "Positive-power exceptional-set estimates permit isolated targets; neither result is the requested signed bound at every prescribed N.",
+      "local_copy": "Downloaded during Stage 68 to temporary storage; no repository PDF added."
+    },
+    {
+      "authors": "I. Althöfer, D. Chen, A. Perelli, and J. Pintz",
+      "title": "The exceptional set of Goldbach numbers among polynomial values",
+      "identifier": "arXiv:2611.09386v1",
+      "version_date": "2026-11-06",
+      "url": "https://arxiv.org/abs/2611.09386",
+      "pdf_sha256": "3e6af1b24fdaa91131dd349d8c60d1add45028a251eac51e875251192cece89b",
+      "theorem_labels": [
+        "Theorem 1",
+        "Theorems A-C"
+      ],
+      "hypotheses": [
+        "fixed integer polynomial of positive leading coefficient and degree k >= 2",
+        "imports the upstream Li-Liu results and cites the OpenAI manuscript for one input"
+      ],
+      "relevant_conclusions": [
+        "exceptional indices along 2 phi(n) are O_(phi,epsilon)(N^(alpha_k+epsilon)); alpha_2=1/2, alpha_3=5/8, alpha_4=3/4, and alpha_k=1-1/(k+1) for k>=5"
+      ],
+      "stage68_relevance": "A sparse polynomial subsequence result does not cover all even integers, and the exceptional-index power bound does not imply zero exceptions.",
+      "local_copy": "Downloaded during Stage 68 to temporary storage; no repository PDF added."
+    },
+    {
+      "authors": "G. Bhowmik and L. Grimmelt",
+      "title": "The exceptional set in Goldbach's problem",
+      "identifier": "Analysis Mathematica 52 (2026), 767-808",
+      "url": "https://doi.org/10.1007/s10476-026-00191-z",
+      "theorem_labels": [
+        "Theorem 3.1"
+      ],
+      "hypotheses": [
+        "inherited Stage 64 audit records a common zero-real-part bound Theta<3/4"
+      ],
+      "relevant_conclusion": "inherited audit records exceptional count O(X^(2Theta-1/2+epsilon))",
+      "provenance": "Inherited Stage 64 source audit only; not freshly retrieved or rechecked in Stage 68."
+    },
+    {
+      "authors": "J. Pintz",
+      "title": "A new explicit formula in the additive theory of primes with applications I: The major arc method and Goldbach's problem",
+      "identifier": "arXiv:1804.09084v2",
+      "url": "https://arxiv.org/abs/1804.09084",
+      "theorem_labels": [
+        "Theorem 1"
+      ],
+      "relevant_conclusion": "inherited audit records unconditional E(X)<X^0.72 for sufficiently large X, with ineffective threshold",
+      "provenance": "Inherited Stage 64 audit only; not freshly retrieved or rechecked in Stage 68."
+    },
+    {
+      "authors": "OpenAI Math",
+      "title": "The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s)>7/8",
+      "identifier": "2026-09-30 manuscript; repository snapshot 4eaee87548250b2682affda7d05d947c05554bae",
+      "url": "https://github.com/openai/math/tree/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026",
+      "provenance": "Inherited Stage 64 manuscript/Lean-scope notes only; not freshly retrieved or validated in Stage 68. Stage 64 reports no Lean build. Treat as an external claimed input, not a Stage 68-verified theorem."
+    }
+  ],
+  "limitations": [
+    "The three listed 2026 arXiv PDFs were freshly inspected at theorem-statement and relevant-dependency level; no full proof was reconstructed.",
+    "The remaining sources are inherited and were not re-versioned in Stage 68.",
+    "No Lean build was run.",
+    "No audited source states the target-uniform signed prime estimate or localized arc profile needed for Stage 68's strict pointwise criterion."
+  ]
+}
