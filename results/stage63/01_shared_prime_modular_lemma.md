@@ -36,7 +36,7 @@ $$T_{210}(n,m)=0\quad\Longleftrightarrow\quad\{n\pmod3,m\pmod3\}=\{1,2\}.$$
 
 Otherwise it is positive. This classifies the wheel obstruction only; positivity does not establish the existence of any prime triple.
 
-The sieve condition in `T_W` removes values divisible by any prime factor of `W`, whereas primality permits the value to equal that prime. For example, `x=3,n-x=5,m-x=7` is a genuine triple for `(n,m)=(8,10)`, although `T_210(8,10)=0`. For `(8,12)`, the triple with `x=5` is genuine; for `(12,18)`, `x=7` and `x=11` both give genuine triples. Small-prime survivors therefore cannot be discarded when relating a wheel sieve to actual primes. The prime 2 can occur in an even prime sum only as `2+2=4`, which is the excluded diagonal; no distinct-prime representation contains 2.
+The sieve condition in `T_W` removes values divisible by any prime factor of `W`, whereas primality permits the value to equal that prime. For example, `x=3,n-x=5,m-x=7` is a genuine triple for `(n,m)=(8,10)`, although `T_210(8,10)=0`. For `(8,12)`, the triple with `x=5` is genuine. For `(12,18)`, the genuine shared primes are `x=5` and `x=7`, giving triples `(5,7,13)` and `(7,5,11)`. The previously stated `x=11` is invalid because `12-11=1` is not prime. Small-prime survivors therefore cannot be discarded when relating a wheel sieve to actual primes. The prime 2 can occur in an even prime sum only as `2+2=4`, which is the excluded diagonal; no distinct-prime representation contains 2.
 
 ## Four positions and what the product says
 
