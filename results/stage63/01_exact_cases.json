@@ -1,0 +1,55 @@
+{
+  "evidence": "exact finite checks; the CRT identity is proved in the report",
+  "moduli_checked": [
+    210,
+    330
+  ],
+  "modular_n_m_cases": 380,
+  "wheel_210_local_obstruction_cases_in_grid": 42,
+  "actual_target_pairs_checked": 780,
+  "stage57_h1_rows_independently_rechecked": 564,
+  "actual_prime_exception_examples": [
+    {
+      "x": 3,
+      "n": 8,
+      "m": 10,
+      "other_primes": [
+        5,
+        7
+      ],
+      "total_shared_prime_count": 1,
+      "wheel_210_count": 0
+    },
+    {
+      "x": 5,
+      "n": 8,
+      "m": 12,
+      "other_primes": [
+        3,
+        7
+      ],
+      "total_shared_prime_count": 1,
+      "wheel_210_count": 8
+    },
+    {
+      "x": 7,
+      "n": 12,
+      "m": 18,
+      "other_primes": [
+        5,
+        11
+      ],
+      "total_shared_prime_count": 2,
+      "wheel_210_count": 16
+    }
+  ],
+  "prime_2_distinct_pair_check_targets": 100,
+  "methods": {
+    "modular_method_1": "direct enumeration of all x modulo W",
+    "modular_method_2": "independent product of local factor counts",
+    "prime_method_1": "scan the common prime x and test both complements",
+    "prime_method_2": "Cartesian product of pair lists and set intersections"
+  },
+  "assertions_passed": true,
+  "universal_prime_claim": false
+}

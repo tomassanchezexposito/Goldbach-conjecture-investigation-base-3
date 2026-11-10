@@ -1,0 +1,200 @@
+{
+  "purpose": "Reproducibility and provenance manifest for Stage 63 M0-M6",
+  "hash_algorithm": "SHA-256",
+  "manifest_self_hash": "omitted to avoid self-reference",
+  "branch_at_generation": "cocalc/stage63-extended-analytic-program",
+  "head_at_generation": "0b252d916b75c5b2c5755ee0714980b088ffeee5",
+  "software": {
+    "python": "3.14.4",
+    "sage_math": "10.9 (checked with sage --version; M6 audit uses Python only)",
+    "operating_system": "Linux-7.0.0-1017-gcp-x86_64-with-glibc2.43"
+  },
+  "parameters": {
+    "residual_definition": "Even N >= 4 with composite N-1 and composite N/2",
+    "distinct_pair_definition": "Unordered prime pairs p<q with p+q=N",
+    "finite_independent_audit_limit": 1000,
+    "wheel_modulus": 210,
+    "fourier_test_targets_count": 42,
+    "fourier_exact_dft_modulus": "L=2N+1",
+    "shared_prime_moduli_tested": [
+      210,
+      330
+    ],
+    "energy_test_arithmetic": "Python fractions / exact integers",
+    "finite_primality_methods": [
+      "Eratosthenes sieve",
+      "trial division"
+    ]
+  },
+  "commands": [
+    "python3 -B results/stage63/01_verify_modular.py",
+    "python3 -B results/stage63/02_verify_fourier.py",
+    "python3 -B results/stage63/03_verify_energy_countermodels.py",
+    "python3 -B results/stage63/05_countermodels.py",
+    "python3 -B results/stage63/06_final_audit.py",
+    "python3 -B -m unittest discover -s tests -v",
+    "git diff --check"
+  ],
+  "files": [
+    {
+      "path": "docs/research_protocol.md",
+      "bytes": 2373,
+      "sha256": "0e6c89ce7ec191e5f6de1032bd4d9d81c5623426c2226fafb773d0e9ae867d0d"
+    },
+    {
+      "path": "docs/research_statement.md",
+      "bytes": 2176,
+      "sha256": "84c3c6dace2ed7da0028c9fbb7a35d439ae6d8a779a0e018b554e5f5bc707c7c"
+    },
+    {
+      "path": "results/stage63/00_manifest.json",
+      "bytes": 5111,
+      "sha256": "775ee3d90c06b5beed8da7abb3f121febd5ac1985e5382fdd007f68fc7422ded"
+    },
+    {
+      "path": "results/stage63/00_provenance_and_audit.md",
+      "bytes": 9901,
+      "sha256": "02f4afe8d3034965d1cbc3e7c47359ef1c6de71637119da0b94695a7f8ccfe4d"
+    },
+    {
+      "path": "results/stage63/00_reproducibility_transcript.txt",
+      "bytes": 1455,
+      "sha256": "645042f5ee5303417b7ca81ef35d04e90f6f0700215f17bb56ab5a7063696a0a"
+    },
+    {
+      "path": "results/stage63/01_exact_cases.json",
+      "bytes": 1277,
+      "sha256": "bdb10b4018b0def79216437b25ff75eab5e5bd0113e3fea3ca37198fc0ac44b5"
+    },
+    {
+      "path": "results/stage63/01_shared_prime_modular_lemma.md",
+      "bytes": 4922,
+      "sha256": "4a540b4f7304c7d5f79457310a039048d716572ede02f4e9c6fd061aff8f63c7"
+    },
+    {
+      "path": "results/stage63/01_verify_modular.py",
+      "bytes": 6097,
+      "sha256": "093f74dd1294778c64e28ff7a9e42a87357cc9fd85d51ef2d0e5a9d2e2c69e62"
+    },
+    {
+      "path": "results/stage63/02_fourier_cases.json",
+      "bytes": 20179,
+      "sha256": "9ee21d3940756edef3cd5a66bae1a9ad221fde3e5fb7d009ed97b7b1a38307b9"
+    },
+    {
+      "path": "results/stage63/02_fourier_pointwise_framework.md",
+      "bytes": 5125,
+      "sha256": "4efd084716b4004223d96991291f78570f25ec903a3962554b898e699a23e099"
+    },
+    {
+      "path": "results/stage63/02_missing_bound_ledger.json",
+      "bytes": 1260,
+      "sha256": "aec2caf0d46ff2eb207fd700e21873a63bb24ebd331e7c2f2626747a3ca3f855"
+    },
+    {
+      "path": "results/stage63/02_verify_fourier.py",
+      "bytes": 4439,
+      "sha256": "2eadc0f61a797af546d437cf61237bdb3897ebab15e7f8f47daa31940ba4c500"
+    },
+    {
+      "path": "results/stage63/03_adjusted_energy_comparison.md",
+      "bytes": 6555,
+      "sha256": "1d0a92bb3f95548255c9444b4308e671f2f4a55ae4ef56c87367f2d994e372e5"
+    },
+    {
+      "path": "results/stage63/03_exact_checks.json",
+      "bytes": 904,
+      "sha256": "99e3781ebef31b9c3d6e5e74ec7ed4a39fc3f13c33b149a7f3ef1b20f1b244ea"
+    },
+    {
+      "path": "results/stage63/03_verify_energy_countermodels.py",
+      "bytes": 3555,
+      "sha256": "b438f63e0482941cd0491d58c9ac25fac08c2be88340b273d89c8754c7606a4d"
+    },
+    {
+      "path": "results/stage63/04_bibliography.json",
+      "bytes": 3869,
+      "sha256": "0b6e24bb41249314d4e8342d2cde7fcd92c5977bcaa62a412111608b10689f66"
+    },
+    {
+      "path": "results/stage63/04_literature_and_implications.md",
+      "bytes": 9548,
+      "sha256": "4b78b6657069b6cfc4f5b02b268843f2b0f0a8a06d0badaacfd188791f4920a7"
+    },
+    {
+      "path": "results/stage63/05_countermodels.py",
+      "bytes": 3469,
+      "sha256": "9ac0def9f468a3bb0ee7f341692fccd4747c7ee1c998afc69c523fc1ea5a1d86"
+    },
+    {
+      "path": "results/stage63/05_primary_analytic_attempt.md",
+      "bytes": 5664,
+      "sha256": "ddc9e3e7c9ce8814ce2a7ce8d99ac4ca0f6923ec637c7a8e5112c589a1b15393"
+    },
+    {
+      "path": "results/stage63/05_proof_obligation.json",
+      "bytes": 2009,
+      "sha256": "b497cb48f2815b2d1da23622b06e92aeb07f53c669711bf1f5e37ff60b385bfe"
+    },
+    {
+      "path": "results/stage63/06_final_audit.json",
+      "bytes": 10725,
+      "sha256": "948ec8392995d6dcd8580e5efcf61a928b3541fba8c9f07e4fb9ed58f526b258"
+    },
+    {
+      "path": "results/stage63/06_final_audit.py",
+      "bytes": 5071,
+      "sha256": "cc232d1919801eb61ade092683e69e4ffb511228d0862c3954e0956a9f78e699"
+    },
+    {
+      "path": "results/stage63/06_write_manifest.py",
+      "bytes": 3456,
+      "sha256": "7a2e6225331763befccb184917b76863a8b4c8ab20e5ddb3ec807dab781cd9a6"
+    },
+    {
+      "path": "results/stage63/checkpoint_log.md",
+      "bytes": 5865,
+      "sha256": "63271fdb4782a2f81e23e158e74043ece6cc0cd05a6c2b3b0f01e890faf5c475"
+    },
+    {
+      "path": "results/stage63/failed_approaches.md",
+      "bytes": 7960,
+      "sha256": "08eee27c14aa464cd8213c39a2b37e7f67fee541c973c8860868b9c9dcb10d29"
+    },
+    {
+      "path": "results/stage63/final_report.md",
+      "bytes": 10297,
+      "sha256": "c0dedc6221ed258e0053e71d008862f42c92fd4ec9a777e1ebf8aaddb4554552"
+    },
+    {
+      "path": "results/stage63/next_objective.md",
+      "bytes": 3700,
+      "sha256": "4f6145aa270c256220be8984af41febcc1314ad9dc74c9bf13d6e037ed9dcd4d"
+    },
+    {
+      "path": "results/stage63/return_brief.md",
+      "bytes": 1033,
+      "sha256": "31ee25bce221ff466f17b48f19c8fbfff979e56b3164d0ea7be611e2a9514f6b"
+    },
+    {
+      "path": "results/stage63/theorems_and_dependencies.md",
+      "bytes": 9098,
+      "sha256": "a784543cc0cbcc84a4944b5a56c87d2187476e986e4d7a1c83b8fae3fee01b2b"
+    },
+    {
+      "path": "tasks/NEXT_TASK.md",
+      "bytes": 3583,
+      "sha256": "8cafa001b4c0db18cc0485b9ee45c2b5af567fb82b5b904a23709fcadaff07eb"
+    },
+    {
+      "path": "tasks/STAGE63_EXTENDED_RESEARCH_PROGRAM.md",
+      "bytes": 23945,
+      "sha256": "0b71d97e88ed4568a69fa98c0cc4beada544692b3494e1daffca647f77fe80a9"
+    }
+  ],
+  "scientific_status": {
+    "universal_residual_coverage": "OPEN",
+    "goldbach_proof_claimed": false,
+    "finite_audit_is_universal_evidence": false
+  }
+}

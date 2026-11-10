@@ -1,0 +1,20 @@
+Stage 63 M0 reproducibility transcript
+Working directory: /home/user/goldbach-research-github
+Starting branch: cocalc/stage63-extended-analytic-program
+Starting commit: 4aa65d9ea7e735e81e40672b672ebaae76174e6d
+Python: 3.14.4
+SageMath: 10.9
+
+Commands and observed summaries:
+python3 -B results/stage57/verify_stage57.py -> passed; 5616 rows, 564 residual targets, 999 wheel values.
+python3 -B results/stage58/verify_second_moment.py -> passed; 620 shifted rows, exact rational checks.
+python3 -B results/stage58/verify_stage58.py -> passed; diagonal identity, moment vectors, and countermodels.
+python3 -B results/stage59/verify_stage59.py -> passed; finite exact checks, even centers 8..4998.
+python3 -B results/stage59/verify_local_energy.py -> passed; exact finite local-energy checks.
+python3 -B results/stage60/verify_stage60.py -> passed; 147 rows, 441 wheel checks.
+python3 -B results/stage61/verify_stage61.py -> passed; 8 signed component identities.
+python3 -B results/stage62/verify_singular_series.py -> passed; 6 CRT examples.
+sage -python results/stage62/verify_singular_series_sage.py -> passed; Sage 10.9, 49 centers, exact QQ.
+python3 -B -m unittest discover -s tests -v -> 4 tests passed.
+
+No source code or prior result was changed. A runtime-only rewrite of results/stage62/sage_verification.json was restored exactly to the starting commit after the audit. Pre-existing untracked __pycache__ directories were preserved and not staged.

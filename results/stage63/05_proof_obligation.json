@@ -1,0 +1,30 @@
+{
+  "milestone": "M5",
+  "verdict": "OPEN",
+  "candidate": "For dyadic blocks of even N, prove sum |C_Lambda(N) - N*S(N)|^2 = o(X^2), where C_Lambda is the ordered von Mangoldt convolution and S is the conventional Goldbach singular series.",
+  "conditional_lemma_status": "PROVED",
+  "conditional_implication": "If D(X) <= c_* X/4 and block_energy < c_*^2 X^2/16, then there is no residual exception N in [X/2,X], where c_*=2*C2 and D(X)=2 floor(log_2 X) floor(sqrt(X)) (log X)^2.",
+  "proof_dependencies": [
+    "S(N) >= 2*C2 > 0 for even N",
+    "0 <= C_Lambda(N)-P_Lambda(N) <= 2 floor(log_2 N) floor(sqrt(N)) (log N)^2",
+    "A residual target with R(N)=0 has P_Lambda(N)=0 because N/2 is composite",
+    "A single dyadic coefficient contributes its squared discrepancy to the block energy"
+  ],
+  "independent_derivation": "The block L2 norm bounds each coefficient discrepancy by its square root; this gives a uniform o(X) discrepancy and contradicts the linear singular-series main term at any zero representation.",
+  "published_estimates_checked": {
+    "source": "Bhowmik and Grimmelt 2026, Theorem 3.1 and equation (3.8)",
+    "conditional_bound": "sum_{N<=X}|r_2(N)-N*S(N)|^2 << X^(3/2+2*Theta+epsilon)",
+    "at_GRH_Theta_half": "X^(5/2+epsilon), insufficient for o(X^2)",
+    "status": "does not prove candidate; ordinary zero-real-part parameter cannot be below 1/2 because zeta has infinitely many zeros on Re(s)=1/2"
+  },
+  "first_missing_theorem": "An unconditional dyadic mean-square discrepancy estimate o(X^2), or an explicit block bound below c_*^2 X^2/16 after prime-power correction.",
+  "countermodels": [
+    "An abstract one-exception block with W_N=cN has energy c^2*N0^2 >= c^2*X^2/4 for N0 in [X/2,X], so O(X^2) with an unrestricted constant does not suffice."
+  ],
+  "genuine_prime_checks": [28, 50, 56],
+  "claims_not_made": [
+    "No proof that the proposed energy estimate holds",
+    "No proof of universal residual coverage",
+    "No proof of Goldbach's conjecture"
+  ]
+}

@@ -1,35 +1,32 @@
-# NEXT TASK — Stage 62: verify singular-series local variation and seek a target-anchored arithmetic error
+# NEXT TASK — Stage 64 pointwise analytic gap audit
 
-**Evidence status: OPEN universal-coverage problem.** The mathematical theorem in Stage 62 concerns the *singular-series arithmetic factor*, NOT the existence or asymptotic number of genuine prime pairs.
+## Primary objective
 
-## Read first
+Continue the original three-case representation conjecture in `docs/research_statement.md`. The goal remains universal coverage of the residual set
 
-- \`results/stage62/report.md\`: proved CRT/Dirichlet/Euler construction of unbounded local singular-series jumps even with wheel-210 normalization and N in the author's residual set H; sharpened but logically insufficient Stage 61 conditional box bound.
-- \`results/stage62/verify_singular_series.py\`: finite exact CRT constructions (stdlib only), independent residue enumeration, exact factorization and fractions.
-- \`results/stage61/report.md\`: signed four-prime expansion and missing pointwise estimate.
-- \`results/stage60/integration_review.md\` and \`docs/stage60_integration_handoff.md\`: provenance.
-- [Stage 61 draft PR #10](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/10).
+$$H=\{N\ge4:N\text{ even},\ N-1\text{ composite},\ N/2\text{ composite}\}$$
 
-## Target and status
+by genuine distinct prime pairs: prove $R(N)>0$ for every $N\in H$. This is open. Do not replace the pointwise target by an average theorem or infer existence from a positive singular series.
 
-For every even N in H (N>=4, N-1 composite, N/2 composite), prove the existence of a pair of **genuine distinct primes** p<q with p+q=N, without assuming it or using congruence survivors as proxies.
+## Stage 63 handoff
 
-The theorem about \`F(n)=prod_{p|n,p>2}(p-1)/(p-2)\` is unconditional; the Hardy–Littlewood pointwise approximation \`R(n) ~ S(n)n/(2 log² n)\` is **conjectural**, not an established estimate.
+Read `results/stage63/final_report.md`, `theorems_and_dependencies.md`, `failed_approaches.md`, `next_objective.md`, and `checkpoint_log.md`. Stage 63 proved exact shared-prime CRT and target-anchored Fourier identities, reviewed the relevant literature, and proved a conditional dyadic energy criterion. It did **not** prove the criterion's hypothesis or universal coverage. The central routes left open are:
 
-## Authorized CoCalc execution
+1. A target-uniform signed minor-arc bound paired with an independently proved positive major-arc lower bound; or
+2. The M5 estimate $\mathcal E(X)=o(X^2)$ for the von Mangoldt convolution discrepancy, or a sufficiently small explicit threshold after the recorded prime-power correction.
 
-1. Verify Git SSH through the existing dedicated deploy key. Work only on \`cocalc/stage62-singular-series-local-variation\`, whose tracked branch already includes the Stage 62 report and verifier. Do not modify \`main\`.
-2. Read the report closely. Independently audit the CRT residue \`q=1 mod P,\ q=4 mod 5\`, use Dirichlet correctly to obtain infinitely many primes q, confirm \(N=2(q-1)\in H\), and justify the divergent product via Euler's divergence of reciprocal primes. Correct any invalid step; mark the result as a standard-theorem consequence, not a claimed novel deep number-theory theorem.
-3. Independently verify the strengthened construction q=2 (mod 3), q=4 (mod 5), q=2 (mod 7), q=1 (mod P), which yields A_210(N)=A_210(N+2)=15 while the arithmetic singular-series ratio is unbounded. Execute \`python3 -B results/stage62/verify_singular_series.py\` and independently confirm the exact ratios with a separate SageMath or Python algorithm; record parameters, wall time, source hashes and finite sample results in \`results/stage62/\`.
-4. Audit Proposition 62.3 (sharp \`D>=4Lambda²/9\` for positive triples all within a relative 1/3 box). Confirm that the assumption **already implies** the target \(X_N>0\), so this is **not a non-circular proof method**. Do not relabel deterministic constant refinement as arithmetic progress.
-5. Compare local normalization by the finite wheel \`A_210(N)\` with the full arithmetic singular series \`S(N)\`: the proved unbounded jump applies only to \`S(N)/A_210(N)\`, not unconditionally to real prime-pair counts.
-6. Focus on an independent target-anchored signed correlation or circle-method error. Formulate exactly what *uniform genuine-prime information* would be required to make the Stage 61 \(D_N>0\) inequality effective for all N in H, and audit whether it is genuinely weaker than simply assuming \(R(N)>0\). Do not introduce a condition that directly assumes a positive target count.
-7. Seek concrete published unconditional estimates (major arcs, minor arcs, exceptional sets, parity barrier), carefully noting missing uniformity, constants and target dependence. Give precise verifiable sources; distinguish references from proofs. **Do not claim a proof of Goldbach.**
-8. Save an English report, executable code, an independent verification result, and a SHA-256 manifest. If an attempt fails, record the first invalid logical step.
-9. Commit and push only the Stage 62 branch. Open a draft PR if possible. Do not install new software, incur costs, delete existing files or merge to \`main\`.
+## Stage 64 work
 
-## Successful outcome
+1. Check the exact hypotheses and theorem statements in primary/full sources for the strongest relevant unconditional binary Goldbach mean-square, circle-method minor-arc, and exceptional-set bounds available in the cited bibliography. Do not rely on abstracts alone where a full source is available.
+2. Compare their exact weights, local factors, parity restrictions, summation ranges, error exponents, quantifiers, constants, and effective cutoffs against the Stage 63 target bounds.
+3. Attempt one explicit derivation from established unconditional estimates to a target-specific signed inequality. Show every transformation and constant. If the derivation loses target localization or sign, identify and quantify the first loss.
+4. Independently check the M5 prime-power correction, diagonal convention, and threshold. Determine whether a cited theorem actually reaches the strict energy threshold; do not treat a weaker $O(X^2)$ estimate as sufficient without its constant.
+5. If no unconditional route works, record a precise conditional theorem or a rigorous logical countermodel to the attempted inference. Do not claim an impossibility result about actual primes without proof.
+6. Keep focused exact checks for $N=4,6,8$, the small-prime cases $2,3,5,7$, and selected residual examples. Use finite calculations only to validate identities, not to claim asymptotic coverage.
+7. Save English reports, a theorem/quantifier comparison table, reproducible verification code or data when it adds value, a parameter/version/hash manifest, and the next precise research objective under a new `results/stage64/` directory.
 
-Either a genuinely independent proved pointwise lower bound for genuine primes with a positive margin and effective cutoff, **or** a clear rigorous obstruction proving that the candidate local condition cannot follow from the current wheel, singular-series heuristic, and finite/averaged data. A finite extension alone is not success.
+## Evidence and branch controls
 
-All repository content, scripts, reports, and commit messages must be in English.
+Use the evidence labels in `docs/research_protocol.md`. Distinguish proven identities, conditional implications, established literature, finite computation, conjecture, and open obligations. Preserve all prior stages. Work on a separate Stage 64 branch based on the current Stage 63 branch; do not alter or merge `main`. Commit and push reviewable checkpoints on the Stage 64 branch only when the authorized task begins.
+
+Do not install software, start paid services, delete prior research, run unbounded scans, expose credentials, or claim a solution to Goldbach/the three-case statement without a complete rigorous proof. All repository content and commit messages must remain in English.

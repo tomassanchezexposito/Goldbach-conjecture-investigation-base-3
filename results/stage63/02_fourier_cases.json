@@ -1,0 +1,647 @@
+{
+  "evidence": "exact finite identities with integer weights; symbolic proof covers log weights",
+  "targets": [
+    4,
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20,
+    22,
+    24,
+    26,
+    28,
+    30,
+    32,
+    34,
+    36,
+    38,
+    40,
+    42,
+    44,
+    46,
+    48,
+    50,
+    52,
+    54,
+    56,
+    58,
+    60,
+    62,
+    64,
+    66,
+    68,
+    70,
+    72,
+    74,
+    76,
+    78,
+    80,
+    100,
+    128,
+    200
+  ],
+  "targets_checked": 42,
+  "dft_modulus_rule": "L=2N+1, so L>2N; exact cyclic coefficient selection has no wraparound",
+  "methods": [
+    "direct ordered convolution",
+    "finite DFT via root-of-unity orthogonality"
+  ],
+  "prime_power_test_weights": "one per prime power, to check partition and multiplicity exactly",
+  "rows": [
+    {
+      "N": 4,
+      "prime_weight_p_equals_p_coefficient": 4,
+      "exact_dft_coefficient": 4,
+      "diagonal_prime": 2,
+      "diagonal_weight": 4,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 1,
+        "at_least_one_higher_prime_power_ordered": 0,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 1
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 6,
+      "prime_weight_p_equals_p_coefficient": 9,
+      "exact_dft_coefficient": 9,
+      "diagonal_prime": 3,
+      "diagonal_weight": 9,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 1,
+        "at_least_one_higher_prime_power_ordered": 2,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 3
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 8,
+      "prime_weight_p_equals_p_coefficient": 30,
+      "exact_dft_coefficient": 30,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 2,
+        "at_least_one_higher_prime_power_ordered": 1,
+        "higher_higher_ordered_included_in_mixed": 1,
+        "total_prime_power_ordered": 3
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 10,
+      "prime_weight_p_equals_p_coefficient": 67,
+      "exact_dft_coefficient": 67,
+      "diagonal_prime": 5,
+      "diagonal_weight": 25,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 3,
+        "at_least_one_higher_prime_power_ordered": 2,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 5
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 12,
+      "prime_weight_p_equals_p_coefficient": 70,
+      "exact_dft_coefficient": 70,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 2,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 6
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 14,
+      "prime_weight_p_equals_p_coefficient": 115,
+      "exact_dft_coefficient": 115,
+      "diagonal_prime": 7,
+      "diagonal_weight": 49,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 3,
+        "at_least_one_higher_prime_power_ordered": 2,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 5
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 16,
+      "prime_weight_p_equals_p_coefficient": 188,
+      "exact_dft_coefficient": 188,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 4,
+        "at_least_one_higher_prime_power_ordered": 3,
+        "higher_higher_ordered_included_in_mixed": 1,
+        "total_prime_power_ordered": 7
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 18,
+      "prime_weight_p_equals_p_coefficient": 284,
+      "exact_dft_coefficient": 284,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 4,
+        "at_least_one_higher_prime_power_ordered": 3,
+        "higher_higher_ordered_included_in_mixed": 1,
+        "total_prime_power_ordered": 7
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 20,
+      "prime_weight_p_equals_p_coefficient": 284,
+      "exact_dft_coefficient": 284,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 4,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 8
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 22,
+      "prime_weight_p_equals_p_coefficient": 405,
+      "exact_dft_coefficient": 405,
+      "diagonal_prime": 11,
+      "diagonal_weight": 121,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 5,
+        "at_least_one_higher_prime_power_ordered": 2,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 7
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 24,
+      "prime_weight_p_equals_p_coefficient": 714,
+      "exact_dft_coefficient": 714,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 6,
+        "at_least_one_higher_prime_power_ordered": 2,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 8
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 26,
+      "prime_weight_p_equals_p_coefficient": 573,
+      "exact_dft_coefficient": 573,
+      "diagonal_prime": 13,
+      "diagonal_weight": 169,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 5,
+        "at_least_one_higher_prime_power_ordered": 2,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 7
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 28,
+      "prime_weight_p_equals_p_coefficient": 604,
+      "exact_dft_coefficient": 604,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 4,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 8
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 30,
+      "prime_weight_p_equals_p_coefficient": 1182,
+      "exact_dft_coefficient": 1182,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 6,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 10
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 32,
+      "prime_weight_p_equals_p_coefficient": 668,
+      "exact_dft_coefficient": 668,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 4,
+        "at_least_one_higher_prime_power_ordered": 7,
+        "higher_higher_ordered_included_in_mixed": 1,
+        "total_prime_power_ordered": 11
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 34,
+      "prime_weight_p_equals_p_coefficient": 1271,
+      "exact_dft_coefficient": 1271,
+      "diagonal_prime": 17,
+      "diagonal_weight": 289,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 7,
+        "at_least_one_higher_prime_power_ordered": 6,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 13
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 36,
+      "prime_weight_p_equals_p_coefficient": 1960,
+      "exact_dft_coefficient": 1960,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 8,
+        "at_least_one_higher_prime_power_ordered": 6,
+        "higher_higher_ordered_included_in_mixed": 4,
+        "total_prime_power_ordered": 14
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 38,
+      "prime_weight_p_equals_p_coefficient": 795,
+      "exact_dft_coefficient": 795,
+      "diagonal_prime": 19,
+      "diagonal_weight": 361,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 3,
+        "at_least_one_higher_prime_power_ordered": 6,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 9
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 40,
+      "prime_weight_p_equals_p_coefficient": 1642,
+      "exact_dft_coefficient": 1642,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 6,
+        "at_least_one_higher_prime_power_ordered": 6,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 12
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 42,
+      "prime_weight_p_equals_p_coefficient": 2680,
+      "exact_dft_coefficient": 2680,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 8,
+        "at_least_one_higher_prime_power_ordered": 2,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 10
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 44,
+      "prime_weight_p_equals_p_coefficient": 1570,
+      "exact_dft_coefficient": 1570,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 6,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 10
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 46,
+      "prime_weight_p_equals_p_coefficient": 2183,
+      "exact_dft_coefficient": 2183,
+      "diagonal_prime": 23,
+      "diagonal_weight": 529,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 7,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 11
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 48,
+      "prime_weight_p_equals_p_coefficient": 3974,
+      "exact_dft_coefficient": 3974,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 10,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 14
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 50,
+      "prime_weight_p_equals_p_coefficient": 3024,
+      "exact_dft_coefficient": 3024,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 8,
+        "at_least_one_higher_prime_power_ordered": 5,
+        "higher_higher_ordered_included_in_mixed": 1,
+        "total_prime_power_ordered": 13
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 52,
+      "prime_weight_p_equals_p_coefficient": 2706,
+      "exact_dft_coefficient": 2706,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 6,
+        "at_least_one_higher_prime_power_ordered": 6,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 12
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 54,
+      "prime_weight_p_equals_p_coefficient": 5354,
+      "exact_dft_coefficient": 5354,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 10,
+        "at_least_one_higher_prime_power_ordered": 5,
+        "higher_higher_ordered_included_in_mixed": 1,
+        "total_prime_power_ordered": 15
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 56,
+      "prime_weight_p_equals_p_coefficient": 2842,
+      "exact_dft_coefficient": 2842,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 6,
+        "at_least_one_higher_prime_power_ordered": 8,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 14
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 58,
+      "prime_weight_p_equals_p_coefficient": 3799,
+      "exact_dft_coefficient": 3799,
+      "diagonal_prime": 29,
+      "diagonal_weight": 841,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 7,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 11
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 60,
+      "prime_weight_p_equals_p_coefficient": 8484,
+      "exact_dft_coefficient": 8484,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 12,
+        "at_least_one_higher_prime_power_ordered": 2,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 14
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 62,
+      "prime_weight_p_equals_p_coefficient": 2949,
+      "exact_dft_coefficient": 2949,
+      "diagonal_prime": 31,
+      "diagonal_weight": 961,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 5,
+        "at_least_one_higher_prime_power_ordered": 6,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 11
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 64,
+      "prime_weight_p_equals_p_coefficient": 5606,
+      "exact_dft_coefficient": 5606,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 10,
+        "at_least_one_higher_prime_power_ordered": 3,
+        "higher_higher_ordered_included_in_mixed": 1,
+        "total_prime_power_ordered": 13
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 66,
+      "prime_weight_p_equals_p_coefficient": 8724,
+      "exact_dft_coefficient": 8724,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 12,
+        "at_least_one_higher_prime_power_ordered": 6,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 18
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 68,
+      "prime_weight_p_equals_p_coefficient": 3148,
+      "exact_dft_coefficient": 3148,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 4,
+        "at_least_one_higher_prime_power_ordered": 10,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 14
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 70,
+      "prime_weight_p_equals_p_coefficient": 8042,
+      "exact_dft_coefficient": 8042,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 10,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 14
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 72,
+      "prime_weight_p_equals_p_coefficient": 10596,
+      "exact_dft_coefficient": 10596,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 12,
+        "at_least_one_higher_prime_power_ordered": 6,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 18
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 74,
+      "prime_weight_p_equals_p_coefficient": 6985,
+      "exact_dft_coefficient": 6985,
+      "diagonal_prime": 37,
+      "diagonal_weight": 1369,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 9,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 13
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 76,
+      "prime_weight_p_equals_p_coefficient": 8318,
+      "exact_dft_coefficient": 8318,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 10,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 14
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 78,
+      "prime_weight_p_equals_p_coefficient": 13462,
+      "exact_dft_coefficient": 13462,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 14,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 18
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 80,
+      "prime_weight_p_equals_p_coefficient": 8264,
+      "exact_dft_coefficient": 8264,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 8,
+        "at_least_one_higher_prime_power_ordered": 8,
+        "higher_higher_ordered_included_in_mixed": 2,
+        "total_prime_power_ordered": 16
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 100,
+      "prime_weight_p_equals_p_coefficient": 19300,
+      "exact_dft_coefficient": 19300,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 12,
+        "at_least_one_higher_prime_power_ordered": 4,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 16
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 128,
+      "prime_weight_p_equals_p_coefficient": 18330,
+      "exact_dft_coefficient": 18330,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 6,
+        "at_least_one_higher_prime_power_ordered": 13,
+        "higher_higher_ordered_included_in_mixed": 1,
+        "total_prime_power_ordered": 19
+      },
+      "prime_power_correction_nonnegative": true
+    },
+    {
+      "N": 200,
+      "prime_weight_p_equals_p_coefficient": 91808,
+      "exact_dft_coefficient": 91808,
+      "diagonal_prime": null,
+      "diagonal_weight": 0,
+      "prime_power_unit_weight_partition": {
+        "prime_prime_ordered": 16,
+        "at_least_one_higher_prime_power_ordered": 10,
+        "higher_higher_ordered_included_in_mixed": 0,
+        "total_prime_power_ordered": 26
+      },
+      "prime_power_correction_nonnegative": true
+    }
+  ],
+  "assertions_passed": true,
+  "universal_prime_claim": false,
+  "note": "The finite checks use integer test weights; no floating arithmetic is used."
+}
