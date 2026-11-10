@@ -142,3 +142,11 @@ Also test whether an operator estimate on *increments* is logically any weaker t
 - **No raw numerical Goldbach sweep needed.** A small exact operator example may test minimax constants, but a proof of the optimization for all finite \(R,m\) is the real deliverable.
 
 Stage 68 should independently prove or refute these statements first, sharpen the *arithmetic* research question by exploring the true-prime tensor structure and the possibility of independently proving nontrivial arcwise allocations or signed cancellation, and identify the first currently unavailable theorem with exact variables, quantifiers, constants and citation provenance.
+
+## 7. Independent audit addendum (Stage 68)
+
+The allocation identity and the uniform-in-shift Gram claim have been independently derived in `02_exact_budget_optimization.md` and `03_uniform_spectral_no_gain.md`. The derivations use both (i) the dual variational formula for the operator norm and Cauchy--Schwarz with equality conditions, and (ii) direct factorization of the synthesis/analysis operators and a trace allocation argument. The exact SymPy and SageMath checks in `verify_stage68.py` and `verify_stage68_sage.py` test the nonaligned interval-Gram example and the full-circle shift identity; they are finite checks of examples, not substitutes for the all-dimensional proofs.
+
+The numerical interval example has been checked from its exact Fourier moments. The two restricted Grams fail to commute, and each has simple top eigenvalue, so no common top eigenvector exists. Therefore replacing the exact allocation by the sum of separate top eigenvalues can be strictly wasteful even for genuine interval sets. The independent diagonal rank-one example shows the density-matrix SDP relaxation can also be strictly wasteful; a rank-one restriction on the optimizing density matrix cannot be asserted without proof.
+
+The inherited conditional prime major-arc estimate supplies a positive lower bound $a_w(N)\ge c_wX$ in its stated range, not merely an absolute-value estimate. The proof obligations file records this one-sided form. The obstruction remains the missing true-prime minor-arc or arc-resolved estimate at the one-target scale; no operator optimization over unrestricted $L^2$ inputs supplies it.

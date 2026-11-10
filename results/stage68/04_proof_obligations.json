@@ -1,0 +1,44 @@
+{
+  "classification": "OPEN ARITHMETIC OBLIGATIONS; thresholds are exact conditional reductions",
+  "weight": "fixed nonnegative smooth w in the audited Li-Liu class",
+  "target_range": "N even, X/2 <= N <= X, N in H",
+  "obligations": [
+    {
+      "name": "pointwise_major_lower_bound",
+      "quantified_form": "Under the stated Li-Liu common zero hypothesis and the weight/arc hypotheses of Proposition 4.1, there exist c_A(w,Theta,kappa)>0 and X_0 such that a_w(N) >= c_A X for every X>=X_0 and every even N in [X/2,X]; in particular this holds on H intersect [X/2,X].",
+      "provenance": "Li-Liu Proposition 4.1 under its common Dirichlet-L zero hypothesis; conditional external input, verify exact theorem conditions before use.",
+      "status": "EXTERNAL CONDITIONAL"
+    },
+    {
+      "name": "uniform_signed_increment_energy",
+      "quantified_form": "For J_X={2,4,...,2m} with distinct shifts and N+J_X within the coefficient range, prove sup_{N in H intersect [X/2,X]} sum_{j in J_X}|m_w(N+j)-m_w(N)|^2 <= V_X, with V_X < m(c_A X - sqrt((B_X-c_A^2 X^2)/m))^2 whenever B_X>c_A^2 X^2 and m>(B_X-c_A^2 X^2)/(c_A^2 X^2).",
+      "provenance": "No cited theorem supplies this target-uniform signed prime-only estimate; global fourth moment plus Gram geometry gives order m B_X instead.",
+      "status": "OPEN"
+    },
+    {
+      "name": "localized_disjoint_fourth_moment_profile",
+      "quantified_form": "For the nearest-rational disjoint bins E_{a/q,s}, prove independent upper bounds Bbar_{q,s}(X) for every reduced a/q, q<=X^kappa, and shell s, such that the exact allocation functional Vbar_X=(max_{||z||=1} sum_{a,q,s} sqrt(Bbar_{q,s}) sqrt(z*G_{a/q,s}z))^2 satisfies the strict Stage66 threshold uniformly for every N in H intersect [X/2,X].",
+      "provenance": "Li-Liu's cited result controls only the total minor-arc fourth moment at the scale O(X^(5/2)(log X)^100); no such resolved profile was established in the audited source.",
+      "status": "OPEN"
+    },
+    {
+      "name": "independent_signed_arc_cancellation",
+      "quantified_form": "For a reflection-symmetric partition and every N in H intersect [X/2,X], prove sum_r Re(c_r(N)) > -a_w(N), where c_r(N)=integral_{E_r} S_w(alpha)^2 e(-N alpha)d alpha, using a prime theorem not assuming R(N)>0.",
+      "provenance": "This is sufficient but equivalent to direct positivity after summing the arc decomposition; a stronger norm bound is also open.",
+      "status": "OPEN; LOGICALLY TAUTOLOGICAL UNLESS PROVED INDEPENDENTLY"
+    },
+    {
+      "name": "base3_position_distribution",
+      "quantified_form": "Prove a uniform lower bound for the number/weight of prime pairs p=3+2a, q=3+2b with a+b=N/2-3 and both endpoints prime, for all N in H, with explicit dependence on the wheel-210 residue classes.",
+      "provenance": "Wheel admissibility establishes local possibility only, not simultaneous primality or a signed Fourier estimate.",
+      "status": "OPEN; THIS IS A REFORMULATION OF A TARGET-SPECIFIC PRIME-PAIR THEOREM"
+    }
+  ],
+  "global_scale": {
+    "B_X": "O(X^(5/2)(log X)^100), conditional on the common zero-free hypothesis",
+    "A_X": "c_A X",
+    "minimum_shift_order_even_at_zero_variation": "m+1 > B_X/A_X^2, hence order X^(1/2)(log X)^100",
+    "required_mean_increment_scale_when_m_is_much_larger": "V_X/m <= approximately A_X^2 = order X^2",
+    "available_global_gram_scale": "V_X/m <= (1+1/m)B_X = order X^(5/2)(log X)^100"
+  }
+}

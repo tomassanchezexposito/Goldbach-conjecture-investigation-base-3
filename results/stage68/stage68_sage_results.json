@@ -1,0 +1,12 @@
+{
+  "classification": "INDEPENDENT FINITE SAGEMATH VERIFICATION",
+  "version": "SageMath 10.9 (runtime)",
+  "interval_gram_matrices_match_fourier_integrals": true,
+  "commutator_nonzero": true,
+  "full_circle_shift_set": [
+    -4,
+    2,
+    6
+  ],
+  "full_circle_constant_eigenvalue": 4
+}
