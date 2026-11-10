@@ -1,0 +1,94 @@
+{
+  "status": "finite exact check and generic sharp graph bound; universal coverage open",
+  "target_range": [
+    10000,
+    17980,
+    20
+  ],
+  "residual_centers": 295,
+  "k": 51,
+  "central_index": 25,
+  "sieve_limit": 35000,
+  "rows": [
+    {
+      "lag_cutoff": 1,
+      "spacing": 2,
+      "checked": 295,
+      "certified": 10,
+      "constant": "650/153",
+      "max_energy_ratio": "363135067100/133238870361"
+    },
+    {
+      "lag_cutoff": 1,
+      "spacing": 210,
+      "checked": 295,
+      "certified": 72,
+      "constant": "650/153",
+      "max_energy_ratio": "6443476/2692881"
+    },
+    {
+      "lag_cutoff": 2,
+      "spacing": 2,
+      "checked": 295,
+      "certified": 287,
+      "constant": "409595784430/436491809787",
+      "max_energy_ratio": "62623156824912520200/58201304421891447289"
+    },
+    {
+      "lag_cutoff": 2,
+      "spacing": 210,
+      "checked": 295,
+      "certified": 294,
+      "constant": "409595784430/436491809787",
+      "max_energy_ratio": "34944254752861020/34908736571974969"
+    },
+    {
+      "lag_cutoff": 5,
+      "spacing": 2,
+      "checked": 295,
+      "certified": 295,
+      "constant": "38683159850948518167722/265567883438518147239561",
+      "max_energy_ratio": "4641597069860814510664179242084/11803503053298997099485390667089"
+    },
+    {
+      "lag_cutoff": 5,
+      "spacing": 210,
+      "checked": 295,
+      "certified": 295,
+      "constant": "38683159850948518167722/265567883438518147239561",
+      "max_energy_ratio": "583187317912899859896576872/1264368693050784899007549921"
+    },
+    {
+      "lag_cutoff": 10,
+      "spacing": 2,
+      "checked": 295,
+      "certified": 295,
+      "constant": "5795453140471880623805151296/110509173655904136618276960327",
+      "max_energy_ratio": "3918118118773099762709973999544214784/14735163210731337723070844644092188669"
+    },
+    {
+      "lag_cutoff": 10,
+      "spacing": 210,
+      "checked": 295,
+      "certified": 295,
+      "constant": "5795453140471880623805151296/110509173655904136618276960327",
+      "max_energy_ratio": "402783993262795703354458015072/847236998028598380740123362507"
+    },
+    {
+      "lag_cutoff": 50,
+      "spacing": 2,
+      "checked": 295,
+      "certified": 295,
+      "constant": "50/2601",
+      "max_energy_ratio": "31375047100/115604760049"
+    },
+    {
+      "lag_cutoff": 50,
+      "spacing": 210,
+      "checked": 295,
+      "certified": 10,
+      "constant": "50/2601",
+      "max_energy_ratio": "2873452/897627"
+    }
+  ]
+}

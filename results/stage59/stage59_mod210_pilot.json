@@ -1,0 +1,72 @@
+{
+  "status": "finite observation, no universal claim",
+  "center_grid": {
+    "start": 10000,
+    "stop_exclusive": 18000,
+    "step": 20,
+    "residual_centers": 295
+  },
+  "sieve_limit": 35000,
+  "results": [
+    {
+      "k": 3,
+      "spacing": 2,
+      "targets": 295,
+      "certified": 295
+    },
+    {
+      "k": 3,
+      "spacing": 210,
+      "targets": 295,
+      "certified": 295
+    },
+    {
+      "k": 5,
+      "spacing": 2,
+      "targets": 295,
+      "certified": 295
+    },
+    {
+      "k": 5,
+      "spacing": 210,
+      "targets": 295,
+      "certified": 295
+    },
+    {
+      "k": 9,
+      "spacing": 2,
+      "targets": 295,
+      "certified": 295
+    },
+    {
+      "k": 9,
+      "spacing": 210,
+      "targets": 295,
+      "certified": 295
+    },
+    {
+      "k": 21,
+      "spacing": 2,
+      "targets": 295,
+      "certified": 295
+    },
+    {
+      "k": 21,
+      "spacing": 210,
+      "targets": 295,
+      "certified": 295
+    },
+    {
+      "k": 51,
+      "spacing": 2,
+      "targets": 295,
+      "certified": 10
+    },
+    {
+      "k": 51,
+      "spacing": 210,
+      "targets": 295,
+      "certified": 72
+    }
+  ]
+}

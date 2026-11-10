@@ -1,0 +1,79 @@
+{
+  "evidence": "finite exact checks only",
+  "blocks": [
+    {
+      "inclusive_interval": [
+        50,
+        54
+      ],
+      "k": 3,
+      "residual_targets": 2,
+      "actual_zeros": 0,
+      "certified_residual_targets": 2,
+      "mean": "17/90",
+      "energy": "1/900",
+      "shared_prime_terms": 5,
+      "four_distinct_terms": 22
+    },
+    {
+      "inclusive_interval": [
+        50,
+        60
+      ],
+      "k": 6,
+      "residual_targets": 3,
+      "actual_zeros": 0,
+      "certified_residual_targets": 3,
+      "mean": "13/72",
+      "energy": "17/3600",
+      "shared_prime_terms": 13,
+      "four_distinct_terms": 56
+    },
+    {
+      "inclusive_interval": [
+        50,
+        100
+      ],
+      "k": 26,
+      "residual_targets": 12,
+      "actual_zeros": 0,
+      "certified_residual_targets": 0,
+      "mean": "209/936",
+      "energy": "4151/32400",
+      "shared_prime_terms": 80,
+      "four_distinct_terms": 451
+    },
+    {
+      "inclusive_interval": [
+        50,
+        200
+      ],
+      "k": 76,
+      "residual_targets": 33,
+      "actual_zeros": 0,
+      "certified_residual_targets": 0,
+      "mean": "8431/27360",
+      "energy": "29411/64800",
+      "shared_prime_terms": 328,
+      "four_distinct_terms": 2987
+    },
+    {
+      "inclusive_interval": [
+        262,
+        362
+      ],
+      "k": 51,
+      "residual_targets": 25,
+      "actual_zeros": 0,
+      "certified_residual_targets": 0,
+      "mean": "10331/18360",
+      "energy": "52331/64800",
+      "shared_prime_terms": 368,
+      "four_distinct_terms": 6712
+    }
+  ],
+  "independent_pair_checks": 249,
+  "direct_wheel_checks": 249,
+  "sharpness_cases": 22,
+  "cyclic_moment_cases": 12
+}
