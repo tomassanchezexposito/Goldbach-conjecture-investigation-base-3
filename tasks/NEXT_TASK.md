@@ -1,24 +1,37 @@
-# NEXT TASK — Stage 57: shifted four-prime correlations and pointwise obstruction
+# NEXT TASK — Stage 58: non-circular pointwise positivity certificate
 
-**Status: open research task.** No universal coverage proof is claimed.
+**Evidence status:** open analytic proof obligation. The author's three-case universal coverage statement remains unproved.
 
-## Inputs
+## Provenance
 
-- `experiments/stage56_variance_probe.py` — independent small reference.
-- `results/stage56_variance_diagnostic.md` — independently checked variance example.
-- The CoCalc-generated Stage 56 notebook and report must be imported and reviewed before being treated as the authoritative experimental record.
+- Baseline: the independently reviewed computational Stage 57 branch, including exact shifted four-prime correlation counts and Stage 56 handoff.
+- Stage 57 draft review: https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/1
+- Detailed Stage 58 tracker: https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/issues/2
+- This branch starts from Stage 57 and does not alter main.
 
-## Mathematical target
+## Mathematical objective
 
-For even N in the residual set H, define R(N) as the number of unordered distinct-prime representations p+q=N. Let A_210(N) be the number of wheel-compatible residues and X_N=R(N)/A_210(N).
+For every N in the residual set H of the author's three-case statement (even N >= 4 with N-1 and N/2 composite), seek an independent, rigorously justified pointwise lower bound establishing R(N)>0, where R counts **unordered pairs of distinct genuine primes** p<q with p+q=N.
 
-1. Derive an **exact** expansion for the shifted correlation X_N X_{N+2h} for fixed h. Identify coincident prime positions and genuinely distinct four-prime configurations. Explicitly handle shared summands, diagonal cases, and wheel factors for both targets.
-2. Evaluate the shifted correlations exactly for a reproducible range (e.g., even N<=2000, h=1..10), with independent primality-based algorithms and assertions. Do not infer asymptotics from this finite test.
-3. Investigate whether an **independent analytic bound**, rather than an identity involving R(N), could exclude an isolated zero of R(N) on H. Specify all hypotheses and error terms.
-4. Audit the known limitation: the strict global variance criterion can fail on blocks with zero missing representations. A new criterion must be logically sufficient and potentially feasible.
-5. Save `results/stage57/` containing a Markdown report, machine-readable data, reproducible code, and a manifest of exact parameters. All repository content and agent instructions in English.
-6. Search for counterexamples to each proposed intermediate inequality. Do not assert a solution to Goldbach.
+No statement may assume the target pair exists.
 
-## Completion criterion
+### Obligations
 
-A valid output includes exact finite verification and a clearly separated *open* analytic proof obligation. Only mark a pointwise theorem proved if a complete non-circular argument is supplied.
+1. **Vacuity audit:** Explain why any putative positive lower bound on X_N X_{N+2h} is circular if it assumes a conclusion equivalent to X_N>0. Give a precise countermodel to positivity inference from averages.
+2. **Prime-only Fourier model:** Define S_N(alpha)=sum_{p<=N prime} (log p) exp(2*pi*i*p*alpha). Derive the exact Fourier coefficient for p+q=N. Remove the diagonal p=q when necessary, preserving positivity for distinct primes. The resulting identity alone is not an estimate.
+3. **Independent analytic bound requirements:** Formulate major-arc and minor-arc contributions with fully quantified uniform error terms and explicit lower/upper inequalities whose strict dominance would imply R(N)>0. Mark all unavailable estimates as OPEN.
+4. **Wheel congruences:** Derive the exact 210-local factor and explain why it does not control the complete singular series or the pointwise error. Respect exceptional primes 2 and 3.
+5. **Sieve/parity comparison:** Compare with Chen-type near-prime results and the parity barrier. Do not infer prime-prime representations from semiprime survivors.
+6. **Alternative routes:** Attempt a different genuinely non-circular pointwise criterion, audit it for hidden assumptions, and search for finite counterexamples if it has experimentally testable content.
+7. **Evidence and reproducibility:** Code only computations testing specific lemmas. Use exact arithmetic and independent validations; no large brute-force Goldbach sweeps as an end in themselves.
+8. **Research record:** Save an English report with fully explicit theorem statuses, failed approaches, proofs of elementary lemmas, analytical obstacles, references, and the next objective.
+
+## Execution instructions
+
+Read docs/research_statement.md and docs/research_protocol.md first. Work in this separate research branch; do not modify main or erase Stage 56/57 files. Put new files in results/stage58/. Keep all content, source comments, and commit messages in English. Do not install software, incur costs, or publish to an external website without approval.
+
+Before committing, run any included verifier and document its exact outputs. Push only this branch; ask for a draft PR review, never an automatic merge.
+
+## Success criterion
+
+A useful outcome either rigorously proves an **independent pointwise** positive margin for every sufficiently large residual N with a finite effective cutoff, or identifies the first missing/nonuniform estimate that blocks such a proof. Do not claim the first outcome on the basis of formal manipulation, heuristic asymptotics, average-case estimates, or finite experiments.
