@@ -1,0 +1,88 @@
+{
+  "DFT_length": 32,
+  "DFT_parseval_lhs": 14,
+  "DFT_product_coefficient_mod_p": 6,
+  "assertions_passed": true,
+  "classification": "INDEPENDENT SAGEMATH FINITE-FIELD DFT CHECK",
+  "direct_shift_sum": 200,
+  "fejer_norm_rows": [
+    {
+      "H": 0,
+      "unnormalized_l2_numerator": 1
+    },
+    {
+      "H": 1,
+      "unnormalized_l2_numerator": 6
+    },
+    {
+      "H": 2,
+      "unnormalized_l2_numerator": 19
+    },
+    {
+      "H": 3,
+      "unnormalized_l2_numerator": 44
+    },
+    {
+      "H": 4,
+      "unnormalized_l2_numerator": 85
+    },
+    {
+      "H": 5,
+      "unnormalized_l2_numerator": 146
+    },
+    {
+      "H": 6,
+      "unnormalized_l2_numerator": 231
+    },
+    {
+      "H": 7,
+      "unnormalized_l2_numerator": 344
+    },
+    {
+      "H": 8,
+      "unnormalized_l2_numerator": 489
+    },
+    {
+      "H": 9,
+      "unnormalized_l2_numerator": 670
+    },
+    {
+      "H": 10,
+      "unnormalized_l2_numerator": 891
+    },
+    {
+      "H": 11,
+      "unnormalized_l2_numerator": 1156
+    },
+    {
+      "H": 12,
+      "unnormalized_l2_numerator": 1469
+    },
+    {
+      "H": 13,
+      "unnormalized_l2_numerator": 1834
+    },
+    {
+      "H": 14,
+      "unnormalized_l2_numerator": 2255
+    },
+    {
+      "H": 15,
+      "unnormalized_l2_numerator": 2736
+    },
+    {
+      "H": 16,
+      "unnormalized_l2_numerator": 3281
+    }
+  ],
+  "lambda_l2_squared": 208,
+  "limits": [
+    "Finite-field DFT checks verify finite coefficient algebra modulo p.",
+    "They do not estimate a genuine-prime minor-arc coefficient."
+  ],
+  "prime_modulus": 97,
+  "primitive_root": 5,
+  "root_of_unity": 28,
+  "sage_version": "10.9",
+  "target_N": 9
+}

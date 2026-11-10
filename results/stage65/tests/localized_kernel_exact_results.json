@@ -1,0 +1,155 @@
+{
+  "H_range": [
+    0,
+    16
+  ],
+  "assertions_passed": true,
+  "classification": "EXACT FINITE RATIONAL CHECKS; NO PRIME-ARITHMETIC CLAIM",
+  "isolated_spike_countermodel": {
+    "H": 20,
+    "all_noncentral_coefficients": 0,
+    "central_coefficient": -1000,
+    "global_l2_squared": 1000000,
+    "normalized_dirichlet_average": "-1000/41",
+    "normalized_fejer_average": "-1000/21",
+    "permitted_budget": 1000000000,
+    "spike_amplitude": 1000
+  },
+  "kernel_rows": [
+    {
+      "H": 0,
+      "normalized_dirichlet_l2_squared": "1",
+      "normalized_fejer_first_absolute_moment": "0",
+      "normalized_fejer_l2_squared": "1",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 1,
+      "normalized_dirichlet_l2_squared": "1/3",
+      "normalized_fejer_first_absolute_moment": "1/2",
+      "normalized_fejer_l2_squared": "3/8",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 2,
+      "normalized_dirichlet_l2_squared": "1/5",
+      "normalized_fejer_first_absolute_moment": "8/9",
+      "normalized_fejer_l2_squared": "19/81",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 3,
+      "normalized_dirichlet_l2_squared": "1/7",
+      "normalized_fejer_first_absolute_moment": "5/4",
+      "normalized_fejer_l2_squared": "11/64",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 4,
+      "normalized_dirichlet_l2_squared": "1/9",
+      "normalized_fejer_first_absolute_moment": "8/5",
+      "normalized_fejer_l2_squared": "17/125",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 5,
+      "normalized_dirichlet_l2_squared": "1/11",
+      "normalized_fejer_first_absolute_moment": "35/18",
+      "normalized_fejer_l2_squared": "73/648",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 6,
+      "normalized_dirichlet_l2_squared": "1/13",
+      "normalized_fejer_first_absolute_moment": "16/7",
+      "normalized_fejer_l2_squared": "33/343",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 7,
+      "normalized_dirichlet_l2_squared": "1/15",
+      "normalized_fejer_first_absolute_moment": "21/8",
+      "normalized_fejer_l2_squared": "43/512",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 8,
+      "normalized_dirichlet_l2_squared": "1/17",
+      "normalized_fejer_first_absolute_moment": "80/27",
+      "normalized_fejer_l2_squared": "163/2187",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 9,
+      "normalized_dirichlet_l2_squared": "1/19",
+      "normalized_fejer_first_absolute_moment": "33/10",
+      "normalized_fejer_l2_squared": "67/1000",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 10,
+      "normalized_dirichlet_l2_squared": "1/21",
+      "normalized_fejer_first_absolute_moment": "40/11",
+      "normalized_fejer_l2_squared": "81/1331",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 11,
+      "normalized_dirichlet_l2_squared": "1/23",
+      "normalized_fejer_first_absolute_moment": "143/36",
+      "normalized_fejer_l2_squared": "289/5184",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 12,
+      "normalized_dirichlet_l2_squared": "1/25",
+      "normalized_fejer_first_absolute_moment": "56/13",
+      "normalized_fejer_l2_squared": "113/2197",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 13,
+      "normalized_dirichlet_l2_squared": "1/27",
+      "normalized_fejer_first_absolute_moment": "65/14",
+      "normalized_fejer_l2_squared": "131/2744",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 14,
+      "normalized_dirichlet_l2_squared": "1/29",
+      "normalized_fejer_first_absolute_moment": "224/45",
+      "normalized_fejer_l2_squared": "451/10125",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 15,
+      "normalized_dirichlet_l2_squared": "1/31",
+      "normalized_fejer_first_absolute_moment": "85/16",
+      "normalized_fejer_l2_squared": "171/4096",
+      "normalized_fejer_weight_sum": "1"
+    },
+    {
+      "H": 16,
+      "normalized_dirichlet_l2_squared": "1/33",
+      "normalized_fejer_first_absolute_moment": "96/17",
+      "normalized_fejer_l2_squared": "193/4913",
+      "normalized_fejer_weight_sum": "1"
+    }
+  ],
+  "limits": [
+    "Finite rational identities audit the formulas only.",
+    "The spike is an abstract coefficient sequence, not a prime example."
+  ],
+  "shift_identity": {
+    "lambda": {
+      "-1": "-2/7",
+      "-3": "1/5",
+      "0": "4/3",
+      "2": "5/11",
+      "4": "-3/8"
+    },
+    "left_direct_sum": "-257/440",
+    "right_product_coefficient": "-257/440",
+    "target_N": 2
+  }
+}

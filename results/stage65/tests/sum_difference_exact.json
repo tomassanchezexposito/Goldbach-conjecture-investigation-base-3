@@ -1,0 +1,99 @@
+{
+  "status": "FINITE EXACT REGRESSION CHECK, NOT A GOLDBACH PROOF",
+  "primes": [
+    3,
+    5
+  ],
+  "DFT_length": 16,
+  "prime_modulus": 97,
+  "primitive_root": 8,
+  "coefficients": [
+    {
+      "k": 0,
+      "sum": 0,
+      "difference": 2
+    },
+    {
+      "k": 1,
+      "sum": 0,
+      "difference": 0
+    },
+    {
+      "k": 2,
+      "sum": 0,
+      "difference": 1
+    },
+    {
+      "k": 3,
+      "sum": 0,
+      "difference": 0
+    },
+    {
+      "k": 4,
+      "sum": 0,
+      "difference": 0
+    },
+    {
+      "k": 5,
+      "sum": 0,
+      "difference": 0
+    },
+    {
+      "k": 6,
+      "sum": 1,
+      "difference": 0
+    },
+    {
+      "k": 7,
+      "sum": 0,
+      "difference": 0
+    },
+    {
+      "k": 8,
+      "sum": 2,
+      "difference": 0
+    },
+    {
+      "k": 9,
+      "sum": 0,
+      "difference": 0
+    },
+    {
+      "k": 10,
+      "sum": 1,
+      "difference": 0
+    },
+    {
+      "k": 11,
+      "sum": 0,
+      "difference": 0
+    },
+    {
+      "k": 12,
+      "sum": 0,
+      "difference": 0
+    },
+    {
+      "k": 13,
+      "sum": 0,
+      "difference": 0
+    },
+    {
+      "k": 14,
+      "sum": 0,
+      "difference": 1
+    },
+    {
+      "k": 15,
+      "sum": 0,
+      "difference": 0
+    }
+  ],
+  "N8_sum": 2,
+  "N8_difference": 0,
+  "independent_methods": [
+    "direct integer ordered-pair enumeration",
+    "finite-field DFT/inverse DFT"
+  ],
+  "assertions_passed": true
+}

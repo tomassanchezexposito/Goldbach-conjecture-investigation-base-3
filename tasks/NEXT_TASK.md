@@ -1,28 +1,32 @@
-# NEXT TASK — Stage 65: target-localized signed Fourier bounds
+# NEXT TASK — Stage 66: target-uniform signed shift modulus
 
-**Mathematical status:** the author's original three-case universal coverage remains OPEN. The Stage 64 branch is cocalc/stage64-2026-minor-arc-gap. Create and work on the next research branch cocalc/stage65-target-localized-correlation, preserving all prior history and never modifying main.
+**Status:** universal coverage of the original three-case conjecture remains OPEN. Continue from the verified Stage 65 branch and preserve all earlier results. All repository material must be in English.
 
-## Research objective
+## Objective
 
-Stage 64 reduced universal coverage on the residual set H to a signed, target-specific estimate for the true-prime minor-arc coefficient. A missing target forces a coefficient of size at least cX, while the reviewed global fourth moment only gives energy O(X^(5/2)(log X)^100), which permits a singleton.
-
-Investigate whether a fixed-target localized Fourier kernel, short weighted shift average, or another exact localization device can improve the one-target bound without assuming R(N)>0.
+Investigate whether the exact Fejér localization criterion in `results/stage65/01_localized_kernel_identities.md` and `05_new_analytic_attempt.md` can be closed by a non-circular, target-uniform arithmetic estimate for the genuine-prime signed minor-arc coefficient
+\[
+m_w(N)=\int_{\mathfrak m}S_w(\alpha)^2e(-N\alpha)\,d\alpha.
+\]
+The first task is to determine the weakest weighted shift-modulus condition that, together with the global fourth moment and a valid positive major-arc estimate, forces $m_w(N)>-a_w(N)$. Do not assume a prime-pair representation at $N$ or any neighboring target.
 
 ## Required work
 
-1. Read the Stage 64 final report, the exact Parseval derivation, its adversarial review, and the repository research protocol.
-2. Define the prime-only smoothed coefficient and all Fourier sign conventions explicitly.
-3. Derive an exact identity relating a weighted sum over shifts of minor-arc coefficients to the corresponding Fourier multiplier. Include normalization and endpoint conventions.
-4. Determine the strongest pointwise coefficient estimate implied by the available global fourth-moment norm together with each stated kernel norm or regularity condition. Keep all X, logarithm, and shift-window dependencies explicit.
-5. Search for counterexamples among abstract coefficient sequences satisfying the proposed norm and regularity constraints. Clearly distinguish such logical models from prime-arithmetic examples.
-6. Test whether any additional smoothness or short-shift estimate is actually proved for the genuine-prime coefficients in the cited sources. Do not assume it from the smooth weight alone: the coefficient sequence still depends arithmetically on the target.
-7. Preserve the original residual definition and three-case formulation. Do not assume an anchored representation, replace actual primes with wheel survivors, or infer pointwise positivity from an average.
-8. Save a rigorous report, reproducible code, independent verification, exact results, and provenance manifest under results/stage65/.
-9. State whether a new non-circular localization lemma is proved. If not, identify the first missing inequality and the exact scale that would suffice.
-10. Commit and push only to the Stage 65 branch. Do not merge into main or overwrite earlier branches.
+1. Independently verify Stage 65's exact Fourier, Fejér, countermodel, and conditional-criterion formulas; rerun the Stage 65 Python and Sage verifiers.
+2. Derive necessary and sufficient coefficient conditions for a finite shift kernel to detect a negative central coefficient under a global $\ell^2$ constraint. Distinguish arbitrary sequences from genuine prime coefficients.
+3. Investigate whether a weighted average of increments, a localized energy, a covariance inequality, or a short-shift exponential-sum estimate can provide the missing bound. State exact ranges and constants.
+4. Compare each proposed estimate with the audited conditional moment/major-arc results in `results/stage65/04_primary_literature.md`. Preserve all zero-free hypotheses and publication-status qualifications.
+5. Actively find counterexamples, sign errors, target-index issues, invalid swaps between $S_w^2$ and $|S_w|^2$, and circular uses of $R(N)>0$.
+6. If no usable arithmetic estimate follows, prove a precise no-go theorem for the relevant family of localization functionals and identify a concrete alternative analytic input.
+7. Record proven results, failed inequalities, conditional consequences, exact reproducible computations, resource use, and remaining proof obligations under a new `results/stage66/` directory. Use independent exact verification when finite identities are checked.
+8. Work on `cocalc/stage66-weighted-shift-modulus`, based on the latest verified research branch. Fetch with the existing dedicated SSH identity and `IdentitiesOnly=yes`; never overwrite or delete historical work. Commit and push only to Stage 66, and do not modify `main`.
 
-## Scope and completion standard
+## Mathematical limits
 
-Prioritize a theorem about what follows logically from a global fourth moment and a precisely defined localizer. A conditional result is useful if every hypothesis is explicit and its premise does not encode R(N)>0. Finite computations are checks only. Universal coverage remains open unless a complete proof is independently verified.
+The original residual set is
+\[
+H=\{N\geq4:N\text{ even},\ N-1\text{ composite},\ N/2\text{ composite}\}.
+\]
+The original cases $N=p+1$, $N=2p$, and $N=p+q$ for distinct primes remain the objective. Modular admissibility and singular-series density are not primality. Averages do not imply pointwise positivity without a stated localization theorem. Do not claim universal coverage without a complete, rigorous, non-circular proof.
 
-All repository content must be in English. Do not install software, incur costs, delete files, force-push, or modify GitHub permissions.
+Do not install software, incur costs, modify GitHub permissions, force-push, or modify `main`.

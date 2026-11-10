@@ -29,7 +29,7 @@ S_{\log}(n,m)=\sum_{\substack{x\text{ prime}\\n-x,m-x\text{ prime}}}
 \]
 The four-distinct term is the sum of $W_nW_m$ over the disjoint pairs. For $n=m$, the diagonal contributes $\sum_{\{p,q\}\in\mathcal R(n)}(\log p\log q)^2$. These are exact algebraic partition identities; they are not estimates for either term.
 
-The exclusions have a concrete role. The set $\mathcal R(t)$ excludes the equal-prime diagonal. If instead one uses all unordered representations including $p=q$, the shared formula and same-target diagonal must be changed. On the residual set $H$, $N/2$ is composite, so the equal-prime prime diagonal is absent. Small primes are not otherwise discarded: $2+(N-2)$ is the only representation involving 2 for even $N>4$, and it contributes exactly when $N-2$ is prime. The open prime variables in all formulas mean genuine primes, not merely residues surviving a wheel.
+The exclusions have a concrete role. The set $\mathcal R(t)$ excludes the equal-prime diagonal. If instead one uses all unordered representations including $p=q$, the shared formula and same-target diagonal must be changed. On the residual set $H$, $N/2$ is composite, so the equal-prime prime diagonal is absent. Small primes are not otherwise discarded. For every even $N>4$, no prime-pair representation can contain 2: the complementary integer $N-2>2$ is even and therefore composite. At $N=4$, the sum $2+2$ is a prime diagonal and is excluded by the requirement $p<q$. Thus the prime 2 never occurs in the distinct unordered representations counted by $R(N)$. The open prime variables in all formulas mean genuine primes, not merely residues surviving a wheel.
 
 ## 2. What the signed identity does not imply
 
