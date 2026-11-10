@@ -2,6 +2,8 @@
 
 **Research status:** The original three-case conjecture remains open. Stage 66 proved sharp deterministic local and aggregate energy inequalities, but obtained no pointwise arithmetic modulus for genuine prime correlations. Preserve the complete history and work only on the pre-created branch `cocalc/stage67-rational-arc-increment-gram`; do not merge into `main`.
 
+**GitHub publication and PR rule:** The Stage 67 branch now exists in the remote. Read `docs/cocalc_github_pr_workflow.md` before starting. Push verified commits via SSH Git, but do **not** require the `gh` CLI to create a PR; ChatGPT's separately authenticated GitHub connector handles draft PRs. If `gh` is unavailable, report the exact branch URL and compare URL rather than calling the research publication a failure.
+
 ## 1. Safe start and required audit
 
 1. In `/home/user/goldbach-research-github`, verify the working tree is clean and fetch using the existing dedicated GitHub SSH deploy key with `IdentitiesOnly=yes`. Never disclose private key contents.
