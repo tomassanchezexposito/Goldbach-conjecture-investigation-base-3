@@ -1,0 +1,69 @@
+{
+  "title": "Stage 57 shifted four-prime correlations",
+  "evidence_status": "Finite computational observation; no universal coverage proof is claimed",
+  "run_date": "2026-11-10",
+  "repository": {
+    "base_commit": "e6bb22bedea55953a6fe3efa3cbd645288b87ba3",
+    "branch": "cocalc/stage57-shifted-four-prime-correlations",
+    "main_modified": false
+  },
+  "definitions": {
+    "residual_set": "H = {N integer: N >= 4, N even, N-1 composite, N/2 composite}",
+    "representation_count": "R(N) = #{(p,q): p<q, p and q prime, p+q=N}",
+    "wheel_factor": "A_210(N) = product over ell in {2,3,5,7} of (ell-1 if ell divides N, otherwise ell-2)",
+    "normalization": "X_N = R(N)/A_210(N)",
+    "shift": "M=N+2h, h in {1,...,10}; count ordered choices from P_N x P_M",
+    "correlation_partition": ["p=r", "p=s", "q=r", "q=s", "p,q,r,s pairwise distinct"]
+  },
+  "parameters": {
+    "minimum_even_target": 4,
+    "maximum_even_target": 2000,
+    "anchor_condition": "N in H and N+2h <= 2000",
+    "shift_values": [1,2,3,4,5,6,7,8,9,10],
+    "residual_anchor_count_through_limit": 564,
+    "correlation_rows": 5616,
+    "covariance_window": "inclusive even-integer interval [L,L+100], step 2",
+    "covariance_windows_tested": 9490,
+    "covariance_inequality_counterexamples": 3762
+  },
+  "arithmetic_and_software": {
+    "language": "Python",
+    "runtime": "Python 3.14.4",
+    "platform": "Linux 7.0.0-1017-gcp x86_64",
+    "dependencies": "Python standard library only",
+    "exactness": "Integer counts and fractions.Fraction; no floating-point arithmetic in the computation or comparison"
+  },
+  "independent_methods": {
+    "method_1": "Trial-division primality tests; explicit p<q pair lists; Cartesian product classified by shared positions",
+    "method_2": "Sieve of Eratosthenes; direct nested scans over lower summands p and r; candidate sums checked with prime flags and classified by equality positions",
+    "verification": "verify_stage57.py independently reloads the saved JSON, rebuilds sieve and direct modulo-210 counts, then rechecks every row, category, normalized term, and shift aggregate"
+  },
+  "stage56_provenance": {
+    "notebook_source": "/home/user/stage56_pointwise_second_moment.ipynb",
+    "notebook_import": "results/stage56/stage56_pointwise_second_moment.ipynb",
+    "notebook_sha256_source_and_import": "68bb429a4a70619ca6b0a71469558c6d98a09d181a6408c64f2eb534d27c89fd",
+    "report_source": "/home/user/stage56_pointwise_second_moment_report.md",
+    "report_import": "results/stage56/stage56_pointwise_second_moment_report.md",
+    "report_sha256_source_and_import": "73a930b59af61790e28b9a10bfd33befbea105e3ab3cb0611a5c935fbc1b0461",
+    "existing_diagnostic_preserved": {
+      "path": "results/stage56_variance_diagnostic.md",
+      "sha256": "955f578752d80d4f02a0e6e03f99cca3bf50d059b829661e3bc06e2f43286a68"
+    },
+    "existing_reference_script_preserved": {
+      "path": "experiments/stage56_variance_probe.py",
+      "sha256": "e139b478b26ced7463a5355edb0f47d382c4180099dece412a036ebe21c87d6a"
+    }
+  },
+  "files": {
+    "compute_stage57.py": "c3276764e73473e04924c00ab661115036f7f4f390219dad6110f5616390cc59",
+    "verify_stage57.py": "df10e534c7d433f5eab472a3e5df70a1c7b9b4e4c2c4cbdbb9a48de776250055",
+    "shifted_correlations.json": "cea15615a398da224e5d44011815cbf35383f4e05568ac0be74161f098e4c1ba",
+    "report.md": "818ead4053391b3a4f94fae0fe78389743060a1011d7e329505bc45d8f8c2d56"
+  },
+  "limitations": [
+    "Finite computation only through N=2000 and h=1,...,10.",
+    "A_210 is a local admissibility count and gives no prime-pair error term.",
+    "The exact correlation expansion contains the prime-pair counts themselves and is not an independent analytic lower bound.",
+    "No theorem proving R(N)>0 for every N in H has been supplied."
+  ]
+}
