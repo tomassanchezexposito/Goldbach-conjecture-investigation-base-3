@@ -1,0 +1,37 @@
+{
+  "evidence": "exact rational identities and finite countermodels",
+  "rational_grid_denominator": 3,
+  "quadratic_vectors_checked": 2197,
+  "zero_center_vectors_checked": 169,
+  "three_path_pseudoinverse_constant": "2/9",
+  "zero_center_energy_cases_checked": 169,
+  "stage61_saved_rows_independently_reconstructed": 8,
+  "abstract_off_center_correlation_countermodels": [
+    {
+      "R_minus": 1,
+      "R_center": 0,
+      "R_plus": 1,
+      "off_center_product_Rminus_Rplus": "1",
+      "9D": "0",
+      "D": "0"
+    },
+    {
+      "R_minus": 1,
+      "R_center": 0,
+      "R_plus": 2,
+      "off_center_product_Rminus_Rplus": "2",
+      "9D": "-1",
+      "D": "-1/9"
+    },
+    {
+      "R_minus": 2,
+      "R_center": 0,
+      "R_plus": 5,
+      "off_center_product_Rminus_Rplus": "10",
+      "9D": "-9",
+      "D": "-1"
+    }
+  ],
+  "assertions_passed": true,
+  "universal_prime_claim": false
+}
