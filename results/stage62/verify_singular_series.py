@@ -52,14 +52,19 @@ def wheel_direct(n):
 
 def find_crt_prime(primes):
     P = prod(primes)
-    # q=1+t*P, with q=4 (mod 5) -> t*P=3 (mod 5)
-    t = (3*pow(P,-1,5))%5
-    first = 1+t*P
-    modulus = 5*P
+    # Same wheel factor at N=2(q-1) and N+2=2q:
+    # q=2 (mod 3), 4 (mod 5), 2 (mod 7), 1 (mod P).
+    a = 0
+    modulus = 1
+    for m, target in ((3,2),(5,4),(7,2),(P,1)):
+        step = ((target-a)*pow(modulus,-1,m))%m
+        a += modulus*step
+        modulus *= m
     for j in range(2500):
-        q = first+j*modulus
+        q = a+j*modulus
         if q > max(primes) and is_prime(q):
-            assert q%5 == 4 and all(q%p == 1 for p in primes)
+            assert q%3 == 2 and q%5 == 4 and q%7 == 2
+            assert all(q%p == 1 for p in primes)
             return q
     raise AssertionError("Finite search failed; this does not contradict Dirichlet")
 
@@ -74,21 +79,21 @@ def main():
         assert is_prime(q) and n%2 == 0
         assert n//2 > 2 and not is_prime(n//2)
         assert n-1 > 5 and (n-1)%5 == 0 and not is_prime(n-1)
-        assert wheel(n) == wheel_direct(n)
-        assert wheel(n+2) == wheel_direct(n+2)
+        assert wheel(n) == wheel_direct(n) == 15
+        assert wheel(n+2) == wheel_direct(n+2) == 15
         sn = singular_factor(n)
         sn2 = singular_factor(n+2)
         assert sn2 == Fraction(q-1,q-2)
         product_lower = prod((Fraction(p-1,p-2) for p in P),start=Fraction(1))
         assert sn >= product_lower
         ratio = sn/sn2*Fraction(wheel(n+2),wheel(n))
-        assert ratio >= Fraction(15,96)*product_lower
+        assert ratio >= Fraction(1,2)*product_lower
         rows.append({"P":list(P),"q":q,"N":n,
                      "wheel_N":wheel(n),"wheel_N_plus_2":wheel(n+2),
                      "odd_prime_factors_N":odd_prime_divisors(n),
                      "singular_factor_ratio":str(sn/sn2),
                      "wheel_normalized_ratio":str(ratio),
-                     "proved_lower_bound":str(Fraction(15,96)*product_lower)})
+                     "proved_lower_bound":str(Fraction(1,2)*product_lower)})
     grid=[]
     for e in product((Fraction(-1,3),Fraction(0),Fraction(1,3)),repeat=3):
         a,b,c=[1+t for t in e]
