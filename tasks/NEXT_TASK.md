@@ -1,34 +1,35 @@
-# NEXT TASK — Stage 70, second research cycle: actual-arc positive-spectrum constant
+# NEXT TASK — Stage 71 (QUEUED, NOT RUNNING): arithmetic information robust enough to prevent a target-specific sparse deletion
 
-**Research state:** Stage 70's first cycle has been completed independently by ChatGPT without using Codex, and is documented in:
-- \`results/stage70/01_positive_spectrum_and_matching.md\` (two internally proved mathematical theorems)
-- \`results/stage70/02_adversarial_limits.md\` (strict scope and limitations)
-- \`results/stage70/verify_stage70.py\` and \`results/stage70/exact_results.json\` (executed exact verification)
-- \`results/stage70/verification_manifest.json\` (verified SHA-256 and Git blob provenance).
+**State:** Stage 70's independent mathematical research is internally complete (Theorems 70.1–70.5 and Corollaries 70.5a–b). **The original universal three-case Goldbach coverage remains OPEN.** No CoCalc/Codex, Goals, or future automations have been started. The user's remaining Codex weekly allowance was limited: do not launch a new long agent run without an explicit later authorization.
 
-**User's weekly Codex allowance is limited. Do not start a new CoCalc or Codex session or a background Goal automatically.** This document queues the next proof task for explicit future authorization or direct non-Codex ChatGPT mathematics.
+## Required read-only recovery
 
-## Single main mathematical question
+Read \`results/stage70/final_report.md\`, \`03_actual_arc_cone_nogo.md\`, \`04_actual_arc_adversarial_review.md\`, \`05_vanishing_mass_prime_deletion.md\`, and \`results/stage69/09_final_synthesis.md\` before new work. Preserve the base-3 odd-prime position coordinate \(p=3+2a\) and the exact residual target \(H=\{N\ge4:N\text{ even},\,N-1,\,N/2\text{ composite}\}\). No changes to \`main\` or prior research branches.
 
-For the *actual symmetric major arcs* \(\mathfrak M(X)\) and a predetermined even frequency superset \(K_X\) containing all possible weighted odd-prime sums, define for every residual N
-\[
-\beta_k(N)=\int_{\mathfrak M(X)}e((k-N)\alpha)\,d\alpha\in\mathbb R,
-\quad
-D_+(N)=\sum_{k\in K_X\setminus\{N\}}(\max\{\beta_k(N),0\})^2.
-\]
-A rigorously established major coefficient lower bound \(a_w(N)\ge A_X>0\) and independent *full-circle* fourth moment upper bound \(B_X\) would imply target nonvanishing under the sharp positive-spectrum cone criterion \(B_XD_+(N)<A_X^2\). The abstract argument is proved in Stage 70, but **its arithmetic applicability is OPEN**.
+## Why Stage 71 must pivot
 
-**Do not substitute a minor-only fourth moment for the full-circle \(B_X\).** Under classical PNT, the actual full circle energy is already \(\gg X^3\). The cone geometry would therefore need a very strong \(D_+\) estimate or a different phase-sensitive structure.
+Theorem 70.4 proves that the **entire-even-band full-circle positive-spectrum certificate** cannot succeed asymptotically, **even with exact actual fourth moment and major coefficient**. Optimizing its constants is no longer a useful Goldbach research task.
 
-## Research cycle
+Theorem 70.5, using the **unconditional published upper sieve** of Wu and the classical PNT, proves that an adversarial removal of only \(O_w(X\log\log X/\log X)=o(X)\) weighted genuine-prime mass can annihilate a prescribed target coefficient while preserving nonnegative prime-supported weights and a nonincreasing full-circle fourth moment. The classical Siegel–Walfisz theorem further shows that the same modified support preserves uniform first-order weighted prime distribution in reduced classes for all \(q\le(\log X)^{1-\varepsilon}\), each fixed \(\varepsilon>0\). This construction is NOT the actual fixed prime polynomial and does NOT refute Goldbach.
 
-1. Derive a fully explicit expression for the actual major-arc Fourier coefficients \(\beta_k(N)\), retaining all q,a, interval endpoints, overlap/measure conventions, and reflection symmetry.
-2. Estimate the positive-part sum \(D_+\) on the **predetermined full even band** \(K_X\), rather than on the unknown Goldbach sumset. Prove lower and upper bounds with constants and their X dependence. A *lower* bound that makes the cone criterion impossible even under optimistic independent upper bounds may be more informative than another unproved positivity hypothesis.
-3. Compare to genuine-prime full-circle \(\int|S_w|^4\gg_wX^3\) and sourced **upper** bounds. Identify quantitatively which constants must hold for the strict inequality \(B_XD_+<A_X^2\).
-4. Attempt a second theorem retaining **nonnegative factorization** \(c_k=\sum_{p+q=k}s_ps_q\), with the fixed weights \(s_p=(\log p)w(p/X)\) distinguished from the variable-coefficient class. The half-weight deletion theorem shows why bounds from only total prime mass and upper energy cannot certify one target: all actual prime coefficients matter.
-5. Adversarially audit any claimed improvement under finite changes to support, weight zeros, the \(p=q\) diagonal, prime 2 and 3, base-3 odd-prime positions and the difference between genuine prime representation and CRT survivors. Provide two independent mathematical derivations if possible, targeted exact checks and a precise first missing arithmetic estimate.
-6. Save focused proofs, verifiers, counterexamples, dependencies and a rigorous negative conclusion if actual-arc \(D_+\) fails to give a useful saving. Avoid large finite Goldbach sweeps or generic narrative.
+A successful future proof therefore requires information **not invariant under** such targeted coefficient deletions: exact fixed prime coefficients, genuinely target-anchored joint primality distribution, or signed minor-arc cancellation proved independently.
 
-**Success:** an actual-arc quantitative result for the true-prime problem, or a rigorous no-go showing precisely why the positive-spectrum relaxation cannot close the missing target bound. **No Goldbach proof has been obtained or is presumed.**
+## Focused next research question
 
-**Operational:** no \`main\` edits/merge, no force push, no software installs or added paid resources. Codex/GitHub CLI \`gh\` is not required. The user may resume this when their weekly allowance resets, or continue through direct ChatGPT research.
+**Identify the weakest independently provable, quantitatively specified genuine-prime statistic that separates the true fixed coefficient family from *every* deletion model erasing one residual target, and whose current estimates can be verified without assuming a representation.**
+
+Investigate rigorously:
+
+1. **Quantitative stability/sensitivity:** write an exact perturbation formula for the prime polynomial's target coefficient under deleting a set of primes. Derive best possible upper bounds in terms of removed prime mass, \(\ell^2\) energy, and reflected pair incidences. Prove that generic \(\ell^1\)-smallness does not force representation existence. Explicitly identify which norm or bilinear target interaction fails.
+2. **Arithmetic-progressions boundary:** independently verify the uniform Siegel–Walfisz inheritance through \(q\le(\log X)^{1-\varepsilon}\), and determine what information on genuinely **growing power-size moduli** would distinguish the thinned support. Do not assert that Bombieri–Vinogradov automatically persists after adversarial deletion or that it implies binary Goldbach at a specific target.
+3. **Signed circle-method route:** formulate the exact signed prime-only minor-arc error needed for every residual N and compare with the current fourth moment and published exceptional-set bounds. Test whether a non-circular target-localized bilinear estimate can be **proved**, rather than simply renaming the desired conclusion.
+4. **Matching-cover arithmetic:** use the exact complement matching graph and external sieve upper estimates to quantify the *minimum* weight removal needed to kill all true representations; distinguish knowing/estimating this minimum from already knowing \(R(N)>0\). An estimate bounded away from zero would imply Goldbach and needs a genuinely independent proof.
+5. **Adversarial critique:** search for abstract and actual-prime countermodels, edge cases \(2,3,p=q\), full versus minor energy swaps, smoothed-weight support zeros, and errors involving base-3 coordinates. Preserve exact domain conditions and strict inequalities.
+
+Only claim **PROVED** when the whole statement is independently derived. Distinguish **EXTERNAL**, **CONDITIONAL**, **FINITE**, **REFUTED**, and **OPEN**. Save proofs, assumptions, source-level citations and at most a few decisive exact checks, not bigger brute-force Goldbach sweeps.
+
+## Publication and resource protocol
+
+Stage 71 is a research **proposal only**. When and only when the user asks to begin that stage, create a branch descending from \`cocalc/stage70-positive-spectrum-cone-audit\`, complete a meaningful theoretical milestone in the current session, commit to GitHub and keep a draft PR. No paid resources, package installs, credential changes, history rewrites, or merges. GitHub CLI is not necessary.
+
+**Success criterion:** a new true-prime estimate whose established strength genuinely exceeds the deletion model, or a sharp proved limitation clarifying which proposed statistics cannot do so. No automatic Goldbach-proof headline or universal positivity claim.
