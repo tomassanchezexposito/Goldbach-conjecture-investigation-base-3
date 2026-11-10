@@ -1,0 +1,16 @@
+{
+  "stage": 62,
+  "branch": "cocalc/stage62-singular-series-local-variation",
+  "base_commit_before_stage62_commit": "6acf313af155cbdac7a8a86416f624efe76e9be7",
+  "algorithm": "SHA-256 over exact saved file bytes",
+  "files": {
+    "report.md": "686b1dff9990fe81c8fed53c7e7c697a8726d2c8811383d19c34164213ab38f6",
+    "summary.md": "d99e8e72928faaa6dc952562b88bca7ac491fc686c66e36d53c641aeaf86c523",
+    "verify_singular_series.py": "d03f1eb98f18fe144a69c64a4f3bde0d5e63eee167e0aea07fc95c051b812579",
+    "verify_singular_series_sage.py": "08da2fbab1dbee33074280352141635de19a9aef8eba1b8d0c42113ff41c9bfb",
+    "finite_examples.json": "08824b086d8546051a02ef3977c9021b6d50ceb5186a377d7e44a1313105d04d",
+    "sage_verification.json": "bd10b9c3d34e267e6109f52a1725d6f0a4d22d5f6b2add30d5f240cfe00225e4",
+    "stage62_verification.json": "cc60c1fd406c7ce81b1cb668884b86fbbb6889251c7c91f872998d674ed6d6ea",
+    "make_manifest.py": "a20e3a2f8bbaac13a88cdd71004609c8fd4e0e64bbee6803a25b25ac0d4cd84f"
+  }
+}

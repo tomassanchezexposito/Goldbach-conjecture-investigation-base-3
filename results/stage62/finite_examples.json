@@ -1,0 +1,129 @@
+{
+  "status": "Finite exact examples only; universal theorem proved separately",
+  "examples": [
+    {
+      "P": [
+        11
+      ],
+      "q": 1409,
+      "N": 2816,
+      "wheel_N": 15,
+      "wheel_N_plus_2": 15,
+      "odd_prime_factors_N": [
+        11
+      ],
+      "singular_factor_ratio": "2345/2112",
+      "wheel_normalized_ratio": "2345/2112",
+      "proved_lower_bound": "5/9"
+    },
+    {
+      "P": [
+        11,
+        13
+      ],
+      "q": 3719,
+      "N": 7436,
+      "wheel_N": 15,
+      "wheel_N_plus_2": 15,
+      "odd_prime_factors_N": [
+        11,
+        13
+      ],
+      "singular_factor_ratio": "24780/20449",
+      "wheel_normalized_ratio": "24780/20449",
+      "proved_lower_bound": "20/33"
+    },
+    {
+      "P": [
+        11,
+        13,
+        17
+      ],
+      "q": 213929,
+      "N": 427856,
+      "wheel_N": 15,
+      "wheel_N_plus_2": 15,
+      "odd_prime_factors_N": [
+        11,
+        13,
+        17
+      ],
+      "singular_factor_ratio": "1140944/882453",
+      "wheel_normalized_ratio": "1140944/882453",
+      "proved_lower_bound": "64/99"
+    },
+    {
+      "P": [
+        11,
+        13,
+        17,
+        19
+      ],
+      "q": 23186879,
+      "N": 46373756,
+      "wheel_N": 15,
+      "wheel_N_plus_2": 15,
+      "odd_prime_factors_N": [
+        11,
+        13,
+        17,
+        19,
+        251
+      ],
+      "singular_factor_ratio": "247326688000/179941766719",
+      "wheel_normalized_ratio": "247326688000/179941766719",
+      "proved_lower_bound": "128/187"
+    },
+    {
+      "P": [
+        11,
+        13,
+        17,
+        19,
+        23
+      ],
+      "q": 779762699,
+      "N": 1559525396,
+      "wheel_N": 15,
+      "wheel_N_plus_2": 15,
+      "odd_prime_factors_N": [
+        11,
+        13,
+        17,
+        19,
+        23,
+        367
+      ],
+      "singular_factor_ratio": "3479078364672/2419213770545",
+      "wheel_normalized_ratio": "3479078364672/2419213770545",
+      "proved_lower_bound": "256/357"
+    },
+    {
+      "P": [
+        11,
+        13,
+        17,
+        19,
+        23,
+        29
+      ],
+      "q": 21750492479,
+      "N": 43500984956,
+      "wheel_N": 15,
+      "wheel_N_plus_2": 15,
+      "odd_prime_factors_N": [
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        353
+      ],
+      "singular_factor_ratio": "237573379162112/159281822392641",
+      "wheel_normalized_ratio": "237573379162112/159281822392641",
+      "proved_lower_bound": "1024/1377"
+    }
+  ],
+  "conditional_grid_minimum": "4/9"
+}

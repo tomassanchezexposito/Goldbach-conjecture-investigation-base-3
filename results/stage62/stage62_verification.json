@@ -1,0 +1,58 @@
+{
+  "stage": 62,
+  "branch": "cocalc/stage62-singular-series-local-variation",
+  "scope": "Exact arithmetic model checks and finite correlation identity audit; no universal Goldbach claim",
+  "python_producer": {
+    "command": "python3 -B results/stage62/verify_singular_series.py",
+    "method": "Trial division primality, incremental CRT, direct enumeration modulo 210, exact fractions, and factorization by trial division",
+    "parameters": {
+      "prime_prefixes": [
+        11,
+        13,
+        17,
+        19,
+        23,
+        29
+      ],
+      "maximum_crt_candidates_per_prefix": 2500,
+      "wheel_modulus": 210
+    },
+    "result": {
+      "examples": 6,
+      "equal_wheel_factors": 15,
+      "largest_q": 21750492479,
+      "largest_N": 43500984956,
+      "largest_exact_ratio": "237573379162112/159281822392641",
+      "largest_proved_lower_bound": "1024/1377",
+      "conditional_grid_minimum": "4/9"
+    },
+    "wall_seconds": 0.214
+  },
+  "independent_sage_verifier": {
+    "command": "sage -python results/stage62/verify_singular_series_sage.py",
+    "sage_version": "10.9",
+    "method": "Sage primality and integer factorization, Sage CRT, direct residue enumeration, exact QQ arithmetic, and direct representation-set enumeration",
+    "result": {
+      "examples_checked": 6,
+      "conditional_grid_cases": 27,
+      "conditional_grid_minimum": "4/9",
+      "correlation_identity_centers_checked": 49,
+      "centers": "even N from 4 through 100 inclusive; targets N-2, N, N+2",
+      "all_assertions_passed": true
+    },
+    "wall_seconds_including_startup": 3.288,
+    "script_runtime_seconds": 0.050877
+  },
+  "resource_notes": "No packages installed. Small deterministic loops; peak memory was not separately measured.",
+  "analytic_proof_dependencies": [
+    "Chinese remainder theorem",
+    "Linnik least-prime theorem for a reduced residue class",
+    "Euler divergence of the sum of reciprocals of primes",
+    "Exact Stage 61 signed quadratic identity"
+  ],
+  "limitations": [
+    "Finite checks do not estimate or certify actual Goldbach representation counts beyond their explicitly enumerated small targets.",
+    "The infinite signed-profile result is about the Hardy-Littlewood arithmetic model, not actual prime-pair counts.",
+    "Universal coverage of the original three-case conjecture remains open."
+  ]
+}
