@@ -54,7 +54,7 @@
       "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10476-026-00191-z.pdf",
       "pdf_sha256": "fc4e7dac8760d3a630abb61c4a428bff18ae0263fbf74acbe679b2ee3ece34e3",
       "hypothesis": "Theorem 3.1 assumes every zero of every Dirichlet L-function has Re(rho)<= one fixed Theta<3/4.",
-      "result": "Conditional exceptional-set bound |E(X)| <<_epsilon X^(2Theta-1/2+epsilon); Theorem 2.1 is an explicit major-arc formula over its stated even target range, not a full pointwise Goldbach asymptotic.",
+      "result": "Theorem 6.3 gives an explicit formula for the major-arc error E_M(N), for even N in [X/2,X] under 0<epsilon<vartheta<4/9-epsilon and R=X^vartheta, with a sum over pairs of exceptional zeros and characters plus O(X exp(-cH)+X/T+X^(1-epsilon)); it is not shown uniformly small for every target. Theorem 3.1 gives the conditional exceptional-set bound |E(X)| <<_epsilon X^(2Theta-1/2+epsilon) under the fixed all-Dirichlet-L-function zero hypothesis Theta<3/4. Neither statement is a full pointwise Goldbach asymptotic.",
       "pointwise_target_consequence": "The conditional exceptional-set bound can still contain a specified isolated target."
     }
   ],
