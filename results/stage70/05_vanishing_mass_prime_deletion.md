@@ -106,6 +106,31 @@ for every fixed q,a as \(X\to\infty\), even along **arbitrary varying** residual
 
 This distinguishes first-order equidistribution of *one prime variable* from the target-dependent simultaneous primality correlation \(p,N-p\). Any viable theorem must preserve the **full fixed coefficient structure** or exert quantitative control over the delicate target-pair dependency which the deletions destroy.
 
+### Corollary 70.5b — uniform first-order progression distribution for slowly growing moduli
+
+Fix \(0<\varepsilon<1\). The **unconditional classical Siegel–Walfisz theorem** gives, for each fixed exponent A and any desired logarithmic error exponent B, a uniform asymptotic for the original weighted prime mass in reduced classes with \(q\le(\log X)^A\):
+\[
+\sum_{\substack{p\in P_X\\p\equiv a\pmod q}}a_p
+=\frac{WX}{\varphi(q)}+O_{A,B,w}\!\left(\frac{X}{(\log X)^B}\right),
+\qquad(a,q)=1.
+\]
+The weights are fixed and compactly supported; the formula follows from the standard uniform progression estimate by partial summation. Apply it with \(A=1,B=3\).
+
+For **every** \(q\le(\log X)^{1-\varepsilon}\) and reduced a, the deleted weight on this residue class is bounded by the **same global deletion mass** \(O_w(X\log\log X/\log X)\). Dividing both the original progression error and the deletion error by the main term \(WX/\varphi(q)\), with \(\varphi(q)\le q\), gives uniformly in N, q, a
+\[
+\boxed{
+\sum_{\substack{p\in P'_{X,N}\\p\equiv a\pmod q}}a_p
+=\frac{WX}{\varphi(q)}
+\left(1+O_{\varepsilon,w}\!\left(
+\frac{\log\log X}{(\log X)^\varepsilon}
+\right)\right)
+}
+\tag{70.19}
+\]
+for sufficiently large X and all residual \(N\in[X/2,X]\). The additional \(O((\log X)^{-2-\varepsilon})\) from the original weighted Siegel–Walfisz error is absorbed.
+
+This strengthens the countermodel: even first-order relative prime-weight distribution simultaneously in **all** reduced residue classes for moduli up to \((\log X)^{1-\varepsilon}\) can survive an adversarial o(1)-mass deletion that makes one target coefficient exactly zero. **It does not** extend to moduli of size X^\(\theta\), nor to uniform bilinear correlations or the actual fixed prime sequence. Siegel–Walfisz is an established external theorem, not a new source of target-specific binary Goldbach positivity.
+
 ## 4. Adversarial limitations and source classification
 
 - **External established theorem:** Wu's unconditional upper sieve theorem supplies the *upper* representation count bound. The classical PNT and PNT-AP are also external established theorems; their proofs are not newly supplied by this research.
