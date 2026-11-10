@@ -1,46 +1,49 @@
-# NEXT TASK — Stage 60: independent signed prime-correlation bounds for the sharp local energy certificate
+# NEXT TASK — Stage 61: signed true-prime correlations with a non-circular pointwise error
 
-**Evidence status:** analytic positivity obligation OPEN. Use the new Stage 59 theorem as an exact, sharp *conditional* certificate, never as an unconditional Goldbach proof.
+**State: OPEN.** This branch is created from the published Stage 60 integration branch. Do not merge into main or claim universal coverage.
 
-## Continuity
+## Provenance to audit before new work
 
-- Read results/stage59/report.md and independently run:
-  - \`python results/stage59/verify_stage59.py\`
-  - \`cc -O3 -std=c11 results/stage59/local_cert_native.c -o /tmp/stage59_local_cert && /tmp/stage59_local_cert 1000000\`
-- Note the source branch \`cocalc/stage59-local-second-moment\`. Stage 56–58 files and the author's original definition are preserved.
-- The previous chat thread ended. Use this GitHub task as the sole durable handoff; CoCalc agent chats are not automatically synchronized with ChatGPT.
+- Stage 60 integrated branch: \`cocalc/stage60-integrated-research\`.
+- Stage 60 report: \`results/stage60/report.md\`; independent checks: \`results/stage60/compute_stage60.py\` and \`results/stage60/verify_stage60.py\`.
+- Stage 60 draft PR #9: https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/9
+- Coordination issue #8: https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/issues/8
+- Stage 58 weighted moment supplement and both Stage 59 local path/cycle/graph lines are preserved in the integrated branch.
 
-## Universal target
+CoCalc's SSH deploy key works for Git fetch and push. The private issue #8 was not readable by \`gh\` (not installed) or unauthenticated REST (HTTP 404); this **does not** imply the issue is missing. Read the checked-in \`docs/stage60_integration_handoff.md\` and \`results/stage60/integration_review.md\` for the mirrored task context. Do not print private key material or require a new token just to read issue #8.
 
-For even \(\,N\in H\,\) (\(N-1,N/2\) both composite), prove the existence of two distinct genuine primes summing to \(N\), using the original positional reflection formula \(p=3+2a,\ q=3+2b,\ a+b=N/2-3\). Do not assume Goldbach or any equivalent statement.
+## Core mathematical objective
 
-Let \(R(N)\) be the genuine unordered distinct prime pair count, \(A(N)\) the wheel-210 admissible residue count, and \(X_N=R(N)/A(N)\).
+For every even N in the author's residual set H (N>=4, N-1 composite and N/2 composite), seek a non-circular rigorous pointwise proof that R(N)>0, where R counts unordered distinct genuine-prime pairs p<q, p+q=N.
 
-## Sharp proved Stage 59 certificate
-
-For \(a=X_{N-2},\ b=X_N,\ c=X_{N+2}\),
+Let A(N) be the exact modulo-210 admissible residue count and X_N=R(N)/A(N). In the three-even-target path, use
 \[
-2(ab+bc+ca)>a^2+b^2+c^2
-\quad\Longleftrightarrow\quad
-(\sqrt a-\sqrt c)^2<b<(\sqrt a+\sqrt c)^2
+a=X_{N-2},\quad b=X_N,\quad c=X_{N+2},\quad
+\mu=(a+b+c)/3,\quad E=(a-b)^2+(b-c)^2.
 \]
-suffices for \(R(N)>0\), but is not known unconditionally for \(N\in H\). Exact finite testing through one million observed no failures among 384,263 residual centers. That is NOT a universal bound. Prove neither half by dividing by \(b\) or by calculating \(R(N)\) as a premise.
+The proved deterministic implication is
+\[
+\mu^2>\frac29 E \Longrightarrow b>0.
+\]
+**The arithmetic implication at all targets remains OPEN**; this condition must be proved from independent prime-distribution information, not assumed.
 
-## Main analytic obligations
+## Stage 61 research obligations
 
-1. **Independent moment bounds:** specify explicit, non-circular estimates \(\mu_N\ge m_N>0\) and \(E_N\le e_N\) with \(m_N^2>(2/9)e_N\) for each sufficiently large residual \(N\), or prove such estimates cannot follow from the proposed input assumptions. All constants, uniformity and error terms must be quantified.
-2. **Correlation decomposition:** expand \(E_N\) into exact products \(R(s)R(t)\), separate identical-pair diagonals, shared-prime contractions and four-distinct-prime terms for shifts 0, 2 and 4. Compute exact weighted factors \(A(s)A(t)\).
-3. **Arithmetic estimate:** investigate whether currently established unconditional bounds for prime sums along these exact shifted planes yield upper bounds with signs, rather than merely absolute values/averages. Distinguish new conjectural estimates from known theorems.
-4. **Sieve bridge:** express the original odd-position sieve \(p=3+2j\) and prime marker exclusion congruences exactly, and identify where survival under finite wheel/criba ceases to imply simultaneous primality.
-5. **Counterexample search:** independently test any intermediate inequality. The exact 3-point criterion fails at N=8 (outside H), and no other failures were seen through 1,000,000: do not extrapolate.
-6. **Alternative analytical certificate:** if moment estimates are impossible with present input, exhibit a rigorously proved conditional theorem with the narrowest precise missing prime-distribution hypothesis. Avoid restating the desired positivity as an assumption.
-7. **Reproducibility:** save mathematical report, independent verifier, data and manifest with code hashes in \`results/stage60/\`. Do not run longer arbitrary Goldbach sweeps in place of proving lemmas.
-8. **Review:** prepare a new branch derived from Stage 59, commit only reproducible audited files there, push it, and create a draft PR. Never merge to main without review.
+1. **Logical no-go lemma.** Show explicitly that wheel-210 admissibility and Stage 60's upper bounds \`0<=R(n)<=B(n)=floor((n-4)/4)\` cannot exclude a zero center: for any sufficiently large even N, the abstract admissible nonnegative counts \`R(N-2)=1\`, \`R(N)=0\`, \`R(N+2)=1\` satisfy all these upper bounds. For \`b=0\`,
+\[
+\mu^2-\frac29E=-\frac{(a-c)^2}{9}\le0.
+\]
+This is a countermodel to deduction from candidate bounds alone, not a claimed counterexample to actual Goldbach.
+2. **Target-index precision.** Correct the ambiguous assertion in Stage 60: a genuine \`Q_4(N,M)>0\` necessarily entails \`R(N)>0\` and \`R(M)>0\` by definition; an off-center \`Q_4(N-2,N+2)>0\` does not entail a representation at N. A non-circular positive lower estimate for \`Q_4(N,M)\` would be strong enough but is not available merely from the identity.
+3. **Signed decomposition.** Derive the exact identity for the signed difference \`D_N=\mu^2-(2/9)E\` with all coefficients of \`R(t)^2\`, \`R(s)R(t)\`, exact wheel factors, same-target diagonals, shared-prime contractions and four-distinct configurations. Check expansions independently in exact rational arithmetic.
+4. **Analyze the critical cancellation.** Identify which signed four-prime terms would have to dominate which negative terms for each N, and formulate an explicit uniform inequality with quantified error and an effective threshold. Do not simply assume a positive R(N) or a positive anchored product.
+5. **Literature and methods.** Compare genuine prime-only circle-method or sieve results, including the parity obstruction and published exceptional-set bounds. Cite original papers with accurate hypotheses and distinguish average/exceptional-set/conditional/pointwise estimates. Do not claim that published results already give strict pointwise positivity for all N.
+6. **Independent computation.** Compute only focused exact test cases and counterexamples to *new* inequalities (not another vast Goldbach search). Use two independent routines, document ranges, exact outputs, and runtime.
+7. **Outcome.** Either supply a rigorously proved non-circular bound on signed four-prime correlations valid for every sufficiently large residual N, with explicit constants and a verified finite cutoff, or state exactly the first missing arithmetic estimate and why the existing unconditional estimates fail to imply it.
+8. **Delivery.** Save English mathematical report, source, independent verifier, exact output and SHA-256 manifest under \`results/stage61/\`. Commit and push solely to \`cocalc/stage61-signed-correlation-gap\`, and open a draft PR; do not overwrite previous stages, modify main, install software or incur costs without approval.
 
-## Acceptance
+## Evidence labels required
 
-The result must either establish a uniform independent pointwise inequality with a positive margin and proof, or explicitly identify and quantify the first missing non-circular error estimate. Do not label any universal coverage statement proved merely because the sharp local certificate is satisfied in a long finite range.
+PROVED MATHEMATICAL LEMMA; ESTABLISHED EXTERNAL THEOREM; FINITE COMPUTATIONAL OBSERVATION; REFUTED CLAIM; CONDITIONAL STATEMENT; OPEN PROOF OBLIGATION.
 
-## Stage 60 integration resolution
-
-This parent-branch Stage 60 objective remains the governing task. The conflicting Stage 59 task protocols are cited in their source commits: `cocalc/stage59-local-second-moment` at `900cae804b76e09992aba555932bc0fd866737af` and `cocalc/stage59-sharp-local-energy` at `60fed50ca43342bd10384a05813202c79c57eab3`. Their distinct reports, experiments, proofs, and verifiers are retained under `results/stage59/`.
+**Do not use density-only or modular-survivor counts as if they were a genuine prime-pair correlation estimate.**

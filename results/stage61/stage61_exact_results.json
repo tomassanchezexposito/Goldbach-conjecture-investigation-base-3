@@ -1,0 +1,774 @@
+{
+  "title": "Stage 61 focused signed true-prime correlation audit",
+  "evidence_status": "Exact finite computation and algebraic checks; no universal prime-pair claim.",
+  "method": "Python standard library; sieve for the producer, independent trial division in verifier.",
+  "parameters": {
+    "centers": [
+      8,
+      10,
+      20,
+      34,
+      50,
+      100,
+      200,
+      500
+    ],
+    "target_triples": 8,
+    "largest_target": 502,
+    "wheel_modulus": 210,
+    "abstract_countermodel_center": 100,
+    "conditional_error_grid_cases": 27
+  },
+  "definitions": {
+    "H": "even N >= 4 with N-1 and N/2 composite",
+    "R": "unordered distinct genuine-prime pairs p<q with p+q=N",
+    "A_210": "exact modulo-210 admissible residue count",
+    "X": "R/A_210",
+    "D": "((X[N-2]+X[N]+X[N+2])/3)^2 - (2/9)*((X[N]-X[N-2])^2+(X[N+2]-X[N])^2)"
+  },
+  "abstract_upper_bound_countermodel": {
+    "status": "logical countermodel only; not a prime-realizability claim",
+    "center": 100,
+    "targets": [
+      98,
+      100,
+      102
+    ],
+    "is_in_H": true,
+    "R_abstract": [
+      1,
+      0,
+      1
+    ],
+    "A_210": [
+      18,
+      20,
+      30
+    ],
+    "candidate_upper_bounds": [
+      23,
+      24,
+      24
+    ],
+    "X_abstract": [
+      "1/18",
+      "0/1",
+      "1/30"
+    ],
+    "D": "-1/18225",
+    "D_nonpositive": true
+  },
+  "conditional_relative_error_check": {
+    "assumption": "X[N+j]=lambda*(1+epsilon_j), lambda>0, |epsilon_j|<=1/3, j in {-2,0,2}",
+    "proved_lower_bound_for_D_over_lambda_squared": "8/81",
+    "exact_grid_cases": 27,
+    "grid_minimum": "4/9",
+    "effective_threshold_if_error_is_C_over_log_N": "N >= max(N0, ceil(exp(3*C)))"
+  },
+  "rows": [
+    {
+      "center": 8,
+      "is_in_H": false,
+      "targets": [
+        6,
+        8,
+        10
+      ],
+      "R": [
+        0,
+        1,
+        1
+      ],
+      "A_210": [
+        30,
+        15,
+        20
+      ],
+      "B_candidate_upper_bounds": [
+        0,
+        1,
+        1
+      ],
+      "X": [
+        "0/1",
+        "1/15",
+        "1/20"
+      ],
+      "mean": "7/180",
+      "path_energy": "17/3600",
+      "D_direct": "1/2160",
+      "D_expanded": "1/2160",
+      "same_target_ordered_squares": [
+        {
+          "diagonal": 0,
+          "four_distinct": 0,
+          "total": 0
+        },
+        {
+          "diagonal": 1,
+          "four_distinct": 0,
+          "total": 1
+        },
+        {
+          "diagonal": 1,
+          "four_distinct": 0,
+          "total": 1
+        }
+      ],
+      "shifted_position_classes": {
+        "minus_center": {
+          "shared_low_low": 0,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 0,
+          "four_distinct": 0
+        },
+        "minus_plus": {
+          "shared_low_low": 0,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 0,
+          "four_distinct": 0
+        },
+        "center_plus": {
+          "shared_low_low": 1,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 0,
+          "four_distinct": 0
+        }
+      },
+      "signed_contributions_to_9D": {
+        "same_minus_diagonal": "0/1",
+        "same_minus_four_distinct": "0/1",
+        "same_center_diagonal": "-1/75",
+        "same_center_four_distinct": "0/1",
+        "same_plus_diagonal": "-1/400",
+        "same_plus_four_distinct": "0/1",
+        "cross_minus_center_shared": "0/1",
+        "cross_minus_center_Q4": "0/1",
+        "cross_minus_plus_shared": "0/1",
+        "cross_minus_plus_Q4": "0/1",
+        "cross_center_plus_shared": "1/50",
+        "cross_center_plus_Q4": "0/1"
+      },
+      "signed_contributions_sum_to_9D": "1/240"
+    },
+    {
+      "center": 10,
+      "is_in_H": false,
+      "targets": [
+        8,
+        10,
+        12
+      ],
+      "R": [
+        1,
+        1,
+        1
+      ],
+      "A_210": [
+        15,
+        20,
+        30
+      ],
+      "B_candidate_upper_bounds": [
+        1,
+        1,
+        2
+      ],
+      "X": [
+        "1/15",
+        "1/20",
+        "1/30"
+      ],
+      "mean": "1/20",
+      "path_energy": "1/1800",
+      "D_direct": "77/32400",
+      "D_expanded": "77/32400",
+      "same_target_ordered_squares": [
+        {
+          "diagonal": 1,
+          "four_distinct": 0,
+          "total": 1
+        },
+        {
+          "diagonal": 1,
+          "four_distinct": 0,
+          "total": 1
+        },
+        {
+          "diagonal": 1,
+          "four_distinct": 0,
+          "total": 1
+        }
+      ],
+      "shifted_position_classes": {
+        "minus_center": {
+          "shared_low_low": 1,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 0,
+          "four_distinct": 0
+        },
+        "minus_plus": {
+          "shared_low_low": 0,
+          "shared_low_high": 0,
+          "shared_high_low": 1,
+          "shared_high_high": 0,
+          "four_distinct": 0
+        },
+        "center_plus": {
+          "shared_low_low": 0,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 1,
+          "four_distinct": 0
+        }
+      },
+      "signed_contributions_to_9D": {
+        "same_minus_diagonal": "-1/225",
+        "same_minus_four_distinct": "0/1",
+        "same_center_diagonal": "-3/400",
+        "same_center_four_distinct": "0/1",
+        "same_plus_diagonal": "-1/900",
+        "same_plus_four_distinct": "0/1",
+        "cross_minus_center_shared": "1/50",
+        "cross_minus_center_Q4": "0/1",
+        "cross_minus_plus_shared": "1/225",
+        "cross_minus_plus_Q4": "0/1",
+        "cross_center_plus_shared": "1/100",
+        "cross_center_plus_Q4": "0/1"
+      },
+      "signed_contributions_sum_to_9D": "77/3600"
+    },
+    {
+      "center": 20,
+      "is_in_H": false,
+      "targets": [
+        18,
+        20,
+        22
+      ],
+      "R": [
+        2,
+        2,
+        2
+      ],
+      "A_210": [
+        30,
+        20,
+        15
+      ],
+      "B_candidate_upper_bounds": [
+        3,
+        4,
+        4
+      ],
+      "X": [
+        "1/15",
+        "1/10",
+        "2/15"
+      ],
+      "mean": "1/10",
+      "path_energy": "1/450",
+      "D_direct": "77/8100",
+      "D_expanded": "77/8100",
+      "same_target_ordered_squares": [
+        {
+          "diagonal": 2,
+          "four_distinct": 2,
+          "total": 4
+        },
+        {
+          "diagonal": 2,
+          "four_distinct": 2,
+          "total": 4
+        },
+        {
+          "diagonal": 2,
+          "four_distinct": 2,
+          "total": 4
+        }
+      ],
+      "shifted_position_classes": {
+        "minus_center": {
+          "shared_low_low": 1,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 1,
+          "four_distinct": 2
+        },
+        "minus_plus": {
+          "shared_low_low": 1,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 0,
+          "four_distinct": 3
+        },
+        "center_plus": {
+          "shared_low_low": 1,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 1,
+          "four_distinct": 2
+        }
+      },
+      "signed_contributions_to_9D": {
+        "same_minus_diagonal": "-1/450",
+        "same_minus_four_distinct": "-1/450",
+        "same_center_diagonal": "-3/200",
+        "same_center_four_distinct": "-3/200",
+        "same_plus_diagonal": "-2/225",
+        "same_plus_four_distinct": "-2/225",
+        "cross_minus_center_shared": "1/50",
+        "cross_minus_center_Q4": "1/50",
+        "cross_minus_plus_shared": "1/225",
+        "cross_minus_plus_Q4": "1/75",
+        "cross_center_plus_shared": "1/25",
+        "cross_center_plus_Q4": "1/25"
+      },
+      "signed_contributions_sum_to_9D": "77/900"
+    },
+    {
+      "center": 34,
+      "is_in_H": false,
+      "targets": [
+        32,
+        34,
+        36
+      ],
+      "R": [
+        2,
+        3,
+        4
+      ],
+      "A_210": [
+        15,
+        15,
+        30
+      ],
+      "B_candidate_upper_bounds": [
+        7,
+        7,
+        8
+      ],
+      "X": [
+        "2/15",
+        "1/5",
+        "2/15"
+      ],
+      "mean": "7/45",
+      "path_energy": "2/225",
+      "D_direct": "1/45",
+      "D_expanded": "1/45",
+      "same_target_ordered_squares": [
+        {
+          "diagonal": 2,
+          "four_distinct": 2,
+          "total": 4
+        },
+        {
+          "diagonal": 3,
+          "four_distinct": 6,
+          "total": 9
+        },
+        {
+          "diagonal": 4,
+          "four_distinct": 12,
+          "total": 16
+        }
+      ],
+      "shifted_position_classes": {
+        "minus_center": {
+          "shared_low_low": 1,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 1,
+          "four_distinct": 4
+        },
+        "minus_plus": {
+          "shared_low_low": 1,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 2,
+          "four_distinct": 5
+        },
+        "center_plus": {
+          "shared_low_low": 1,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 3,
+          "four_distinct": 8
+        }
+      },
+      "signed_contributions_to_9D": {
+        "same_minus_diagonal": "-2/225",
+        "same_minus_four_distinct": "-2/225",
+        "same_center_diagonal": "-1/25",
+        "same_center_four_distinct": "-2/25",
+        "same_plus_diagonal": "-1/225",
+        "same_plus_four_distinct": "-1/75",
+        "cross_minus_center_shared": "4/75",
+        "cross_minus_center_Q4": "8/75",
+        "cross_minus_plus_shared": "1/75",
+        "cross_minus_plus_Q4": "1/45",
+        "cross_center_plus_shared": "4/75",
+        "cross_center_plus_Q4": "8/75"
+      },
+      "signed_contributions_sum_to_9D": "1/5"
+    },
+    {
+      "center": 50,
+      "is_in_H": true,
+      "targets": [
+        48,
+        50,
+        52
+      ],
+      "R": [
+        5,
+        4,
+        3
+      ],
+      "A_210": [
+        30,
+        20,
+        15
+      ],
+      "B_candidate_upper_bounds": [
+        11,
+        11,
+        12
+      ],
+      "X": [
+        "1/6",
+        "1/5",
+        "1/5"
+      ],
+      "mean": "17/90",
+      "path_energy": "1/900",
+      "D_direct": "287/8100",
+      "D_expanded": "287/8100",
+      "same_target_ordered_squares": [
+        {
+          "diagonal": 5,
+          "four_distinct": 20,
+          "total": 25
+        },
+        {
+          "diagonal": 4,
+          "four_distinct": 12,
+          "total": 16
+        },
+        {
+          "diagonal": 3,
+          "four_distinct": 6,
+          "total": 9
+        }
+      ],
+      "shifted_position_classes": {
+        "minus_center": {
+          "shared_low_low": 2,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 3,
+          "four_distinct": 15
+        },
+        "minus_plus": {
+          "shared_low_low": 2,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 2,
+          "four_distinct": 11
+        },
+        "center_plus": {
+          "shared_low_low": 0,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 1,
+          "four_distinct": 11
+        }
+      },
+      "signed_contributions_to_9D": {
+        "same_minus_diagonal": "-1/180",
+        "same_minus_four_distinct": "-1/45",
+        "same_center_diagonal": "-3/100",
+        "same_center_four_distinct": "-9/100",
+        "same_plus_diagonal": "-1/75",
+        "same_plus_four_distinct": "-2/75",
+        "cross_minus_center_shared": "1/20",
+        "cross_minus_center_Q4": "3/20",
+        "cross_minus_plus_shared": "4/225",
+        "cross_minus_plus_Q4": "11/225",
+        "cross_center_plus_shared": "1/50",
+        "cross_center_plus_Q4": "11/50"
+      },
+      "signed_contributions_sum_to_9D": "287/900"
+    },
+    {
+      "center": 100,
+      "is_in_H": true,
+      "targets": [
+        98,
+        100,
+        102
+      ],
+      "R": [
+        3,
+        6,
+        8
+      ],
+      "A_210": [
+        18,
+        20,
+        30
+      ],
+      "B_candidate_upper_bounds": [
+        23,
+        24,
+        24
+      ],
+      "X": [
+        "1/6",
+        "3/10",
+        "4/15"
+      ],
+      "mean": "11/45",
+      "path_energy": "17/900",
+      "D_direct": "1/18",
+      "D_expanded": "1/18",
+      "same_target_ordered_squares": [
+        {
+          "diagonal": 3,
+          "four_distinct": 6,
+          "total": 9
+        },
+        {
+          "diagonal": 6,
+          "four_distinct": 30,
+          "total": 36
+        },
+        {
+          "diagonal": 8,
+          "four_distinct": 56,
+          "total": 64
+        }
+      ],
+      "shifted_position_classes": {
+        "minus_center": {
+          "shared_low_low": 0,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 0,
+          "four_distinct": 18
+        },
+        "minus_plus": {
+          "shared_low_low": 2,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 2,
+          "four_distinct": 20
+        },
+        "center_plus": {
+          "shared_low_low": 2,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 5,
+          "four_distinct": 41
+        }
+      },
+      "signed_contributions_to_9D": {
+        "same_minus_diagonal": "-1/108",
+        "same_minus_four_distinct": "-1/54",
+        "same_center_diagonal": "-9/200",
+        "same_center_four_distinct": "-9/40",
+        "same_plus_diagonal": "-2/225",
+        "same_plus_four_distinct": "-14/225",
+        "cross_minus_center_shared": "0/1",
+        "cross_minus_center_Q4": "3/10",
+        "cross_minus_plus_shared": "2/135",
+        "cross_minus_plus_Q4": "2/27",
+        "cross_center_plus_shared": "7/100",
+        "cross_center_plus_Q4": "41/100"
+      },
+      "signed_contributions_sum_to_9D": "1/2"
+    },
+    {
+      "center": 200,
+      "is_in_H": false,
+      "targets": [
+        198,
+        200,
+        202
+      ],
+      "R": [
+        13,
+        8,
+        8
+      ],
+      "A_210": [
+        30,
+        20,
+        15
+      ],
+      "B_candidate_upper_bounds": [
+        48,
+        49,
+        49
+      ],
+      "X": [
+        "13/30",
+        "2/5",
+        "8/15"
+      ],
+      "mean": "41/90",
+      "path_energy": "17/900",
+      "D_direct": "61/300",
+      "D_expanded": "61/300",
+      "same_target_ordered_squares": [
+        {
+          "diagonal": 13,
+          "four_distinct": 156,
+          "total": 169
+        },
+        {
+          "diagonal": 8,
+          "four_distinct": 56,
+          "total": 64
+        },
+        {
+          "diagonal": 8,
+          "four_distinct": 56,
+          "total": 64
+        }
+      ],
+      "shifted_position_classes": {
+        "minus_center": {
+          "shared_low_low": 4,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 5,
+          "four_distinct": 95
+        },
+        "minus_plus": {
+          "shared_low_low": 3,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 3,
+          "four_distinct": 98
+        },
+        "center_plus": {
+          "shared_low_low": 1,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 1,
+          "four_distinct": 62
+        }
+      },
+      "signed_contributions_to_9D": {
+        "same_minus_diagonal": "-13/900",
+        "same_minus_four_distinct": "-13/75",
+        "same_center_diagonal": "-3/50",
+        "same_center_four_distinct": "-21/50",
+        "same_plus_diagonal": "-8/225",
+        "same_plus_four_distinct": "-56/225",
+        "cross_minus_center_shared": "9/100",
+        "cross_minus_center_Q4": "19/20",
+        "cross_minus_plus_shared": "2/75",
+        "cross_minus_plus_Q4": "98/225",
+        "cross_center_plus_shared": "1/25",
+        "cross_center_plus_Q4": "31/25"
+      },
+      "signed_contributions_sum_to_9D": "183/100"
+    },
+    {
+      "center": 500,
+      "is_in_H": false,
+      "targets": [
+        498,
+        500,
+        502
+      ],
+      "R": [
+        23,
+        13,
+        14
+      ],
+      "A_210": [
+        30,
+        20,
+        15
+      ],
+      "B_candidate_upper_bounds": [
+        123,
+        124,
+        124
+      ],
+      "X": [
+        "23/30",
+        "13/20",
+        "14/15"
+      ],
+      "mean": "47/60",
+      "path_energy": "169/1800",
+      "D_direct": "3841/6480",
+      "D_expanded": "3841/6480",
+      "same_target_ordered_squares": [
+        {
+          "diagonal": 23,
+          "four_distinct": 506,
+          "total": 529
+        },
+        {
+          "diagonal": 13,
+          "four_distinct": 156,
+          "total": 169
+        },
+        {
+          "diagonal": 14,
+          "four_distinct": 182,
+          "total": 196
+        }
+      ],
+      "shifted_position_classes": {
+        "minus_center": {
+          "shared_low_low": 5,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 7,
+          "four_distinct": 287
+        },
+        "minus_plus": {
+          "shared_low_low": 6,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 8,
+          "four_distinct": 308
+        },
+        "center_plus": {
+          "shared_low_low": 0,
+          "shared_low_high": 0,
+          "shared_high_low": 0,
+          "shared_high_high": 0,
+          "four_distinct": 182
+        }
+      },
+      "signed_contributions_to_9D": {
+        "same_minus_diagonal": "-23/900",
+        "same_minus_four_distinct": "-253/450",
+        "same_center_diagonal": "-39/400",
+        "same_center_four_distinct": "-117/100",
+        "same_plus_diagonal": "-14/225",
+        "same_plus_four_distinct": "-182/225",
+        "cross_minus_center_shared": "3/25",
+        "cross_minus_center_Q4": "287/100",
+        "cross_minus_plus_shared": "14/225",
+        "cross_minus_plus_Q4": "308/225",
+        "cross_center_plus_shared": "0/1",
+        "cross_center_plus_Q4": "91/25"
+      },
+      "signed_contributions_sum_to_9D": "3841/720"
+    }
+  ]
+}
