@@ -57,6 +57,18 @@ When this inequality holds, \(b>0\), hence \(R(N)>0\). It is a **sufficient** co
 
 If \(b=0\) and \(a,c\ge0\), the difference between the right and left sides is \(a^2+c^2-2ac=(a-c)^2\ge0\); therefore the criterion cannot hold. This is the sharpness/necessity barrier for a local-zero profile.
 
+### Exact threshold form of the three-coordinate criterion
+
+The equivalent inequality can also be solved as a quadratic in the central count \(b\):
+\[
+(a+c-b)^2<4ac
+\quad\Longleftrightarrow\quad
+\boxed{(\sqrt a-\sqrt c)^2<b<(\sqrt a+\sqrt c)^2}.
+\]
+For nonnegative normalized counts \(a,c\), this explicitly shows that the local criterion is **strictly stronger than simply asserting \(b>0\)**, because it also requires a quantitative upper bound on \(b\). If \(a=0\) or \(c=0\), no nonnegative \(b\) satisfies the strict inequality: the condition is a certificate, not an equivalent restatement of Goldbach.
+
+To use the inequality as a proof, one must control the middle count independently; knowing only the two neighboring counts does not suffice. The strong empirical success of the inequality is a proposed local-regularity hypothesis, not a known theorem about real primes.
+
 ### Exact four-prime expansion
 
 Let \(T=\{N-2,N,N+2\}\) and \(A_t=A(t)\). Then
