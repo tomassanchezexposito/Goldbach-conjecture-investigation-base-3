@@ -1,0 +1,15 @@
+{
+  "all_assertions_passed": true,
+  "arc_matrix_entries_compared": 13500,
+  "center_rank_one_matrix_sizes": "11 shifts for every reduced a/q, 2<=q<=12",
+  "classification": "EXACT FORMAL GROUP-RING AND RATIONAL ARITHMETIC CHECKS; NOT A PRIME ESTIMATE",
+  "formal_symbol": "t=1/(2*pi*i); roots of unity are sparse Q[C_L] elements",
+  "full_circle_entries_checked": 21,
+  "limitations": [
+    "The group-ring checks establish exact expansions; the proof of positivity is the integral Gram argument in report.md.",
+    "No prime-weighted localized moment or pointwise prime estimate is proved."
+  ],
+  "major_arc_measure_inequalities_checked": 100,
+  "reduced_center_shift_tests": 495,
+  "runtime_seconds": 4.821887054000399
+}
