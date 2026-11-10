@@ -1,0 +1,17 @@
+{
+  "stage": 69,
+  "status": "PASS",
+  "finite_only": true,
+  "checked_unordered_targets": 7,
+  "checked_shifted_target_pairs": 21,
+  "checked_exact_energy_cases": 252,
+  "rational_minor_arc_example": {
+    "alpha": "1013/3000",
+    "P": 13,
+    "X": 2000,
+    "closest_center_denominator": 3,
+    "in_major_arcs": false
+  },
+  "interpretation": "Minor-arc membership alone does not imply every nearby rational approximant has denominator>P.",
+  "execution": "Independent local Python 3 runtime in this review; no Codex usage."
+}
