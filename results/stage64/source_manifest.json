@@ -1,0 +1,169 @@
+{
+  "access_date": "2026-11-10",
+  "base_commit": "cd8dbfd0fd8f3f3a0a1d42f334ebe29e114665b0",
+  "branch": "cocalc/stage64-2026-minor-arc-gap",
+  "environment": {
+    "platform": "Linux-7.0.0-1017-gcp-x86_64-with-glibc2.43",
+    "python": "3.14.4",
+    "sagemath": "10.9"
+  },
+  "external_source_fingerprints": [
+    {
+      "local_inspection_path": "/tmp/stage64-li-liu.pdf",
+      "name": "Li-Liu arXiv:2610.26756v1 PDF",
+      "sha256": "dfc50df01f80c0493c29170e748cc5af608d66d0252b7c15209524104f4f0153"
+    },
+    {
+      "local_inspection_path": "/tmp/stage64-li-liu.txt",
+      "name": "Li-Liu arXiv:2610.26756v1 extracted text",
+      "sha256": "f670136cc9b148a303cb85971c469f594b1a3df0bae84c599657271859a8aab3"
+    },
+    {
+      "local_inspection_path": "/tmp/stage64-pintz-althofer.pdf",
+      "name": "Pintz-Althofer arXiv:2610.15559v1 PDF",
+      "sha256": "adfca5b1b8b5b1c0ce350bdbaa08bb9fb288f41c2fad1db8bf5cd4d8d93412ec"
+    },
+    {
+      "local_inspection_path": "/tmp/stage64-pintz-althofer.txt",
+      "name": "Pintz-Althofer arXiv:2610.15559v1 extracted text",
+      "sha256": "342bcc44fc71c115a216b4b3f62ad489e401d26789132628b3af06de00db3ab5"
+    },
+    {
+      "local_inspection_path": "/tmp/stage64-polynomial.pdf",
+      "name": "Althofer-Chen-Perelli-Pintz arXiv:2611.09386v1 PDF",
+      "sha256": "3e6af1b24fdaa91131dd349d8c60d1add45028a251eac51e875251192cece89b"
+    },
+    {
+      "local_inspection_path": "/tmp/stage64-polynomial.txt",
+      "name": "Althofer-Chen-Perelli-Pintz arXiv:2611.09386v1 extracted text",
+      "sha256": "e425534f5cbeabb180a21e2d494e54d3b446f3571dfc4927c3a9c2dc7f59bfaa"
+    },
+    {
+      "local_inspection_path": "/tmp/stage64-openai-qrh.pdf",
+      "name": "OpenAI Math Quasi-Riemann Hypothesis PDF",
+      "sha256": "8fe93046f8cf5ef1ba5969c89addc02d76311adc4ee9075099cd96f7ec99e7"
+    },
+    {
+      "local_inspection_path": "/tmp/stage64-openai-qrh.txt",
+      "name": "OpenAI Math Quasi-Riemann Hypothesis extracted text",
+      "sha256": "71bed075a774d53b01fdda1f3974fce9731fd9a5525824375ce81f1864fab324"
+    },
+    {
+      "name": "OpenAI Math Lean scope note",
+      "sha256": "41e52ed718260e6feb1db218f8e97287e703cb63c6f16e6c36f5563e6e2395ce",
+      "url": "https://github.com/openai/math/blob/main/lean/docs/003.md"
+    },
+    {
+      "commit": "4eaee87548250b2682affda7d05d947c05554bae",
+      "date": "2026-10-29",
+      "name": "OpenAI Math inspected repository snapshot"
+    }
+  ],
+  "files": [
+    {
+      "bytes": 3086,
+      "path": "tasks/NEXT_TASK.md",
+      "sha256": "4d5e1e87cc65fa8c71693dc9004e921a0a21720069de2fc0c7226b821f24c513"
+    },
+    {
+      "bytes": 1852,
+      "path": "results/stage64/00_stage63_erratum_and_provenance.md",
+      "sha256": "c2ef7fe7e328e982a3636ed698a942dc64578149b84bac42b2aec52757e41793"
+    },
+    {
+      "bytes": 10577,
+      "path": "results/stage64/01_2026_primary_sources.md",
+      "sha256": "43813f78035aa45ed151744652c93a0cee1870b559ce2f8d4ff9bf46b7a91530"
+    },
+    {
+      "bytes": 6375,
+      "path": "results/stage64/02_fourth_moment_to_pointwise_gap.md",
+      "sha256": "b6d6e08cbd7147d1cd09588faa1ebfeb5380dbcf8c4b9b882326cca96a27a26f"
+    },
+    {
+      "bytes": 8269,
+      "path": "results/stage64/03_signed_fourprime_alternatives.md",
+      "sha256": "c683f41778ff1e8a3845bcbc4a7d63c5341d641ad93205e09d80cfe0cecb360d"
+    },
+    {
+      "bytes": 4337,
+      "path": "results/stage64/04_research_attempt.md",
+      "sha256": "083234ee45c2119909d24344584d271dd715a281d5a3f4ff672850237a781fb6"
+    },
+    {
+      "bytes": 4292,
+      "path": "results/stage64/05_adversarial_review.md",
+      "sha256": "9e899a57398339553bc36d89c354735692a76f1654aed74f0cf116d05573af28"
+    },
+    {
+      "bytes": 1841,
+      "path": "results/stage64/checkpoint_log.md",
+      "sha256": "42bedf2a4b17a37219141ce1295a5b85fc745c77c5501abb9f11989d462d12ce"
+    },
+    {
+      "bytes": 6419,
+      "path": "results/stage64/final_report.md",
+      "sha256": "642208100fb94f148e9d11c5794e6999128e7a128bd356d603cfa9566c7d89e5"
+    },
+    {
+      "bytes": 6112,
+      "path": "results/stage64/tests/stage64_exact_results.json",
+      "sha256": "c53e5d5af27c1abe95e802a6e1d4e552da30cc64e1e50d591e0f61afb02e2398"
+    },
+    {
+      "bytes": 4559,
+      "path": "results/stage64/tests/stage64_sage_results.json",
+      "sha256": "202ce61b044e0fba62b1bd6ac4b4242e14ac1d479152ae5d014dee01dfe46e45"
+    },
+    {
+      "bytes": 7127,
+      "path": "results/stage64/tests/verify_stage64_exact.py",
+      "sha256": "2ba25f69f4123da0d98a75380148250d7d7d4c4880fe0a0b8f6975a9d2009b2e"
+    },
+    {
+      "bytes": 3609,
+      "path": "results/stage64/tests/verify_stage64_sage.py",
+      "sha256": "5592528a7e572cb9cc932cf05da5dc01f202d7209711e1a1cce6303bcebf764a"
+    }
+  ],
+  "finite_parameters": {
+    "finite_field_moduli": [
+      97,
+      193
+    ],
+    "finite_field_parseval_length": 16,
+    "four_prime_partition_targets": [
+      50,
+      68,
+      100,
+      112
+    ],
+    "wheel_modulus": 210,
+    "wheel_targets": [
+      210,
+      420
+    ]
+  },
+  "limitations": [
+    "External source PDFs were inspected from the paths and hashes above but are not committed into the repository.",
+    "No Lean compilation was run.",
+    "Finite checks are not an asymptotic estimate and do not prove universal Goldbach coverage."
+  ],
+  "observed_runtime_seconds": {
+    "python": 0.065,
+    "sagemath": 3.418
+  },
+  "pre_completion_head": "6d9d06797daf250649acfc5113ca07bf83a6d3fa",
+  "repository": "tomassanchezexposito/Goldbach-conjecture-investigation-base-3",
+  "resource_usage": "Peak memory was not measured; /usr/bin/time is unavailable in this environment and no software was installed.",
+  "ssh_authentication": {
+    "identity_path": "/home/user/.ssh/id_ed25519_goldbach-investigacion-base-3",
+    "public_key_fingerprint": "SHA256:1tt9g8Q3RZLv3B9HFSKihQp6YteXn7aYYy659+b1Zyg",
+    "test": "ssh -o IdentitiesOnly=yes -i <identity> -T git@github.com; GitHub authenticated; exit status 1 is expected because shell access is unavailable"
+  },
+  "title": "Stage 64 source and verification manifest",
+  "verification_commands": [
+    "python3 results/stage64/tests/verify_stage64_exact.py",
+    "sage -python results/stage64/tests/verify_stage64_sage.py"
+  ]
+}

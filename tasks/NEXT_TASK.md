@@ -1,32 +1,28 @@
-# NEXT TASK — Stage 64 pointwise analytic gap audit
+# NEXT TASK — Stage 65: target-localized signed Fourier bounds
 
-## Primary objective
+**Mathematical status:** the author's original three-case universal coverage remains OPEN. The Stage 64 branch is cocalc/stage64-2026-minor-arc-gap. Create and work on the next research branch cocalc/stage65-target-localized-correlation, preserving all prior history and never modifying main.
 
-Continue the original three-case representation conjecture in `docs/research_statement.md`. The goal remains universal coverage of the residual set
+## Research objective
 
-$$H=\{N\ge4:N\text{ even},\ N-1\text{ composite},\ N/2\text{ composite}\}$$
+Stage 64 reduced universal coverage on the residual set H to a signed, target-specific estimate for the true-prime minor-arc coefficient. A missing target forces a coefficient of size at least cX, while the reviewed global fourth moment only gives energy O(X^(5/2)(log X)^100), which permits a singleton.
 
-by genuine distinct prime pairs: prove $R(N)>0$ for every $N\in H$. This is open. Do not replace the pointwise target by an average theorem or infer existence from a positive singular series.
+Investigate whether a fixed-target localized Fourier kernel, short weighted shift average, or another exact localization device can improve the one-target bound without assuming R(N)>0.
 
-## Stage 63 handoff
+## Required work
 
-Read `results/stage63/final_report.md`, `theorems_and_dependencies.md`, `failed_approaches.md`, `next_objective.md`, and `checkpoint_log.md`. Stage 63 proved exact shared-prime CRT and target-anchored Fourier identities, reviewed the relevant literature, and proved a conditional dyadic energy criterion. It did **not** prove the criterion's hypothesis or universal coverage. The central routes left open are:
+1. Read the Stage 64 final report, the exact Parseval derivation, its adversarial review, and the repository research protocol.
+2. Define the prime-only smoothed coefficient and all Fourier sign conventions explicitly.
+3. Derive an exact identity relating a weighted sum over shifts of minor-arc coefficients to the corresponding Fourier multiplier. Include normalization and endpoint conventions.
+4. Determine the strongest pointwise coefficient estimate implied by the available global fourth-moment norm together with each stated kernel norm or regularity condition. Keep all X, logarithm, and shift-window dependencies explicit.
+5. Search for counterexamples among abstract coefficient sequences satisfying the proposed norm and regularity constraints. Clearly distinguish such logical models from prime-arithmetic examples.
+6. Test whether any additional smoothness or short-shift estimate is actually proved for the genuine-prime coefficients in the cited sources. Do not assume it from the smooth weight alone: the coefficient sequence still depends arithmetically on the target.
+7. Preserve the original residual definition and three-case formulation. Do not assume an anchored representation, replace actual primes with wheel survivors, or infer pointwise positivity from an average.
+8. Save a rigorous report, reproducible code, independent verification, exact results, and provenance manifest under results/stage65/.
+9. State whether a new non-circular localization lemma is proved. If not, identify the first missing inequality and the exact scale that would suffice.
+10. Commit and push only to the Stage 65 branch. Do not merge into main or overwrite earlier branches.
 
-1. A target-uniform signed minor-arc bound paired with an independently proved positive major-arc lower bound; or
-2. The M5 estimate $\mathcal E(X)=o(X^2)$ for the von Mangoldt convolution discrepancy, or a sufficiently small explicit threshold after the recorded prime-power correction.
+## Scope and completion standard
 
-## Stage 64 work
+Prioritize a theorem about what follows logically from a global fourth moment and a precisely defined localizer. A conditional result is useful if every hypothesis is explicit and its premise does not encode R(N)>0. Finite computations are checks only. Universal coverage remains open unless a complete proof is independently verified.
 
-1. Check the exact hypotheses and theorem statements in primary/full sources for the strongest relevant unconditional binary Goldbach mean-square, circle-method minor-arc, and exceptional-set bounds available in the cited bibliography. Do not rely on abstracts alone where a full source is available.
-2. Compare their exact weights, local factors, parity restrictions, summation ranges, error exponents, quantifiers, constants, and effective cutoffs against the Stage 63 target bounds.
-3. Attempt one explicit derivation from established unconditional estimates to a target-specific signed inequality. Show every transformation and constant. If the derivation loses target localization or sign, identify and quantify the first loss.
-4. Independently check the M5 prime-power correction, diagonal convention, and threshold. Determine whether a cited theorem actually reaches the strict energy threshold; do not treat a weaker $O(X^2)$ estimate as sufficient without its constant.
-5. If no unconditional route works, record a precise conditional theorem or a rigorous logical countermodel to the attempted inference. Do not claim an impossibility result about actual primes without proof.
-6. Keep focused exact checks for $N=4,6,8$, the small-prime cases $2,3,5,7$, and selected residual examples. Use finite calculations only to validate identities, not to claim asymptotic coverage.
-7. Save English reports, a theorem/quantifier comparison table, reproducible verification code or data when it adds value, a parameter/version/hash manifest, and the next precise research objective under a new `results/stage64/` directory.
-
-## Evidence and branch controls
-
-Use the evidence labels in `docs/research_protocol.md`. Distinguish proven identities, conditional implications, established literature, finite computation, conjecture, and open obligations. Preserve all prior stages. Work on a separate Stage 64 branch based on the current Stage 63 branch; do not alter or merge `main`. Commit and push reviewable checkpoints on the Stage 64 branch only when the authorized task begins.
-
-Do not install software, start paid services, delete prior research, run unbounded scans, expose credentials, or claim a solution to Goldbach/the three-case statement without a complete rigorous proof. All repository content and commit messages must remain in English.
+All repository content must be in English. Do not install software, incur costs, delete files, force-push, or modify GitHub permissions.
