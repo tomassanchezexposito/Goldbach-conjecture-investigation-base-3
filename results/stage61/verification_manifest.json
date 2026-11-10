@@ -1,0 +1,59 @@
+{
+  "stage": 61,
+  "branch": "cocalc/stage61-signed-correlation-gap",
+  "source_provenance": {
+    "stage60_research_commit": "e33e4103ad97686be7f9c21cad2fe8636f2bb7e2",
+    "stage61_branch_base_commit": "feb09da4b959594cbc699586e9fd42689731222a",
+    "task_file": "tasks/NEXT_TASK.md",
+    "issue_8_context": "docs/stage60_integration_handoff.md and results/stage60/integration_review.md"
+  },
+  "evidence_scope": "Focused finite checks and exact rational identities; not universal Goldbach coverage.",
+  "environment": {
+    "python": "3.14.4",
+    "dependencies": "Python standard library only",
+    "integer_arithmetic": "unbounded Python integers",
+    "rational_arithmetic": "fractions.Fraction exact arithmetic"
+  },
+  "observed_runtime_seconds": {
+    "producer": 0.202,
+    "independent_verifier": 0.195,
+    "note": "Single measured shell runs; machine- and load-dependent."
+  },
+  "algorithms": {
+    "producer": "Sieve of Eratosthenes; product formula for A_210; direct prime-position pair classification.",
+    "independent_verifier": "Trial division; direct enumeration of all 210 residue classes; set-intersection position classifier."
+  },
+  "parameters": {
+    "centers": [
+      8,
+      10,
+      20,
+      34,
+      50,
+      100,
+      200,
+      500
+    ],
+    "target_triples": 8,
+    "largest_target": 502,
+    "wheel_modulus": 210,
+    "abstract_countermodel_center": 100,
+    "conditional_error_grid_cases": 27
+  },
+  "commands": [
+    "python3 -B results/stage61/compute_stage61.py",
+    "python3 -B results/stage61/verify_stage61.py",
+    "python3 -B results/stage61/make_manifest.py"
+  ],
+  "verification_result": "All independent exact assertions passed.",
+  "sha256": {
+    "report.md": "9bab0158d1d0c1f4d4a27552dc5733e1a179ce955b45a5948e19294fb0dad77d",
+    "summary.md": "39828d23b8196bb09eb7392c4a2d3ad755822443ca60f7db7a7b51a5b020651d",
+    "compute_stage61.py": "7b24cf5ff00e1ee07c6d55ccbf8e8dd8a138f498db7f539628a970c2bb71541e",
+    "verify_stage61.py": "8aebd2b712432bf12a0d0040acbd2df7418d07af8823c35350171c71eb23df3a",
+    "stage61_exact_results.json": "5fde2dcb36699d39bfde2d62bb87af99ed114dad9a530cca6f3702c43eded0e9",
+    "stage61_verification.json": "db01cb0db3c003b5b19ba9168422e74b3263d3243e6767b51623fc3fe6445c42",
+    "make_manifest.py": "06b9780b63053c5f6fe55c11b131a0a4de1991c01ae831c12e11350bc37d4578"
+  },
+  "manifest_hash_note": "This manifest lists hashes of all report, source, exact-output, verification-output, and manifest-generator files. It does not hash itself."
+}

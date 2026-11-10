@@ -1,0 +1,11 @@
+{
+  "independent_method": "trial division; direct modulo-210 enumeration; exact Fractions",
+  "triples_verified": 8,
+  "target_counts_verified": 24,
+  "representation_count_incidences": 128,
+  "residual_centers": 2,
+  "signed_component_identities": 8,
+  "abstract_zero_center_model_checked": true,
+  "conditional_grid_cases": 27,
+  "all_assertions_passed": true
+}
