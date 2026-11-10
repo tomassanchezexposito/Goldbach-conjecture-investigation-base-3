@@ -1,0 +1,68 @@
+{
+  "stage": 63,
+  "milestone": "M0 provenance and critical audit",
+  "branch": "cocalc/stage63-extended-analytic-program",
+  "starting_commit": "4aa65d9ea7e735e81e40672b672ebaae76174e6d",
+  "source_commits": {
+    "stage57": "e77e3d0e3c4c3bb005c37e3d30396131598003a2",
+    "stage58": "d847c3a88d441d2332585c72b468498612ba190e",
+    "stage59": "a35142ae4c83f0edfa2e89ef2aa4000c1b6389ae",
+    "stage60": "e33e4103ad97686be7f9c21cad2fe8636f2bb7e2",
+    "stage61": "fcafa07f7601e41608e1e71c54d661869f759028",
+    "stage62": "262264f9d6a2fee6a849cc11645647074578e9c6"
+  },
+  "runtime": {
+    "python": "3.14.4",
+    "sage": "10.9"
+  },
+  "definitions": {
+    "residual_set": "even N >= 4 with N-1 and N/2 composite",
+    "representation_count": "unordered distinct genuine primes p<q with p+q=N",
+    "A_210": "exact count of x mod 210 with gcd(x,210)=gcd(N-x,210)=1",
+    "C_210_note": "Stage 56 used C_210 for the same residue count; neither is the full singular series"
+  },
+  "checks": {
+    "stage57": "passed: 5616 rows, 564 residual targets, 999 wheel values",
+    "stage58": "passed: 620 shifted rows, 62 residual anchors; independent second verifier passed",
+    "stage59": "passed: finite graph/local verifiers",
+    "stage60": "passed: 147 rows, 62 residual centers, 256 zero-center models",
+    "stage61": "passed: 8 triples, 8 signed identities, 27 grid cases",
+    "stage62_python": "passed: six exact CRT examples",
+    "stage62_sage": "passed: six examples, 49 exact correlation centers, 27 grid cases",
+    "repository_unit_tests": "passed: 4 tests"
+  },
+  "sha256": {
+    "README.md": "6693551f96079bd75c3b2bf58dd3506180e6548f1d7b2ddf710c4a03fe638ad3",
+    "docs/research_statement.md": "84c3c6dace2ed7da0028c9fbb7a35d439ae6d8a779a0e018b554e5f5bc707c7c",
+    "docs/research_protocol.md": "0e6c89ce7ec191e5f6de1032bd4d9d81c5623426c2226fafb773d0e9ae867d0d",
+    "docs/stage60_integration_handoff.md": "11f082550f714e294a98e451b7d2166eda5e791bfd7a60df847d271c0987cda5",
+    "tasks/NEXT_TASK.md": "d0b1ab047543f86b16bdb9c23adf5cbbc4c0d2e0962f82c8eeddc4e2e0e5bbc3",
+    "tasks/STAGE63_EXTENDED_RESEARCH_PROGRAM.md": "0b71d97e88ed4568a69fa98c0cc4beada544692b3494e1daffca647f77fe80a9",
+    "results/stage56_variance_diagnostic.md": "955f578752d80d4f02a0e6e03f99cca3bf50d059b829661e3bc06e2f43286a68",
+    "results/stage57/report.md": "818ead4053391b3a4f94fae0fe78389743060a1011d7e329505bc45d8f8c2d56",
+    "results/stage57/manifest.json": "85ed641d71cabc3d1764afea6ecd26b90f285f156c790c97077e5065288c06ef",
+    "results/stage57/verify_stage57.py": "df10e534c7d433f5eab472a3e5df70a1c7b9b4e4c2c4cbdbb9a48de776250055",
+    "results/stage58/pointwise_second_moments.md": "12d6d9611e80b4700d8df6fe5b7e3637f224b9c78cf86f258c9fa9cfbd31907c",
+    "results/stage58/report.md": "e16fd477bfb9c35a99cb283156f943e08e2c6b6638694273cd1abb03c3f40de6",
+    "results/stage58/second_moment_manifest.json": "2acf31bc02d8cf21128c630f7bf25fa9a8cbee6c5c21cf3826ef11ba6deaf40d",
+    "results/stage58/verify_second_moment.py": "53cb2336ed767b68cf797730cc3bc7625eae8fd4610d04b6dae688e91dfcbd36",
+    "results/stage58/verify_stage58.py": "fdf1e79787112043248ede701e007e08d2011a3b01eb79f54ac7fb2981f31f78",
+    "results/stage59/report.md": "33eadfefc01c6ebf82b83ab2c780797d522cee58b701188ff784f9834ef701ff",
+    "results/stage59/research_note.md": "f15129eb657a45ee797e170dedf1f42b0f6687da878c288a3b863933b298453a",
+    "results/stage59/verify_graph_energy.py": "f47e0575bc1e9a72410f5506373b5ea29a7979ab17a950ba7a49df9b62f04adf",
+    "results/stage59/verify_local_energy.py": "eacbfbfd6191bee77c39f3ee4c354100840f7ae5d05c752b5281111cf5502d3b",
+    "results/stage59/verify_stage59.py": "edb46aabadda7d7a2a06ba986b5a5b3dc72233dfc616fa47cc5cafe894d460ea",
+    "results/stage60/report.md": "8cb8557f4d5f4a81216f92bbfabd1b30a6113972ad66384af9a90785d2cab0be",
+    "results/stage60/verification_manifest.json": "a5e8fdd327aea21472cbf43ec936892a287faaa440b8af40164c0f7e0355cbd0",
+    "results/stage60/verify_stage60.py": "e1c9ca2c36d49ee50ccef25f7cdfc3e4c88bca2ccee02a9a82b73105834aa355",
+    "results/stage61/report.md": "9bab0158d1d0c1f4d4a27552dc5733e1a179ce955b45a5948e19294fb0dad77d",
+    "results/stage61/verification_manifest.json": "0e7db0a22cac551d025255ec43a1b65f3a700351750a32dd4c11d41e63d45347",
+    "results/stage61/verify_stage61.py": "8aebd2b712432bf12a0d0040acbd2df7418d07af8823c35350171c71eb23df3a",
+    "results/stage62/report.md": "686b1dff9990fe81c8fed53c7e7c697a8726d2c8811383d19c34164213ab38f6",
+    "results/stage62/verification_manifest.json": "706d55598367a68b1df35a7560054f445cbb617df585f4a2fb1a8d227839432d",
+    "results/stage62/verify_singular_series.py": "d03f1eb98f18fe144a69c64a4f3bde0d5e63eee167e0aea07fc95c051b812579",
+    "results/stage62/verify_singular_series_sage.py": "08da2fbab1dbee33074280352141635de19a9aef8eba1b8d0c42113ff41c9bfb",
+    "results/stage63/00_provenance_and_audit.md": "02f4afe8d3034965d1cbc3e7c47359ef1c6de71637119da0b94695a7f8ccfe4d"
+  },
+  "note": "The manifest hash is intentionally omitted to avoid a self-referential digest. Finite checks are not universal Goldbach evidence."
+}
