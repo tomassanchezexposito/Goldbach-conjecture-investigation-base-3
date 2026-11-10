@@ -45,7 +45,7 @@ because it rules out |m_w(N)|≥cX at that target. A global bound at scale X^(5/
 1. Nonnegativity of prime weights gives r_w(N)≥0, while the minor term may be negative and cancel the major term.
 2. Positivity of the singular series lower-bounds the modeled major term, not the signed error.
 3. Any exceptional-set upper bound tending to infinity permits a singleton.
-4. H removes the equal-prime case because N/2 is composite. A representation involving 2 is a genuine distinct representation and causes no logical exception: if R(N)=0, it is absent as well.
+4. H removes the equal-prime case because N/2 is composite. For even N>4, a representation involving 2 is impossible, since N-2 is even and greater than 2; at N=4 the prime diagonal 2+2 is excluded from R. This small-prime observation does not affect the pointwise minor-arc proof obligation.
 
 ## Result
 
