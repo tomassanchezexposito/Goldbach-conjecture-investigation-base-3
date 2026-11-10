@@ -25,7 +25,7 @@ It is measurable, invariant under \(\alpha\mapsto-\alpha\), and contains the \(q
 \]
 There is no need to assume intervals are disjoint; the union bound suffices.
 
-Use a **predetermined entire even-frequency superset**
+Because the fixed weight has compact support away from zero, there is an X_0(w) such that \(w(2/X)=0\) for every X≥X_0(w). Thus only **odd** genuine primes contribute to \(S_w\) on the asymptotic range of this theorem, and every nonzero square coefficient has even frequency. This is an exact support fact, not an assumption that any particular even target has a representation.\n\nUse a **predetermined entire even-frequency superset**
 \[
 K_X=\{k\in2\mathbb Z:6\le k\le2\lfloor X\rfloor\}
 \]
