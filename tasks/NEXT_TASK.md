@@ -1,37 +1,68 @@
-# NEXT TASK — Stage 58: non-circular pointwise positivity certificate
+# NEXT TASK — Stage 59: sharp pointwise path-energy bound and four-prime correlations
 
-**Evidence status:** open analytic proof obligation. The author's three-case universal coverage statement remains unproved.
+**Goal:** Find a **non-circular, independent pointwise** bound that guarantees a genuine distinct prime pair at every residual even integer of the author's original three-case conjecture.
 
-## Provenance
+**Evidence status:** The deterministic path-energy inequality below is proved and sharp, but the required analytic bounds on its right-hand side are **OPEN**. Do not present numerical success as universal proof.
 
-- Baseline: the independently reviewed computational Stage 57 branch, including exact shifted four-prime correlation counts and Stage 56 handoff.
-- Stage 57 draft review: https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/1
-- Detailed Stage 58 tracker: https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/issues/2
-- This branch starts from Stage 57 and does not alter main.
+## Provenance and initial research
 
-## Mathematical objective
+The new research branch is \`cocalc/stage59-sharp-local-energy\`, based on Stage 58. It contains:
 
-For every N in the residual set H of the author's three-case statement (even N >= 4 with N-1 and N/2 composite), seek an independent, rigorously justified pointwise lower bound establishing R(N)>0, where R counts **unordered pairs of distinct genuine primes** p<q with p+q=N.
+- \`results/stage59/research_note.md\`: proofs of T1–T3 and exact finite observations.
+- \`results/stage59/verify_local_energy.py\`: independently checkable finite prime, wheel, four-prime and optimality tests.
+- \`results/stage59/verify_mod210_pilot.py\`: finite centered-window comparison, spacing 2 versus 210.
+- Draft Stage 58 review: https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/3
 
-No statement may assume the target pair exists.
+Read \`docs/research_statement.md\`, \`docs/research_protocol.md\`, and \`results/stage59/research_note.md\` first. The user's three-case formulation and the set H are non-negotiable definitions.
 
-### Obligations
+## T1 — Exact pointwise inequality to investigate
 
-1. **Vacuity audit:** Explain why any putative positive lower bound on X_N X_{N+2h} is circular if it assumes a conclusion equivalent to X_N>0. Give a precise countermodel to positivity inference from averages.
-2. **Prime-only Fourier model:** Define S_N(alpha)=sum_{p<=N prime} (log p) exp(2*pi*i*p*alpha). Derive the exact Fourier coefficient for p+q=N. Remove the diagonal p=q when necessary, preserving positivity for distinct primes. The resulting identity alone is not an estimate.
-3. **Independent analytic bound requirements:** Formulate major-arc and minor-arc contributions with fully quantified uniform error terms and explicit lower/upper inequalities whose strict dominance would imply R(N)>0. Mark all unavailable estimates as OPEN.
-4. **Wheel congruences:** Derive the exact 210-local factor and explain why it does not control the complete singular series or the pointwise error. Respect exceptional primes 2 and 3.
-5. **Sieve/parity comparison:** Compare with Chen-type near-prime results and the parity barrier. Do not infer prime-prime representations from semiprime survivors.
-6. **Alternative routes:** Attempt a different genuinely non-circular pointwise criterion, audit it for hidden assumptions, and search for finite counterexamples if it has experimentally testable content.
-7. **Evidence and reproducibility:** Code only computations testing specific lemmas. Use exact arithmetic and independent validations; no large brute-force Goldbach sweeps as an end in themselves.
-8. **Research record:** Save an English report with fully explicit theorem statuses, failed approaches, proofs of elementary lemmas, analytical obstacles, references, and the next objective.
+For consecutive even targets n_j=n_0+2j, k>=2, write x_j=R(n_j)/A_210(n_j), where R counts **unordered distinct genuine prime pairs** and A_210 is the exact local wheel admissibility factor. Let mu=(sum_j x_j)/k and E=sum_{j=0}^{k-2}(x_{j+1}-x_j)^2.
 
-## Execution instructions
+Define A_(k,j)= [sum_{t=1}^j t²+sum_{t=1}^{k-1-j}t²]/k². The proved sharp inequality is
 
-Read docs/research_statement.md and docs/research_protocol.md first. Work in this separate research branch; do not modify main or erase Stage 56/57 files. Put new files in results/stage58/. Keep all content, source comments, and commit messages in English. Do not install software, incur costs, or publish to an external website without approval.
+    (x_j - mu)^2 <= A_(k,j) E.
 
-Before committing, run any included verifier and document its exact outputs. Push only this branch; ask for a draft PR review, never an automatic merge.
+Hence **mu² > A_(k,j)*E** is a correct pointwise zero-exclusion criterion. The coefficient A_(k,j) cannot be improved for arbitrary nonnegative sequences, even with a zero at j.
 
-## Success criterion
+This is a deterministic theorem, NOT the missing arithmetic bound.
 
-A useful outcome either rigorously proves an **independent pointwise** positive margin for every sufficiently large residual N with a finite effective cutoff, or identifies the first missing/nonuniform estimate that blocks such a proof. Do not claim the first outcome on the basis of formal manipulation, heuristic asymptotics, average-case estimates, or finite experiments.
+## Stage 59 research and execution requirements
+
+1. Inspect the existing working tree; fetch the Stage 59 branch through the dedicated SSH deploy key and check it out safely (no destructive overwrite).
+2. Run both provided verification scripts and record exact outputs; independently verify at least some outputs with SageMath's primality functions. Write result JSON and a reproducibility manifest under \`results/stage59/\`.
+3. Verify independently the **proof** of T1 and the sharpness counterexamples T2, and the cyclic zero-invisibility theorem T3 for m=1,2,3,4.
+4. Derive and explain the complete decomposition of E into same-target and adjacent-target correlations of **four prime positions**, including all shared-prime categories, two wheel denominators, diagonal terms, and exceptions involving 2 and 3.
+5. Compare **independently derived** lower bounds mu>=m_N and upper bounds E<=U_N against the strict condition m_N²>A_(k,j)U_N. Never use a hypothetical R(N)>0 to prove either bound, and never divide by R(N).
+6. Investigate whether the k=3 or k=5 local criterion or spacing-210 residue-class paths admit a rigorous arithmetic upper bound based on published sieve or circle-method estimates. Cite precise theorems, hypotheses, uniformity, and constants.
+7. Test whether residual N with extreme local singular-series factors defeat any proposed uniform inequality; distinguish finite counterexamples from speculative asymptotics. No unbounded brute-force sweep is necessary.
+8. For fixed k and cyclic vectors, prove that any m-fold correlation average with fixed m can differ from the all-positive model by only m/k while still containing a zero. Explain why o(1) averaged accuracy does not exclude an isolated zero.
+9. Review the September 2026 Bhowmik–Grimmelt published work on Goldbach exceptional sets and its major-arc formula (https://doi.org/10.1007/s10476-026-00191-z). Identify what quantitative estimate would be needed to bridge the gap to each individual target. This is **not** a claim that the published article closes the problem.
+10. Save all new code, SageMath notebook (if useful), exact data, report, source/provenance and SHA-256 manifest in \`results/stage59/\`. Retain existing original files.
+11. Commit and push **only** \`cocalc/stage59-sharp-local-energy\` after independent checks. Do not modify or merge \`main\` or prior research branches; propose a draft PR for review.
+12. Report a precise statement of the **first missing analytic bound** and whether the local energy route remains plausible at the numerical scales examined.
+
+## Scientific standard
+
+Keep all repository files, comments, code and commit messages in English. Separate proved lemmas, assumptions, conditional conclusions, finite observations, counterexamples and open obligations. Seek an actual proof for *every* N in H, not a positive average. Do not claim Goldbach or the user's universal statement has been proved without a complete non-circular proof.
+
+Do not install software, incur additional charges, delete files, or publish externally without approval.
+
+
+## Extension: E59-T4 multi-shift graph energies (priority)
+
+The research note now includes the **sharp discrete graph-Sobolev certificate** with Laplacian L, mean-zero vector a_j=e_j-(1/k)1, and constant C_(G,j)=a_j^T L^+ a_j. This is classical graph theory adapted to the project's prime correlation setting; do not claim novelty for the graph inequality itself.
+
+Run and independently review `results/stage59/verify_graph_energy.py` in addition to the other two scripts. It uses exact rational elimination for k=51 and graph edges of index lengths 1..h, h in {1,2,5,10,50}, with even-target step 2 or 210. The independently computed finite table is:
+
+| h | Step 2 | Step 210 |
+|---|---:|---:|
+| 1 | 10/295 | 72/295 |
+| 2 | 287/295 | 294/295 |
+| 5 | 295/295 | 295/295 |
+| 10 | 295/295 | 295/295 |
+| 50 | 295/295 | 10/295 |
+
+Verify the exact zero-coordinate equality witness for sharpness, particularly for the h=5 constant shown in the research note. Investigate whether intermediate graph weights reduce the bound relative to complete graphs, but **do not optimize edge weights using the unknown target prime-pair count to prove positivity**.
+
+The mathematical objective is to derive independent, **uniform in the target N**, lower/upper bounds on the mean and graph energy involving multiple same-target and shifted four-prime correlations. Record the first missing non-circular arithmetic estimate if existing theorems only provide averages or upper-bound sieve survivors.
