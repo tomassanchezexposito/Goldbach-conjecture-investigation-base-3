@@ -1,0 +1,66 @@
+{
+  "classification": "FINITE VERIFICATION; identities proved separately in report",
+  "intervals": [
+    {
+      "center": "0",
+      "radius": "1/8"
+    },
+    {
+      "center": "1/2",
+      "radius": "1/8"
+    }
+  ],
+  "shifts": [
+    1,
+    2
+  ],
+  "G_center_0": [
+    [
+      "-sqrt(2)/pi + 1/2",
+      "1/4 - 1/(2*pi)"
+    ],
+    [
+      "1/4 - 1/(2*pi)",
+      "1/2 - 1/pi"
+    ]
+  ],
+  "G_center_half": [
+    [
+      "sqrt(2)/pi + 1/2",
+      "1/4 - 1/(2*pi)"
+    ],
+    [
+      "1/4 - 1/(2*pi)",
+      "1/2 - 1/pi"
+    ]
+  ],
+  "commutator_01": "sqrt(2)*(2 - pi)/(2*pi**2)",
+  "triangle_bound_strict": true,
+  "orthogonal_PSD_true_optimum": "sqrt(2)",
+  "orthogonal_PSD_triangle_bound": "2",
+  "full_circle_shift_sets_checked": [
+    [
+      -4,
+      2,
+      6
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      -7,
+      -3,
+      11,
+      14
+    ]
+  ],
+  "sparse_polynomial_support_of_square": [
+    6,
+    8,
+    10
+  ],
+  "sparse_target": 28,
+  "major_interval_radius": "1/88",
+  "major_coefficient_positive": true
+}
