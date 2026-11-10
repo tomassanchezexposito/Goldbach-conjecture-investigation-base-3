@@ -1,0 +1,17 @@
+{
+  "name": "Uniform signed minor-arc bound for the genuine-prime coefficient",
+  "status": "OPEN",
+  "quantifiers": "There exist delta>0 and X1 such that for every X>=X1 and every even N in H intersect [X/2,X], the stated bound holds.",
+  "target_set": "H = {N>=4: N even, N-1 composite, N/2 composite}; original three cases unchanged.",
+  "weight": "The fixed Li-Liu nonnegative Gevrey weight w in C_c^infty((0,1)), 0<=w<=1, w=1 on [1/8,7/8].",
+  "zero_free_assumption": "Conditional Q_Theta: every nontrivial zero of every primitive Dirichlet L-function, including zeta, has real part <= one fixed Theta, with 1/2<=Theta<11/12.",
+  "arc_parameters": "Fix the source parameter kappa=kappa(Theta) in (4/9,9/20), P=X^kappa, q<=P, and arcs |alpha-a/q|<=P/(qX).",
+  "candidate_bound": "|m_w(N)| = |integral_{minor arcs} S_w(alpha)^2 e(-N alpha) d alpha| <= (c0-delta) X, with 0<delta<c0 and c0>0 a fixed lower-bound constant from the source major-arc asymptotic.",
+  "major_arc_input": "Li-Liu Proposition 4.1, under its exact fixed Q_Theta, weight, interval, and kappa hypotheses, yields a uniformly positive major coefficient a_w(N)>=c0 X for sufficiently large even N in [X/2,X]. The project did not compute effective c0 or X0.",
+  "effectivity": "Not supplied; X1 and c0 are ineffective/unquantified at the level of this project record.",
+  "conditional_consequence": "If the candidate and major-arc input both hold, then r_w(N)=a_w(N)+m_w(N)>=delta X>0, so a genuine weighted prime-pair representation exists; N in H removes the diagonal.",
+  "source_dependencies": ["Li-Liu, arXiv:2610.26756v1, Theorem 1 and Proposition 4.1; preprint, source PDF SHA256 recorded in 05_source_ledger.json"],
+  "why_not_proved": "The known conditional minor fourth moment gives only |m_w(N)| <= O(X^(5/4)(log X)^50), and the fixed-target signed cancellation needed to improve this to below c0 X is unavailable. Exceptional-set estimates permit isolated targets.",
+  "circularity_check": "The statement uses no selected prime pair at N. Assuming instead a lower bound for r_w(N) would already assume the desired target conclusion.",
+  "scientific_status": "This conditional analytic target is essentially a target-uniform binary Goldbach existence theorem once combined with the source major arc. It is a precise missing estimate, not a reduction that has been proved."
+}

@@ -1,0 +1,31 @@
+{
+  "status": "proved deterministic criterion; no prime-specific saving established",
+  "parameters": {
+    "major_lower_bound": "A_X approximately c_w X under the explicitly conditional major-arc hypotheses",
+    "minor_fourth_moment_conditional": "B_X <= C_4 X^(5/2) (log X)^100 under Li-Liu Q_Theta, fixed Theta<11/12, fixed kappa(Theta) in (4/9,9/20), specified fixed smooth Gevrey weight",
+    "minor_fourth_moment_reported_unconditional_baseline": "X^(31/12+epsilon), as cited by Li-Liu from Maynard-Pandey-Radziwill; not independently re-proved here"
+  },
+  "derived_scales": {
+    "conditional_squared_energy_ratio": "B_X/A_X^2 <= (C_4/c_w^2) X^(1/2) (log X)^100",
+    "conditional_pointwise_cauchy_amplitude": "O(X^(5/4) (log X)^50), ratio to A_X is O(X^(1/4) (log X)^50)",
+    "reported_unconditional_squared_energy_ratio": "X^(7/12+epsilon) up to constants relative to X^2"
+  },
+  "strict_certificate": {
+    "formula": "A^2 + m*(A-sqrt(Vbar/m))_+^2 > Bbar",
+    "if_Bbar_less_than_A2": "center already impossible",
+    "if_Bbar_equals_A2": "requires Vbar < m*A^2",
+    "if_Bbar_greater_than_A2": "with K=Bbar-A^2, requires K<m*A^2 and Vbar < m*(A-sqrt(K/m))^2",
+    "minimum_m_for_K_positive": "floor((sqrt(Vbar)+sqrt(K))^2/A^2)+1",
+    "strict_boundary": "Equality does not imply contradiction"
+  },
+  "exact_energy_correction": {
+    "statement": "For exact V, the minimum unrestricted l2 energy is A^2+(sqrt(V)-sqrt(m)*A)^2 if V<=A^2*(m+1)^2/m, and V/(m+1) thereafter.",
+    "relation": "The Stage 66 lower bound is exact for fixed V<=m*A^2, valid but not sharp for fixed V>m*A^2; it remains sharp when only V<=Vbar is known."
+  },
+  "prime_specific_result": null,
+  "first_missing_estimate": "A target-uniform bound on signed genuine-prime shift energy V_{N,J} strong enough to satisfy the strict certificate, with no target representation assumed.",
+  "verification_scripts": [
+    "results/stage69/verify_stage69_m6.py",
+    "results/stage69/verify_stage69_m6.sage"
+  ]
+}

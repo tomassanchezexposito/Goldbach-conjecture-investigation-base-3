@@ -1,0 +1,23 @@
+{
+  "evidence_type": "exact symbolic focused regression; proofs in Markdown",
+  "original_two_projector_example": {
+    "rank_one_optimum": "sqrt(2)",
+    "psd_lifted_optimum": "sqrt(2)",
+    "triangle_upper_bound": "2",
+    "strict_psd_gap": false,
+    "strict_triangle_gap": true
+  },
+  "six_pauli_projectors": {
+    "all_projectors_rank_one_psd": true,
+    "mixed_psd_optimum": "3*sqrt(2)",
+    "pure_rank_one_optimum": "3*sqrt(sqrt(6)/3 + 1)",
+    "strict_gap": true,
+    "pure_extremizer_bloch": [
+      "1/sqrt(3)",
+      "1/sqrt(3)",
+      "1/sqrt(3)"
+    ]
+  },
+  "scope": "abstract Hermitian matrices, not true-prime arc Gram inputs",
+  "status": "PASS"
+}

@@ -1,0 +1,63 @@
+{
+  "stage": 69,
+  "date": "2026-11-10",
+  "status": "M0–M7 Codex published; M8–M9 independently reviewed and documented; Goldbach universal coverage OPEN",
+  "branch": "cocalc/stage69-deep-prime-specific-localization",
+  "reviewer_execution": {
+    "environment": "Separate local Python 3.13.5 runtime (not CoCalc/Codex)",
+    "executed_command": "python /mnt/data/review69_repro.py",
+    "repository_reproduction_command": "python3 -B results/stage69/verify_m8_independent.py",
+    "method": "Exact integer prime enumeration and fractions; no probabilistic primality or numerical quadrature",
+    "source_content_match": "Local execution source and GitHub version have the same verified Git blob SHA-1",
+    "output_content_match": "Local execution stdout JSON and GitHub result have the same verified Git blob SHA-1",
+    "source_git_blob_sha1": "a187bb297b5aec8c57d690f490a660e1bc08da76",
+    "source_sha256": "c03577eebdabf52d0d8c33b241cb73ef643b2922a7eba7fc8aaf70472da44916",
+    "result_git_blob_sha1": "27e2a09d545b70754cd7f0b412fed56190080e23",
+    "result_sha256": "aa8dc0fc4b16fc49659e6f13f921a0afa842bf2351d80b357849cba65a888bbc",
+    "result": "PASS",
+    "checks": {
+      "weighted_residual_targets": 7,
+      "distinct_target_shared_prime_decompositions": 21,
+      "exact_rational_energy_cases": 252,
+      "minor_arc_low_denominator_counterexamples": 1
+    }
+  },
+  "reviewed_files_git_blob_sha1": {
+    "results/stage69/00_erratum_psd_lifting.md": "87bbf34921bc4b5684a17b8324d567cf02ab719b",
+    "results/stage69/00_independent_psd_erratum_audit.md": "a90c6b0bcf7d39ee2e904027a9ace9041dd6d958",
+    "results/stage69/01_prime_specific_exact_convolution.md": "28f1c2a43492f0b170a16296cb49449a28cfbfa4",
+    "results/stage69/02_information_hierarchy_and_no_go.md": "3f38f0dfe5c577ac2cb7ebd19b9e8eb5614c6e3a",
+    "results/stage69/06_sharp_target_criterion_and_robust_errors.md": "510004029e3311ea79a14c8d04d7cbf813ad8319",
+    "results/stage69/07_primary_analytic_route_A.md": "41d26c87c499eccb8daed9d19ea6874cccda3139",
+    "results/stage69/07_primary_arithmetic_route_B.md": "63ab7e9b4da0493e0f59bb2bc513402db9839475",
+    "results/stage69/08_adversarial_review.md": "525330aa73e103843883aaac47ddd6c5f040e8f4",
+    "results/stage69/09_final_synthesis.md": "eeb3fd68c417f4e9d29044bf69f1c106ec59dc2d",
+    "results/stage69/final_report.md": "1dc7a9c113871a18a6d37011b04b71445b449d43",
+    "results/stage69/theorem_dependency_ledger.md": "3a04397f98c1d1ba800121a37a8f59ff52f37f1b"
+  },
+  "provenance_caveats": [
+    "Git blob identifiers are Git object SHA-1 hashes, not SHA-256 checksums; explicit SHA-256 values are given only for the executed source and its byte-identical JSON output.",
+    "Review did not re-run every prior Stage 69 CoCalc Python or Sage file and did not rebuild cited Lean code.",
+    "Original 2026 source paper mathematical proofs were not independently re-proved in this review.",
+    "Finite tests are not a universal existence proof.",
+    "No Codex or GitHub automation was scheduled or triggered by this review."
+  ],
+  "source_reference_records": [
+    {
+      "url": "https://arxiv.org/abs/2610.26756",
+      "type": "2026 preprint, conditional fourth moment"
+    },
+    {
+      "url": "https://arxiv.org/abs/2610.15559",
+      "type": "2026 preprint, conditional exceptional set"
+    },
+    {
+      "url": "https://arxiv.org/abs/2611.09386",
+      "type": "2026 preprint, polynomial sequence"
+    },
+    {
+      "url": "https://doi.org/10.1007/s10476-026-00191-z",
+      "type": "2026 peer-reviewed article"
+    }
+  ]
+}

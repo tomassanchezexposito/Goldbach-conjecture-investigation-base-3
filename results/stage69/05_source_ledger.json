@@ -1,0 +1,71 @@
+{
+  "audit_date_utc": "2026-11-10",
+  "method": "Downloaded arXiv v1 PDFs from arxiv.org and checked version metadata; checked Bhowmik-Grimmelt metadata at Springer. Source files retained outside the repository in /tmp/stage69_sources.",
+  "sources": [
+    {
+      "authors": "H. Li and Z. Liu",
+      "title": "Fourth moments of prime exponential sums and exceptional sets for sums and differences of primes",
+      "id": "arXiv:2610.26756v1",
+      "submitted": "2026-10-19",
+      "status": "preprint; v1 checked",
+      "url": "https://arxiv.org/abs/2610.26756v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.26756v1",
+      "pdf_sha256": "dfc50df01f80c0493c29170e748cc5af608d66d0252b7c15209524104f4f0153",
+      "hypothesis": "Q_Theta: every nontrivial zero of every primitive Dirichlet L-function, including zeta, has real part <= one fixed Theta; Theorem 1 requires Theta < 11/12.",
+      "result": "For specified smooth Gevrey w in C_c^infty((0,1)), 0<=w<=1, w=1 on [1/8,7/8], P=X^kappa with fixed kappa(Theta) in (4/9,9/20), minor fourth moment is O_{w,Theta}(X^(5/2)(log X)^100). Theorem 2 gives square-root-log exceptional-set bounds; Proposition 4.1 gives major-arc asymptotic under fixed Q_Theta, Theta<1 and kappa<9/20.",
+      "pointwise_target_consequence": "No signed pointwise minor coefficient bound; exceptional-set results permit isolated exceptions."
+    },
+    {
+      "authors": "J. Pintz and I. Althöfer",
+      "title": "The Goldbach exceptional set: an exponent 7/12 and conditional refinement",
+      "id": "arXiv:2610.15559v1",
+      "submitted": "2026-10-11",
+      "status": "preprint; v1 checked; authors state proof not Lean verified",
+      "url": "https://arxiv.org/abs/2610.15559v1",
+      "pdf_url": "https://arxiv.org/pdf/2610.15559v1",
+      "pdf_sha256": "adfca5b1b8b5b1c0ce350bdbaa08bb9fb288f41c2fad1db8bf5cd4d8d93412ec",
+      "hypothesis": "H_theta0: every zero of every primitive Dirichlet L-function, including zeta, lies in Re(s)<=theta0; fixed parameter.",
+      "result": "Theorem 1 exceptional set O_{theta0,epsilon}(X^(7/12+epsilon)) for theta0<1. Theorem 3 under fixed theta<=2/3 gives exponent g(theta)+epsilon, g(theta)=theta(5-4theta)/(2(2-theta)); at theta=5/8 this is 25/44+epsilon.",
+      "external_dependency": "Cites an OpenAI/Lean 7/8 zero-boundary result; exact source build not independently identified or compiled in this audit.",
+      "pointwise_target_consequence": "Positive-power exceptional set does not eliminate a designated target."
+    },
+    {
+      "authors": "I. Althöfer, D. Chen, A. Perelli and J. Pintz",
+      "title": "The exceptional set of Goldbach numbers among polynomial values",
+      "id": "arXiv:2611.09386v1",
+      "submitted": "2026-11-06",
+      "status": "preprint; v1 checked",
+      "url": "https://arxiv.org/abs/2611.09386v1",
+      "pdf_url": "https://arxiv.org/pdf/2611.09386v1",
+      "pdf_sha256": "3e6af1b24fdaa91131dd349d8c60d1add45028a251eac51e875251192cece89b",
+      "hypothesis": "Fixed integer polynomial with positive leading coefficient and degree k>=2; theorem constants may depend on polynomial and epsilon.",
+      "result": "Polynomial-indexed exceptional count O_{phi,epsilon}(N^(alpha_k+epsilon)); alpha_2=1/2, alpha_3=5/8, alpha_4=3/4, alpha_k=1-1/(k+1) for k>4.",
+      "external_dependency": "Uses Li-Liu and cited external zero-free input as stated in the paper.",
+      "pointwise_target_consequence": "Degree one is excluded; a positive-power exceptional count along a polynomial sequence does not rule out a selected residual target."
+    },
+    {
+      "authors": "G. Bhowmik and L. Grimmelt",
+      "title": "The exceptional set of the Goldbach problem",
+      "journal": "Analysis Mathematica 52(3) (2026), 767-808",
+      "doi": "10.1007/s10476-026-00191-z",
+      "first_online": "2026-09-23",
+      "status": "journal article; Springer metadata checked",
+      "url": "https://link.springer.com/article/10.1007/s10476-026-00191-z",
+      "pdf_url": "https://link.springer.com/content/pdf/10.1007/s10476-026-00191-z.pdf",
+      "pdf_sha256": "fc4e7dac8760d3a630abb61c4a428bff18ae0263fbf74acbe679b2ee3ece34e3",
+      "hypothesis": "Theorem 3.1 assumes every zero of every Dirichlet L-function has Re(rho)<= one fixed Theta<3/4.",
+      "result": "Theorem 6.3 gives an explicit formula for the major-arc error E_M(N), for even N in [X/2,X] under 0<epsilon<vartheta<4/9-epsilon and R=X^vartheta, with a sum over pairs of exceptional zeros and characters plus O(X exp(-cH)+X/T+X^(1-epsilon)); it is not shown uniformly small for every target. Theorem 3.1 gives the conditional exceptional-set bound |E(X)| <<_epsilon X^(2Theta-1/2+epsilon) under the fixed all-Dirichlet-L-function zero hypothesis Theta<3/4. Neither statement is a full pointwise Goldbach asymptotic.",
+      "pointwise_target_consequence": "The conditional exceptional-set bound can still contain a specified isolated target."
+    }
+  ],
+  "external_openai_lean_zero_free_source": {
+    "status": "not independently verified",
+    "reason": "Downstream citations did not provide a directly identified retrievable source file plus compiled project/build proving the precise theorem and scope; a commit identifier alone was insufficient.",
+    "policy": "Retain as an explicit external dependency wherever downstream papers use it; do not claim independent formal verification."
+  },
+  "limitations": [
+    "The source audit checks statements, notation, hypotheses, version metadata and scope; it is not a reproof of the analytic papers.",
+    "None of the audited sources yields unconditional signed pointwise positivity for every N in H.",
+    "The preprint source files are not checked into the repository; hashes identify the retrieved copies outside the repository."
+  ]
+}
