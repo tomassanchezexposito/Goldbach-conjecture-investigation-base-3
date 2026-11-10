@@ -1,62 +1,50 @@
-# Stage 69 — target-localized prime energy and signed correlation obstruction
+# NEXT TASK — STAGE 69: DOUBLE-DEPTH PRIME-SPECIFIC MATHEMATICAL INVESTIGATION
 
-## Research objective
+**Status:** ready for CoCalc execution; the user's universal three-case conjecture and Goldbach coverage on the residual set are **OPEN**.
 
-Stage 68 proved that arcwise Hilbert-space allocation is exactly computable, that a total fourth-moment budget collapses to the full-minor operator norm, and that the growing-shift Gram geometry has no uniform relative saving. The missing step is arithmetic: a target-uniform estimate for the actual prime-square input, or a rigorous obstruction showing why available analytic inputs cannot reach the Stage 66/68 threshold.
+**Existing remote branch:** \`cocalc/stage69-deep-prime-specific-localization\`  
+**Repository clone:** \`/home/user/goldbach-research-github\`  
+**Base:** completed Stage 68 branch \`cocalc/stage68-optimal-arc-allocation-and-pointwise-obstruction\`  
+**Documentation language:** English for all repository artifacts.
 
-This stage must investigate one narrower question: **can a genuinely prime-specific theorem localize either the signed increment vector or the fourth-moment mass to target-dependent rational-arc cells strongly enough to exclude one isolated zero representation?** Preserve the original three-case formulation and do not assume a representation at the target.
+## Authoritative complete research program — read BOTH documents
 
-## Required setup and deliverables
+1. \`tasks/STAGE69_DEEP_PROGRAM_I.md\`: mathematical audit, exact true-prime convolution, a rigorous information hierarchy/no-go analysis, a phase-preserving circle-method route, and an independent arithmetic/sieve route (M0–M4).
+2. \`tasks/STAGE69_DEEP_PROGRAM_II.md\`: primary-source theorem audit, sharp quantitative pointwise criteria with all errors, two fully developed independent proof attempts, hostile independent verification, and final synthesis (M5–M9).
 
-1. Follow the repository workflow to select or create the Stage 69 research branch from the verified research base. Verify a clean tree; fetch with the existing dedicated SSH identity and `IdentitiesOnly=yes`; preserve every prior branch and file. Do not modify `main`.
-2. Read this file, `results/stage68/final_report.md`, `results/stage68/04_arc_budget_feasibility.md`, `results/stage68/07_primary_analytic_attempt.md`, `results/stage68/08_adversarial_review.md`, and the relevant Stage 63–67 dependency documents.
-3. Keep the exact definitions of the residual set `H`, representation count `R(N)`, smooth prime polynomial `S_w`, major/minor coefficient split, and even shifts from the earlier reports. Re-derive the Fourier signs before use. The prime sum is encoded by `S_w^2`, not `|S_w|^2`.
-4. Save a complete report, exact code/data when useful, independent verification, source/dependency ledger, counterexample record, and an adversarial review under `results/stage69/`.
+**These two documents are a continuous single assignment.** Do not stop after reading or executing Part I. Stage 69 must invest approximately twice the analytical depth of Stage 68, **not** twice the number of computational examples, more boilerplate, or arbitrarily more words. This means more original mathematical derivation, fully quantified claims, alternate proofs, and explicit first missing arithmetic theorems.
 
-## Mathematical milestones
+## Mandatory first result: repair an actual mathematical error
 
-### M0 — re-audit the Stage 68 target threshold
+Before starting any new Goldbach analysis, read and **independently audit**:
+- \`results/stage69/00_erratum_psd_lifting.md\` — proves the Stage 68 two-projector rank-one-vs-PSD gap claim was false, distinguishes triangle bound 2 from both correct optima sqrt(2), and supplies a valid six-Pauli-projector strict PSD gap in abstract Hermitian geometry.
+- \`results/stage69/verify_psd_lifting.py\` — focused SymPy exact regression. Run \`python3 -B results/stage69/verify_psd_lifting.py\` after checking preinstalled dependencies. If it fails, correct the code or proof and document the first invalid step. The script's existence does not imply it has already been executed in CoCalc.
+- \`results/stage68/02_exact_budget_optimization.md\` and \`results/stage68/08_adversarial_review.md\` — historical files that contain the false claim and must be retained for provenance. Record a transparent Stage 69 correction rather than overwriting Stage 68.
 
-Re-derive the sharp finite-dimensional inequality from center value and increment energy, including equality configurations. State exactly the independent uniform hypotheses that would imply positivity, with constants and the shifted index range. Test the formula against small exact rational examples and boundary cases (`V=0`, threshold equality, and `V>=mA^2`).
+The historical Stage 68 triangle-bound strictness for concrete interval Gram matrices remains valid and distinct. Do not misclassify either result.
 
-### M1 — target-dependent arc partition
+## Practical execution and checkpoints
 
-Define a genuinely disjoint partition of the minor arcs into rational-center cells or shells, with explicit treatment of overlaps, reflected cells, the final shell, and denominators dividing an even shift. For each cell derive the exact increment Gram and all available operator-norm bounds. Determine whether the target phase can be retained in the optimization instead of discarded by Cauchy–Schwarz. State what arithmetic information a prime theorem would have to add.
+- Verify \`git status\`, fetch using the existing repository-specific SSH identity with \`IdentitiesOnly=yes\`, and check out **the existing Stage 69 branch**. Preserve all historical work.
+- Execute milestones **M0–M9** sequentially. Complete each substantive theme with a proof or a clearly documented counterexample/first missing lemma, a critical pass and a commit/push checkpoint.
+- Continue automatically through the next milestones as far as the existing CoCalc Goal, context, membership and runtime allow. A written instruction cannot guarantee unlimited unattended execution. No new user prompt is required for authorized routine proof work.
+- No extra paid compute, software installs, new SSH keys, personal tokens, permission changes, public submission, branch deletion, history rewrite, force push, or merge into \`main\`.
+- GitHub CLI \`gh\` is not installed and is NOT needed. Follow \`docs/cocalc_github_pr_workflow.md\`; push normal Git commits through SSH, report branch and exact SHA. ChatGPT's separately authenticated GitHub app will handle draft PR creation/review. Do not report a GitHub push failure when only \`gh\` is missing.
+- Keep no more finite verification than needed for important equality, endpoint, sign, and multiplicity checks. Distinguish source-derived facts from independent new proofs and externally conditional claims.
 
-### M2 — localized fourth moment versus signed coefficient
+## Mathematical objective and scientific exit status
 
-Audit available unconditional and conditional prime exponential-sum estimates for localized forms such as
-`integral_E |S_w|^4`, signed integrals `integral_E S_w^2 e(-N alpha)`, and cross-cell covariance. Do not infer targetwise bounds from averages or from the total moment. For every candidate estimate, write its exact quantifiers, weight, modulus/arc, target, shift, zero-free, and constant dependencies. If literature retrieval is unavailable, use checked repository sources and say so; do not invent citations.
+Preserve exactly:
+\[
+H=\{N\ge4:\ N\text{ even},\ N-1\text{ composite},\ N/2\text{ composite}\},\quad
+R(N)=\#\{p<q:\ p,q\text{ prime},\ p+q=N\}.
+\]
+The challenge is to establish \(R(N)>0\) on every residual target using **genuine primes**, without assuming the target representation, dividing by R(N), confusing CRT survivors with primes, or promoting singular-series heuristics to theorems.
 
-### M3 — two distinct proof routes or explicit failure
+The major/minor coefficient for Goldbach uses \`S_w(alpha)^2\` (not \`|S_w(alpha)|^2\`). Published 2026 fourth-moment/exceptional-set estimates cited in the repository are subject to their complete conditional or publication-status qualifications. A global exceptional-set bound that allows even one target is insufficient.
 
-Develop two mathematically distinct routes toward the required target estimate, for example (i) a signed Fourier/circle-method decomposition with all complementary arcs controlled, and (ii) a local-energy/covariance or bilinear-prime route. Each route must end in either a complete lemma with proof and usable constants, or an explicitly identified first missing estimate. Avoid circularly assuming positivity of the target coefficient or a prime-pair factor.
+**Success means** a genuinely proven non-circular arithmetic estimate OR a thoroughly developed conditional/negative mathematical advance proving why named inputs cannot imply pointwise positivity and identifying the narrowest new prime-only lemma. Mark the conjecture **OPEN** unless a complete universal proof is obtained and independently checked.
 
-### M4 — adversarial falsification
+**Expected final user-facing handoff:** final Stage 69 branch URL, exact remote commit SHA, verified milestones and source hashes, actual test commands, strongest proved new mathematics, refuted inferences, conditional assumptions, first remaining prime-theoretic estimate, and a narrow Stage 70 proposal. No final claim based only on the number of files or milestones.
 
-Test each proposed implication using exact finite-dimensional countermodels, boundary cases, arithmetic congruence constraints, and any justified small exact computations. Distinguish an abstract coefficient sequence from the genuine prime sequence. Refute invalid transitions such as average-to-supremum, modular admissibility-to-primality, selected-arcs-to-complement, and a four-position lower bound that already encodes the target pair.
-
-### M5 — literature and dependency audit
-
-Use the Stage 68 source ledger as the baseline. Check the exact hypotheses and current versions of every source actually used; separate fresh inspection from inherited notes. State whether a theorem is unconditional, conditional, an external claim, or not independently verified. Do not claim novelty from an unsearched literature space.
-
-### M6 — integrated result and next objective
-
-Give a precise theorem/proof if one is obtained. Otherwise state the strongest conditional theorem, the exact first missing arithmetic estimate, and a quantitative comparison with the pointwise threshold. Preserve the original three-case statement verbatim in the report and explicitly label universal coverage OPEN unless proved non-circularly. Propose the next research stage based on the most informative outcome.
-
-## Pointwise threshold to meet
-
-Let `a_w(N)` and `m_w(N)` be the major and minor coefficients and let `J` contain `m` distinct nonzero even shifts. If a zero representation forces the full nonnegative weighted coefficient to vanish, if `a_w(N)>=A_X>0`, if the global minor energy is at most `B_X`, and the signed increment energy is at most `V_X`, then the sharp necessary lower energy under the zero hypothesis is
-
-`A_X^2 + m * (A_X - sqrt(V_X/m))_+^2`.
-
-A contradiction follows only when this is strictly greater than `B_X`. Stage 68's source chain gives global scale `B_X ~ X^(5/2)(log X)^100` and major scale `A_X ~ X` under its stated conditional hypotheses. The generic Hilbert bound does not close the resulting target-specific gap. Recompute constants if using another weight or source theorem; do not treat big-O constants as numerically favorable.
-
-## Restrictions and completion criteria
-
-- No prime representation at the target may be assumed or used in normalization.
-- Keep the author's original three cases unchanged; distinguish `N=p+1`, `N=2p`, and `N=p+q, p<q`.
-- Do not claim universal Goldbach coverage absent a complete non-circular proof.
-- No main-branch edits, force pushes, destructive Git operations, new credentials, software installation, or additional costs.
-- Use English for every repository artifact and commit message.
-- Commit and push verified milestones only to the Stage 69 branch using the existing dedicated SSH key.
+Begin M0 immediately, then continue through M9 from BOTH research documents without routine pauses.
