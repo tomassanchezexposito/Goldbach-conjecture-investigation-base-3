@@ -1,0 +1,422 @@
+{
+  "classification": "FINITE_EXACT_VERIFICATION",
+  "finite_field_parseval_checks": [
+    {
+      "cyclic_convolution": [
+        4,
+        0,
+        4,
+        0,
+        3,
+        2,
+        2,
+        2,
+        4,
+        2,
+        4,
+        0,
+        2,
+        2,
+        3,
+        2
+      ],
+      "length": 16,
+      "lhs_mod_p": 14,
+      "prime_modulus": 97,
+      "prime_positions": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "primitive_root": 5,
+      "rhs_mod_p": 14,
+      "root_of_unity": 8
+    },
+    {
+      "cyclic_convolution": [
+        4,
+        0,
+        4,
+        0,
+        3,
+        2,
+        2,
+        2,
+        4,
+        2,
+        4,
+        0,
+        2,
+        2,
+        3,
+        2
+      ],
+      "length": 16,
+      "lhs_mod_p": 23,
+      "prime_modulus": 193,
+      "prime_positions": [
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "primitive_root": 5,
+      "rhs_mod_p": 23,
+      "root_of_unity": 64
+    }
+  ],
+  "four_prime_partition_checks": [
+    {
+      "R_m": 2,
+      "R_n": 4,
+      "four_distinct": 5,
+      "m": 68,
+      "n": 50,
+      "product": 8,
+      "representations_m": [
+        [
+          7,
+          61
+        ],
+        [
+          31,
+          37
+        ]
+      ],
+      "representations_n": [
+        [
+          3,
+          47
+        ],
+        [
+          7,
+          43
+        ],
+        [
+          13,
+          37
+        ],
+        [
+          19,
+          31
+        ]
+      ],
+      "shared": 3,
+      "shared_formula": 3
+    },
+    {
+      "R_m": 6,
+      "R_n": 4,
+      "four_distinct": 22,
+      "m": 100,
+      "n": 50,
+      "product": 24,
+      "representations_m": [
+        [
+          3,
+          97
+        ],
+        [
+          11,
+          89
+        ],
+        [
+          17,
+          83
+        ],
+        [
+          29,
+          71
+        ],
+        [
+          41,
+          59
+        ],
+        [
+          47,
+          53
+        ]
+      ],
+      "representations_n": [
+        [
+          3,
+          47
+        ],
+        [
+          7,
+          43
+        ],
+        [
+          13,
+          37
+        ],
+        [
+          19,
+          31
+        ]
+      ],
+      "shared": 2,
+      "shared_formula": 2
+    },
+    {
+      "R_m": 7,
+      "R_n": 4,
+      "four_distinct": 27,
+      "m": 112,
+      "n": 50,
+      "product": 28,
+      "representations_m": [
+        [
+          3,
+          109
+        ],
+        [
+          5,
+          107
+        ],
+        [
+          11,
+          101
+        ],
+        [
+          23,
+          89
+        ],
+        [
+          29,
+          83
+        ],
+        [
+          41,
+          71
+        ],
+        [
+          53,
+          59
+        ]
+      ],
+      "representations_n": [
+        [
+          3,
+          47
+        ],
+        [
+          7,
+          43
+        ],
+        [
+          13,
+          37
+        ],
+        [
+          19,
+          31
+        ]
+      ],
+      "shared": 1,
+      "shared_formula": 1
+    },
+    {
+      "R_m": 6,
+      "R_n": 2,
+      "four_distinct": 12,
+      "m": 100,
+      "n": 68,
+      "product": 12,
+      "representations_m": [
+        [
+          3,
+          97
+        ],
+        [
+          11,
+          89
+        ],
+        [
+          17,
+          83
+        ],
+        [
+          29,
+          71
+        ],
+        [
+          41,
+          59
+        ],
+        [
+          47,
+          53
+        ]
+      ],
+      "representations_n": [
+        [
+          7,
+          61
+        ],
+        [
+          31,
+          37
+        ]
+      ],
+      "shared": 0,
+      "shared_formula": 0
+    },
+    {
+      "R_m": 7,
+      "R_n": 2,
+      "four_distinct": 14,
+      "m": 112,
+      "n": 68,
+      "product": 14,
+      "representations_m": [
+        [
+          3,
+          109
+        ],
+        [
+          5,
+          107
+        ],
+        [
+          11,
+          101
+        ],
+        [
+          23,
+          89
+        ],
+        [
+          29,
+          83
+        ],
+        [
+          41,
+          71
+        ],
+        [
+          53,
+          59
+        ]
+      ],
+      "representations_n": [
+        [
+          7,
+          61
+        ],
+        [
+          31,
+          37
+        ]
+      ],
+      "shared": 0,
+      "shared_formula": 0
+    },
+    {
+      "R_m": 7,
+      "R_n": 6,
+      "four_distinct": 33,
+      "m": 112,
+      "n": 100,
+      "product": 42,
+      "representations_m": [
+        [
+          3,
+          109
+        ],
+        [
+          5,
+          107
+        ],
+        [
+          11,
+          101
+        ],
+        [
+          23,
+          89
+        ],
+        [
+          29,
+          83
+        ],
+        [
+          41,
+          71
+        ],
+        [
+          53,
+          59
+        ]
+      ],
+      "representations_n": [
+        [
+          3,
+          97
+        ],
+        [
+          11,
+          89
+        ],
+        [
+          17,
+          83
+        ],
+        [
+          29,
+          71
+        ],
+        [
+          41,
+          59
+        ],
+        [
+          47,
+          53
+        ]
+      ],
+      "shared": 9,
+      "shared_formula": 9
+    }
+  ],
+  "limits": [
+    "Finite computations verify identities and examples only.",
+    "Finite-field Parseval checks do not prove the analytic circle-method estimate.",
+    "No universal Goldbach or residual-coverage claim is made."
+  ],
+  "python_method_a": "trial division and direct common-prime formula",
+  "python_method_b": "Eratosthenes sieve and representation-set intersection",
+  "residual_status": {
+    "sieve": {
+      "210": true,
+      "420": false
+    },
+    "trial_division": {
+      "210": true,
+      "420": false
+    }
+  },
+  "singular_series_odd_factor": {
+    "210": "16/5",
+    "420": "16/5",
+    "shared_odd_prime_divisors": [
+      3,
+      5,
+      7
+    ]
+  },
+  "wheel_210": {
+    "direct_residue_count": 48,
+    "independent_local_product": 48,
+    "residue_modulus": 210,
+    "targets": [
+      210,
+      420
+    ]
+  }
+}
