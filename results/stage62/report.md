@@ -63,6 +63,29 @@ by Euler's theorem on divergent prime reciprocals (or just lower-bound its logar
 
 **Logical scope:** This is a theorem about the *singular-series function*. It does **not** prove that actual \(R(N)\) has the same jump. That further claim requires a highly nontrivial, pointwise Goldbach asymptotic, which remains unproved.
 
+## Strengthening 62.1A — exactly identical wheel-210 factors (PROVED)
+
+The preceding theorem holds **even if one insists on**
+\[
+\boxed{A_{210}(N)=A_{210}(N+2)=15.}
+\]
+Indeed, keep the same finite set of primes \(P\ge11\) and impose the stronger simultaneous congruences
+\[
+q\equiv2\pmod3,\qquad q\equiv4\pmod5,\qquad
+q\equiv2\pmod7,\qquad q\equiv1\pmod{\prod_{\ell\in P}\ell}.
+\]
+The Chinese remainder theorem gives a reduced residue class modulo \(105\prod_{\ell\in P}\ell\), so Dirichlet supplies infinitely many primes \(q\) in it. Setting \(N=2(q-1)\) again yields \(N\in H\) because \(N/2=q-1\) is even and composite and \(N-1=2q-3\) is divisible by 5 and larger than 5. The congruences give, respectively,
+\[
+N\equiv2\pmod3,\ 1\pmod5,\ 2\pmod7,\qquad
+N+2\equiv1\pmod3,\ 3\pmod5,\ 4\pmod7.
+\]
+Thus neither target is divisible by 3, 5 or 7, and both have wheel count \(1\cdot1\cdot3\cdot5=15\). The normalized series ratio is therefore exactly \(F(N)/F(N+2)\), and it is at least
+\[
+\frac{q-2}{q-1}\prod_{\ell\in P}\frac{\ell-1}{\ell-2}
+\ \ge\ \frac12\prod_{\ell\in P}\frac{\ell-1}{\ell-2},
+\]
+which is unbounded as before. This proves that **even identical wheel factors cannot control the higher-prime singular-series discrepancy**. No claim about the actual prime-pair counts \(R(N)\) follows.
+
 ## Corollary 62.2 — obstruction to a common 1/3 baseline for the singular-series model (PROVED)
 
 For any two positive numbers \(u,v\) satisfying \(u,v\in[\tfrac23\Lambda,\tfrac43\Lambda]\) for one \(\Lambda>0\), we have \(u/v\le2\). But by Theorem 62.1, infinitely many \(N\in H\) satisfy
