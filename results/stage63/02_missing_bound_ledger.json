@@ -1,0 +1,24 @@
+{
+  "status": "OPEN",
+  "target_domain": "H = {N >= 4: N even, N-1 composite, N/2 composite}",
+  "fixed_partition": {
+    "Q": "explicit integer function Q(N), to be chosen in a theorem",
+    "major_arcs": "union of circular neighborhoods ||alpha-a/q|| <= Q/N for reduced a/q, 1 <= q <= Q",
+    "minor_arcs": "complement in [0,1)"
+  },
+  "sufficient_obligations": [
+    "Prove I_M(N,Q) >= M_N > 0 with explicit constants for every N in the claimed range.",
+    "Prove |I_m(N,Q)| <= E_N < M_N, or directly I_m(N,Q) > -M_N, for every residual N beyond an explicit N0.",
+    "Verify every residual N <= N0 exactly, if a finite cutoff is used."
+  ],
+  "what_is_established_here": [
+    "Exact orthogonality coefficient identity.",
+    "Elementary prime-power correction bound 2 floor(log_2 N) floor(sqrt(N)) (log N)^2."
+  ],
+  "what_is_not_established": [
+    "No numerical M_N, E_N, Q(N), or N0 proving pointwise positivity is supplied.",
+    "No checked theorem in this stage supplies the signed minor-arc estimate for every residual target."
+  ],
+  "equivalence_warning": "The exact full coefficient is positive iff a genuine prime-pair representation exists on H; this identity alone contains no positivity estimate.",
+  "finite_computation_is_proof": false
+}
