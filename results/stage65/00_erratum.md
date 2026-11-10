@@ -58,3 +58,16 @@ For even \(N>4\), no distinct prime representation contains 2: \(N-2>2\) is even
 - Re-run Stage 64 and Stage 63 verifiers before adopting the revised analysis. Record exact output and hash values.
 
 **Remaining open mathematics:** establish an independent target-uniform bound on the *signed genuine-prime minor-arc coefficient*, or another non-circular arithmetical result implying a positive prime-pair count at every residual target.
+
+## Independent Stage 65 audit
+
+The correction can be checked directly without a circle-method assumption. Expanding the finite polynomial gives
+\[
+S_w(\alpha)^2=\sum_{p,q}a_pa_qe((p+q)\alpha),\qquad
+|S_w(\alpha)|^2=\sum_{p,q}a_p\overline{a_q}e((p-q)\alpha).
+\]
+For real $a_p$, integration against $e(-N\alpha)$ imposes respectively $p+q=N$ and $p-q=N$; there is no extra factor of $2$. Thus only $S_w^2$ decomposes the prime-sum coefficient into major and minor arcs. The modulus square remains correct in Parseval because $|S_w^2|^2=|S_w|^4$. The exact $N=8$ regression with positions 3 and 5 gives 2 and 0, respectively.
+
+The required command `python3 -B results/stage65/tests/verify_sum_difference.py` was run before new analysis. It passed the ordered-pair enumeration and finite-field DFT at all 16 frequencies modulo 97; the exact result is in `tests/sum_difference_exact.json`. A repository search of Stage 64 for the sum/difference coefficient formulas found the corrected sum-square definitions in `02_fourth_moment_to_pointwise_gap.md`; remaining modulus-square occurrences are the valid fourth-moment Parseval expression or explicit descriptions of the erratum. No uncorrected major/minor coefficient definition remains in the checked Stage 64 text. Historical Git commits are preserved.
+
+The inherited `results/stage64/source_manifest.json` is a snapshot manifest, not a live integrity assertion for the current Stage 65 checkout. Of the files listed in it, current bytes differ for `tasks/NEXT_TASK.md`, `results/stage64/02_fourth_moment_to_pointwise_gap.md`, `results/stage64/03_signed_fourprime_alternatives.md`, and `results/stage64/04_research_attempt.md`; the first two include later task/correction material, and the latter two already differ on the Stage 65 base. All other listed repository files match their recorded size and SHA-256 at this audit. The exact current Stage 65 deliverable hashes are recorded in `source_manifest.json`.
