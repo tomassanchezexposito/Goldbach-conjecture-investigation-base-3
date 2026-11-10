@@ -52,5 +52,71 @@
     "The pruned model deliberately zeros some genuine-prime coefficients, so it is not the fixed actual-prime polynomial.",
     "One finite program is a regression, not a general number-theoretic proof.",
     "Goldbach coverage is OPEN and no Codex/background execution was started."
-  ]
+  ],
+  "second_cycle": {
+    "date": "2026-11-10",
+    "status": "PROVED Fejer geometric cone denominator lower bound and PROVED PNT-based no-go for the specific full-circle positive-cone criterion; universal Goldbach OPEN",
+    "execution": "Separate local Python exact-rational regression, no CoCalc/Codex quota",
+    "theorems": [
+      {
+        "id": "70.3",
+        "claim": "D_plus(N)>=P/(50X) uniformly for all sufficiently large even N in [X/2,X], P=X^kappa, 0<kappa<1/2, on standard major arcs and the predetermined full even frequency superset",
+        "class": "PROVED elementary Fourier"
+      },
+      {
+        "id": "70.4",
+        "claim": "For every fixed nonzero nonnegative smooth weight in C_c^infty((0,1)), B_true D_plus/|a_major|^2 >= c_w P/(log X)^4 -> infinity, if a_major nonzero",
+        "class": "PROVED using the established classical prime number theorem"
+      },
+      {
+        "id": "method_scope",
+        "claim": "The certificate B_upper D_plus<A_lower^2 is unavailable even with exact global energy; this does not prohibit prime-specific signed or factorized methods",
+        "class": "PROVED NO-GO FOR THIS SPECIFIC SUFFICIENT CRITERION"
+      }
+    ],
+    "verified_files": [
+      {
+        "path": "results/stage70/03_actual_arc_cone_nogo.md",
+        "sha256": "6e7220f417da53e1e959e2116060f2eceb25338ffd093a198edc564f7e129405",
+        "git_blob_sha1": "36038ed38c05e42dcbc5793a48779cd7952a2813"
+      },
+      {
+        "path": "results/stage70/04_actual_arc_adversarial_review.md",
+        "sha256": "762f42554bf2969739c1f2395fbfd49507283d532346ae59d5f429b3b65d1666",
+        "git_blob_sha1": "f2c47dc3cf706f76a274081c0b6542402fc23fa5"
+      },
+      {
+        "path": "results/stage70/verify_stage70_arc_nogo.py",
+        "sha256": "3deb3c4b708ac1f7f28cc50635c90e2b3d03fca40759583c78b82b7bf83011bf",
+        "git_blob_sha1": "4ae4518ea7bc28ed02999ee98c5950904e4a0096"
+      },
+      {
+        "path": "results/stage70/arc_nogo_exact_results.json",
+        "sha256": "968d164bc6373bf57b20904a2de32a49fc0f7fcf854cc70d6773d4fbad783f1e",
+        "git_blob_sha1": "12d8a7a794e0e3156f14ae89a024009ea9bfd42a"
+      }
+    ],
+    "exact_checked_cases": 4,
+    "verified_sha256_algorithm": "Independent V8 SHA-256 implementation confirmed against known empty-string and abc test vectors; exact UTF-8 bytes of GitHub fetched files were hashed",
+    "external_sources": [
+      {
+        "url": "https://dlmf.nist.gov/1.15",
+        "role": "Fejer kernel classical Fourier identity"
+      },
+      {
+        "url": "https://www2.math.upenn.edu/~gressman/analysis/08b-summability.html",
+        "role": "Fejer Fourier coefficients"
+      },
+      {
+        "url": "https://alexkontorovich.github.io/PrimeNumberTheoremAnd/blueprint/corollaries-chapter.html",
+        "role": "classical prime number theorem theta asymptotic"
+      }
+    ],
+    "caveats": [
+      "Exact parameter regression is not proof of uniform theorem; written proof covers all sufficiently large X.",
+      "Proof uses classical PNT as external established theorem, not the unverified 2026 zero-free manuscript.",
+      "The no-go is for broad full-even frequency-band relaxation and full-circle energy; actual prime-square factorization remains unexplored.",
+      "No asynchronous job, CoCalc, Codex run or public release was started."
+    ]
+  }
 }
