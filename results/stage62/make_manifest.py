@@ -29,13 +29,18 @@ def sha256(path):
     return digest.hexdigest()
 
 
-def expected_manifest():
+def expected_manifest(base_commit=None):
     branch = subprocess.check_output(
         ["git", "-C", str(ROOT), "branch", "--show-current"], text=True
     ).strip()
-    base_commit = subprocess.check_output(
-        ["git", "-C", str(ROOT), "rev-parse", "HEAD"], text=True
-    ).strip()
+    if base_commit is None:
+        if MANIFEST.exists():
+            previous = json.loads(MANIFEST.read_text(encoding="utf-8"))
+            base_commit = previous.get("base_commit_before_stage62_commit")
+        if not base_commit:
+            base_commit = subprocess.check_output(
+                ["git", "-C", str(ROOT), "rev-parse", "HEAD"], text=True
+            ).strip()
     return {
         "stage": 62,
         "branch": branch,
@@ -49,13 +54,14 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--check", action="store_true")
     args = parser.parse_args()
-    expected = expected_manifest()
     if args.check:
         actual = json.loads(MANIFEST.read_text(encoding="utf-8"))
+        expected = expected_manifest(actual.get("base_commit_before_stage62_commit"))
         if actual != expected:
             raise SystemExit("verification manifest mismatch")
         print("verification manifest: all listed SHA-256 hashes match")
     else:
+        expected = expected_manifest()
         MANIFEST.write_text(json.dumps(expected, indent=2) + "\n", encoding="utf-8")
         print(f"wrote {MANIFEST}")
 
