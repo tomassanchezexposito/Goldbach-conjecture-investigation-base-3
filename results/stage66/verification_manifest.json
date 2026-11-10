@@ -1,0 +1,182 @@
+{
+  "aggregate_python_parameters": {
+    "A": [
+      "1",
+      "3/2",
+      "3"
+    ],
+    "increments": "0,1/4,...,2",
+    "m": "1..4"
+  },
+  "base_commit_before_stage66_work": "703d899fa4badd7a12a1042b355d447e9963e7ca",
+  "branch": "cocalc/stage66-sharp-local-energy-modulus",
+  "commands": [
+    {
+      "cases": 300,
+      "child_max_rss_kib": 17256,
+      "command": "python3 -B results/stage66/verify_stage66.py",
+      "elapsed_seconds": 0.24,
+      "status": "PASS"
+    },
+    {
+      "aggregate_rational_vectors": 22140,
+      "child_max_rss_kib": 17328,
+      "command": "python3 -B results/stage66/verify_stage66_aggregate.py",
+      "elapsed_seconds": 0.78,
+      "ordered_distinct_target_pairs": 3422,
+      "status": "PASS"
+    },
+    {
+      "aggregate_rational_vectors": 8400,
+      "child_max_rss_kib": 234580,
+      "command": "sage -python results/stage66/verify_stage66_sage.py",
+      "elapsed_seconds": 13.91,
+      "gram_sizes": 8,
+      "lipschitz_cases": 260,
+      "ordered_distinct_target_pairs": 2352,
+      "status": "PASS"
+    },
+    {
+      "command": "python3 -B results/stage65/tests/verify_sum_difference.py",
+      "note": "Inherited Stage 65 regression; see prior checkpoint record.",
+      "status": "PASS"
+    },
+    {
+      "command": "python3 -B results/stage65/tests/verify_localized_kernel.py",
+      "note": "Inherited Stage 65 regression.",
+      "status": "PASS"
+    },
+    {
+      "command": "sage -python results/stage65/tests/verify_localized_kernel_sage.py",
+      "note": "Inherited Stage 65 regression.",
+      "status": "PASS"
+    },
+    {
+      "command": "python3 -B results/stage64/tests/verify_stage64_exact.py",
+      "note": "Inherited Stage 64 exact regression.",
+      "status": "PASS"
+    },
+    {
+      "command": "python3 -B results/stage61/verify_stage61.py",
+      "note": "Inherited Stage 61 exact regression.",
+      "status": "PASS"
+    },
+    {
+      "command": "python3 -B results/stage62/verify_singular_series.py",
+      "note": "Inherited Stage 62 exact regression.",
+      "status": "PASS"
+    },
+    {
+      "command": "sage -python results/stage62/verify_singular_series_sage.py",
+      "note": "Inherited Stage 62 independent exact regression.",
+      "status": "PASS"
+    }
+  ],
+  "environment": {
+    "python": "3.14.4",
+    "sage": "10.9"
+  },
+  "limitations": [
+    "Finite exact verifications validate only the listed identities and multiplicities.",
+    "The literature audit is inherited and dated 2026-11-10; external versions were not refreshed during Stage 66.",
+    "No pointwise genuine-prime signed increment estimate or universal Goldbach result is proved."
+  ],
+  "sage_parameters": {
+    "A": [
+      "1",
+      "2",
+      "7/2"
+    ],
+    "increments": "0,1/3,...,2",
+    "m": "1..4"
+  },
+  "self_hash_note": "This manifest is intentionally excluded from its own file hash list.",
+  "sha256_files": [
+    {
+      "path": "tasks/NEXT_TASK.md",
+      "sha256": "23b772bf0817532efd531042647145d46431b6f59b5a7489d67169da4f737781"
+    },
+    {
+      "path": "results/stage66/00_sharp_modulus_energy.md",
+      "sha256": "838c66c2206c4ea3ee1f26161ed3cf8f576ccb95807719cce0ffbf31648d5045"
+    },
+    {
+      "path": "results/stage66/01_review_and_proofs.md",
+      "sha256": "7002c122f836a024d7e6f5f6b3599065b608cae47329a716601075919c978e3f"
+    },
+    {
+      "path": "results/stage66/02_arithmetic_modulus.md",
+      "sha256": "9dcab302e0b80cde0ee95b6854d315ff1e73a1500f487493a241cf802ea31149"
+    },
+    {
+      "path": "results/stage66/03_fourprime_signed_energy.md",
+      "sha256": "449bf87ad7525ca7e65beb3f3cb985901cac807146a57b065827e570838dc958"
+    },
+    {
+      "path": "results/stage66/04_countermodels_and_literature.md",
+      "sha256": "ce2c95416dabfad7f62b0729427e82098705ea5865560a0fc669f1dc85e06424"
+    },
+    {
+      "path": "results/stage66/05_independent_audit.md",
+      "sha256": "7791b008e7b1fd74bf48684f14f532e8a953823292d34d8456f99fdecd5b8b84"
+    },
+    {
+      "path": "results/stage66/final_report.md",
+      "sha256": "57cc886cb2a114d8cf23fac69033d6316b618d0565183c29f47a23853688d2d1"
+    },
+    {
+      "path": "results/stage66/checkpoint_log.md",
+      "sha256": "e0368c932fc2627f2d3dc47a1e8273941d562cfebe8ff48df3e244874c423020"
+    },
+    {
+      "path": "results/stage66/verify_stage66.py",
+      "sha256": "5a13ada22caa9897a46ecd98ccbb8d733961518fc4cbd785a43e777d045f54a1"
+    },
+    {
+      "path": "results/stage66/verify_stage66_aggregate.py",
+      "sha256": "e472873ff4642183efe573db9dce098483cdc5f3550e94b3136332640d0d3b57"
+    },
+    {
+      "path": "results/stage66/verify_stage66_sage.py",
+      "sha256": "4540015e771bc9e35c69b3062edda4a53cb6509f540faf6abd733a72737cb4ae"
+    },
+    {
+      "path": "results/stage66/stage66_exact_results.json",
+      "sha256": "ba2bfba84ec00a4ae8ee3ceb00717b7a33082d748baf936408341eafaf7444b4"
+    },
+    {
+      "path": "results/stage66/stage66_aggregate_python_results.json",
+      "sha256": "9b4f1c3e158ed01eb8b59decdd073d5cd078a5f170a0e45725bd6e45f32e0f78"
+    },
+    {
+      "path": "results/stage66/stage66_sage_results.json",
+      "sha256": "0fcd93a348fff52331009fc29f251b102298785b438225cd5e134d453414619d"
+    },
+    {
+      "path": "results/stage65/00_erratum.md",
+      "sha256": "84ff0fb1caa08f21656865048f7de0bf27bfd2ff7ef9e3fd45abe20c0fdb16f5"
+    },
+    {
+      "path": "results/stage65/tests/verify_sum_difference.py",
+      "sha256": "a78e3c7a4c4237be082622de6c897634e1da0e8f19aee9d3699c4048d2376caa"
+    },
+    {
+      "path": "results/stage65/tests/verify_localized_kernel.py",
+      "sha256": "07f037965f6bca59575f63663cba116f4b326e621f9680a569c4320a21a0fee3"
+    },
+    {
+      "path": "results/stage65/tests/verify_localized_kernel_sage.py",
+      "sha256": "d0ab1ccb9bdb4f26bb6c82b6c7dd4c58602a88d3259ba2be368bc158f2eaf959"
+    },
+    {
+      "path": "results/stage64/01_2026_primary_sources.md",
+      "sha256": "43813f78035aa45ed151744652c93a0cee1870b559ce2f8d4ff9bf46b7a91530"
+    },
+    {
+      "path": "results/stage64/source_manifest.json",
+      "sha256": "482da08c73a561911bd48d07412a6745a237bda457a268db9c11ef03f0a695da"
+    }
+  ],
+  "stage": 66,
+  "verification_date_utc": "2026-11-10"
+}

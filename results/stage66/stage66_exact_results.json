@@ -1,0 +1,30 @@
+{
+  "H_values": [
+    0,
+    1,
+    2,
+    4,
+    8,
+    20
+  ],
+  "all_assertions_passed": true,
+  "classification": "EXACT ABSTRACT SEQUENCE CHECK; NOT GOLDBACH",
+  "lipschitz_parameter_cases_checked": 300,
+  "nonuniform_case": {
+    "A": "3",
+    "excluded_energy_budget": "84373/3600",
+    "increments": {
+      "-1": "1/4",
+      "-4": "5",
+      "-7": "2/3",
+      "3": "9/5",
+      "8": "12"
+    },
+    "minimum_energy": "84409/3600"
+  },
+  "number_of_independent_formulas": 2,
+  "strides": [
+    1,
+    2
+  ]
+}
