@@ -1,0 +1,88 @@
+{
+  "stage": "63-M4",
+  "sources": [
+    {
+      "id": "bhowmik_grimmelt_2026",
+      "authors": ["Gautami Bhowmik", "Lasse Grimmelt"],
+      "title": "The exceptional set of the Goldbach problem",
+      "journal": "Analysis Mathematica",
+      "volume": "52",
+      "issue": "3",
+      "pages": "767-808",
+      "publication_date": "2026",
+      "first_online": "2026-09-23",
+      "doi": "10.1007/s10476-026-00191-z",
+      "url": "https://link.springer.com/article/10.1007/s10476-026-00191-z",
+      "status": "peer-reviewed published article; full publisher PDF inspected",
+      "sections_checked": ["Theorem 3.1", "Proposition 4.1", "Lemma 4.2", "Theorem 4.3", "Theorem 5.1", "Proposition 8.1", "Theorem 8.2"],
+      "notes": "Article header and DOI metadata state volume 52; later running footer in the downloaded PDF appears inconsistent."
+    },
+    {
+      "id": "chen_original_1973",
+      "authors": ["Jing-run Chen"],
+      "title": "On the representation of a large even integer as the sum of a prime and the product of at most two primes",
+      "journal": "Scientia Sinica",
+      "volume": "16",
+      "pages": "157-176",
+      "publication_date": "1973",
+      "url": null,
+      "status": "original primary scan not available for direct inspection; theorem recorded in standard form",
+      "notes": "Conclusion is prime plus a P2 number; it does not guarantee the second summand is prime."
+    },
+    {
+      "id": "chen_reprint_2002",
+      "authors": ["Jing-run Chen"],
+      "title": "On the representation of a larger even integer as the sum of a prime and the product of at most two primes",
+      "container": "The Goldbach Conjecture, Series in Pure Mathematics",
+      "pages": "275-294",
+      "publication_date": "2002-11",
+      "doi": "10.1142/9789812776600_0021",
+      "url": "https://doi.org/10.1142/9789812776600_0021",
+      "status": "bibliographic metadata cross-checked with Crossref; full text not accessible"
+    },
+    {
+      "id": "montgomery_vaughan_1975",
+      "authors": ["Hugh L. Montgomery", "Robert C. Vaughan"],
+      "title": "The exceptional set in Goldbach's problem",
+      "journal": "Acta Arithmetica",
+      "volume": "27",
+      "pages": "353-370",
+      "publication_date": "1975",
+      "doi": "10.4064/aa-27-1-353-370",
+      "url": "https://doi.org/10.4064/aa-27-1-353-370",
+      "status": "peer-reviewed article; bibliographic details verified; theorem/hypothesis checked through 2026 peer-reviewed exposition, not independently through primary full text"
+    },
+    {
+      "id": "pintz_2018",
+      "authors": ["Janos Pintz"],
+      "title": "A new explicit formula in the additive theory of primes with applications II. The exceptional set in Goldbach's problem",
+      "repository": "arXiv",
+      "identifier": "arXiv:1804.09084v2",
+      "publication_date": "2018-04-30",
+      "url": "https://arxiv.org/abs/1804.09084",
+      "status": "preprint; full v2 PDF inspected; Theorem 1 has an ineffective threshold and E(X) < X^0.72"
+    },
+    {
+      "id": "linnik_1944",
+      "authors": ["Yuri V. Linnik"],
+      "title": "On the least prime in an arithmetic progression I: The basic theorem",
+      "journal": "Matematicheskii Sbornik (N.S.)",
+      "volume": "15 (57)",
+      "pages": "139-178",
+      "publication_date": "1944",
+      "url": null,
+      "status": "established least-prime theorem; cited and applied in Stage 62.4"
+    },
+    {
+      "id": "hardy_littlewood_1923",
+      "authors": ["G. H. Hardy", "J. E. Littlewood"],
+      "title": "Some problems of 'Partitio numerorum'; III: On the expression of a number as a sum of primes",
+      "journal": "Acta Mathematica",
+      "volume": "44",
+      "pages": "1-70",
+      "publication_date": "1923",
+      "url": null,
+      "status": "classical conjectural asymptotic; not a theorem giving pointwise Goldbach coverage"
+    }
+  ]
+}
