@@ -24,7 +24,7 @@ r_X(N)=\sum_{\substack{p+q=N\\p,q\ {\rm genuine\ primes}}}
 (\log p)(\log q)w(p/X)w(q/X)\ge0.
 \tag{72.1}
 \]
-On H, distinct unordered pairs are counted twice. \(r_X(N)>0\) implies a genuine Goldbach pair **within the weight support**, but \(r_X(N)=0\) does not exclude pairs outside it. For \(N\in[X/2,X]\), to make the support permissive one can deliberately choose \(w>0\) on e.g. \([1/8,3/8]\); however this only ensures potential midpoint regions are admitted, not that any complementary prime pair exists.
+On H, distinct unordered pairs are counted twice. \(r_X(N)>0\) implies a genuine Goldbach pair **within the weight support**, but \(r_X(N)=0\) does not exclude pairs outside it. For \(N\in[X/2,X]\), to make the support permissive one can deliberately choose \(w>0\) on e.g. \([1/5,3/5]\), covering the midpoint \(N/(2X)\in[1/4,1/2]\); however this only ensures potential midpoint regions are admitted, not that any complementary prime pair exists.
 
 The established PNT and partial summation give
 \[
