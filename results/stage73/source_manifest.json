@@ -1,0 +1,38 @@
+{
+  "retrieved_utc": "2026-11-11T08:22:27.061680+00:00",
+  "scope": "Relevant statements and proof passages read; not full independent proofs of these external works.",
+  "sources": [
+    {
+      "name": "tao_1201.6656v4.pdf",
+      "url": "https://arxiv.org/pdf/1201.6656v4",
+      "bytes": 477901,
+      "sha256": "6708dbec1064168ee1fd6ab88c6033ceff7cf606f6bcb9a60a82659131153ad0",
+      "download_status": "OK",
+      "cache_path": "/tmp/stage73-source-cache/tao_1201.6656v4.pdf"
+    },
+    {
+      "name": "wu_0705.1652v1.pdf",
+      "url": "https://arxiv.org/pdf/0705.1652v1",
+      "bytes": 373548,
+      "sha256": "41d432dd63da6d1fe7836ba3beda8b601ce6e64420e50501d26d79f7d971043e",
+      "download_status": "OK",
+      "cache_path": "/tmp/stage73-source-cache/wu_0705.1652v1.pdf"
+    },
+    {
+      "name": "bhowmik_grimmelt.pdf",
+      "url": "https://link.springer.com/content/pdf/10.1007/s10476-026-00191-z.pdf",
+      "bytes": 814462,
+      "sha256": "fc4e7dac8760d3a630abb61c4a428bff18ae0263fbf74acbe679b2ee3ece34e3",
+      "download_status": "OK",
+      "cache_path": "/tmp/stage73-source-cache/bhowmik_grimmelt.pdf"
+    },
+    {
+      "name": "tao_bv_notes.html",
+      "url": "https://terrytao.wordpress.com/2015/01/10/254a-notes-3-the-large-sieve-and-the-bombieri-vinogradov-theorem/",
+      "bytes": 677520,
+      "sha256": "08353a0f1f3c65f32d276ad4ef9e7b51ef59fc5db253e8b44643daa696f6cc19",
+      "download_status": "OK",
+      "cache_path": "/tmp/stage73-source-cache/tao_bv_notes.html"
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "runs": [
+    {
+      "name": "stage70_recheck",
+      "command": "python3 -B results/stage70/verify_stage70.py",
+      "status": "PASS",
+      "elapsed_wall_seconds": 0.06092671901569702,
+      "wait4_resources": {
+        "peak_rss_kib": 20968,
+        "user_cpu_seconds": 0.045834,
+        "system_cpu_seconds": 0.013949
+      },
+      "stderr": "",
+      "output": "results/stage73/stage70_recheck.json",
+      "sha256": "20521ee2123873cd5caaf9def67c0d29f943186577c0a70a17fe0b1a66acc691"
+    },
+    {
+      "name": "stage71_recheck",
+      "command": "python3 -B results/stage71/verify_stage71.py",
+      "status": "PASS",
+      "elapsed_wall_seconds": 0.05899803902138956,
+      "wait4_resources": {
+        "peak_rss_kib": 21304,
+        "user_cpu_seconds": 0.043643999999999995,
+        "system_cpu_seconds": 0.014877999999999999
+      },
+      "stderr": "",
+      "output": "results/stage73/stage71_recheck.json",
+      "sha256": "50840ea61f45811cbf961bab0d83e89559b060a70ad650f61fa6313a1d98ba0b"
+    },
+    {
+      "name": "stage72_recheck",
+      "command": "python3 -B results/stage72/verify_stage72.py",
+      "status": "PASS",
+      "elapsed_wall_seconds": 0.3345244730007835,
+      "wait4_resources": {
+        "peak_rss_kib": 21304,
+        "user_cpu_seconds": 0.32306399999999996,
+        "system_cpu_seconds": 0.011002
+      },
+      "stderr": "",
+      "output": "results/stage73/stage72_recheck.json",
+      "sha256": "92d05bbe80de8b8db08c6f4cf89d98db2478e52beaff1da0e170eb2b8065e730"
+    },
+    {
+      "name": "exact_results",
+      "command": "python3 -B results/stage73/verify_stage73.py",
+      "status": "PASS",
+      "elapsed_wall_seconds": 0.13078102699364536,
+      "wait4_resources": {
+        "peak_rss_kib": 21304,
+        "user_cpu_seconds": 0.11923299999999999,
+        "system_cpu_seconds": 0.011021
+      },
+      "stderr": "",
+      "output": "results/stage73/exact_results.json",
+      "sha256": "1f4ba1e6d7f25cbe8b1b97cdac8dd7464b741e18191d5566e0dcf9370c395ea4"
+    },
+    {
+      "name": "sage_results",
+      "command": "sage -python results/stage73/verify_stage73_sage.py",
+      "status": "PASS",
+      "elapsed_wall_seconds": 26.481514793995302,
+      "wait4_resources": {
+        "peak_rss_kib": 239836,
+        "user_cpu_seconds": 26.201139,
+        "system_cpu_seconds": 0.277439
+      },
+      "stderr": "",
+      "output": "results/stage73/sage_results.json",
+      "sha256": "2355506428dfc06b407221b54aaea1e2df85018d150c4a29ff29f9271b726e03"
+    }
+  ],
+  "python_version": "3.14.4 (main, Apr  8 2026, 04:02:31) [GCC 15.2.0]",
+  "scope": "Declared finite identities, inherited regressions, and three certified interval examples only."
+}

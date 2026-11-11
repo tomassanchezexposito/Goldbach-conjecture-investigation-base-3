@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "sage_version": "10.9",
+  "typeI_coefficient_bounds_checked": 600,
+  "vaughan_checks": 600,
+  "projector_residues": 210,
+  "wheel_even_residues": 105,
+  "minimum_F210": "175/128",
+  "interval_precision_bits": 160,
+  "actual_log_weight_checks": [
+    {
+      "prime_power_contamination_interval": "11.169433928487262283392269124385635170960378937?",
+      "X": 600,
+      "N": 300,
+      "prime_positions": 82,
+      "deleted_positions": 12,
+      "C1_interval": "40.82539962158734685197465833758511225361825941?",
+      "C210_interval": "143.48718388128386036446880084246374106591993283?",
+      "deleted_C210_interval": "130.13634054495944347257595298354397326943886771?",
+      "deleted_target_coefficient_exactly_zero": true,
+      "core_bounds_and_stability": "PASS"
+    },
+    {
+      "prime_power_contamination_interval": "6.0352171911311930189806116149560327700277667296?",
+      "X": 600,
+      "N": 400,
+      "prime_positions": 82,
+      "deleted_positions": 8,
+      "C1_interval": "41.9003232799478355089892198649855971828445645?",
+      "C210_interval": "79.21783065708988603714296577269797102759867653?",
+      "deleted_C210_interval": "56.84209425319375875168839072101699234979784259?",
+      "deleted_target_coefficient_exactly_zero": true,
+      "core_bounds_and_stability": "PASS"
+    },
+    {
+      "prime_power_contamination_interval": "72.026870803300862253771041453157981707289385768?",
+      "X": 600,
+      "N": 540,
+      "prime_positions": 82,
+      "deleted_positions": 24,
+      "C1_interval": "42.70615287153261151127024428812937604837639165?",
+      "C210_interval": "154.09436192952681765993586295977388715896238091?",
+      "deleted_C210_interval": "50.12492927640841708726405553896997176505357100?",
+      "deleted_target_coefficient_exactly_zero": true,
+      "core_bounds_and_stability": "PASS"
+    }
+  ],
+  "scope": "Exact polynomial/cyclotomic identities and three certified finite interval examples; not asymptotic proof."
+}

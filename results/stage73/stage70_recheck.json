@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "theorem_scope": "abstract positive Fourier cone and prime-support pruning; not Goldbach",
+  "cyclic_model": {
+    "group_size": 12,
+    "positive_major_coefficient": 1,
+    "unrestricted_minimum_full_energy": "36/5",
+    "nonnegative_spectrum_minimum_full_energy": "9"
+  },
+  "pruned_prime_support": {
+    "max_prime": 200,
+    "number_of_primes": 45,
+    "weights": "p+(p mod 7)^2",
+    "targets": [
+      {
+        "N": 50,
+        "original": 9882,
+        "pruned": 0,
+        "kept_weight": 4811,
+        "all_weight": 4911
+      },
+      {
+        "N": 100,
+        "original": 40264,
+        "pruned": 0,
+        "kept_weight": 4679,
+        "all_weight": 4911
+      },
+      {
+        "N": 120,
+        "original": 109360,
+        "pruned": 0,
+        "kept_weight": 4364,
+        "all_weight": 4911
+      },
+      {
+        "N": 256,
+        "original": 154302,
+        "pruned": 0,
+        "kept_weight": 4499,
+        "all_weight": 4911
+      },
+      {
+        "N": 300,
+        "original": 344488,
+        "pruned": 0,
+        "kept_weight": 4003,
+        "all_weight": 4911
+      }
+    ],
+    "all_assertions_passed": true
+  }
+}
