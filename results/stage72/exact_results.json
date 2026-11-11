@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "exact_arithmetic": "fractions.Fraction",
+  "scope": "all even N in [X/2,X] for X=90,150,240; rational unit-weight surrogate, not logarithmic PNT",
+  "targets_checked": 122,
+  "samples": [
+    {
+      "X": 90,
+      "N": 46,
+      "prime_count": 24,
+      "r_unit_surrogate": "9527951/65610000",
+      "lambda_unit_surrogate": "16976387/65610000",
+      "power_contamination": "7663/67500",
+      "proper_power_count": 10,
+      "deleted_positions": 4,
+      "all_checks_passed": true
+    },
+    {
+      "X": 90,
+      "N": 90,
+      "prime_count": 24,
+      "r_unit_surrogate": "7077283/10935000",
+      "lambda_unit_surrogate": "25799371/32805000",
+      "power_contamination": "2283761/16402500",
+      "proper_power_count": 10,
+      "deleted_positions": 9,
+      "all_checks_passed": true
+    },
+    {
+      "X": 150,
+      "N": 76,
+      "prime_count": 35,
+      "r_unit_surrogate": "405509/2025000",
+      "lambda_unit_surrogate": "74181163/253125000",
+      "power_contamination": "435047/4687500",
+      "proper_power_count": 13,
+      "deleted_positions": 5,
+      "all_checks_passed": true
+    },
+    {
+      "X": 150,
+      "N": 150,
+      "prime_count": 35,
+      "r_unit_surrogate": "18381991/21093750",
+      "lambda_unit_surrogate": "9894637/9375000",
+      "power_contamination": "15523769/84375000",
+      "proper_power_count": 13,
+      "deleted_positions": 12,
+      "all_checks_passed": true
+    },
+    {
+      "X": 240,
+      "N": 120,
+      "prime_count": 52,
+      "r_unit_surrogate": "76152841/138240000",
+      "lambda_unit_surrogate": "1026132733/1658880000",
+      "power_contamination": "112298641/1658880000",
+      "proper_power_count": 14,
+      "deleted_positions": 12,
+      "all_checks_passed": true
+    },
+    {
+      "X": 240,
+      "N": 240,
+      "prime_count": 52,
+      "r_unit_surrogate": "109046881/92160000",
+      "lambda_unit_surrogate": "109720537/82944000",
+      "power_contamination": "115783441/829440000",
+      "proper_power_count": 14,
+      "deleted_positions": 18,
+      "all_checks_passed": true
+    }
+  ],
+  "limitations": "Finite exact identities and inequality only; does not test analytic asymptotics or Goldbach."
+}
