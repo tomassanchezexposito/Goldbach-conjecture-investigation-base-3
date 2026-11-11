@@ -85,6 +85,28 @@ Weak duality follows from \(A_it_i\le\lambda t_i+(A_i-\lambda)_+B_i\). Choosing 
 
 The exact radius \(\tau_N\) depends on the *actual target representations*. Any proposed independently proved uniform \(\tau_N>0\) would already establish the Goldbach claim on the chosen full support. The theorem is an exact sensitivity characterization, **not** a number-theoretic lower bound for \(\tau_N\).
 
+### Corollary 71.1a — exact target-specific perturbation identity and sharp first-order sensitivity
+
+Extend a_p by zero outside P and put \(d_p=a_p-b_p\), \(0\le d_p\le a_p\). The *ordered* N-th convolution coefficients obey the exact algebraic identity
+\[
+\boxed{
+r_a(N)-r_b(N)=
+2\sum_{\{p,q\}\in\mathcal E_N}
+\bigl(a_pd_q+a_qd_p-d_pd_q\bigr).
+}
+\tag{71.5a}
+\]
+Consequently, for \(a_{\max}=\max_{p\in P}a_p\),
+\[
+0\le r_a(N)-r_b(N)
+\le 2\sum_{p\in P}d_p a_{N-p}
+\le 2a_{\max}\delta_1(a,b).
+\tag{71.5b}
+\]
+The first inequality holds because the weights are decreased coordinatewise, and the second because \(d_pd_q\ge0\). The final bound is *locally sharp*: deleting an infinitesimal amount from the lighter endpoint of an edge whose other weight equals \(a_{\max}\) changes r(N) at rate exactly \(2a_{\max}\).
+
+The middle sum is a **target-reflected prime-weight interaction**, unlike the total deleted mass. Knowing only \(\delta_1\) loses its location on the complement graph. It is not an independently estimated arithmetic statistic, however: \(a_{N-p}\) records the primality and support status of the complementary entry. Assuming a lower bound for that interaction without proving it would repackage the original target question. The exact greedy tradeoff (71.3) records precisely how much this loss of location matters.
+
 ## 2. Theorem 71.2 — the erased-target polynomial is close in every normalized global Fourier Lp scale (PROVED)
 
 Fix any nonzero nonnegative \(w\in C_c^\infty((0,1))\) and let
