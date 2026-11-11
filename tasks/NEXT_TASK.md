@@ -1,39 +1,22 @@
-# NEXT TASK — Stage 73 (QUEUED; DO NOT AUTO-RUN): target-specific signed prime correlation beyond a positive central core
+# NEXT TASK — Stage 74: evaluate the truncated Type I main kernel
 
-**As of 2026-11-11:** Stage 72 mathematical proofs and exact finite checks are complete locally/GitHub; no Codex or CoCalc used. This task is **queued only**, not a background job. Strong Goldbach for every residual N∈H remains **OPEN**.
+Queued research objective only; do not begin until requested. Universal coverage of the original three cases remains OPEN.
 
-## Recovery and notation
+## Single concrete question
 
-Read, in order, \`results/stage72/final_report.md\`, \`results/stage72/01_pointwise_core_and_prime_power.md\`, \`results/stage72/02_adversarial_review.md\`, Stage 71 \`01_exact_target_robustness_and_lp.md\`, Stage 70 \`05_vanishing_mass_prime_deletion.md\`, and Stage 69 \`07_primary_analytic_route_A.md\` before proposing a new lemma.
+Starting from the completed Stage 73 branch, evaluate uniformly for $N\in H\cap[X/2,X]$ and $t$ in the fixed weight support the explicit signed kernel
+$$\mathcal K_{U,V,N}(t)=\sum_{d\le U,(d,N)=1}\frac{\mu(d)}{\varphi(d)}\log(t/d)-\sum_{l\le UV,(l,N)=1}\frac{c_l}{\varphi(l)},\quad
+c_l=\sum_{dm=l,d\le U,m\le V}\mu(d)\Lambda(m),$$
+with $U=V=\lfloor X^{1/5}\rfloor$ and $\mathcal M_I(N)=\int h_N(t)\mathcal K_{U,V,N}(t)dt$. Prove a uniform asymptotic with a quantified error, or refute a proposed formula by an exact arithmetic obstruction. This asks for the correct Type II centering, not for an assumed prime-pair lower bound.
 
-Keep the original cases, H={even N≥4: N−1 and N/2 composite}, distinct prime pair count R(N), and p=3+2a positions, a+b=N/2−3. All weights must refer to the *immutable actual entire prime support*, except explicitly labeled adversarial alternative models. Smooth w≥0 fixed compact support (0,1), state precisely which fraction of possible pairs it admits.
+## Required method and gates
 
-## Current rigorous theorem versus missing input
+1. Read Stage 73's complete report, proofs, audit and manifest. Independently audit T73.5, including the grouped bound $|c_l|\le\log l$, nonreduced classes, BV centering and mesh endpoints. Preserve Stage 72 PR #21 and all prior evidence.
+2. Expand the second term as the actual $d,m$ sum. Separate $m=p^j$ with $p\mid d$ from $p\nmid d$; never assume $\varphi(dm)=\varphi(d)\varphi(m)$ without coprimality. Track $(dm,N)=1$ exactly.
+3. Compare fixed targets and targets with many small prime divisors. Constants must be uniform as $N$ varies with $X$; do not silently use a fixed-$N$ Möbius estimate in that regime. Source-check any required multiplicative-function/zero-free estimate.
+4. Establish at least two independent derivations for the kernel simplification and use a few exact boundary counterexamples. Avoid expanding finite Goldbach sweeps.
+5. State the resulting signed main term of $A_3$ and the precise first remaining target-uniform correlation estimate. Do not claim $A_3=o(X)$ before proving that its main contribution vanishes. Test any proposed enlarged-class certificate against Stage 70–71 deletion and T73.4.
+6. Preserve $H=\{N\ge4:N\text{ even},N-1,N/2\text{ composite}\}$, unordered distinct genuine-prime $R(N)$ and $p=3+2a$, $q=3+2b$, $a+b=N/2-3$. The immutable full prime coefficients are unchanged.
+7. Save English proofs, source/status ledger, independent verification and exact manifests under `results/stage74/` on a new dedicated branch. Fetch first using the configured dedicated SSH identity and `IdentitiesOnly=yes`; preserve uncommitted work. Do not modify main, install software, change credentials, force-push, incur costs or merge PRs. Publication and execution require the user's Stage 74 request.
 
-- **T72.1 PROVED:** for N∈[X/2,X], the actual true-prime central integral over |alpha|≤1/(6X) satisfies C_X(N)≥(2/(3πX))S_X(0)^2≥W²X/(6π) for large X. This **does not** prove r_X(N)>0, because the signed complement E_X(N) is unbounded below at that needed threshold.
-- **T72.2 PROVED:** true-prime and weighted von Mangoldt binary convolution differ by at most an explicit 2M²⌊√X⌋(log X)² for all X≥4 and, by the established Chebyshev estimate, at most 4C_Ch M²√X log X for X≥16, uniformly in N. This is arithmetic bookkeeping, not a pointwise lower bound for G_X(N).
-- **Deletion adversary:** a polynomial using a nearly-complete subset of genuine primes can have r'_X(N)=0 while C'_X(N)≫X, so any purported new sufficient certificate that only uses positive core mass or first-order prime statistics must fail for that enlarged class.
-- **Missing signed theorem:** a proved lower bound E_X(N)>−W²X/(6π), or a proved stronger full Λ*Λ lower bound above the quantified prime-power error, for each residual N; neither is currently available.
-
-## Research objective and two independent paths
-
-**Path A — actual signed Fourier complement.**
-1. Treat \(\mathbb T\setminus J_X\) as the exact complement of the q=1 microcore; distinguish its other rational major arcs and genuine minor regions. Explicitly preserve the target phase \(e(-N\alpha)\).
-2. Explore a disjoint Farey/Voronoi shell decomposition to expose cancellation among numerator Ramanujan weights and reflected prime residues without taking absolute values prematurely. Prove a valid **quantitative signed** inequality strictly stronger than Cauchy, or find the first unavoidable existing input gap.
-3. Derive the contribution from actual fixed prime coefficients, not from arbitrary coefficient positivity. Source-check every published major-arc theorem for its smoothing, uniformity in N and zero-free assumptions. Never cite a conditional estimate as unconditional, or a minor-only fourth moment as full-circle.
-
-**Path B — true-prime binary Λ-correlation and sieve parity.**
-1. Starting from the exact \(\Lambda*\Lambda\) at each N, decompose Λ using a concrete, correctly truncated Vaughan/Heath-Brown identity, carefully recording prime-power correction (≤4C_Ch M²√X log X).
-2. Isolate Type I and Type II signed sums and identify which term would need a power or logarithmic saving **uniformly for a fixed target N**. A known mean-square or average-over-N result cannot automatically remove the exceptional target.
-3. Search current peer-reviewed original publications for true pointwise binary lower bounds under explicit hypotheses. If an assumed hypothesis already implies Goldbach or is stronger than it, label the implication CONDITIONAL, not a theorem of Goldbach.
-4. Compare any growing-modulus input with the Stage 70–71 adversarial deletions. If it is stable under deletion, it cannot force a positive target coefficient in that model class.
-
-## Mandatory adversarial proof check
-
-Write out exact quantifiers and constants, the target support of smooth w, p=2 and p=3 exceptions, possible p=q outside H, and whether prime powers are corrected before interpreting a Λ lower bound. Test any proposed decisive inequality against an explicit matching-deletion model before accepting it. Use a **few decisive exact finite tests** only for algebra; do not substitute a large prime sweep for a target-uniform signed proof.
-
-## Publication protocol
-
-Start a new branch descending from \`cocalc/stage72-pointwise-prime-power-core\` **only when the user requests the next stage**. Preserve Stage 72 and PR in draft, and avoid merging to \`main\`. Record proof ledger, external source audits, counterexamples, and executable checks with machine-readable manifests. No CoCalc/Codex use, paid resources, installed software, credential or permission changes without user authorization.
-
-**Success:** one independent *proved* target-level signed saving not already equivalent to Goldbach, or one rigorous new no-go delimiting an attempted class, with exact first missing lemma. Goldbach stays OPEN otherwise.
+Success is a proved target-uniform multiplicative-kernel evaluation or a rigorous refutation with its first missing input. It is not automatically a simultaneous-primality theorem.

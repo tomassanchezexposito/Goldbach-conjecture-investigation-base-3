@@ -1,0 +1,118 @@
+{
+  "stage": 73,
+  "generated_utc": "2026-11-11T08:33:49.073801+00:00",
+  "branch": "cocalc/stage73-signed-prime-correlations",
+  "base_branch": "cocalc/stage72-pointwise-prime-power-core",
+  "base_sha": "0801eff2a1e8335539016360be4d1572a1d5ca50",
+  "verified_math_checkpoint": "f658e8d88f002328a3a17aaa9e74642fec50c1ab",
+  "worktree": "/home/user/goldbach-stage73",
+  "preservation": "Original worktree /home/user/goldbach-research-github and its four untracked Stage 69 files preserved. No main or Stage 72 branch mutation.",
+  "proof_status": {
+    "T73.1": "PROVED elementary exact projector, two derivations",
+    "T73.2": "PROVED deduction from established fixed-modulus PNT-AP; constant 175/128 exact",
+    "T73.3": "PROVED standard Vaughan identity and binary specialization",
+    "T73.4": "PROVED sharp elementary local-profile bound, two proofs; deletion corollary uses established Wu/PNT",
+    "T73.5": "PROVED Type I reduction using established BV and quantitative PNT; signed Type II unresolved",
+    "universal_coverage": "OPEN",
+    "conditional_candidates": "Signed complement margin / full binary Lambda lower bound / centered Type II hypothesis remain OPEN"
+  },
+  "reproduction": "python3 -B results/stage73/run_verification.py",
+  "software": {
+    "python": "3.14.4 (main, Apr  8 2026, 04:02:31) [GCC 15.2.0]",
+    "sage": "10.9, release 2026-05-04",
+    "sage_python": "3.14.4",
+    "interval_arithmetic": "Sage RealIntervalField, 160 bits; certified enclosures, not exact real values"
+  },
+  "verification_runs_file": "results/stage73/verification_runs.json",
+  "new_exact_domains": {
+    "vaughan_and_typeI_coefficient_checks_per_implementation": 600,
+    "integer_n": [
+      1,
+      120
+    ],
+    "truncations": [
+      [
+        1,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        12,
+        10
+      ]
+    ],
+    "binary_targets": [
+      16,
+      28,
+      40,
+      64,
+      100,
+      120
+    ],
+    "wheel_even_residues": 105,
+    "projector_residues": 210,
+    "actual_prime_interval_examples": {
+      "X": 600,
+      "N": [
+        300,
+        400,
+        540
+      ],
+      "prime_positions_per_example": 82,
+      "prime_enumeration_bound_exclusive": 600
+    }
+  },
+  "independent_methods": [
+    "Python factorization, sparse formal-log dictionaries and Fraction CRT/Mobius sums",
+    "Sage arithmetic-function convolution, multivariate polynomial ring and cyclotomic roots",
+    "Analytic two-derivation proofs separate from finite checks"
+  ],
+  "primality": "Python deterministic trial factorization on the declared small inputs; Sage exact integer primality/factorization and proven small-prime enumeration below 600.",
+  "inherited_stage72_checks": "Historical source and result SHA-256 values independently matched to manifest; rerun output byte-identical; 122 unit-weight rational surrogate targets, no analytic asymptotic test.",
+  "source_manifest": "results/stage73/source_manifest.json",
+  "cutoffs": "No numerical asymptotic cutoff or optimized Chebyshev constant computed; all new arithmetic uniformity claims specify fixed w and target range. D is fixed in the wheel theorem.",
+  "limitations": [
+    "Finite checks do not prove universal prime-pair existence",
+    "Certified intervals validate only three stated actual-log examples",
+    "No unconditional signed lower margin for the full complement or Type II established",
+    "No recent unverified zero-free premise adopted",
+    "Internal independent derivations/implementations are not external peer review"
+  ],
+  "known_draft_failures_corrected": [
+    "Initial resource runner expected absent /usr/bin/time; replaced by standard os.wait4 without installation",
+    "Intermediate source-summary centering was corrected to coprime mass; its prime-power difference is included in the BV mesh proof"
+  ],
+  "files_sha256": {
+    "results/stage73/01_fourier_signed_complement.md": "2fb00350850aef6ecbedcadc0ca7be73f561fa38aa3963da78373174236da918",
+    "results/stage73/02_binary_von_mangoldt_decomposition.md": "fcbdbef0ae13f20ae2190b976f9c990b0beac4c63b05dc1e2d9f7d5bb36df9dc",
+    "results/stage73/03_literature_and_hypothesis_audit.md": "ea07e7b308673bca5d300e24de927191a2ce4e0e60eacca5b430702e5eeef726",
+    "results/stage73/04_adversarial_review.md": "5674b8b8157291f68f90bfd8d8cac6508f6536d7008b7cdf01a23df54b3c9286",
+    "results/stage73/05_proof_ledger.md": "0643b5a190cfeef2d901988fdfe1bf3ba20a9961316e8fa3a336152f7679bf54",
+    "results/stage73/checkpoint_log.md": "f6f8d835adcb6c6b80c5dc79de855bcbf6cdeac6b82a813ef9c8c23225ff320f",
+    "results/stage73/exact_results.json": "1f4ba1e6d7f25cbe8b1b97cdac8dd7464b741e18191d5566e0dcf9370c395ea4",
+    "results/stage73/final_report.md": "786f0131d063466b9125e6fccd3666cb248617d8d0a994b4c2290c7ab3f1ec29",
+    "results/stage73/run_verification.py": "b199cc94e5798f2daae9da8c2929c27e16b0215056e40abf4db37a7efeef5148",
+    "results/stage73/sage_results.json": "2355506428dfc06b407221b54aaea1e2df85018d150c4a29ff29f9271b726e03",
+    "results/stage73/source_manifest.json": "c9ebb3c7a3251f14fd9dbea721d068632887fb193cb15532aeb2a3bced0be9e3",
+    "results/stage73/stage70_recheck.json": "20521ee2123873cd5caaf9def67c0d29f943186577c0a70a17fe0b1a66acc691",
+    "results/stage73/stage71_recheck.json": "50840ea61f45811cbf961bab0d83e89559b060a70ad650f61fa6313a1d98ba0b",
+    "results/stage73/stage72_recheck.json": "92d05bbe80de8b8db08c6f4cf89d98db2478e52beaff1da0e170eb2b8065e730",
+    "results/stage73/task_snapshot.md": "1f12d670aaaadde5a179a9719268c758c3e62410c7d5409544cbf48a8612428f",
+    "results/stage73/verification_runs.json": "a986f4a90b65ee1966188fd2c7c2abac8d8708c8289214e562407c9e363026d1",
+    "results/stage73/verify_stage73.py": "b1683512386f33c2ce18283ca641e6bf995cbea971e74f2b3ffb2e8ec9343b62",
+    "results/stage73/verify_stage73_sage.py": "532a6a7178096238a4b6f3088bf3757e58d2181c99e6acfdd0808e1ed415047b",
+    "tasks/NEXT_TASK.md": "e695d4e47331faef8d142f22068db05f4a7de20f92ca52d73c678e208b4d64e7"
+  },
+  "self_hash_policy": "This manifest excludes itself; final Git commit SHA is reported separately to avoid self-reference."
+}
