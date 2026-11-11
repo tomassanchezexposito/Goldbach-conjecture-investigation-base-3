@@ -1,0 +1,305 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,hyperref,url,array}
+\hypersetup{hidelinks,pdftitle={Formal closure and the remaining binary prime correlation},pdfauthor={Prime-Correlations-210 research project}}
+\emergencystretch=2em
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\newcommand{\Sg}{\mathfrak S}\newcommand{\e}{\mathrm e}
+\newcommand{\status}[1]{\textbf{Status: #1.}}
+\begin{document}
+\begin{center}\Large\textbf{Formal Closure and the Remaining Binary Prime Correlation}\\[5pt]
+\large A technical consolidation of Stages 56--76\\[4pt]
+\normalsize Prime-Correlations-210\quad 11 November 2026\end{center}
+\section{Scope, immutable objects and certification levels}
+\status{Strong Goldbach OPEN; signed Type II NO-GO under deletion-stable premises}
+This monograph consolidates the exact reductions, finite refutations and obstruction arguments of the research record. Its central conclusion is a precise conditional threshold, not a new arithmetic lower bound. The original research and ledger statements remain unchanged. The source base is commit \texttt{3a5581dd93b7c50bbc55062d032a6ad2acab1fb4}; the final publication commit is pinned separately in Git and the manifest policy.
+
+The permanent genuine-prime object is
+\[
+ S_X(\alpha)=\sum_{p\ge2}(\log p)w(p/X)\e(p\alpha),\qquad \e(t)=\exp(2\pi it),
+\]
+where $w\ge0$ is fixed, smooth and compactly supported in $(0,1)$. Its coefficient at 1 is zero; $1$ is not prime. Define the ordered weighted coefficient
+\[
+ r_X(N)=\int_0^1 S_X(\alpha)^2\e(-N\alpha)\,d\alpha.
+\]
+The square, not the modulus square, encodes sums. For $\Lambda(n)$ use the actual von Mangoldt function, extended by zero on $n\le0$. All prime powers remain until their correction is bounded.
+
+Three evidence levels must be distinguished. Elementary identities and finite matching optimization have written proofs. Sage rational calculations check specified finite or symbolic dependencies. Analytic estimates use named external theorems and the internal uniformity arguments reproduced here. A finite test is not a proof of an analytic rate or of positivity at every target.
+
+Lean was not found on PATH or in the four standard executable locations checked. The accompanying Mathlib-dependent Lean source has no admitted theorem or added axiom, but is \emph{uncompiled and not certified}. No package was installed. Thus the requested Lean machine-certification milestone is unavailable in this runtime; the monograph does not disguise it as completed. The exact executable checks are recorded in the manifest.
+
+The input request's Stage 57 denominator 9,450 conflicts with the preserved report, manifest and exact data, all of which record \textbf{9,490}. We use the recorded 9,490 with this explicit discrepancy notice. No historical number is silently rewritten.
+\newpage
+\section{The three cases, residual set and boundary set}
+For even $N\ge4$ let
+\[
+ R(N)=\#\{p<q:p,q\text{ prime},\ p+q=N\}.
+\]
+The author's three-case statement is
+\[
+ C(N):\quad N=p+1\text{ for a prime }p\quad\lor\quad
+ N=2p\text{ for a prime }p\quad\lor\quad R(N)>0.
+\]
+Set
+\begin{align*}
+H&=\{N\ge4:N\text{ even},\ N-1,N/2\text{ composite}\},\\
+H_1&=\{N\ge8:N\text{ even},\ N-1\text{ prime},\ N/2\text{ composite}\},\\
+D&=\{N\ge4:N\text{ even},\ N/2\text{ composite}\}.
+\end{align*}
+Here composite means greater than one and not prime. If $N\in D$, its composite midpoint is at least 4, hence $N\ge8$. The integer $N-1>1$ is either prime or composite, exclusively, proving $D=H\mathbin{\dot\cup}H_1$.
+
+Write $B(N)$ for binary Goldbach at this target. Splitting representations into equal and distinct endpoints gives
+\[
+ B(N)\iff (N/2\text{ prime})\lor R(N)>0,
+ \qquad C(N)\iff(N-1\text{ prime})\lor B(N).
+\]
+Outside $H$, one of the first two author cases is already available; on $H$ neither is available. Outside $D$, Goldbach has the equal-prime representation; on $D$ a representation must be distinct. Therefore
+\begin{align*}
+(\forall N\ge4\text{ even},C(N))&\iff(\forall N\in H,R(N)>0),\\
+(\forall N\ge4\text{ even},B(N))&\iff(\forall N\in D,R(N)>0).
+\end{align*}
+These are proved logical equivalences, not existence theorems. Strong Goldbach implies the three-case assertion. The converse requires the additional coverage of $H_1$ and is not assumed.
+
+\textbf{L76.1, logical component.} The author's assertion plus $R(N)>0$ on every $H_1$ target is exactly binary Goldbach. Case I alone does not exhibit a two-prime sum. Introducing $H_1$ removes a formulation ambiguity while leaving its arithmetic content fully open. In particular, no identity involving the zero coefficient at 1 creates a missing prime partner.
+\newpage
+\section{Coordinates, midpoint, double symmetry and wheel 210}
+The map $C_a=3+2a$ is a bijection from nonnegative integers to odd integers at least 3. Its inverse is $a=(p-3)/2$; injectivity follows by cancellation of 2, and oddness makes the inverse integral. This progression contains composites as well as primes.
+
+For odd $p,q$, write $p=3+2a$, $q=3+2b$ and $N=2m$. Then
+\[
+ p+q=N\iff a+b=m-3.
+\]
+If $p<q$, let $h=(q-p)/2=b-a>0$. Exactly
+\[
+ p=m-h,\quad q=m+h,\quad N-2p=2q-N=q-p.
+\]
+None of these equalities tests primality. Prime 3 is position zero. Prime 2 occurs in an even two-prime sum only at $N=4$, which has prime midpoint; it is not covered by the odd-position map.
+
+For a prime $l$, let $\nu_l(N)$ be the number of distinct forbidden residues $\{0,N\}$ modulo $l$: it is 1 if $l\mid N$ and 2 otherwise. A residue $r$ is admissible when neither $r$ nor $N-r$ is divisible by $l$, giving $l-\nu_l(N)$ choices. CRT gives the exact finite identity
+\[
+ A_{210}(N)=\prod_{l\in\{2,3,5,7\}}(l-\nu_l(N)).
+\]
+Since $\varphi(210)=(2-1)(3-1)(5-1)(7-1)=48$, the normalized local factor is
+\[
+ S_{210}(N)=\frac{210A_{210}(N)}{48^2}.
+\]
+For odd targets the factor at 2 is zero. For even targets it is positive. This counts residue choices, not prime representations, and is not the infinite singular series. A genuine representation involving 2, 3, 5 or 7 can fail reduced-residue conditions; it must not be discarded when using the full polynomial. Exactly one can split $R(N)$ into pairs with both endpoints greater than 7 and the remaining exceptional pairs with a small endpoint. We do not insert the wheel as an equality for $R(N)$.
+
+The arithmetic obstruction $\varphi(dm)\ne\varphi(d)\varphi(m)$ without coprimality is already visible at $d=m=3$: $\varphi(9)=6$, whereas $\varphi(3)^2=4$. At the recorded $N=16,U=V=3$ boundary the correct coefficient is $(\log3)(1/2-1/6)=(\log3)/3$, versus the false separated $(\log3)/4$. The difference is $(\log3)/12$.
+\newpage
+\section{Finite variance obstruction and Stage 56 evidence}
+Let $x_1,\ldots,x_k\ge0$, $k\ge2$, with $\mu=k^{-1}\sum x_i$ and centered sum of squares $V=\sum(x_i-\mu)^2$. If some $x_j=0$, Cauchy--Schwarz on the other $k-1$ entries gives
+\[
+ \sum x_i^2\ge\frac{k^2\mu^2}{k-1},\qquad
+ V=\sum x_i^2-k\mu^2\ge\frac{k\mu^2}{k-1}.
+\]
+Equality occurs when the other $k-1$ entries all equal $k\mu/(k-1)$. Thus a strict inequality in the other direction excludes zeros, but is not necessary for positivity. A failed sufficient test gives no negative existence conclusion.
+
+Stage 56 used $x_N=R(N)/A_{210}(N)$ on residual targets in each block. The normalization is a finite wheel normalization, not an assumed asymptotic for the true-prime count. The recorded scan considered 426 windows with even endpoints differing by 100, each containing 51 even integers before residual filtering. It found three violations of the proposed strict bound. The largest exact ratio was
+\[
+ \frac{V}{k\mu^2/(k-1)}=\frac{1716160}{1568187}>1
+\]
+on $[50,150]$, which contains 21 residual targets and no zero counts. This is an exact counterexample to assuming the bound universally; it is not a Goldbach counterexample. The original report and notebook preserve the scan, and Stage 57 cites this same counterexample.
+
+This monograph does not rerun the Stage 56 scan or reconstruct a live notebook from JSON. The source report is pinned and hashed. The historical finite observation remains distinct from the all-dimensional elementary variance lemma proved above.
+
+An important logical limitation follows without number theory: a favorable mean or aggregate energy does not constrain each coordinate until an independent quantitative hypothesis crosses the sharp one-zero threshold. If the quantities in that hypothesis are themselves built from the unknown $R(N)$, writing the hypothesis is not an independent positivity proof. Stages 58--61 developed sharper local criteria but did not supply that missing arithmetic estimate.
+\newpage
+\section{Shifted four-position identities and Stage 57 refutations}
+Let $\mathcal P_N$ be the set of pairs $(p,q)$ with $p<q$ and sum $N$. For a distinct shifted target $M=N+2h$, the product $R(N)R(M)$ counts ordered choices from $\mathcal P_N\times\mathcal P_M$. An ordered choice is either four-distinct or shares exactly one endpoint position. The four possible equalities are $p=r$, $p=s$, $q=r$, $q=s$.
+
+Two shared endpoints would force identical unordered pairs and hence $N=M$, excluded here. The five categories are therefore disjoint and exhaustive, with multiplicity one per ordered choice. If their counts are $Q_4,S_{LL},S_{LH},S_{HL},S_{HH}$,
+\[
+ R(N)R(M)=Q_4+S_{LL}+S_{LH}+S_{HL}+S_{HH}.
+\]
+At zero shift the identical-pair diagonal is $R(N)$ and the off-diagonal is $R(N)(R(N)-1)$. Sharing one prime at the same target forces the other prime equal. These identities must not be substituted for a signed lower estimate of their terms.
+
+The preserved Stage 57 data covers targets through 2000, shifts $h=1,\ldots,10$, with residual anchors and shifted target at most 2000. It records 5,616 anchor-shift rows. The ordered representation-pair total is 5,085,878: 4,988,922 four-distinct and 96,956 shared-prime terms. Independent trial-division and sieve methods were recorded historically; they are not rerun here.
+
+For normalized values $X_N=R(N)/A_{210}(N)$, the tested covariance hypothesis was
+\[
+ \frac1k\sum_{N\in B}X_NX_{N+2h}\ge
+ \left(\frac1k\sum_{N\in B}X_N\right)
+ \left(\frac1k\sum_{N\in B}X_{N+2h}\right).
+\]
+It failed in 3,762 of \textbf{9,490} eligible windows. The task's 9,450 is explicitly rejected as a source transcription error, not adopted or silently repaired. At $h=1$ and $[262,362]$, with 25 residual anchors, the recorded covariance is $-127/3000000$. Its product mean is $4859/15000$, less than $971927/3000000$.
+
+The new certificate reads the saved window count and failures and sums saved ordered counts. It does not generate prime pairs. These exact finite failures refute universal covariance nonnegativity, not every possible prime-specific correlation theorem.
+\newpage
+\section{From local criteria to Fourier and operator obstructions}
+Stages 58--61 separated sharp deterministic certificates from their missing prime inputs. Stage 58 audited pointwise certificates without obtaining a lower correlation bound. Stage 59 developed local second-moment criteria. Stage 60 bounded candidate configurations at an inadequate scale; Stage 61 retained signed local combinations. A candidate-position upper bound cannot force a representation.
+
+Stage 62 exhibited the danger of replacing the full singular series by a wheel-only local model. The infinite arithmetic factor
+\[
+ \Sg(N)=2C_2\prod_{p\mid N,p>2}\frac{p-1}{p-2},\quad
+ C_2=\prod_{p>2}\left(1-\frac1{(p-1)^2}\right)
+\]
+contains divisibility information beyond 210. Its occurrence as a prediction does not prove a pointwise asymptotic for prime counts. Stage 63 continued exact configuration and conditional-criterion analysis.
+
+Stages 64--65 recorded and corrected a sum-versus-difference Fourier error. Orthogonality gives
+\[
+ [S_X^2]_N=\sum_{p+q=N}a_pa_q,
+ \qquad [|S_X|^2]_N=\sum_{p-q=N}a_pa_q.
+\]
+These coefficients and their signed arc integrals cannot be interchanged. Parseval can control aggregate squares of coefficients while permitting a single exceptional coordinate.
+
+Stages 66--68 sharpened local energy, rational-arc Gram geometry and allocation of arcwise budgets. A basic exact geometric bound is: if $|c(N)|\ge A$ and $|c(N+h)-c(N)|\le d_h$ at distinct nonzero shifts, then
+\[
+ \|c\|_2^2\ge A^2+\sum_h(A-d_h)_+^2.
+\]
+The reverse triangle inequality proves each summand. Abstract equality constructions show why this alone is not a prime-specific arithmetic saving. Stage 69 audited a semidefinite lifting error in the allocation framework and retained the actual-prime pointwise obstruction.
+
+This chronological synthesis does not certify every historical analytic claim. The retained core used below is independently specified: the genuine sum polynomial, the exact Vaughan identity, standard BV/PNT inputs, and the stated uniform transfer. No unverified 2026 zero-free half-plane claim enters these deductions. Norm optimization is not restarted in this closure stage.
+\newpage
+\section{Standard Vaughan decomposition and genuine-prime correction}
+Write Dirichlet convolution as $*$. Split $\mu=\mu_1+\mu_2$ at $d\le U$ and $\Lambda=\Lambda_1+\Lambda_2$ at $m\le V$. Since $\log=\mathbf1*\Lambda$ and $\mu*\mathbf1=\varepsilon$,
+\[
+ \Lambda=\Lambda_1+\mu_1*\log-\mu_1*\mathbf1*\Lambda_1
+              +\mu_2*\mathbf1*\Lambda_2.
+\]
+Indeed the two middle terms combine to $\mu_1*\mathbf1*\Lambda_2$; adding the last gives $\Lambda_2$. This is the standard identity, not a novelty claim.
+
+Let $h_N(t)=w(t/X)w((N-t)/X)$, $F_N(t)=\Lambda(N-t)h_N(t)$ and $U=V=\max(1,\lfloor X^{1/5}\rfloor)$. Multiplying the identity by $F_N$ and summing gives exactly
+\begin{align*}
+ G_X&=A_0+A_1-A_2+A_3,\\
+ A_0&=\sum_{n\le V}\Lambda(n)F_N(n),\\
+ A_1&=\sum_{d\le U}\mu(d)\sum_{k\ge1}\log k\,F_N(dk),\\
+ A_2&=\sum_{d\le U,m\le V}\mu(d)\Lambda(m)\sum_{k\ge1}F_N(dmk),\\
+ A_3&=\sum_{k>U,m>V}b_U(k)\Lambda(m)\Lambda(N-km)h_N(km),
+ \quad b_U(k)=\sum_{d\mid k,d>U}\mu(d).
+\end{align*}
+All support and hyperbolic restrictions remain; $b_U$ changes sign. The boundary $A_0$ vanishes only at sufficiently large $X$ when $V<\sigma X$, with fixed $\operatorname{supp}w\subset[\sigma,\rho]\subset(0,1)$.
+
+Let $T_X$ have coefficients $\Lambda(n)w(n/X)$ and $Q_X=T_X-S_X$, supported on proper prime powers. Each coefficient of $Q_X$ is nonnegative. With $M=\|w\|_\infty$, its coefficient sum is at most $M\pi(\sqrt X)\log X$. Ordered union bookkeeping gives
+\[
+ 0\le P_X(N):=G_X(N)-r_X(N)
+ \le2M^2\pi(\sqrt X)\log^2X
+ \le4C_{\rm Ch}M^2\sqrt X\log X\quad(X\ge16).
+\]
+The factor 2 permits double counting two proper-power entries. This is a negligible deterministic correction, not a lower bound for $G_X$. No target representation is assumed, and the estimate holds for every integer target.
+\newpage
+\section{T73.5: the uniform Type I reduction}
+Group $A_2$ by $l=dm$ and define
+\[
+ c_l=\sum_{dm=l,d\le U,m\le V}\mu(d)\Lambda(m),\qquad
+ |c_l|\le\sum_{m\mid l}\Lambda(m)=\log l.
+\]
+For reduced $(N,l)=1$, the reflected variable $x=N-lk$ places $\Lambda(x)$ in class $N\pmod l$. Compact support allows Stieltjes partial summation. The variation of $h_N(N-x)$ is $O_w(1)$, and that of its logarithmic $A_1$ version is $O_w(\log X)$, uniformly in $N\in[X/2,X]$. Thus the main term is
+\[
+ \mathcal M_I(N)=\int h_N(t)\left[
+ \sum_{d\le U,(d,N)=1}\frac{\mu(d)}{\varphi(d)}\log(t/d)
+ -\sum_{l\le UV,(l,N)=1}\frac{c_l}{\varphi(l)}\right]dt.
+\]
+{\raggedright Nonreduced classes contain only prime powers with bases dividing $N$; their total loss is $O_w(UV\log^3X)$. They are not assigned the reduced-class main term.\par}
+
+The externally established BV input, in Tao's Theorem 17 convention, centers at coprime $\Lambda$ mass. Removing that coprimality in the center costs $O(\log^4X)$ after summing moduli; quantitative PNT supplies the $y/\varphi(l)$ center. To justify endpoint maxima, fix a desired saving $A$, put $R=A+2$, choose $C>R+3$, then $D>R+C+4$, then the source $B(D)$. A grid with first positive endpoint comparable to $X/\log^CX$ has $O(\log^CX)$ points. At each positive point,
+\[
+ \frac{X^{2/5}\log^{B(D)} y}{\sqrt y}
+ \ll X^{-1/10}\log^{B(D)+C/2}X\longrightarrow0.
+\]
+Endpoint BV is therefore valid even at the first point. Monotonicity adds at most $\Delta/\varphi(l)$ between endpoints, summed as $O(X\log^{2-C}X)$. The zero endpoint has discrepancy zero. Parameter selection is fixed before taking $X$ large.
+
+Consequently, for every fixed $A>0$ and sufficiently large $X$,
+\[
+ G_X(N)=\mathcal M_I(N)+A_3(N)
+ +O_{A,w}(X\log^{-A}X+X^{2/5}\log^3X)
+\]
+uniformly in all integer $N\in[X/2,X]$. This theorem does not need $N-1$ composite and does not estimate the sign of $A_3$. An effective finite cutoff is not supplied.
+\newpage
+\section{T74.3: uniform kernel evaluation without a prime-pair premise}
+For positive even $N$, define
+\[
+ a_N(d)=\frac{\mu(d)\mathbf1_{(d,N)=1}}{\varphi(d)},\quad
+ A_N(y)=\sum_{d\le y}a_N(d),\quad B_N(y)=\sum_{d\le y}a_N(d)\log d.
+\]
+The external quantitative M\"obius estimate gives
+\[
+ \sum_{n\le y}\frac{\mu(n)}n=O(e^{-c\sqrt{\log y}}),\quad
+ \sum_{n\le y}\frac{\mu(n)\log n}{n}=-1+O(e^{-c\sqrt{\log y}}).
+\]
+Partial summation controls both tails; its uniform bound with an extra $n^{-s}$, $0\le s\le1$, justifies differentiation at the boundary of $1/\zeta(1+s)=s+O(s^2)$ and the minus sign.
+
+Define $g_N(p^j)=p^{-j}$ if $p\mid N$, and $-1/(p^j(p-1))$ otherwise. Local Euler factors give $a_N=(\mu/n)*g_N$. If $N\le X^B$ with fixed $B$, splitting its prime divisors at $\log X$ gives
+\[
+ T_N:=\sum_k|g_N(k)|k^{1/4}\le C\exp(C_B(\log X)^{1/4}).
+\]
+For fixed $0<\alpha\le\beta$ and $X^\alpha\le y\le X^\beta$, split the convolution at $\sqrt y$. Its errors are bounded by
+\[
+ T_N(1+\log y)^2\{e^{-c_1\sqrt{\log y}}+y^{-1/8}\}
+ =O(e^{-c\sqrt{\log X}}).
+\]
+The exponent $1/4$ in the moment growth is smaller than $1/2$ in the saving; no fixed-target constant is imported. Absolute convergence evaluates $\sum g_N=\Sg(N)$, giving $A_N(y)=o(1)$ at the displayed rate and $B_N(y)=-\Sg(N)+o(1)$.
+
+The shared-prime correction in $\varphi(dp^j)$ is retained exactly. Alternatively removing its local Euler factor decreases the absolute moment, uniformly in $p,j$. Summing over $p^j\le V$ with its $O(\log^2V)$ mass preserves the saving. Hence, for $t\in[\sigma X,\rho X]$ and all positive even $N\le X$,
+\[
+ \mathcal K(t)=\Sg(N)+O_{\sigma,\rho}(e^{-c\sqrt{\log X}}),\quad
+ \mathcal M_I=X\Sg(N)J_w(N/X)+O_w(Xe^{-c\sqrt{\log X}}).
+\]
+This is an absolute error, also for targets with many small prime divisors. The positive sign and evenness at prime 2 are essential. This chapter summarizes the preserved detailed proof; no new kernel experiment is undertaken.
+\newpage
+\section{L76.2: matching deletion and its analytic dependencies}
+Complementary pairs form a matching: a given prime $p$ has at most one complement $N-p$. On $D$ no diagonal occurs. For a finite collection of disjoint edges $(p_i,q_i)$ with nonnegative weights $a$, consider attenuations $0\le b\le a$ and
+\[
+ r_b(N)=2\sum_i b_{p_i}b_{q_i}.
+\]
+All products are nonnegative. If $r_b=0$, every edge has a zero endpoint, whose deletion costs at least $\min(a_{p_i},a_{q_i})$. Since edges are disjoint these costs sum. Zeroing a lighter endpoint on every edge and retaining all isolated vertices attains the bound. Thus exactly
+\[
+ \tau_N=\min_{0\le b\le a,\ r_b=0}\|a-b\|_1
+       =\sum_i\min(a_{p_i},a_{q_i}).
+\]
+This also covers ties, zero weights and the empty matching. For merely nonnegative weights, zero cost does not imply an empty edge set. No number-theoretic lower bound for $\tau_N$ follows.
+
+For the actual weighted prime sequence, the published upper sieve of J. Wu, Theorem 1 (2004), gives for all sufficiently large even $N$ an upper representation bound of order $N\Sg(N)/\log^2N$. This is an upper bound, not a second-prime lower bound. With the standard $N/\varphi(N)\ll\log\log N$ bound and $N\asymp X$,
+\[
+ \#\mathcal E_N\ll X\log\log X/\log^2X,\qquad
+ D_1=\tau_N\ll_w X\log\log X/\log X=o(X).
+\]
+Let $d=a-b$ and $\Delta=S_X-S'_X$. Then $D_2=\sum d_p^2\le M\log X D_1$, while PNT gives $S_X(0)\asymp_w X$ and $\|S_X\|_2^2\asymp_w X\log X$. Therefore the relative mass and L2 perturbations tend to zero uniformly in the target. The upper sieve is uniform over even targets, so this extension does not require $N-1$ composite.
+
+For fixed $q>2$, $\|\Delta\|_q^q\le D_1^{q-2}D_2$. Concentration of $S_X$ near zero gives $\|S_X\|_q\gg_w X^{1-1/q}$, and the quotient tends to zero. For fixed $r\ge1$, factor $S_X^2-(S'_X)^2=\Delta(S_X+S'_X)$ and apply H\"older with $q=2r$; the relative square-polynomial norm also tends to zero. These inherited analytic deductions need PNT and sieve input. They are not finite matching facts, not uniform in growing q, and not formalized in Lean here.
+\newpage
+\section{T76.1: the boundary extension, threshold and qualified obstruction}
+Let $F_X=X\Sg(N)J_w(N/X)$, $E_I=G_X-\mathcal M_I-A_3$, $E_K=\mathcal M_I-F_X$ and $P_X=G_X-r_X$. On every even target in $[X/2,X]$, the previous estimates yield exactly
+\[
+ A_3=r_X-F_X+e_X,\qquad e_X=P_X-E_K-E_I,\qquad
+ \sup_{N\in D\cap[X/2,X]}|e_X(N)|=o_w(X).
+\]
+The extension from $H$ to $H_1$ follows from the domains of the estimates. The zero coefficient at 1 explains the absence of a Case I prime-pair term but does not by itself prove uniformity.
+
+Assume in addition $w>0$ on $[1/5,3/5]$. For $\tau\in[1/2,1]$, integrate $J_w$ over $[\tau/2-1/40,\tau/2+1/40]$ to get $J_w\ge m_w^2/20$, where $m_w=\min_{[9/40,21/40]}w>0$. Since $\Sg(N)\ge2C_2$, put $c_w=C_2m_w^2/10$ so that $F_X\ge c_wX$.
+
+\textbf{T76.1 (conditional).} Suppose independently that $A_3(N)\ge-c_wX/2$ for every $N\in D\cap[X/2,X]$ and all $X\ge X_0$. Choose $X_1\ge X_0$ with $\sup|e_X|\le c_wX/4$ thereafter. Then
+\[
+ r_X=F_X+A_3-e_X\ge c_wX/4>0\qquad(X\ge X_1).
+\]
+This proves eventual positivity only under the unproved premise. The same exact identity and triangle inequality show
+\[
+ \sup_D|A_3|=o_w(X)\iff\sup_D|r_X-F_X|=o_w(X),
+\]
+with $D$ restricted to the target interval in both suprema. This equivalence is with a weighted asymptotic, not with bare Goldbach.
+
+For the adversarial obstruction, take data preserved to its stated tolerance under the optimal deletion. A certificate from only those data that forces positive target coefficient for every member of the enlarged prime-subset class would also apply to $S'_X$, whose target coefficient is zero: contradiction. On a common model scale $T_b=r_b-F_X=-F_X\le-c_wX$, the half-main-term threshold fails.
+
+\emph{The model remainder $T_b$ is not asserted to be the genuine Vaughan $A_3$ with unchanged $\mu$.} Neither exact Vaughan structure nor maximal BV accuracy is claimed deletion-stable. This is a no-go under deletion-stable premises, not a refutation of an actual-prime bound or of all future arithmetic methods. The missing signed estimate is still OPEN.
+\newpage
+\section{Evidence ledger, reproducibility and final scientific status}
+The publication chain checked through the authenticated connector is:
+\begin{center}\begin{tabular}{cll}\toprule
+PR & Research checkpoint & Source commit prefix\\\midrule
+20 & Stage 71 deletion sensitivity & \texttt{abb5c8f}\\
+21 & Stage 72 core and proper powers & \texttt{0801eff}\\
+22 & Stage 73 signed reduction & \texttt{5746bec}\\
+23 & Stage 74 Type I kernel & \texttt{5bdef46}\\
+24 & Stage 75 novelty gate & \texttt{983c9d9}\\
+25 & Dependency audit and referee package & \texttt{3a5581d}\\\bottomrule
+\end{tabular}\end{center}
+All six were draft and unmerged when checked. Stage 76 branches from the last displayed full source state; it does not merge them or change main. Their complete SHAs and statuses are recorded in the manifest.
+
+The five numbered deliverable groups include two files each in groups 02 and 04, as explicitly requested. Group 02 supplies uncompiled Lean source and an independent exact Sage/Python certificate. It checks rational coordinate identities, eight logical truth assignments, all 210 wheel residues against the CRT product, the one shared-prime totient boundary, and three abstract matching fixtures with exhaustive endpoint covers. It reads historical Stage 57 data without recomputing prime pairs. The nine prior PR25 algebra identities are separately rerun as requested. None of these computations proves an asymptotic theorem.
+
+\textbf{Established external inputs:} Tao, \emph{254A Notes 3}, Theorem 17 (2015), with coprime-mass discrepancy convention; Montgomery--Vaughan, \emph{Multiplicative Number Theory I}, Chapter 6, Theorem 6.9 and (6.17)--(6.19), for PNT/M\"obius cancellation; J. Wu, \emph{Chen's double sieve, Goldbach's conjecture and the twin prime problem}, Acta Arith. 114.3 (2004), 215--273, Theorem 1, DOI \href{https://doi.org/10.4064/aa114-3-2}{10.4064/aa114-3-2}, for the upper sieve. The named statements were consulted; their complete external proofs were not independently refereed. Full URLs and source receipts or inherited receipts are in the manifest.
+
+\textbf{Internal proved deductions:} the set bridge L76.1, coordinate/CRT identities, exact matching cost L76.2, uniform error-domain extension, and conditional threshold/equivalence T76.1. \textbf{Computational observations:} the explicitly bounded finite certificates and inherited Stage 56--57 refutations. \textbf{Not certified:} Lean elaboration, external human acceptance, analytic constants at an effective cutoff. \textbf{Open:} the actual-prime signed pointwise bound and the finite connection for universal coverage.
+
+No new unconditional prime-pair lower bound is claimed. No standard Vaughan identity is claimed novel. The negative result is scientifically substantive because it identifies which information is missing without assuming it. Preserve the registered NO-GO under deletion-stable premises. Strong Goldbach and the original universal three-case assertion remain \textbf{OPEN}.
+\end{document}

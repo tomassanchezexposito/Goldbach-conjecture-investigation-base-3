@@ -1,0 +1,1342 @@
+{
+  "stage": 76,
+  "title": "Formal Closure, Adversarial Obstruction Certification, and Unified Monograph",
+  "generated_utc": "2026-11-11T12:50:20.899518+00:00",
+  "base_sha": "3a5581dd93b7c50bbc55062d032a6ad2acab1fb4",
+  "branch": "cocalc/stage76-formal-closure",
+  "base_branch": "cocalc/dependency-audit-stages73-75",
+  "initial_fetch": "Successful dedicated identity SSH fetch; local and remote matched verified base; clean worktree",
+  "budget": {
+    "numbered_deliverable_groups": 5,
+    "deliverable_files": 7,
+    "ledger_files": 1,
+    "interpretation": "Groups02 and04 each explicitly request two files; disclosed before implementation"
+  },
+  "status": {
+    "strong_goldbach": "OPEN",
+    "three_case_coverage": "OPEN",
+    "typeII": "NO-GO under deletion-stable premises; actual-prime margin OPEN",
+    "lean": "UNAVAILABLE on PATH and four inspected standard locations; UNCOMPILED source supplied; requested machine certification NOT achieved",
+    "new_unconditional_prime_lower_bound": false
+  },
+  "corrections": [
+    {
+      "kind": "Input number discrepancy, not a historical theorem edit",
+      "requested_covariance_windows": 9450,
+      "recorded_report_manifest_and_data": 9490,
+      "failures": 3762
+    },
+    {
+      "kind": "Quantifier qualification",
+      "statement": "Threshold positivity holds beyond X1 >= X0 including all error cutoffs, not automatically at every X >= the hypothesis-only cutoff"
+    },
+    {
+      "kind": "Obstruction scope",
+      "statement": "Deletion-stable-data no-go on enlarged subset class; modified remainder is not asserted equal to genuine Vaughan A3 with unchanged Mobius"
+    },
+    {
+      "kind": "Asymptotic scope",
+      "statement": "A single unit-weight edge has tau/total mass = 1/2; asymptotic vanishing needs actual smooth prime weights and external sieve/PNT, not just finite matching structure."
+    }
+  ],
+  "lean_inspection": {
+    "PATH_lean": null,
+    "PATH_lake": null,
+    "locations": {
+      "/home/user/.elan/bin/lean": false,
+      "/opt/lean/bin/lean": false,
+      "/usr/local/bin/lean": false,
+      "/usr/bin/lean": false
+    },
+    "requires": "Existing Lean4 plus Mathlib environment; no installation attempted",
+    "proposed_check": "lake env lean results/stage76_closure/02_formal_invariants_and_deletion.lean",
+    "check_executed": false,
+    "notes": "No new axiom/admitted proof directive found by source scan; elaboration and theorem API compatibility unverified"
+  },
+  "software": {
+    "sage": "10.9",
+    "sage_python": "3.14.4 (main, Apr 8 2026, 04:02:31) [GCC 15.2.0]",
+    "python_manifest": "3.14.4 (main, Apr  8 2026, 04:02:31) [GCC 15.2.0]",
+    "git": "git version 2.53.0",
+    "pdftex": "3.141592653-2.6-1.40.28 (TeX Live 2025/Debian)",
+    "latexmk": "4.87"
+  },
+  "verification": [
+    {
+      "command": "sage -python results/stage76_closure/02_symbolic_certificate.py",
+      "result": {
+        "status": "PASS",
+        "sage_version": "10.9",
+        "coordinates": "Five rational polynomial checks including error elimination pass",
+        "logic": "Eight abstract truth assignments pass; general equivalence has a written proof",
+        "wheel_residue_cases": 210,
+        "wheel_exact_rows": [
+          [
+            0,
+            48,
+            "35/8"
+          ],
+          [
+            1,
+            0,
+            "0"
+          ],
+          [
+            2,
+            15,
+            "175/128"
+          ],
+          [
+            3,
+            0,
+            "0"
+          ],
+          [
+            4,
+            15,
+            "175/128"
+          ],
+          [
+            5,
+            0,
+            "0"
+          ],
+          [
+            6,
+            30,
+            "175/64"
+          ],
+          [
+            7,
+            0,
+            "0"
+          ],
+          [
+            8,
+            15,
+            "175/128"
+          ],
+          [
+            9,
+            0,
+            "0"
+          ],
+          [
+            10,
+            20,
+            "175/96"
+          ],
+          [
+            11,
+            0,
+            "0"
+          ],
+          [
+            12,
+            30,
+            "175/64"
+          ],
+          [
+            13,
+            0,
+            "0"
+          ],
+          [
+            14,
+            18,
+            "105/64"
+          ],
+          [
+            15,
+            0,
+            "0"
+          ],
+          [
+            16,
+            15,
+            "175/128"
+          ],
+          [
+            17,
+            0,
+            "0"
+          ],
+          [
+            18,
+            30,
+            "175/64"
+          ],
+          [
+            19,
+            0,
+            "0"
+          ],
+          [
+            20,
+            20,
+            "175/96"
+          ],
+          [
+            21,
+            0,
+            "0"
+          ],
+          [
+            22,
+            15,
+            "175/128"
+          ],
+          [
+            23,
+            0,
+            "0"
+          ],
+          [
+            24,
+            30,
+            "175/64"
+          ],
+          [
+            25,
+            0,
+            "0"
+          ],
+          [
+            26,
+            15,
+            "175/128"
+          ],
+          [
+            27,
+            0,
+            "0"
+          ],
+          [
+            28,
+            18,
+            "105/64"
+          ],
+          [
+            29,
+            0,
+            "0"
+          ],
+          [
+            30,
+            40,
+            "175/48"
+          ],
+          [
+            31,
+            0,
+            "0"
+          ],
+          [
+            32,
+            15,
+            "175/128"
+          ],
+          [
+            33,
+            0,
+            "0"
+          ],
+          [
+            34,
+            15,
+            "175/128"
+          ],
+          [
+            35,
+            0,
+            "0"
+          ],
+          [
+            36,
+            30,
+            "175/64"
+          ],
+          [
+            37,
+            0,
+            "0"
+          ],
+          [
+            38,
+            15,
+            "175/128"
+          ],
+          [
+            39,
+            0,
+            "0"
+          ],
+          [
+            40,
+            20,
+            "175/96"
+          ],
+          [
+            41,
+            0,
+            "0"
+          ],
+          [
+            42,
+            36,
+            "105/32"
+          ],
+          [
+            43,
+            0,
+            "0"
+          ],
+          [
+            44,
+            15,
+            "175/128"
+          ],
+          [
+            45,
+            0,
+            "0"
+          ],
+          [
+            46,
+            15,
+            "175/128"
+          ],
+          [
+            47,
+            0,
+            "0"
+          ],
+          [
+            48,
+            30,
+            "175/64"
+          ],
+          [
+            49,
+            0,
+            "0"
+          ],
+          [
+            50,
+            20,
+            "175/96"
+          ],
+          [
+            51,
+            0,
+            "0"
+          ],
+          [
+            52,
+            15,
+            "175/128"
+          ],
+          [
+            53,
+            0,
+            "0"
+          ],
+          [
+            54,
+            30,
+            "175/64"
+          ],
+          [
+            55,
+            0,
+            "0"
+          ],
+          [
+            56,
+            18,
+            "105/64"
+          ],
+          [
+            57,
+            0,
+            "0"
+          ],
+          [
+            58,
+            15,
+            "175/128"
+          ],
+          [
+            59,
+            0,
+            "0"
+          ],
+          [
+            60,
+            40,
+            "175/48"
+          ],
+          [
+            61,
+            0,
+            "0"
+          ],
+          [
+            62,
+            15,
+            "175/128"
+          ],
+          [
+            63,
+            0,
+            "0"
+          ],
+          [
+            64,
+            15,
+            "175/128"
+          ],
+          [
+            65,
+            0,
+            "0"
+          ],
+          [
+            66,
+            30,
+            "175/64"
+          ],
+          [
+            67,
+            0,
+            "0"
+          ],
+          [
+            68,
+            15,
+            "175/128"
+          ],
+          [
+            69,
+            0,
+            "0"
+          ],
+          [
+            70,
+            24,
+            "35/16"
+          ],
+          [
+            71,
+            0,
+            "0"
+          ],
+          [
+            72,
+            30,
+            "175/64"
+          ],
+          [
+            73,
+            0,
+            "0"
+          ],
+          [
+            74,
+            15,
+            "175/128"
+          ],
+          [
+            75,
+            0,
+            "0"
+          ],
+          [
+            76,
+            15,
+            "175/128"
+          ],
+          [
+            77,
+            0,
+            "0"
+          ],
+          [
+            78,
+            30,
+            "175/64"
+          ],
+          [
+            79,
+            0,
+            "0"
+          ],
+          [
+            80,
+            20,
+            "175/96"
+          ],
+          [
+            81,
+            0,
+            "0"
+          ],
+          [
+            82,
+            15,
+            "175/128"
+          ],
+          [
+            83,
+            0,
+            "0"
+          ],
+          [
+            84,
+            36,
+            "105/32"
+          ],
+          [
+            85,
+            0,
+            "0"
+          ],
+          [
+            86,
+            15,
+            "175/128"
+          ],
+          [
+            87,
+            0,
+            "0"
+          ],
+          [
+            88,
+            15,
+            "175/128"
+          ],
+          [
+            89,
+            0,
+            "0"
+          ],
+          [
+            90,
+            40,
+            "175/48"
+          ],
+          [
+            91,
+            0,
+            "0"
+          ],
+          [
+            92,
+            15,
+            "175/128"
+          ],
+          [
+            93,
+            0,
+            "0"
+          ],
+          [
+            94,
+            15,
+            "175/128"
+          ],
+          [
+            95,
+            0,
+            "0"
+          ],
+          [
+            96,
+            30,
+            "175/64"
+          ],
+          [
+            97,
+            0,
+            "0"
+          ],
+          [
+            98,
+            18,
+            "105/64"
+          ],
+          [
+            99,
+            0,
+            "0"
+          ],
+          [
+            100,
+            20,
+            "175/96"
+          ],
+          [
+            101,
+            0,
+            "0"
+          ],
+          [
+            102,
+            30,
+            "175/64"
+          ],
+          [
+            103,
+            0,
+            "0"
+          ],
+          [
+            104,
+            15,
+            "175/128"
+          ],
+          [
+            105,
+            0,
+            "0"
+          ],
+          [
+            106,
+            15,
+            "175/128"
+          ],
+          [
+            107,
+            0,
+            "0"
+          ],
+          [
+            108,
+            30,
+            "175/64"
+          ],
+          [
+            109,
+            0,
+            "0"
+          ],
+          [
+            110,
+            20,
+            "175/96"
+          ],
+          [
+            111,
+            0,
+            "0"
+          ],
+          [
+            112,
+            18,
+            "105/64"
+          ],
+          [
+            113,
+            0,
+            "0"
+          ],
+          [
+            114,
+            30,
+            "175/64"
+          ],
+          [
+            115,
+            0,
+            "0"
+          ],
+          [
+            116,
+            15,
+            "175/128"
+          ],
+          [
+            117,
+            0,
+            "0"
+          ],
+          [
+            118,
+            15,
+            "175/128"
+          ],
+          [
+            119,
+            0,
+            "0"
+          ],
+          [
+            120,
+            40,
+            "175/48"
+          ],
+          [
+            121,
+            0,
+            "0"
+          ],
+          [
+            122,
+            15,
+            "175/128"
+          ],
+          [
+            123,
+            0,
+            "0"
+          ],
+          [
+            124,
+            15,
+            "175/128"
+          ],
+          [
+            125,
+            0,
+            "0"
+          ],
+          [
+            126,
+            36,
+            "105/32"
+          ],
+          [
+            127,
+            0,
+            "0"
+          ],
+          [
+            128,
+            15,
+            "175/128"
+          ],
+          [
+            129,
+            0,
+            "0"
+          ],
+          [
+            130,
+            20,
+            "175/96"
+          ],
+          [
+            131,
+            0,
+            "0"
+          ],
+          [
+            132,
+            30,
+            "175/64"
+          ],
+          [
+            133,
+            0,
+            "0"
+          ],
+          [
+            134,
+            15,
+            "175/128"
+          ],
+          [
+            135,
+            0,
+            "0"
+          ],
+          [
+            136,
+            15,
+            "175/128"
+          ],
+          [
+            137,
+            0,
+            "0"
+          ],
+          [
+            138,
+            30,
+            "175/64"
+          ],
+          [
+            139,
+            0,
+            "0"
+          ],
+          [
+            140,
+            24,
+            "35/16"
+          ],
+          [
+            141,
+            0,
+            "0"
+          ],
+          [
+            142,
+            15,
+            "175/128"
+          ],
+          [
+            143,
+            0,
+            "0"
+          ],
+          [
+            144,
+            30,
+            "175/64"
+          ],
+          [
+            145,
+            0,
+            "0"
+          ],
+          [
+            146,
+            15,
+            "175/128"
+          ],
+          [
+            147,
+            0,
+            "0"
+          ],
+          [
+            148,
+            15,
+            "175/128"
+          ],
+          [
+            149,
+            0,
+            "0"
+          ],
+          [
+            150,
+            40,
+            "175/48"
+          ],
+          [
+            151,
+            0,
+            "0"
+          ],
+          [
+            152,
+            15,
+            "175/128"
+          ],
+          [
+            153,
+            0,
+            "0"
+          ],
+          [
+            154,
+            18,
+            "105/64"
+          ],
+          [
+            155,
+            0,
+            "0"
+          ],
+          [
+            156,
+            30,
+            "175/64"
+          ],
+          [
+            157,
+            0,
+            "0"
+          ],
+          [
+            158,
+            15,
+            "175/128"
+          ],
+          [
+            159,
+            0,
+            "0"
+          ],
+          [
+            160,
+            20,
+            "175/96"
+          ],
+          [
+            161,
+            0,
+            "0"
+          ],
+          [
+            162,
+            30,
+            "175/64"
+          ],
+          [
+            163,
+            0,
+            "0"
+          ],
+          [
+            164,
+            15,
+            "175/128"
+          ],
+          [
+            165,
+            0,
+            "0"
+          ],
+          [
+            166,
+            15,
+            "175/128"
+          ],
+          [
+            167,
+            0,
+            "0"
+          ],
+          [
+            168,
+            36,
+            "105/32"
+          ],
+          [
+            169,
+            0,
+            "0"
+          ],
+          [
+            170,
+            20,
+            "175/96"
+          ],
+          [
+            171,
+            0,
+            "0"
+          ],
+          [
+            172,
+            15,
+            "175/128"
+          ],
+          [
+            173,
+            0,
+            "0"
+          ],
+          [
+            174,
+            30,
+            "175/64"
+          ],
+          [
+            175,
+            0,
+            "0"
+          ],
+          [
+            176,
+            15,
+            "175/128"
+          ],
+          [
+            177,
+            0,
+            "0"
+          ],
+          [
+            178,
+            15,
+            "175/128"
+          ],
+          [
+            179,
+            0,
+            "0"
+          ],
+          [
+            180,
+            40,
+            "175/48"
+          ],
+          [
+            181,
+            0,
+            "0"
+          ],
+          [
+            182,
+            18,
+            "105/64"
+          ],
+          [
+            183,
+            0,
+            "0"
+          ],
+          [
+            184,
+            15,
+            "175/128"
+          ],
+          [
+            185,
+            0,
+            "0"
+          ],
+          [
+            186,
+            30,
+            "175/64"
+          ],
+          [
+            187,
+            0,
+            "0"
+          ],
+          [
+            188,
+            15,
+            "175/128"
+          ],
+          [
+            189,
+            0,
+            "0"
+          ],
+          [
+            190,
+            20,
+            "175/96"
+          ],
+          [
+            191,
+            0,
+            "0"
+          ],
+          [
+            192,
+            30,
+            "175/64"
+          ],
+          [
+            193,
+            0,
+            "0"
+          ],
+          [
+            194,
+            15,
+            "175/128"
+          ],
+          [
+            195,
+            0,
+            "0"
+          ],
+          [
+            196,
+            18,
+            "105/64"
+          ],
+          [
+            197,
+            0,
+            "0"
+          ],
+          [
+            198,
+            30,
+            "175/64"
+          ],
+          [
+            199,
+            0,
+            "0"
+          ],
+          [
+            200,
+            20,
+            "175/96"
+          ],
+          [
+            201,
+            0,
+            "0"
+          ],
+          [
+            202,
+            15,
+            "175/128"
+          ],
+          [
+            203,
+            0,
+            "0"
+          ],
+          [
+            204,
+            30,
+            "175/64"
+          ],
+          [
+            205,
+            0,
+            "0"
+          ],
+          [
+            206,
+            15,
+            "175/128"
+          ],
+          [
+            207,
+            0,
+            "0"
+          ],
+          [
+            208,
+            15,
+            "175/128"
+          ],
+          [
+            209,
+            0,
+            "0"
+          ]
+        ],
+        "phi210": 48,
+        "totient_counterexample": {
+          "N": 16,
+          "U": 3,
+          "V": 3,
+          "correct_log3": "1/3",
+          "false_log3": "1/4",
+          "difference": "1/12"
+        },
+        "matching_fixtures": [
+          {
+            "edges": 0,
+            "covers": 1,
+            "tau": "0"
+          },
+          {
+            "edges": 1,
+            "covers": 2,
+            "tau": "0"
+          },
+          {
+            "edges": 3,
+            "covers": 8,
+            "tau": "11/2"
+          }
+        ],
+        "stage57_saved_data": {
+          "windows": 9490,
+          "failures": 3762,
+          "ordered_total_if_named": 5085878
+        },
+        "limitations": "Finite algebra/modular/fixture checks only; no asymptotic theorem or Goldbach proof; Lean unavailable"
+      },
+      "timestamps": {
+        "stdout_file_created": "2026-11-11 12:43:22.058814906 +0000",
+        "stdout_last_written": "2026-11-11 12:43:25.183809744 +0000",
+        "basis": "Filesystem UTC receipts for redirected process output, not separately instrumented process clocks"
+      }
+    },
+    {
+      "command": "sage -python results/external_referee_package/verify_algebra_sage.py",
+      "result": {
+        "status": "PASS",
+        "sage_version": "10.9",
+        "method": "Free multivariate polynomial identities over QQ; no imported project verifier",
+        "groups": [
+          {
+            "label": "T75.1 error elimination",
+            "identities": 2,
+            "residuals": [
+              "0",
+              "0"
+            ]
+          },
+          {
+            "label": "Proper-power union algebra",
+            "identities": 2,
+            "difference": "t*q + s*u + q*u",
+            "majorant_excess": "q*u",
+            "order_assumption": "All coefficient variables nonnegative for the inequality"
+          },
+          {
+            "label": "Midpoint and base-3 reflection algebra",
+            "identities": 5,
+            "sum_positions": "m - 3",
+            "difference_positions": "h"
+          }
+        ],
+        "scope": "Exact algebra only; no primality, integrality, analytic uniformity or Goldbach proof",
+        "excluded": "No Type I kernel, wheel, deletion, global moment or Goldbach experiment"
+      },
+      "timestamps": {
+        "stdout_file_created": "2026-11-11 12:43:37.099790060 +0000",
+        "stdout_last_written": "2026-11-11 12:43:40.122785066 +0000",
+        "basis": "Filesystem UTC receipts for redirected process output, not separately instrumented process clocks"
+      }
+    }
+  ],
+  "resource_policy": "Small symbolic/modular fixtures only; no prime-pair search or expanded Goldbach ranges. Separate peak-memory/CPU timings not instrumented.",
+  "build": {
+    "command": "\"/opt/cocalc/bin/node\" \"/opt/cocalc/bin2/cocalc-cli.js\" project build /home/user/goldbach-stage76/results/stage76_closure/04_master_closure_monograph.tex --force --build-timeout 60s",
+    "build_id": "720b24d7-983f-4c0c-b250-5946e48921b3",
+    "state": "succeeded",
+    "exit_code": 0,
+    "started_at_utc": "2026-11-11T12:48:53.069000+00:00",
+    "ended_at_utc": "2026-11-11T12:48:53.684000+00:00",
+    "diagnostics": [],
+    "pages": 12,
+    "visual_review": "Rendered pages1,3,10,11,12 inspected; twelve page count and full extracted text inspected; not a full independent referee review"
+  },
+  "historical_checks": {
+    "unchanged_prior_hashes": {
+      "results/stage74/01_gate_and_kernel.md": "865c2ad3243fadcbd5b7875271c860387f8e3bdbaee151afa7a73fe5c2b921ae",
+      "results/stage74/04_review_and_assessment.md": "6b60ba691285ace8580597776f9403c5800492b09a38198c3abed34ff49e649a",
+      "results/stage74/LEDGER_DELTA.md": "15bd3746fe010ae9c0db28d6ae42206094df449fded6ef9d575704c130cdcfde",
+      "results/stage74/verify_stage74.py": "69c226d1ef4ed7ca95256532886ee5c3d0f29f4a10b490540088c86683c0cfb1",
+      "results/stage74/verify_stage74_sage.py": "69e83073de4eab4c4f4949d138fc3e8c946bdc8875aaf424e21cdf72a786d116",
+      "results/stage75/01_duplication_gate.md": "3a53aca74ce49d39a486d594a7b63847759fcdc8b5d7253a102bc02a6f99d8b5",
+      "results/stage75/02_primary_source_audit.md": "068c2507c98d50ceec55ffe358434d6a934cda24bae89c6327b0af359c8957c1",
+      "results/stage75/03_negative_assessment.md": "e04f0d26997cf666fd091e88649230e47e6dc85370c53c43801d0e68eb23c4f7",
+      "results/stage75/LEDGER_DELTA.md": "d871f49f8be94b6f34d6f8f1a5c8d991cb59426f11060d88f29db6a5bac7f873",
+      "tasks/NEXT_TASK.md": "f64300a7d40aa2438169255b47e65ade889896aafd48e6ab941d359a3674471c",
+      "results/dependency_audit_73_75/01_dependency_audit.md": "f850fd55258f9f731530dac775c05fc6a970fa65892edcbca1b57bfdf329374f",
+      "results/dependency_audit_73_75/LEDGER_DELTA.md": "8df39a4d1372a1b4b9d1a3c01c8454f1d21660b115c7b620e66018f6ef6d42d8",
+      "results/external_referee_package/referee_package.tex": "cb1c85a335f4e2eb66d82330cce0e98d471c7a51e099ab2354b9909852e28f32",
+      "results/external_referee_package/referee_package.pdf": "0be5a98388d5ec78f423dc1d32201826791b09bb7cba360e6ebf581cd368bd86",
+      "results/external_referee_package/verification_notes.md": "64d3e9d0299baa9c330c678792de528434480ccc5a6eba2f505ee9a2031f559a",
+      "results/external_referee_package/verify_algebra_sage.py": "0a98a2793472bfdef2bc279ff6d6d16dbe25c90f8a05c5c116565357bcb51390",
+      "results/external_referee_package/LEDGER_DELTA.md": "4698af29369facf98db8acd840024142d16e96c73993ac84ad541c0146b90408"
+    },
+    "source_evidence_hashes": {
+      "results/stage56/stage56_pointwise_second_moment_report.md": "73a930b59af61790e28b9a10bfd33befbea105e3ab3cb0611a5c935fbc1b0461",
+      "results/stage57/report.md": "818ead4053391b3a4f94fae0fe78389743060a1011d7e329505bc45d8f8c2d56",
+      "results/stage57/manifest.json": "85ed641d71cabc3d1764afea6ecd26b90f285f156c790c97077e5065288c06ef",
+      "results/stage57/shifted_correlations.json": "cea15615a398da224e5d44011815cbf35383f4e05568ac0be74161f098e4c1ba",
+      "results/stage71/01_exact_target_robustness_and_lp.md": "ac6651db2c67ba671619586a714cd52d1e1d6029ff2d1661b59e78c67c04ff8e"
+    },
+    "stage56_scan_rerun": false,
+    "stage57_prime_count_rerun": false
+  },
+  "primary_sources": [
+    {
+      "url": "https://terrytao.wordpress.com/2015/01/10/254a-notes-3-the-large-sieve-and-the-bombieri-vinogradov-theorem/",
+      "cache": "/tmp/dependency-audit-73-75/tao-bv.html",
+      "bytes": 677607,
+      "sha256": "613cd724919310c70a95fbe770fd1775c1a59c01f7ec9ef23f228574426e918f",
+      "passages_read": "Discrepancy definition, Theorem17 and Exercise20 statement"
+    },
+    {
+      "url": "https://personal.science.psu.edu/rcv4/personal/Publications/MNTI/10.0_pp_168_198_The_Prime_Number_Theorem.pdf",
+      "cache": "/tmp/dependency-audit-73-75/mv-ch6.pdf",
+      "bytes": 448236,
+      "sha256": "0ce7e8c75f57a8b52a3e518ad166941f9e9be721980e897f5c75dd846b85a6c6",
+      "passages_read": "Chapter6 (6.17)-(6.19) and quantitative PNT context"
+    },
+    {
+      "url": "https://www.impan.pl/shop/publication/transaction/download/product/82961",
+      "bytes": 337751,
+      "sha256": "ebe75ef36478213bde937dce7d163bdd14b5b0352be54e085c9f696afc6e8a30",
+      "passages_read": "Introduction definition D(N), Theta(N), Theorem 1, pp.215-216; full proof not independently refereed"
+    }
+  ],
+  "source_limits": "Only specified original statements/passages read, not full external proofs; earlier literature judgments not independently refereed again",
+  "pr_provenance": [
+    {
+      "pr": 20,
+      "head": "cocalc/stage71-sharp-deletion-sensitivity",
+      "head_sha": "abb5c8ffda5012bd9cac63b568e29a07f35f1aa5",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "pr": 21,
+      "head": "cocalc/stage72-pointwise-prime-power-core",
+      "head_sha": "0801eff2a1e8335539016360be4d1572a1d5ca50",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "pr": 22,
+      "head": "cocalc/stage73-signed-prime-correlations",
+      "head_sha": "5746becb0f778d9953702da7ea7b9e1c52a91eb5",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "pr": 23,
+      "head": "cocalc/stage74-parity-gate-type-I-kernel",
+      "head_sha": "5bdef46daa30e523565022748f6969bfe0e7a8a4",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "pr": 24,
+      "head": "cocalc/stage75-novelty-gate-prime-input",
+      "head_sha": "983c9d91bd0ac036c1c75d0afa10b0809fe0728a",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    },
+    {
+      "pr": 25,
+      "head": "cocalc/dependency-audit-stages73-75",
+      "head_sha": "3a5581dd93b7c50bbc55062d032a6ad2acab1fb4",
+      "state": "open",
+      "draft": true,
+      "merged": false
+    }
+  ],
+  "files_sha256": {
+    "results/stage76_closure/01_logical_bridge_and_H1_extension.md": "709d914fe97e9398ecbc1a9552dcc9337d6341fd24de5e52621a6f689d8916a8",
+    "results/stage76_closure/02_formal_invariants_and_deletion.lean": "087799d16bced3987703c403d4eaa1cef0aaa772229ea1baf4dcc63288855916",
+    "results/stage76_closure/02_symbolic_certificate.py": "a7d8f14530fc752b3412fac539e62a2bb5faf33e3c45d59c3df2dafc7d288d9a",
+    "results/stage76_closure/03_conditional_threshold_theorem.md": "29db0a188a973d64db2f01d08b020c464a1a89da8e09b24e8c5f6c38a964fa0c",
+    "results/stage76_closure/04_master_closure_monograph.tex": "fbd14c589af9a6579746f1c64fc11599a01b26e10803de42e665f3f5fcdf7f3f",
+    "results/stage76_closure/04_master_closure_monograph.pdf": "eef742fb594394440894fec2ce384147b5d7e06aedb082427e662ab2c3d7027a",
+    "results/stage76_closure/LEDGER_DELTA.md": "a26adff9a19b74fa7430a2f8d463862508450bb9b4a6086524b05a2606999fc3"
+  },
+  "reproduce": [
+    "Run the two recorded Sage commands",
+    "Build the saved LaTeX through the CoCalc pipeline; confirm 12pages and no final diagnostics",
+    "Compare historical and new file SHA256 values; manifest excludes itself",
+    "In an already installed Lean4/Mathlib environment, attempt the proposed Lean command; report its actual result before claiming certification",
+    "Verify git diff from base contains only results/stage76_closure/ and normal SSH push remote SHA matches HEAD"
+  ],
+  "self_hash_and_commit_policy": "Manifest excludes itself. Exact final publication SHA is verified by Git/remote and published in final response, commit card and draft PR. Embedding the SHA in its own tree is avoided.",
+  "limitations": [
+    "No universal prime representation lower bound",
+    "No Lean elaboration certificate",
+    "No independent human peer review",
+    "No effective finite connection or analytic error cutoff",
+    "Deletion-invariant premises only, not impossibility for immutable primes"
+  ]
+}
