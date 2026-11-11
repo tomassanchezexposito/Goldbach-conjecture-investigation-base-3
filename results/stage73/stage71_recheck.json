@@ -1,0 +1,69 @@
+{
+  "status": "PASS",
+  "scope": "finite exact algebra only",
+  "independent_greedy_vs_brute_integer_dp_cases": 15,
+  "integer_dp_values": [
+    113,
+    104,
+    95,
+    86,
+    77,
+    68,
+    59,
+    51,
+    43,
+    35,
+    27,
+    19,
+    11,
+    3,
+    0
+  ],
+  "prime_support_targets": [
+    {
+      "N": 50,
+      "representations_coefficient": 9882,
+      "minimum_erasure_cost": 100,
+      "relative_mass_retained": "4811/4911",
+      "target_after_erasure": 0,
+      "fourth_moment_monotone": true,
+      "young_L4_checked": true
+    },
+    {
+      "N": 100,
+      "representations_coefficient": 40264,
+      "minimum_erasure_cost": 232,
+      "relative_mass_retained": "4679/4911",
+      "target_after_erasure": 0,
+      "fourth_moment_monotone": true,
+      "young_L4_checked": true
+    },
+    {
+      "N": 120,
+      "representations_coefficient": 109360,
+      "minimum_erasure_cost": 547,
+      "relative_mass_retained": "4364/4911",
+      "target_after_erasure": 0,
+      "fourth_moment_monotone": true,
+      "young_L4_checked": true
+    },
+    {
+      "N": 256,
+      "representations_coefficient": 154302,
+      "minimum_erasure_cost": 412,
+      "relative_mass_retained": "4499/4911",
+      "target_after_erasure": 0,
+      "fourth_moment_monotone": true,
+      "young_L4_checked": true
+    },
+    {
+      "N": 300,
+      "representations_coefficient": 344488,
+      "minimum_erasure_cost": 908,
+      "relative_mass_retained": "4003/4911",
+      "target_after_erasure": 0,
+      "fourth_moment_monotone": true,
+      "young_L4_checked": true
+    }
+  ]
+}
