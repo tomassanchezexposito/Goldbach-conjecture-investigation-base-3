@@ -1,22 +1,27 @@
-# NEXT TASK — Stage 74: evaluate the truncated Type I main kernel
+# NEXT TASK — Evidence gate after the Stage 75 NO-GO
 
-Queued research objective only; do not begin until requested. Universal coverage of the original three cases remains OPEN.
+Queued objective only. Do not automatically start another direct Goldbach proof stage. Universal coverage of the original three cases remains OPEN.
 
-## Single concrete question
+## Verified stopping point
 
-Starting from the completed Stage 73 branch, evaluate uniformly for $N\in H\cap[X/2,X]$ and $t$ in the fixed weight support the explicit signed kernel
-$$\mathcal K_{U,V,N}(t)=\sum_{d\le U,(d,N)=1}\frac{\mu(d)}{\varphi(d)}\log(t/d)-\sum_{l\le UV,(l,N)=1}\frac{c_l}{\varphi(l)},\quad
-c_l=\sum_{dm=l,d\le U,m\le V}\mu(d)\Lambda(m),$$
-with $U=V=\lfloor X^{1/5}\rfloor$ and $\mathcal M_I(N)=\int h_N(t)\mathcal K_{U,V,N}(t)dt$. Prove a uniform asymptotic with a quantified error, or refute a proposed formula by an exact arithmetic obstruction. This asks for the correct Type II centering, not for an assumed prime-pair lower bound.
+Read all Stage 75 deliverables and ledger, and the preserved Stage 73–74 evidence. The strong signed Type II estimate is the existing weighted Hardy–Littlewood obligation after centering. Inspected external results do not supply its pointwise margin. Stage 75 closes this repeated direct line as NO-GO.
 
-## Required method and gates
+## Next scientifically justified objective
 
-1. Read Stage 73's complete report, proofs, audit and manifest. Independently audit T73.5, including the grouped bound $|c_l|\le\log l$, nonreduced classes, BV centering and mesh endpoints. Preserve Stage 72 PR #21 and all prior evidence.
-2. Expand the second term as the actual $d,m$ sum. Separate $m=p^j$ with $p\mid d$ from $p\nmid d$; never assume $\varphi(dm)=\varphi(d)\varphi(m)$ without coprimality. Track $(dm,N)=1$ exactly.
-3. Compare fixed targets and targets with many small prime divisors. Constants must be uniform as $N$ varies with $X$; do not silently use a fixed-$N$ Möbius estimate in that regime. Source-check any required multiplicative-function/zero-free estimate.
-4. Establish at least two independent derivations for the kernel simplification and use a few exact boundary counterexamples. Avoid expanding finite Goldbach sweeps.
-5. State the resulting signed main term of $A_3$ and the precise first remaining target-uniform correlation estimate. Do not claim $A_3=o(X)$ before proving that its main contribution vanishes. Test any proposed enlarged-class certificate against Stage 70–71 deletion and T73.4.
-6. Preserve $H=\{N\ge4:N\text{ even},N-1,N/2\text{ composite}\}$, unordered distinct genuine-prime $R(N)$ and $p=3+2a$, $q=3+2b$, $a+b=N/2-3$. The immutable full prime coefficients are unchanged.
-7. Save English proofs, source/status ledger, independent verification and exact manifests under `results/stage74/` on a new dedicated branch. Fetch first using the configured dedicated SSH identity and `IdentitiesOnly=yes`; preserve uncommitted work. Do not modify main, install software, change credentials, force-push, incur costs or merge PRs. Publication and execution require the user's Stage 74 request.
+Review one specific independently justified arithmetic input when new evidence is available. Before proof development record:
 
-Success is a proved target-uniform multiplicative-kernel evaluation or a rigorous refutation with its first missing input. It is not automatically a simultaneous-primality theorem.
+1. Original source, version, theorem number, full hypotheses, dependencies and passages read; or a complete independent proof of a genuinely new arithmetic mechanism.
+2. Exact immutable coefficients $S_X(\alpha)=\sum_p(\log p)w(p/X)e(p\alpha)$ for the fixed broad weight, with support and target phase retained.
+3. Every-target quantifiers for $N\in H\cap[X/2,X]$, $H=\{N\ge4:N\text{ even},N-1,N/2\text{ composite}\}$; target/conductor/modulus dependence; no unremoved exceptional set.
+4. A proved quantitative transfer to a signed reflected genuine-prime lower bound exceeding the proper-power correction. Do not assume that bound as a count-band, covariance or dispersion hypothesis.
+5. The specific information beyond Stage 70–71 deletion-stable premises. Do not assert that exact Vaughan structure or maximal distribution precision survives deletion without proof.
+6. Comparison with C73.C, O74.1 and T75.1: show that the new input is not a renamed unresolved obligation. Independently check both implications when equivalence is claimed.
+7. For an eventual asymptotic theorem, an effective cutoff and rigorous finite connection before any universal claim.
+
+If nothing passes, stop and retain the assessment without another direct proof cycle or artificial milestone. External mathematical review of existing reductions is useful before reopening.
+
+## Do not repeat
+
+No Type I kernel reevaluation, wheel-210 positivity, global-moment optimization, repeated deletion demonstration, finite Goldbach sweep, or finite-complexity application to $(n,N-n)$. Do not turn almost-all into every, reverse count-band implications, omit exceptional-character corrections, assume $A_3=o(X)$, or import an unverified zero-free assertion.
+
+Keep unordered distinct $R(N)$ separate from ordered weighted counts. Preserve prime-plus-one, twice a prime, distinct-prime cases and $p=3+2a,q=3+2b,a+b=N/2-3$ without inferring primality. Preserve prior branches/evidence. Do not modify main, merge PRs, force-push, install software, change credentials or incur costs. All content remains English.
