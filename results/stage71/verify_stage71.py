@@ -51,6 +51,7 @@ c = convolution(w)
 energy = sum(v*v for v in c.values())
 rows = []
 for N in (50, 100, 120, 256, 300):
+    assert N >= 4 and N % 2 == 0 and not is_prime(N-1) and not is_prime(N//2)
     seen = set()
     retained = {}
     tau = 0
