@@ -1,0 +1,104 @@
+{
+  "stage": 72,
+  "date": "2026-11-11",
+  "branch": "cocalc/stage72-pointwise-prime-power-core",
+  "base": "cocalc/stage71-sharp-deletion-sensitivity",
+  "provenance": "Direct ChatGPT reasoning, primary literature comparison, local exact Python verification, GitHub connector publication. No CoCalc/Codex use.",
+  "theorems": [
+    {
+      "id": "T72.1",
+      "status": "PROVED elementary finite Fourier; asymptotic requires established PNT",
+      "statement": "C_X(N) >= 2 S_X(0)^2/(3πX) >= W² X/(6π) for sufficiently large X, uniformly N∈[X/2,X], with fixed w≥0 in C_c^∞((0,1)); no positivity of full r_X(N) inferred."
+    },
+    {
+      "id": "T72.2",
+      "status": "PROVED elementary",
+      "statement": "0≤G_X(N)-r_X(N)≤2M² floor(sqrt X)(log X)² for every integer N and X≥4."
+    },
+    {
+      "id": "T72.2b",
+      "status": "PROVED via established external classical Chebyshev prime-counting upper bound",
+      "statement": "0≤G_X(N)-r_X(N)≤4C_Ch M² sqrt X log X, X≥16, all integer N; C_Ch any valid uniform Chebyshev constant π(y)≤C_Ch y/log y, y≥2."
+    },
+    {
+      "id": "T72.3",
+      "status": "CONDITIONAL; needed hypotheses OPEN",
+      "statement": "E_X(N)>−W²X/(6π), or G_X(N)>4C_Ch M² sqrt X log X, would imply genuine positive weighted prime coefficient r_X(N). Neither estimated independently for every residual N."
+    }
+  ],
+  "executed_exact_validation": {
+    "python_version": "3.13.5",
+    "run_command": "python3 -B results/stage72/verify_stage72.py",
+    "targets_checked": 122,
+    "scales": [
+      90,
+      150,
+      240
+    ],
+    "status": "PASS",
+    "primality": "deterministic trial division n<=239",
+    "numerics": "fractions.Fraction exact rational arithmetic",
+    "focus": "Reflected lookup versus independent direct pair-list convolution, proper-power contamination union bound, exact target matching deletion",
+    "surrogate": "w_X(t) = t(1−t) for t in (0,1), unit weights not actual log p. The surrogate does NOT satisfy w∈C_c^∞((0,1)) and is deliberately used ONLY for finite algebra checks.",
+    "source_sha256": "3b7b50eae8518870d404e4d632664fbe5210710d8e9043b26b98501e5f8e8fbf",
+    "results_sha256": "92d05bbe80de8b8db08c6f4cf89d98db2478e52beaff1da0e170eb2b8065e730",
+    "git_blob_sha1_source": "13bebd8a8240757d962d4d57330d74ac99bacf6c",
+    "git_blob_sha1_results": "0b6c7a6b15dbf91edbd98aaded8d7f9e081f010e",
+    "verified_exact_git_blob_identity": true,
+    "limitations": "Neither the sinc central-core integral nor PNT/Chebyshev theorem constants were numerically tested; mathematical proofs and known literature supply those facts."
+  },
+  "committed_files": [
+    {
+      "path": "results/stage72/01_pointwise_core_and_prime_power.md",
+      "git_blob_sha1": "c967bde49c8d174845b55ce36c7a060a3e538339"
+    },
+    {
+      "path": "results/stage72/02_adversarial_review.md",
+      "git_blob_sha1": "67f7896e119e8ac5a23182e0545a1ca36fc85496"
+    },
+    {
+      "path": "results/stage72/final_report.md",
+      "git_blob_sha1": "c211f3ade26a9e5dbf149825576e39d61934bd52"
+    },
+    {
+      "path": "results/stage72/verify_stage72.py",
+      "git_blob_sha1": "13bebd8a8240757d962d4d57330d74ac99bacf6c"
+    },
+    {
+      "path": "results/stage72/exact_results.json",
+      "git_blob_sha1": "0b6c7a6b15dbf91edbd98aaded8d7f9e081f010e"
+    },
+    {
+      "path": "tasks/NEXT_TASK.md",
+      "git_blob_sha1": "90d8fa7316420805d88e2a1de6e9014b235f4a36"
+    }
+  ],
+  "external_provenance": [
+    {
+      "source": "classical prime number theorem (PNT)",
+      "role": "weighted mass S_X(0)~WX"
+    },
+    {
+      "source": "classical Chebyshev π(y)<<y/log y",
+      "role": "power correction saving",
+      "url": "https://isa-afp.org/browser_info/current/AFP/Prime_Distribution_Elementary/Elementary_Prime_Bounds.html"
+    },
+    {
+      "source": "Iwaniec, Prime Numbers and L-functions, ICM 2006",
+      "role": "sieve parity background",
+      "url": "https://www.mathunion.org/fileadmin/ICM/Proceedings/ICM2006.1/ICM2006.1.ocr.pdf"
+    },
+    {
+      "source": "Wu, Chen's double sieve ... Acta Arith. 114 (2004)",
+      "role": "prior stages deletion upper sieve",
+      "url": "https://doi.org/10.4064/aa114-3-2"
+    }
+  ],
+  "caveats": [
+    "Core integral can be cancelled exactly by signed contribution outside core; the complement includes rational major arcs.",
+    "Adversarial deletion of true-prime subset is not the immutable full true-prime polynomial and does not refute Goldbach.",
+    "Power corrections do not yield a positive lower bound for G_X(N).",
+    "Finite 122 exact tests do not verify the asymptotic analytic results or Goldbach.",
+    "No peer review, Lean proof, CoCalc/Codex computation, PR merge or scheduled automation."
+  ]
+}
