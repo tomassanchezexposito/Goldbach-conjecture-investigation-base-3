@@ -1,0 +1,89 @@
+{
+  "stage": 71,
+  "date": "2026-11-11",
+  "branch": "cocalc/stage71-sharp-deletion-sensitivity",
+  "provenance": "Mathematics and focused tests completed directly with ChatGPT; no CoCalc/Codex usage, no job scheduled",
+  "mathematics": [
+    {
+      "id": "T71.1",
+      "status": "PROVED (finite matching optimization)",
+      "statement": "Minimum nonnegative-weight l1 deletion cost erasing all target prime pairs equals sum over disjoint complement edges of the smaller weight; all finite l^s distances and the exact fractional-budget piecewise linear optimum are established."
+    },
+    {
+      "id": "T71.1a",
+      "status": "PROVED (exact target perturbation identity)",
+      "statement": "Target coefficient loss equals 2 sum_edges(a_p d_q+a_q d_p-d_p d_q), bounded by 2 max(a_p) sum d_p; reflected interaction is required."
+    },
+    {
+      "id": "T71.2",
+      "status": "PROVED deduction from established external theorems",
+      "statement": "An adversarial prime-support deletion can annihilate an arbitrary residual target while the altered polynomial and its square converge to the originals in every fixed normalized global Fourier L^q (q>=2) and L^r (r>=1), respectively; the theorem is for modified coefficients only."
+    }
+  ],
+  "external_theorems": [
+    {
+      "source": "J. Wu, Acta Arithmetica 114(3) (2004), 215-273, Thm 1",
+      "url": "https://doi.org/10.4064/aa114-3-2",
+      "role": "unconditional upper bound D(N)<=7.8209 Theta(N), not a Goldbach lower bound"
+    },
+    {
+      "source": "classical PNT and weighted partial summation",
+      "role": "total weighted prime mass and squared coefficient norm"
+    },
+    {
+      "source": "uniform n/phi(n)=O(log log n)",
+      "role": "replace Wu singular factor with universal loglog upper"
+    },
+    {
+      "source": "Young convolution inequality and Fourier Parseval",
+      "role": "exact L4 upper and factorized closeness"
+    }
+  ],
+  "independent_local_verification": {
+    "python_version": "Python 3.13.5",
+    "run_command": "python3 /mnt/data/stage71/verify_stage71.py",
+    "repository_reproduction": "python3 -B results/stage71/verify_stage71.py",
+    "source": {
+      "path": "results/stage71/verify_stage71.py",
+      "sha256": "b9decd6f739f9c734589ddc7408bba7781a9dcaac98b876e039f9c5d282b5aa0",
+      "github_git_blob_sha1": "1b912dce3ba43c7ba2f8c66c66b5f5bdcbfcffd1"
+    },
+    "output": {
+      "path": "results/stage71/exact_results.json",
+      "sha256": "50840ea61f45811cbf961bab0d83e89559b060a70ad650f61fa6313a1d98ba0b",
+      "github_git_blob_sha1": "a2ebb5727ec5a4cede70b102c581c75d0d0cf47c"
+    },
+    "assertions": "PASS",
+    "scope": {
+      "independent_bruteforce_dp_budgets": 15,
+      "finite_residual_prime_support_targets": [
+        50,
+        100,
+        120,
+        256,
+        300
+      ],
+      "exact_fourth_moment_monotonicity": true,
+      "exact_fourier_Young_L4": true
+    },
+    "byte_identity": "Source and stdout JSON Git blob SHA1 verified against local files with git hash-object; SHA256 calculated by sha256sum on executed files."
+  },
+  "research_files": [
+    {
+      "path": "results/stage71/01_exact_target_robustness_and_lp.md",
+      "github_git_blob_sha1": "b73d729555cf81e6b7208d3a0df917af61fddb92"
+    },
+    {
+      "path": "results/stage71/02_adversarial_review.md",
+      "github_git_blob_sha1": "e6223602ffb483186993e36f225e251da18a1ce4"
+    }
+  ],
+  "limitations": [
+    "No pointwise lower bound for the true-prime reflection correlation, R(N) or tau_N on all residual H is proved.",
+    "The modified polynomial deletes genuine-prime frequencies; it is not the fixed actual full prime polynomial, and not a Goldbach counterexample.",
+    "Normalized global closeness is not an absolute o(X) error at one coefficient.",
+    "Finite exact experiments test implementations but do not prove the asymptotic theorem.",
+    "External published sieve/PNT proofs not re-proved or formally verified here; publisher citation checked.",
+    "Pull request remains draft, main unmodified and no Codex run launched."
+  ]
+}
