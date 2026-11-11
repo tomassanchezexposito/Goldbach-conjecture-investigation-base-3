@@ -1,0 +1,129 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=17mm]{geometry}
+\usepackage{amsmath,amssymb,hyperref,url}
+\hypersetup{hidelinks}
+\setlength{\parindent}{0pt}\setlength{\parskip}{3pt}
+\newcommand{\head}[1]{\smallskip\textbf{#1}\par}
+\newcommand{\refstep}[2]{\item #1\;{\scriptsize\path{#2}}}
+\begin{document}
+\begin{center}\large\textbf{External referee package: Stage 73--75 reductions}\\
+\small Pinned audit base: \texttt{512a20cac32623ad4d150a8e15a92d311476fe05}\\
+11 November 2026. Review PR \#25. No new mathematics; NO-GO retained.\end{center}
+\textbf{Cover note.} Dear Colleague, please independently examine the uniform analytic dependencies and exact error bookkeeping of the reductions below. The project has not proved a signed prime-pair lower bound. The requested review concerns validity and scope, including whether any purported input assumes the missing target correlation. Existing machine checks establish only small algebraic identities. Earlier reviews include same-agent critical passes, not external peer review. Please challenge the eight steps on page 2 before treating these reductions as certified.
+\head{A. Original formulation and its logical scope}
+For each even integer $N\ge4$, the author's statement is
+\[C(N):\quad (N-1\text{ prime})\ \lor\ (N/2\text{ prime})\ \lor\ R(N)>0,
+\quad R(N)=\#\{p<q:p,q\text{ prime},\ p+q=N\}.\]
+Let $H=\{N\ge4:N\text{ even},\ N-1,N/2\text{ composite}\}$. The universal three-case assertion is equivalent to $R(N)>0$ for every $N\in H$. Pointwise binary Goldbach is $B(N)\iff(N/2\text{ prime})\lor R(N)>0$, so $C(N)\iff(N-1\text{ prime})\lor B(N)$. Thus Goldbach implies the three-case assertion. Its converse additionally requires Goldbach on targets with $N-1$ prime and $N/2$ composite; no such converse is proved here. Prime-plus-one is not itself a two-prime representation.
+
+For distinct odd primes put $m=N/2$, $h=(q-p)/2>0$: $p=m-h$, $q=m+h$. With $p=3+2a$, $q=3+2b$, $a,b\in\mathbb Z_{\ge0}$, exactly $a+b=m-3$, $b-a=h$. These are identities, not simultaneous-primality criteria. Prime 3 is position zero. Prime 2 occurs in an even two-prime sum only at $N=4$; there the midpoint is prime and the odd-position map is not used.
+\head{B. Exact statements under review}
+Fix nonnegative $w\in C_c^\infty((0,1))$, support in fixed $[\sigma,\rho]\subset(0,1)$; set $e(t)=e^{2\pi it}$, $h_N(t)=w(t/X)w((N-t)/X)$ and $U=V=\max(1,\lfloor X^{1/5}\rfloor)$. Keep the full actual-prime sum
+\[S_X(\alpha)=\sum_p(\log p)w(p/X)e(p\alpha),\quad r_X(N)=\int_0^1 S_X(\alpha)^2e(-N\alpha)\,d\alpha,\quad G_X(N)=\sum_n\Lambda(n)\Lambda(N-n)h_N(n).\]
+Extend $\Lambda(n)=0$ for $n\le0$. Write $b_U(k)=\sum_{d\mid k,d>U}\mu(d)$, $c_l=\sum_{dm=l,d\le U,m\le V}\mu(d)\Lambda(m)$ and retain all hyperbolic support:
+{\small\[A_3=\sum_{k>U,m>V,\ km<N}b_U(k)\Lambda(m)\Lambda(N-km)h_N(km),\quad
+\mathcal K(t)=\sum_{d\le U,(d,N)=1}\frac{\mu(d)}{\varphi(d)}\log(t/d)-\sum_{l\le UV,(l,N)=1}\frac{c_l}{\varphi(l)},\quad \mathcal M_I=\int h_N\mathcal K.\]}
+\textbf{T73.5.} For every fixed $A>0$, all sufficiently large $X$, uniformly in integer $N\in[X/2,X]$,
+\[G_X=\mathcal M_I+A_3+E_I,\qquad E_I=O_{A,w}\bigl(X\log^{-A}X+X^{2/5}\log^3X\bigr).\]
+\textbf{T74.3.} Let $C_2=\prod_{p>2}(1-(p-1)^{-2})$, $\mathfrak S(N)=2C_2\prod_{p\mid N,p>2}(p-1)/(p-2)$ and $J_w(\tau)=\int w(u)w(\tau-u)du$. For positive even $N\le X$, $t\in[\sigma X,\rho X]$, uniformly as $X\to\infty$, for some fixed $c>0$,
+\[\mathcal K(t)=\mathfrak S(N)+O_{\sigma,\rho}(e^{-c\sqrt{\log X}}),\quad
+\mathcal M_I=F_X+E_K,\quad F_X=X\mathfrak S(N)J_w(N/X),\quad E_K=O_w(Xe^{-c\sqrt{\log X}}).\]
+\textbf{T75.1.} In addition take $w>0$ on $[1/5,3/5]$. On $\mathcal H_X=H\cap[X/2,X]$,
+{\small\[A_3=r_X-F_X+e_X,\quad e_X=P_X-E_K-E_I,\quad P_X=G_X-r_X,\quad
+0\le P_X\le4C_{\rm Ch}\|w\|_\infty^2\sqrt X\log X\ (X\ge16),\quad \sup_{\mathcal H_X}|e_X|=o_w(X).\]}
+Here $C_{\rm Ch}$ is any fixed valid constant in $\pi(y)\le C_{\rm Ch}y/\log y$ ($y\ge2$); empty suprema are zero. Thus uniform $A_3=o_w(X)$ iff $r_X=F_X+o_w(X)$. For fixed $\lambda\ge0$, the quantified eventual bound $A_3\ge-(\lambda+\epsilon)X$ for every $\epsilon>0$ is equivalent to $r_X\ge F_X-(\lambda+\epsilon)X$ with the same eventual quantifiers. Exact finite boundaries require slack; none is inferred from $o(X)$ alone.
+\newpage
+\head{C. Dependency graph and source scope}
+\textbf{External E1:} Bombieri--Vinogradov, Tao, \emph{254A Notes 3} (10 January 2015), discrepancy definition and Theorem 17 actually consulted. Endpoint error is centered at coprime $\Lambda$ mass, with $Q\le\sqrt y\log^{-B(A)}y$; the endpoint maximum used internally is derived by a mesh, not assumed. Source: \url{https://terrytao.wordpress.com/2015/01/10/254a-notes-3-the-large-sieve-and-the-bombieri-vinogradov-theorem/}.
+
+\textbf{External E2:} Montgomery--Vaughan, \emph{Multiplicative Number Theory I} (2007), Chapter 6, Theorem 6.9 (quantitative PNT), (6.17)--(6.19) (M\"obius cancellation) consulted; \url{https://doi.org/10.1017/CBO9780511618314.008}. Author-hosted chapter URL and byte hashes are in the preserved audit manifest. The qualitative Chebyshev bound follows from PNT after enlarging a constant on a finite initial interval; no optimized constant is required. Full external proofs were not independently refereed.
+
+\textbf{Internal edges:} standard Vaughan identity $\longrightarrow$ logarithmic grouping/nonreduced-power bookkeeping $+$ E1/E2 $\longrightarrow$ T73.5. E2 $+$ absolutely convergent Euler convolution with $\sum|g_N(k)|k^{1/4}\le\exp(O_B((\log X)^{1/4}))$ for $0<N\le X^B$, fixed $B$, $\longrightarrow$ T74.3 (transfer arguments $X^\alpha\le y\le X^\beta$ have fixed $0<\alpha\le\beta$). T73.5 $+$ T74.3 $+$ nonnegative proper-power union bound $\longrightarrow$ T75.1. No representation is a premise of these edges.
+
+\textbf{Refuted approaches, not refuted prime theorems:} separating $\varphi(dm)$ without coprimality; inferring every-target positivity from exceptional-set bounds or deletion-stable coarse data; applying finite-complexity results to a reflected binary slice. Prior counterexamples are preserved, not rerun here.
+\head{D. Strongest conclusion and first missing theorem}
+The strongest demonstrated conclusion in this chain is the uniform Type I evaluation and its exact reduction of the actual-prime remainder to the signed $A_3$, not a positive lower bound for $r_X$. Let $m_w=\min_{[9/40,21/40]}w>0$ and $c_w=C_2m_w^2/10$. The continuum support bound gives $F_X\ge c_wX$. One sufficient \emph{unproved} arithmetic theorem is
+\[\exists X_0\ \forall X\ge X_0\ \forall N\in H\cap[X/2,X]:\quad A_3(N)\ge-\tfrac12c_wX.\]
+Together with the audited errors this would give $r_X\ge c_wX/4>0$ eventually. A rigorous finite connection would still be needed for universality. The stronger $A_3=o_w(X)$ duplicates the existing weighted Hardy--Littlewood obligation. Alternative genuine-prime mechanisms are not proved impossible, but none is supplied here.
+\head{E. Claims NOT made}
+No new universal lower bound for genuine prime pairs; no novelty claim for the standard Vaughan decomposition; no unconditional resolution of the signed Type II obstruction; no proof of strong Goldbach. Same-agent audit and finite algebra are not independent human certification.
+\head{F. Eight referee challenges (paths relative to the pinned repository)}
+\begin{enumerate}\setlength{\itemsep}{1pt}\setlength{\parsep}{0pt}
+\refstep{Are the three-case/Goldbach implications and the odd-prime and midpoint domains stated correctly?}{results/stage75/01_duplication_gate.md:7--11}
+\refstep{Does grouping lose only $\log l$, including $l=1$, and are nonreduced powers fully retained?}{results/stage73/02_binary_von_mangoldt_decomposition.md:44--53}
+\refstep{Do reflection and compact support justify the variation bound and all boundary terms uniformly?}{results/stage73/02_binary_von_mangoldt_decomposition.md:38--40}
+\refstep{Does endpoint BV apply at the first positive mesh point, with correct centering and parameter order?}{results/stage73/02_binary_von_mangoldt_decomposition.md:55}
+\refstep{Is differentiating the M\"obius series at the boundary justified, with limiting value $-1$?}{results/stage74/01_gate_and_kernel.md:59--62}
+\refstep{Does the absolute Euler moment absorb all varying target divisors with fixed polynomial parameters?}{results/stage74/01_gate_and_kernel.md:70--86}
+\refstep{Are shared-prime correction signs and the uniform removed-factor argument valid?}{results/stage74/01_gate_and_kernel.md:44--53,98--103}
+\refstep{Are proper-power factors, error signs, epsilon slack and the conditional margin sufficient without circularity?}{results/stage73/02_binary_von_mangoldt_decomposition.md:10--15; results/stage75/01_duplication_gate.md:28--38}
+\end{enumerate}
+\head{G. Five-line novelty/parity gate}
+1. The present reduction leaves $A_3$ signed at each prescribed target.\\
+2. The Type I main term alone supplies no lower bound for that remainder.\\
+3. Coarse deletion-stable inputs cannot force positivity in their enlarged subset class.\\
+4. No independently justified actual-prime input overcoming this limitation is established here.\\
+5. Retain NO-GO: do not reopen Type II or initiate Stage 76.
+\newpage
+\begin{center}\large\textbf{Appendix: unaltered historical ledger entries}\end{center}
+\small The entries below reproduce every cell of the selected original rows; layout only is changed. They record historical evidence claims, not a new external certification. Paths are repository-relative at the pinned base. No earlier statement is edited.
+
+\head{T73.5}\textit{Source:} \path{results/stage73/05_proof_ledger.md} (line 9).
+\begin{quote}
+T73.5
+
+Uniform Type I reduction with error $O_{A,w}(X\log^{-A}X+X^{2/5}\log^3X)$ for $U=V=\lfloor X^{1/5}\rfloor$
+
+Coefficient bound, partial summation, nonreduced prime-power bound and mesh proof in 02; formal coefficient tests
+
+Established BV and quantitative PNT; main term plus Type II sign remains open
+\end{quote}
+
+\head{T74.3}\textit{Source:} \path{results/stage74/LEDGER_DELTA.md} (line 11).
+\begin{quote}
+T74.3
+
+PROVED HERE, NO LITERATURE-NOVELTY CLAIM
+
+$\mathcal K=\mathfrak S(N)+O(e^{-c\sqrt{\log X}})$ and $\mathcal M_I=X\mathfrak S(N)J_w+O_w(Xe^{-c\sqrt{\log X}})$, uniformly on the required domain. Correct sign is positive; no claim about Type II sign follows.
+\end{quote}
+
+\head{T75.1}\textit{Source:} \path{results/stage75/LEDGER_DELTA.md} (line 8).
+\begin{quote}
+T75.1
+
+PROVED HERE, not new arithmetic
+
+Uniform error relation, equivalence to the existing weighted asymptotic, lower-bound equivalence with epsilon slack.
+\end{quote}
+
+\head{C73.C}\textit{Source:} \path{results/stage73/05_proof_ledger.md} (line 16).
+\begin{quote}
+C73.C
+
+Centered Type II weighted Hardy–Littlewood hypothesis, uniform on $H$
+
+Exact reduction in 02 section 6 and explicit $J_w\ge m_w^2/20$ support argument; reviewed in 04 section 6
+
+OPEN arithmetic hypothesis, quantitatively stronger than bare existence
+\end{quote}
+
+\head{O74.1}\textit{Source:} \path{results/stage74/LEDGER_DELTA.md} (line 14).
+\begin{quote}
+O74.1
+
+OPEN OBLIGATION; NOT PURSUED
+
+A target-uniform signed Type II lower margin after the now-evaluated centering; the exact sufficient inequality is in the one-page assessment. No universal prime-pair lower bound is established.
+\end{quote}
+
+\head{O75.1}\textit{Source:} \path{results/stage75/LEDGER_DELTA.md} (line 12).
+\begin{quote}
+O75.1
+
+UNCHANGED OPEN
+
+Independent actual-prime signed pointwise arithmetic input; universal original three-case coverage remains OPEN.
+\end{quote}
+
+\textbf{Package status:} request independent human review; signed pointwise arithmetic remains OPEN.\end{document}

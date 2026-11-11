@@ -1,0 +1,178 @@
+{
+  "kind": "External human referee handoff; no new mathematics",
+  "generated_utc": "2026-11-11T10:40:45.536588+00:00",
+  "branch": "cocalc/dependency-audit-stages73-75",
+  "pinned_source_sha": "512a20cac32623ad4d150a8e15a92d311476fe05",
+  "pinned_remote_sha": "512a20cac32623ad4d150a8e15a92d311476fe05",
+  "fetch": "Successful dedicated-identity SSH fetch; local/remote match and initial clean worktree",
+  "designated_pr": {
+    "number": 25,
+    "url": "https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/25",
+    "state": "open",
+    "draft": true,
+    "merged": false,
+    "target": "cocalc/stage75-novelty-gate-prime-input",
+    "verification": "Authorized GitHub connector; optional gh absent; no new PR"
+  },
+  "budget": {
+    "deliverables": 5,
+    "additional_ledger_delta": 1
+  },
+  "canonical_layout": {
+    "pdf_pages": 3,
+    "body_pages": [
+      1,
+      2
+    ],
+    "appendix_pages": [
+      3
+    ],
+    "referee_questions": 8,
+    "visual_review": "All three rendered pages inspected; content readable; final build has zero diagnostics"
+  },
+  "build": {
+    "command": "\"/opt/cocalc/bin/node\" \"/opt/cocalc/bin2/cocalc-cli.js\" project build /home/user/goldbach-dependency-audit/results/external_referee_package/referee_package.tex --force --build-timeout 60s",
+    "build_id": "8db8a07e-39b5-45d0-925f-a95db73248cf",
+    "state": "succeeded",
+    "exit_code": 0,
+    "diagnostics": [],
+    "draft_layout_note": "First build had two overfull display warnings; only those two display font sizes reduced before final clean build; mathematical content unchanged"
+  },
+  "software": {
+    "sage": "10.9",
+    "sage_python": "3.14.4 (main, Apr 8 2026, 04:02:31) [GCC 15.2.0]",
+    "python_manifest": "3.14.4 (main, Apr  8 2026, 04:02:31) [GCC 15.2.0]",
+    "git": "git version 2.53.0",
+    "pdftex": "3.141592653-2.6-1.40.28 (TeX Live 2025/Debian)",
+    "latexmk": "4.87"
+  },
+  "algebra_verification": {
+    "command": "sage -python results/external_referee_package/verify_algebra_sage.py",
+    "status": "PASS",
+    "executions": 1,
+    "method": "Independent free multivariate QQ polynomial rings; imports no project verifier",
+    "groups": [
+      {
+        "label": "T75.1 error elimination",
+        "identities": 2,
+        "residuals": [
+          "0",
+          "0"
+        ]
+      },
+      {
+        "label": "Proper-power union algebra",
+        "identities": 2,
+        "difference": "t*q + s*u + q*u",
+        "majorant_excess": "q*u",
+        "order_assumption": "Coefficient variables nonnegative for inequality"
+      },
+      {
+        "label": "Midpoint and base-3 reflection",
+        "identities": 5,
+        "sum_positions": "m - 3",
+        "difference_positions": "h"
+      }
+    ],
+    "timing": "Short local execution; separate CPU/peak-memory timing not instrumented",
+    "scope": "Algebra only; no analytic theorem, primality, integrality-domain or universal positivity certification"
+  },
+  "excluded_work": [
+    "Type I kernel or wheel experiments",
+    "Prime deletion or global moment experiments",
+    "Finite Goldbach sweep",
+    "Lean formalization",
+    "New arithmetic proof or Stage76"
+  ],
+  "sources": [
+    {
+      "url": "https://terrytao.wordpress.com/2015/01/10/254a-notes-3-the-large-sieve-and-the-bombieri-vinogradov-theorem/",
+      "cache": "/tmp/dependency-audit-73-75/tao-bv.html",
+      "bytes": 677607,
+      "sha256": "613cd724919310c70a95fbe770fd1775c1a59c01f7ec9ef23f228574426e918f",
+      "passages_read": "Discrepancy definition, Theorem17 and Exercise20 statement"
+    },
+    {
+      "url": "https://personal.science.psu.edu/rcv4/personal/Publications/MNTI/10.0_pp_168_198_The_Prime_Number_Theorem.pdf",
+      "cache": "/tmp/dependency-audit-73-75/mv-ch6.pdf",
+      "bytes": 448236,
+      "sha256": "0ce7e8c75f57a8b52a3e518ad166941f9e9be721980e897f5c75dd846b85a6c6",
+      "passages_read": "Chapter6 (6.17)-(6.19) and quantitative PNT context"
+    }
+  ],
+  "source_reading": "Previously consulted original E1 discrepancy/Theorem17 and E2 (6.17)-(6.19); cached original E2 Theorem6.9 statement additionally consulted for this package; full external proofs not independently refereed",
+  "historical_hashes_passed": {
+    "results/stage74/01_gate_and_kernel.md": "865c2ad3243fadcbd5b7875271c860387f8e3bdbaee151afa7a73fe5c2b921ae",
+    "results/stage74/04_review_and_assessment.md": "6b60ba691285ace8580597776f9403c5800492b09a38198c3abed34ff49e649a",
+    "results/stage74/LEDGER_DELTA.md": "15bd3746fe010ae9c0db28d6ae42206094df449fded6ef9d575704c130cdcfde",
+    "results/stage74/verify_stage74.py": "69c226d1ef4ed7ca95256532886ee5c3d0f29f4a10b490540088c86683c0cfb1",
+    "results/stage74/verify_stage74_sage.py": "69e83073de4eab4c4f4949d138fc3e8c946bdc8875aaf424e21cdf72a786d116",
+    "results/stage75/01_duplication_gate.md": "3a53aca74ce49d39a486d594a7b63847759fcdc8b5d7253a102bc02a6f99d8b5",
+    "results/stage75/02_primary_source_audit.md": "068c2507c98d50ceec55ffe358434d6a934cda24bae89c6327b0af359c8957c1",
+    "results/stage75/03_negative_assessment.md": "e04f0d26997cf666fd091e88649230e47e6dc85370c53c43801d0e68eb23c4f7",
+    "results/stage75/LEDGER_DELTA.md": "d871f49f8be94b6f34d6f8f1a5c8d991cb59426f11060d88f29db6a5bac7f873",
+    "tasks/NEXT_TASK.md": "f64300a7d40aa2438169255b47e65ade889896aafd48e6ab941d359a3674471c",
+    "results/dependency_audit_73_75/01_dependency_audit.md": "f850fd55258f9f731530dac775c05fc6a970fa65892edcbca1b57bfdf329374f",
+    "results/dependency_audit_73_75/LEDGER_DELTA.md": "8df39a4d1372a1b4b9d1a3c01c8454f1d21660b115c7b620e66018f6ef6d42d8"
+  },
+  "appendix_rows": [
+    {
+      "source": "results/stage73/05_proof_ledger.md",
+      "line": 9,
+      "label": "T73.5",
+      "raw_row_sha256": "aa4dbde5ab7d149ff01cc2884a9168f363701d449f1a0bc29cd9e7ca224c0250",
+      "unchanged_cells": true
+    },
+    {
+      "source": "results/stage74/LEDGER_DELTA.md",
+      "line": 11,
+      "label": "T74.3",
+      "raw_row_sha256": "6a2ccffb26189addd3d8c1001f52336b5a4c9b816426bec4c68f4794fbde9cd7",
+      "unchanged_cells": true
+    },
+    {
+      "source": "results/stage75/LEDGER_DELTA.md",
+      "line": 8,
+      "label": "T75.1",
+      "raw_row_sha256": "4311547523acd32ecf01fc257601fb374474e54f1ce62fc16801707b8802ee31",
+      "unchanged_cells": true
+    },
+    {
+      "source": "results/stage73/05_proof_ledger.md",
+      "line": 16,
+      "label": "C73.C",
+      "raw_row_sha256": "f252e8c34c38564d62f8b43a5c5e0594cb2667e0ec9058249c7d60b29206475f",
+      "unchanged_cells": true
+    },
+    {
+      "source": "results/stage74/LEDGER_DELTA.md",
+      "line": 14,
+      "label": "O74.1",
+      "raw_row_sha256": "a46d648ad0e833e8d83de1cddd3a8f9a73adab7f4a244ed310be767587dfbe1c",
+      "unchanged_cells": true
+    },
+    {
+      "source": "results/stage75/LEDGER_DELTA.md",
+      "line": 12,
+      "label": "O75.1",
+      "raw_row_sha256": "114f343d2897e5242d5a16ddb9330c5e13fa2e1f6180375ac75c18bf1f2779fb",
+      "unchanged_cells": true
+    }
+  ],
+  "integrity": "No earlier tracked content changed; all additions confined to package directory",
+  "reproducibility": [
+    "Run Sage command above",
+    "Build saved LaTeX through CoCalc CLI; inspect pdfinfo and pages",
+    "Compare document hashes, source-row hashes and historical fingerprints",
+    "git diff --check and review changes from pinned source"
+  ],
+  "files_sha256": {
+    "results/external_referee_package/referee_package.tex": "cb1c85a335f4e2eb66d82330cce0e98d471c7a51e099ab2354b9909852e28f32",
+    "results/external_referee_package/referee_package.pdf": "0be5a98388d5ec78f423dc1d32201826791b09bb7cba360e6ebf581cd368bd86",
+    "results/external_referee_package/verification_notes.md": "64d3e9d0299baa9c330c678792de528434480ccc5a6eba2f505ee9a2031f559a",
+    "results/external_referee_package/verify_algebra_sage.py": "0a98a2793472bfdef2bc279ff6d6d16dbe25c90f8a05c5c116565357bcb51390",
+    "results/external_referee_package/LEDGER_DELTA.md": "4698af29369facf98db8acd840024142d16e96c73993ac84ad541c0146b90408"
+  },
+  "commit_policy": "Manifest pins source SHA and excludes its own hash; exact final commit and verified remote SHA are reported in chat/commit card and existing PR head, avoiding a self-referential commit",
+  "stop_disposition": "NO-GO retained; publish then stop; universal Goldbach coverage OPEN"
+}
