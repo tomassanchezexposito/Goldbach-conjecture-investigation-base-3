@@ -125,6 +125,27 @@ Every coefficient of \(T_X\) is at most \(M\log X\). Expanding
 \]
 Substitute (72.9) to obtain (72.8). All quantities are from genuine primes and their true proper powers. In particular, there is no assumption that \(r_X(N)\) is nonzero.
 
+### Corollary 72.2b — a further logarithm saved by Chebyshev (PROVED with established theorem)
+
+The classical **unconditional Chebyshev upper bound** \(\pi(y)\le C_{\rm Ch}y/\log y\) for all \(y\ge2\) gives, for \(X\ge16\),
+\[
+\sum_{n}[Q_X]_n
+\le M\pi(\sqrt X)\log X
+\le2C_{\rm Ch}M\sqrt X.
+\tag{72.9b}
+\]
+Inserting this in the same precise pair union bound above yields
+\[
+\boxed{
+0\le G_X(N)-r_X(N)
+\le 4C_{\rm Ch}M^2\sqrt X\log X
+=O_w(\sqrt X\log X)}
+\tag{72.9c}
+\]
+**uniformly in every target N**, without assuming any Goldbach representation or any zero-free hypothesis. Here \(C_{\rm Ch}\) can be *any fixed rigorously admissible upper Chebyshev constant* for \(y\ge2\); we do not claim it to be numerically optimal. This improves the published Stage 69 \(O_w(\sqrt X\log^3X)\) accounting by **two logarithmic factors**. The simple explicit finite-X bound (72.8) remains valid independently of Chebyshev.
+
+The underlying upper Chebyshev theorem is classical; consult Manuel Eberl's formalized elementary prime-bound treatment in the Isabelle AFP, https://isa-afp.org/browser_info/current/AFP/Prime_Distribution_Elementary/Elementary_Prime_Bounds.html . Its independent proof is an external input, not newly supplied here.
+
 ### Corollary 72.2a — a correct but unproved at-scale quantitative target certificate
 
 For any N, if an independent theorem produces the strict lower bound
@@ -152,7 +173,7 @@ The complementary integral for that modified model is necessarily **negative of 
 
 - **PROVED (finite Fourier):** positivity C_X(N)≥(2/(3πX)) S_X(0)^2 for all N in range; exact missing-target cancellation.
 - **PROVED (PNT input):** center C_X(N)≥(W²/(6π))X for all sufficiently large X, uniformly in N.
-- **PROVED (elementary):** proper prime-power contamination is at most \(2M^2\lfloor\sqrt X\rfloor(\log X)^2=o(X)\), pointwise.
+- **PROVED (elementary):** proper prime-power contamination is at most \(2M^2\lfloor\sqrt X\rfloor(\log X)^2=o(X)\), pointwise, and is in fact \(O_w(\sqrt X\log X)\) via the unconditional classical Chebyshev theorem.
 - **CONDITIONAL certification only:** full binary von Mangoldt correlation above that error, or sufficiently weak negative signed complement E_X(N).
 - **OPEN:** an unconditional, target-uniform estimate of E_X(N), G_X(N) or r_X(N) forcing a positive representation on H. **No solution to strong Goldbach.**
 
