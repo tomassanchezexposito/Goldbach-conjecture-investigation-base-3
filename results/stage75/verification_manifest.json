@@ -1,0 +1,140 @@
+{
+  "stage": 75,
+  "generated_utc": "2026-11-11T09:47:50.262733+00:00",
+  "base_sha": "5bdef46daa30e523565022748f6969bfe0e7a8a4",
+  "base_branch": "cocalc/stage74-parity-gate-type-I-kernel",
+  "branch": "cocalc/stage75-novelty-gate-prime-input",
+  "worktree": "/home/user/goldbach-stage75",
+  "fetch": "Successful explicit dedicated-identity SSH fetch before branch creation",
+  "ssh_identity": "/home/user/.ssh/id_ed25519_goldbach-investigacion-base-3",
+  "ssh_options": [
+    "IdentitiesOnly=yes"
+  ],
+  "gate_0": "NO-GO: duplicates C73.C/O74.1; direct proof line not started",
+  "result": "Scoped negative applicability assessment; no new arithmetic saving; Goldbach OPEN",
+  "budget": {
+    "stage75_deliverables": 4,
+    "next_task_documents": 1,
+    "additional_ledger_delta": 1
+  },
+  "mathematical_checks": [
+    "Direct and reverse substitution of T73.5, T74.3 and proper-power correction",
+    "Both epsilon-half lower-bound implications; no exact-boundary equivalence",
+    "Conditional character-bracket degeneracy at even conductor multiples",
+    "Separate same-agent source acceptance pass granting statements before testing quantifiers"
+  ],
+  "review_limitations": "Same-agent second critical pass, not blind external review; complete external proofs not certified",
+  "computations": {
+    "new_goldbach_or_primality_tests": 0,
+    "new_sage_runs": 0,
+    "new_mathematical_scripts": 0,
+    "finite_stage74_experiments_rerun": false,
+    "operations": "Source/evidence SHA-256, JSON and Git scope checks only"
+  },
+  "software": {
+    "python": "3.14.4 (main, Apr  8 2026, 04:02:31) [GCC 15.2.0]",
+    "git": "git version 2.53.0",
+    "sage": "Not invoked; no new Sage-dependent computation"
+  },
+  "prior_evidence_integrity": {
+    "results/stage74/01_gate_and_kernel.md": {
+      "sha256": "865c2ad3243fadcbd5b7875271c860387f8e3bdbaee151afa7a73fe5c2b921ae",
+      "status": "PASS: unchanged"
+    },
+    "results/stage74/04_review_and_assessment.md": {
+      "sha256": "6b60ba691285ace8580597776f9403c5800492b09a38198c3abed34ff49e649a",
+      "status": "PASS: unchanged"
+    },
+    "results/stage74/LEDGER_DELTA.md": {
+      "sha256": "15bd3746fe010ae9c0db28d6ae42206094df449fded6ef9d575704c130cdcfde",
+      "status": "PASS: unchanged"
+    },
+    "results/stage74/verify_stage74.py": {
+      "sha256": "69c226d1ef4ed7ca95256532886ee5c3d0f29f4a10b490540088c86683c0cfb1",
+      "status": "PASS: unchanged"
+    },
+    "results/stage74/verify_stage74_sage.py": {
+      "sha256": "69e83073de4eab4c4f4949d138fc3e8c946bdc8875aaf424e21cdf72a786d116",
+      "status": "PASS: unchanged"
+    }
+  },
+  "sources": [
+    {
+      "name": "matomaki-merikoski-v2",
+      "url": "https://arxiv.org/pdf/2112.11412v2",
+      "bytes": 394770,
+      "sha256": "2e664b17f1a825b65d607b6e4bdcaf6457c7cb653bca34165960e63a785521ff",
+      "passages_read": "Corollary 1.2 and Theorems 1.3-1.4, pp. 2-3",
+      "status": "Original statement checked, not full proof",
+      "accessed_utc": "2026-11-11T09:47:50.259877+00:00"
+    },
+    {
+      "name": "grimmelt-teravainen-v1",
+      "url": "https://arxiv.org/pdf/2207.08805v1",
+      "bytes": 867335,
+      "sha256": "ab78bc6359853d9310669594b3aa4191a765fda2a2782cbb0e4b0066064ffce1",
+      "passages_read": "Theorems 1.1-1.2 p. 2 and model transfer pp. 4-5",
+      "status": "Original statement checked, not full proof",
+      "accessed_utc": "2026-11-11T09:47:50.259900+00:00"
+    },
+    {
+      "name": "green-tao-annals",
+      "url": "https://annals.math.princeton.edu/wp-content/uploads/annals-v171-n3-p08-p.pdf",
+      "bytes": 1213124,
+      "sha256": "ec126f9c9e189cc0308b83fb4f9f93c29a47d11ad875391aff4ce4c42aef1001",
+      "passages_read": "Definition 1.5, Examples 1, Lemma 1.6, Main Theorem, Corollary 1.7 pp. 1759-1763",
+      "status": "Original journal domain checked; no current-status claim about finite-complexity dependencies",
+      "accessed_utc": "2026-11-11T09:47:50.259904+00:00"
+    },
+    {
+      "name": "polynomial-goldbach-v1",
+      "url": "https://arxiv.org/pdf/2611.09386v1",
+      "bytes": 304189,
+      "sha256": "3e6af1b24fdaa91131dd349d8c60d1add45028a251eac51e875251192cece89b",
+      "passages_read": "Theorem 1 and Section 2 pp. 2-5",
+      "status": "External zero-free assertion not adopted or independently verified",
+      "accessed_utc": "2026-11-11T09:47:50.259907+00:00"
+    },
+    {
+      "name": "pham-v1",
+      "url": "https://www.preprints.org/manuscript/202610.3061",
+      "download_error": "HTTP Error 403: Forbidden",
+      "sha256": null,
+      "reading_access": "Relevant passages read with web tool; no local byte receipt available",
+      "passages_read": "Abstract/status discussion, Proposition D.5 and Theorem G.2",
+      "status": "Selected HTML statements checked, not full proof",
+      "accessed_utc": "2026-11-11T09:47:50.259909+00:00"
+    },
+    {
+      "name": "arneth-record",
+      "url": "https://zenodo.org/records/23477014",
+      "bytes": 83817,
+      "sha256": "ea4382ea4403ea7e2e1cb06187075f1fc815c4f7ead6466281c1505889c9f238",
+      "passages_read": "Creator description and metadata only",
+      "status": "PDF proof not read; conditional lead only",
+      "accessed_utc": "2026-11-11T09:47:50.259911+00:00"
+    }
+  ],
+  "search_scope": [
+    "Repository obligation comparison Stages69-74 and deletion limitations",
+    "Primary searches: exceptional-zero reflected correlations, almost-twin-prime exceptional sets, finite-complexity equations",
+    "Current 2025-2026 signed/fixed-target searches: polynomial exceptional sets and explicitly conditional contemporary leads",
+    "Previously audited Bhowmik-Grimmelt/Li-Liu inputs acknowledged, not re-proved"
+  ],
+  "search_limitations": "Not exhaustive; search results not treated as established proofs; no impossibility claim about unexamined or future results",
+  "reproduction": [
+    "Read the named source versions and passages; compare available source hashes with sha256sum",
+    "Compare unchanged evidence hashes with Stage74 manifest",
+    "Inspect algebraic proof in 01; no finite experiment can certify the missing universal premise",
+    "git diff --check; changes limited to results/stage75 and tasks/NEXT_TASK.md"
+  ],
+  "files_sha256": {
+    "results/stage75/01_duplication_gate.md": "3a53aca74ce49d39a486d594a7b63847759fcdc8b5d7253a102bc02a6f99d8b5",
+    "results/stage75/02_primary_source_audit.md": "068c2507c98d50ceec55ffe358434d6a934cda24bae89c6327b0af359c8957c1",
+    "results/stage75/03_negative_assessment.md": "e04f0d26997cf666fd091e88649230e47e6dc85370c53c43801d0e68eb23c4f7",
+    "results/stage75/LEDGER_DELTA.md": "d871f49f8be94b6f34d6f8f1a5c8d991cb59426f11060d88f29db6a5bac7f873",
+    "tasks/NEXT_TASK.md": "f64300a7d40aa2438169255b47e65ade889896aafd48e6ab941d359a3674471c"
+  },
+  "self_hash_policy": "Excludes itself; final Git SHA and publication receipts reported separately",
+  "integrity_elapsed_seconds": 0.35996519299806096
+}
