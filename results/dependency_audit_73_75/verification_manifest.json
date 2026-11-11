@@ -1,0 +1,77 @@
+{
+  "purpose": "Independent mathematical dependency validation, not Stage76",
+  "base_sha": "983c9d91bd0ac036c1c75d0afa10b0809fe0728a",
+  "branch": "cocalc/dependency-audit-stages73-75",
+  "generated_utc": "2026-11-11T10:11:09.073912+00:00",
+  "verdict": "T73.5, T74.3, T75.1 pass in their stated domains; no new arithmetic input; retain NO-GO and stop",
+  "review_protocol": "Fresh same-agent reconstruction from external input statements and critical checking of uniformity, endpoints, convergence, signs and quantifiers; no blind external review claimed",
+  "mathematical_checks": [
+    "Explicit BV parameter order C then D then B(D), including first positive mesh endpoint and zero endpoint",
+    "Coprime-center removal, nonreduced powers, fixed-weight reflected variation",
+    "Convergence of differentiated Mobius series at s=0 and minus sign",
+    "Absolute Euler moment for targets <=X^B and absorption of exp(O(log(X)^(1/4)))",
+    "Auxiliary target and variable ranges, removed prime-factor moment monotonicity",
+    "Both exact error rearrangements and lower-bound epsilon slack"
+  ],
+  "external_inputs": [
+    "Classical Bombieri-Vinogradov with endpoint coprime-mass centering",
+    "Classical quantitative PNT and Mobius cancellation; Chebyshev prime-count bound"
+  ],
+  "conditional": "Uniform signed TypeII lower margin remains unproved",
+  "new_arithmetic_inputs": 0,
+  "goldbach_tests": 0,
+  "sage_runs": 0,
+  "repeated_typeI_finite_calculations": 0,
+  "old_verification_scripts_rerun": false,
+  "sources": [
+    {
+      "url": "https://terrytao.wordpress.com/2015/01/10/254a-notes-3-the-large-sieve-and-the-bombieri-vinogradov-theorem/",
+      "cache": "/tmp/dependency-audit-73-75/tao-bv.html",
+      "bytes": 677607,
+      "sha256": "613cd724919310c70a95fbe770fd1775c1a59c01f7ec9ef23f228574426e918f",
+      "passages_read": "Discrepancy definition, Theorem17 and Exercise20 statement"
+    },
+    {
+      "url": "https://personal.science.psu.edu/rcv4/personal/Publications/MNTI/10.0_pp_168_198_The_Prime_Number_Theorem.pdf",
+      "cache": "/tmp/dependency-audit-73-75/mv-ch6.pdf",
+      "bytes": 448236,
+      "sha256": "0ce7e8c75f57a8b52a3e518ad166941f9e9be721980e897f5c75dd846b85a6c6",
+      "passages_read": "Chapter6 (6.17)-(6.19) and quantitative PNT context"
+    }
+  ],
+  "reading_limitations": "Only named external statements/passages checked; no full reproof of external analytic theorems; no new broad literature search",
+  "integrity": {
+    "prior_hashes_passed": {
+      "results/stage74/01_gate_and_kernel.md": "865c2ad3243fadcbd5b7875271c860387f8e3bdbaee151afa7a73fe5c2b921ae",
+      "results/stage74/04_review_and_assessment.md": "6b60ba691285ace8580597776f9403c5800492b09a38198c3abed34ff49e649a",
+      "results/stage74/LEDGER_DELTA.md": "15bd3746fe010ae9c0db28d6ae42206094df449fded6ef9d575704c130cdcfde",
+      "results/stage74/verify_stage74.py": "69c226d1ef4ed7ca95256532886ee5c3d0f29f4a10b490540088c86683c0cfb1",
+      "results/stage74/verify_stage74_sage.py": "69e83073de4eab4c4f4949d138fc3e8c946bdc8875aaf424e21cdf72a786d116",
+      "results/stage75/01_duplication_gate.md": "3a53aca74ce49d39a486d594a7b63847759fcdc8b5d7253a102bc02a6f99d8b5",
+      "results/stage75/02_primary_source_audit.md": "068c2507c98d50ceec55ffe358434d6a934cda24bae89c6327b0af359c8957c1",
+      "results/stage75/03_negative_assessment.md": "e04f0d26997cf666fd091e88649230e47e6dc85370c53c43801d0e68eb23c4f7",
+      "results/stage75/LEDGER_DELTA.md": "d871f49f8be94b6f34d6f8f1a5c8d991cb59426f11060d88f29db6a5bac7f873",
+      "tasks/NEXT_TASK.md": "f64300a7d40aa2438169255b47e65ade889896aafd48e6ab941d359a3674471c",
+      "results/stage73/02_binary_von_mangoldt_decomposition.md": "fcbdbef0ae13f20ae2190b976f9c990b0beac4c63b05dc1e2d9f7d5bb36df9dc",
+      "results/stage73/05_proof_ledger.md": "0643b5a190cfeef2d901988fdfe1bf3ba20a9961316e8fa3a336152f7679bf54",
+      "results/stage74/verification_manifest.json": "ef2463bcaca63819d5d722a728936ff02b0a2a0d40116a79864a45d3319ffff2",
+      "results/stage75/verification_manifest.json": "f7a69b11444faf8185c270f16320fd883ca4c401923cfe4bced620b47840f6cf"
+    },
+    "all_earlier_tracked_files_unchanged": true
+  },
+  "software": {
+    "python": "3.14.4 (main, Apr  8 2026, 04:02:31) [GCC 15.2.0]",
+    "git": "git version 2.53.0"
+  },
+  "reproduction": [
+    "Read the primary-source passages and the report implication checks",
+    "Compare earlier file hashes and base commit contents",
+    "git diff --check; verify only results/dependency_audit_73_75 changes from base",
+    "No numerical experiment is needed or claimed to certify the missing arithmetic inequality"
+  ],
+  "files_sha256": {
+    "results/dependency_audit_73_75/01_dependency_audit.md": "f850fd55258f9f731530dac775c05fc6a970fa65892edcbca1b57bfdf329374f",
+    "results/dependency_audit_73_75/LEDGER_DELTA.md": "8df39a4d1372a1b4b9d1a3c01c8454f1d21660b115c7b620e66018f6ef6d42d8"
+  },
+  "self_hash_policy": "Excludes manifest; final commit and remote SHA reported separately"
+}
