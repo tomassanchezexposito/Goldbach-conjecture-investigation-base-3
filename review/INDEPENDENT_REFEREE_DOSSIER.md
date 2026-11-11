@@ -32,16 +32,16 @@ Reviewers should not merely rerun project tests or copy another reviewer. Each r
 
 ## Full reference links pinned to the chosen source tree
 
-- [R1 decomposition](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/cocalc/stage76-audited-closure/results/stage73/02_binary_von_mangoldt_decomposition.md)
-- [R2 kernel](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/cocalc/stage76-audited-closure/results/stage74/01_gate_and_kernel.md)
-- [R3 Stage 75 dependency](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/cocalc/stage76-audited-closure/results/stage75/01_duplication_gate.md)
-- [Stage 76 audit](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/cocalc/stage76-audited-closure/results/stage76_closure/01_audit_report.md)
-- [Stage 76 12-page monograph](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/cocalc/stage76-audited-closure/results/stage76_closure/03_monograph.pdf)
-- [Stage 76 script](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/cocalc/stage76-audited-closure/results/stage76_closure/02_verify_exact.py)
-- [Stage 76 execution and hashes](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/cocalc/stage76-audited-closure/results/stage76_closure/04_verification_manifest.json)
-- [Original three-theorem referee package](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/cocalc/dependency-audit-stages73-75/results/external_referee_package/referee_package.pdf)
+- [R1 decomposition](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/d9e0ac05247f2f220423c444d30561645c747c4c/results/stage73/02_binary_von_mangoldt_decomposition.md)
+- [R2 kernel](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/d9e0ac05247f2f220423c444d30561645c747c4c/results/stage74/01_gate_and_kernel.md)
+- [R3 Stage 75 dependency](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/d9e0ac05247f2f220423c444d30561645c747c4c/results/stage75/01_duplication_gate.md)
+- [Stage 76 audit](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/d9e0ac05247f2f220423c444d30561645c747c4c/results/stage76_closure/01_audit_report.md)
+- [Stage 76 12-page monograph](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/d9e0ac05247f2f220423c444d30561645c747c4c/results/stage76_closure/03_monograph.pdf)
+- [Stage 76 script](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/d9e0ac05247f2f220423c444d30561645c747c4c/results/stage76_closure/02_verify_exact.py)
+- [Stage 76 execution and hashes](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/d9e0ac05247f2f220423c444d30561645c747c4c/results/stage76_closure/04_verification_manifest.json)
+- [Original three-theorem referee package](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/blob/3a5581dd93b7c50bbc55062d032a6ad2acab1fb4c/results/external_referee_package/referee_package.pdf)
 
-**Named external dependencies, for reviewers to verify against original statements:** T. Tao, *254A Notes 3*, Bombieri–Vinogradov Theorem 17 ([source](https://terrytao.wordpress.com/2015/01/10/254a-notes-3-the-large-sieve-and-the-bombieri-vinogradov-theorem/)); H. L. Montgomery and R. C. Vaughan, *Multiplicative Number Theory I*, Chapter 6, Theorem 6.9 and equations (6.17)–(6.19 ([chapter](https://personal.science.psu.edu/rcv4/personal/Publications/MNTI/10.0_pp_168_198_The_Prime_Number_Theorem.pdf)); and J. Wu, upper-sieve theorem ([DOI](https://doi.org/10.4064/aa114-3-2)) only for the separately qualified deletion-model asymptotic. Referees must check hypothesis matches and uniformity; citing a title does not establish applicability.
+**Named external dependencies, for reviewers to verify against original statements:** T. Tao, *254A Notes 3*, Bombieri–Vinogradov Theorem 17 ([source](https://terrytao.wordpress.com/2015/01/10/254a-notes-3-the-large-sieve-and-the-bombieri-vinogradov-theorem/)); H. L. Montgomery and R. C. Vaughan, *Multiplicative Number Theory I*, Chapter 6, Theorem 6.9 and equations (6.17)–(6.19) ([chapter](https://personal.science.psu.edu/rcv4/personal/Publications/MNTI/10.0_pp_168_198_The_Prime_Number_Theorem.pdf)); and J. Wu, upper-sieve theorem ([DOI](https://doi.org/10.4064/aa114-3-2)) only for the separately qualified deletion-model asymptotic. Referees must check hypothesis matches and uniformity; citing a title does not establish applicability.
 
 ## Required referee report
 
