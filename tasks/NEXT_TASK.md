@@ -1,66 +1,39 @@
-# NEXT TASK — Stage 72 (QUEUED ONLY): target-rigid genuine-prime correlations beyond global norm stability
+# NEXT TASK — Stage 73 (QUEUED; DO NOT AUTO-RUN): target-specific signed prime correlation beyond a positive central core
 
-**Status as of 2026-11-11:** Stage 71 mathematical report complete, with two internally proved theorem families and exact independent finite regression. The user's original three-case universal Goldbach coverage is still **OPEN**. **Do not automatically start Codex or CoCalc Goal**; the user's weekly Codex quota was limited and this is a stored mathematical research handoff, not an authorization for a new run.
+**As of 2026-11-11:** Stage 72 mathematical proofs and exact finite checks are complete locally/GitHub; no Codex or CoCalc used. This task is **queued only**, not a background job. Strong Goldbach for every residual N∈H remains **OPEN**.
 
-## Read these source records before continuing
+## Recovery and notation
 
-1. \`results/stage71/final_report.md\`, \`01_exact_target_robustness_and_lp.md\`, \`02_adversarial_review.md\`, and \`verification_manifest.json\`.
-2. Stage 70 \`03_actual_arc_cone_nogo.md\` and \`05_vanishing_mass_prime_deletion.md\`: broad full-even-band Fourier cone is quantitatively insufficient, and an \(o(X)\)-mass deletion retains first-order prime progressions while erasing a target.
-3. Stage 69 \`07_primary_analytic_route_A.md\`, \`07_primary_arithmetic_route_B.md\`, \`09_final_synthesis.md\`: both analytic and reflected-arithmetic routes still lack a pointwise true-prime estimate.
-4. Follow \`docs/cocalc_github_pr_workflow.md\` for GitHub publication; GitHub CLI \`gh\` is optional and cannot be treated as a failure to push branches.
+Read, in order, \`results/stage72/final_report.md\`, \`results/stage72/01_pointwise_core_and_prime_power.md\`, \`results/stage72/02_adversarial_review.md\`, Stage 71 \`01_exact_target_robustness_and_lp.md\`, Stage 70 \`05_vanishing_mass_prime_deletion.md\`, and Stage 69 \`07_primary_analytic_route_A.md\` before proposing a new lemma.
 
-## Why the approach must pivot again
+Keep the original cases, H={even N≥4: N−1 and N/2 composite}, distinct prime pair count R(N), and p=3+2a positions, a+b=N/2−3. All weights must refer to the *immutable actual entire prime support*, except explicitly labeled adversarial alternative models. Smooth w≥0 fixed compact support (0,1), state precisely which fraction of possible pairs it admits.
 
-Stage 71 proved, using unconditional Wu/PNT input, that after deliberately deleting a vanishing proportion of genuine-prime frequencies the resulting modified polynomial can be **globally close to the original in every fixed normalized Fourier \(L^q\) norm**, and even its square can be globally close in **every fixed \(L^r\)**, while its coefficient at a prescribed residual target is **exactly zero**.
+## Current rigorous theorem versus missing input
 
-The exact \(\ell^1\) deletion radius to zero is the sum over target-complement edges of their smaller weight:
-\[
-\tau_N=\sum_{p<q,\ p+q=N}\min(a_p,a_q).
-\]
-Proving \(\tau_N>0\) for the **complete true-prime support** is essentially the unresolved Goldbach assertion; it cannot be adopted as an independent lemma. The sharp finite matching and greedy optimization do **not** supply a nonzero arithmetic lower bound.
+- **T72.1 PROVED:** for N∈[X/2,X], the actual true-prime central integral over |alpha|≤1/(6X) satisfies C_X(N)≥(2/(3πX))S_X(0)^2≥W²X/(6π) for large X. This **does not** prove r_X(N)>0, because the signed complement E_X(N) is unbounded below at that needed threshold.
+- **T72.2 PROVED:** true-prime and weighted von Mangoldt binary convolution differ by at most an explicit 2M²⌊√X⌋(log X)² for all X≥4 and, by the established Chebyshev estimate, at most 4C_Ch M²√X log X for X≥16, uniformly in N. This is arithmetic bookkeeping, not a pointwise lower bound for G_X(N).
+- **Deletion adversary:** a polynomial using a nearly-complete subset of genuine primes can have r'_X(N)=0 while C'_X(N)≫X, so any purported new sufficient certificate that only uses positive core mass or first-order prime statistics must fail for that enlarged class.
+- **Missing signed theorem:** a proved lower bound E_X(N)>−W²X/(6π), or a proved stronger full Λ*Λ lower bound above the quantified prime-power error, for each residual N; neither is currently available.
 
-**Therefore Stage 72 MUST NOT** repeat: global-fourth-moment optimization, exact but arithmetic-neutral Gram identities, general Fourier \(L^p\) closeness, larger finite Goldbach sweeps, or weighted-support countermodels with arbitrary prime deletions. Their explanatory roles are now fully documented.
+## Research objective and two independent paths
 
-## One sharply focused true-prime problem
+**Path A — actual signed Fourier complement.**
+1. Treat \(\mathbb T\setminus J_X\) as the exact complement of the q=1 microcore; distinguish its other rational major arcs and genuine minor regions. Explicitly preserve the target phase \(e(-N\alpha)\).
+2. Explore a disjoint Farey/Voronoi shell decomposition to expose cancellation among numerator Ramanujan weights and reflected prime residues without taking absolute values prematurely. Prove a valid **quantitative signed** inequality strictly stronger than Cauchy, or find the first unavoidable existing input gap.
+3. Derive the contribution from actual fixed prime coefficients, not from arbitrary coefficient positivity. Source-check every published major-arc theorem for its smoothing, uniformity in N and zero-free assumptions. Never cite a conditional estimate as unconditional, or a minor-only fourth moment as full-circle.
 
-Find and **prove from independent arithmetic results** a signed or absolute target-local estimate involving the exact fixed genuine-prime coefficients
-\[
-a_p=(\log p)w(p/X),\qquad
-r_w(N)=\sum_{\substack{p+q=N\\p,q\ {\rm prime}}}a_pa_q
-\]
-whose conclusion forces \(r_w(N)>0\) for **each** specified residual \(N\in H\cap[X/2,X]\), with \[
-H=\{N\ge4:N\text{ even},\ N-1,N/2\text{ composite}\}.
-\]
-If a smoothed weight fails to include any pair region for a target, positivity of its coefficient is not equivalent to Goldbach; prove and state the exact nonvanishing interval conditions on w. The user's odd-prime position map \(p=3+2a\) and reflected index \(a+b=N/2-3\) are retained, but not treated as prime distribution theorems.
+**Path B — true-prime binary Λ-correlation and sieve parity.**
+1. Starting from the exact \(\Lambda*\Lambda\) at each N, decompose Λ using a concrete, correctly truncated Vaughan/Heath-Brown identity, carefully recording prime-power correction (≤4C_Ch M²√X log X).
+2. Isolate Type I and Type II signed sums and identify which term would need a power or logarithmic saving **uniformly for a fixed target N**. A known mean-square or average-over-N result cannot automatically remove the exceptional target.
+3. Search current peer-reviewed original publications for true pointwise binary lower bounds under explicit hypotheses. If an assumed hypothesis already implies Goldbach or is stronger than it, label the implication CONDITIONAL, not a theorem of Goldbach.
+4. Compare any growing-modulus input with the Stage 70–71 adversarial deletions. If it is stable under deletion, it cannot force a positive target coefficient in that model class.
 
-### Research route A: quantitative target-error with real genuine primes
+## Mandatory adversarial proof check
 
-1. Start with the exact prime-only circle decomposition \(r_w(N)=a_w(N)+m_w(N)\) using \(S_w^2\), **not** \(|S_w|^2\). For non-symmetric arc pieces use paired regions and real parts.
-2. Audit each available external major-arc theorem's true uniformity, smoothing, conditional common-zero-free hypotheses and effective constants. If a positive lower bound \(a_w(N)\ge cX\) is only conditional, retain that qualifier.
-3. Derive a *new*, independently proven **signed true-prime** minor-arc estimate with a strict margin below the major coefficient, or identify the first unavailable bilinear estimate and why existing global fourth moments cannot yield it.
-4. When using \(\Lambda\) or von Mangoldt, explicitly subtract genuine prime powers and diagonal terms with deterministic errors. Never pass from a weak upper estimate on an exceptional-set count to the absence of one prescribed exceptional target.
+Write out exact quantifiers and constants, the target support of smooth w, p=2 and p=3 exceptions, possible p=q outside H, and whether prime powers are corrected before interpreting a Λ lower bound. Test any proposed decisive inequality against an explicit matching-deletion model before accepting it. Use a **few decisive exact finite tests** only for algebra; do not substitute a large prime sweep for a target-uniform signed proof.
 
-### Research route B: prime-specific reciprocal matching rigidity
+## Publication protocol
 
-1. Study whether the actual fixed sequence \(a_p\) has any arithmetic statistic that **changes by an order-one target-relevant amount under the optimal matching deletion** but can be estimated independently of Goldbach. Examples: signed reflected bilinear sums, modulus-dependent covariance, or a genuinely local dispersion identity. Avoid merely defining a statistic equal to \(r_w(N)\) and assuming a positive lower bound.
-2. Prove exact identities for the deletion gradient \(2a_{N-p}\), distinguishing ordinary first-order distribution from paired primality.
-3. Test conditional short-interval or arithmetic-progression inputs against the specific \(O_w(X\log\log X/\log X)\) deletion mass. If a proposed estimate is unaffected by the deletion, it cannot force target positivity in the broad modified class. A meaningful genuine-prime theorem must exclude that class by an independently justified assumption, not by assuming a representation.
-4. Preserve the sieve parity barrier, the cases p=2, p=3, p=q, and the distinction between the 210 wheel's survivor counts and actual simultaneous primality.
+Start a new branch descending from \`cocalc/stage72-pointwise-prime-power-core\` **only when the user requests the next stage**. Preserve Stage 72 and PR in draft, and avoid merging to \`main\`. Record proof ledger, external source audits, counterexamples, and executable checks with machine-readable manifests. No CoCalc/Codex use, paid resources, installed software, credential or permission changes without user authorization.
 
-### Required proof discipline
-
-For each candidate inequality record:
-- exact domain and quantifiers \(X,N,p,q,h,\kappa,w\);
-- constants, asymptotic exponents, weight support, uniformity and source theorem dependencies;
-- first strictly arithmetic step not already implied by global norm identities;
-- independent proof or first invalid implication; proof by contradiction must not select a target prime pair;
-- whether the hypothesis is weaker, equivalent to or stronger than the desired target positivity;
-- a small exact countermodel only when it tests a nontrivial algebraic assertion, not brute-force evidence.
-
-Retain two mathematically distinct proof paths and an adversarial audit. Mark statements **PROVED / EXTERNAL / CONDITIONAL / FINITE / REFUTED / OPEN**. If no new prime-theoretic signed estimate can be proved, the valid result is a precise barrier theorem or an identified minimal missing lemma, not an unsupported solution claim.
-
-## Publication and resource restrictions
-
-**Queued but not started.** When explicitly authorized, branch from \`cocalc/stage71-sharp-deletion-sensitivity\`, save source files and proof ledger, add only decisive reproducible tests, and open a draft PR through the connected GitHub tool. No \`main\` modification, force push, new credentials, package installations, increased spending or Codex usage without express approval.
-
-**Scientific success:** a non-circular, genuinely prime-specific pointwise estimate with sufficient quantitative strength, or a valid new obstruction narrowing the remaining proof obligation. Goldbach remains OPEN until a complete proof is found and independently audited.
+**Success:** one independent *proved* target-level signed saving not already equivalent to Goldbach, or one rigorous new no-go delimiting an attempted class, with exact first missing lemma. Goldbach stays OPEN otherwise.
