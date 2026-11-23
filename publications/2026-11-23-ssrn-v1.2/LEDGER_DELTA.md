@@ -11,3 +11,14 @@ This delta is **not** a revision of any previous theorem statement, and does not
 **No-GO/novelty gate:** The first missing actual-prime target-uniform signed Type II bound is unchanged. No new analytic proof is asserted; the present stage is documentation only (L0–L1). Deletion-stable coarse-data obstructions apply only to their enlarged models, not to genuine primes.
 
 **Dated visibility note (23 November 2026):** The owner has already made the repository **public**. A limited 27-branch tree and selected manifest/metadata audit is recorded in governance PR #28; a full historical privacy/license scan remains open. This publication PR did not change visibility. At the time this delta was written no PR merge had been claimed.
+
+## V1.2 artifact-deposit completion — 23 November 2026 (append only)
+
+| ID | Statement | Label | Dependencies and reproducibility | Location |
+|---|---|---|---|---|
+| PUB-V12-BINARIES | The English and Spanish v1.2 preprint PDFs and the complete original supplement ZIP have been deposited byte-for-byte in the public GitHub publication directory. | Verified artifact deposit, not mathematical endorsement | Original SHA-256 digests and Git blob SHA-1 for all three matched; exact checksums in `README.md` | `publications/2026-11-23-ssrn-v1.2/` |
+| PUB-V12-SOURCES | All 14 original text files from the ZIP have been deposited separately as source/code/evidence, with 14/14 Git blob identities verified against the originals. | Verified provenance and reproducible sources | `supplement/SHA256SUMS` and local `sha256sum -c` result PASS; tracked under distinct `supplement/` path, preserving original file names | `publications/2026-11-23-ssrn-v1.2/supplement/` |
+| PUB-V12-RERUN | Exact finite prefix, reflected pairs, 8,000,000-bound witness and antidiagonal fixtures were executed successfully in a separate local environment. | Independent rerun of finite algorithms / computational observation only | Python standard library and C++17 compiler; exact comparison with archived results. No new exhaustive analytic proof follows. | `supplement/` |
+| PUB-V12-SSRN | The author reports having published the v1.2 manuscript on SSRN, but the SSRN public article page and identifier were not independently obtained. | Author-reported administrative event; external verification OPEN | Last examined screenshot: SSRN Step 7. No SSRN DOI or date is invented. | `SUBMISSION_STATUS.md` |
+
+**Review gate unchanged:** T73.5, T74.3 and T75.1 are not independently accepted analytical proofs; no actual-prime signed target-uniform Type II bound is established. Both universal conjectures remain OPEN. The source research PR #27 and prior historical branches remain unmerged, available through pinned SHA references.
