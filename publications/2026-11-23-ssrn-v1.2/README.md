@@ -3,7 +3,7 @@
 **Author:** Tomás Sánchez Expósito (Independent Researcher)  
 **Manuscript date:** 22 November 2026 (PDF title page); **SSRN form date:** 23 November 2026  
 **Submission type:** Preprint; **license selected in SSRN form:** Creative Commons Attribution (CC BY)  
-**Status (23 November 2026):** the author now reports that this version has been published on SSRN. The last documentary evidence accessible in this repository shows SSRN **Step 7, Review and Submit**; an actual SSRN paper URL, manuscript/abstract ID, DOI or confirmation email has not been supplied or independently verified. The author report must not be misrepresented as a confirmed SSRN DOI or peer-reviewed acceptance.
+**Status (23 November 2026):** the author confirms that this manuscript **has been submitted to SSRN and is currently under SSRN's review/screening process; it has NOT been published on SSRN**. Earlier documentary evidence shows SSRN **Step 7, Review and Submit**. No public SSRN paper URL, manuscript/abstract ID, DOI or confirmation email has been supplied or independently verified. SSRN screening is not independent mathematical peer review.
 
 ## Title
 
@@ -36,4 +36,4 @@ Define `H={N even >=4: N-1 and N/2 composite}` and `H1={N even >=8: N-1 prime an
 
 ## Copyright and publication safeguards
 
-The author's SSRN form shows CC BY selected; the author reports publication but has not provided its public landing page or DOI for verification. The repository is **public** as of 23 November 2026; a limited branch/manifest privacy inspection is documented by governance PR #28, and a complete historical/privacy review remains open. CC BY selected for the SSRN paper does not automatically license code, prior commits or third-party materials. Public GitHub visibility is distinct from making the manuscript publicly available on SSRN. No peer-review endorsement is implied.
+The author's SSRN form shows CC BY selected; the submission is pending SSRN review and not yet publicly published on SSRN; no public landing page or DOI has been verified. The repository is **public** as of 23 November 2026; a limited branch/manifest privacy inspection is documented by governance PR #28, and a complete historical/privacy review remains open. CC BY selected for the SSRN paper does not automatically license code, prior commits or third-party materials. Public GitHub visibility is distinct from making the manuscript publicly available on SSRN. No peer-review endorsement is implied.
