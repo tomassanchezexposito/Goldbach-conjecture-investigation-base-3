@@ -2,7 +2,7 @@
 
 **Purpose:** Request three distinct, independently authored mathematical assessments of the analytical dependency chain. This is a **review request**, not a certificate, endorsement, or claim of universal Goldbach.
 
-**Canonical research version:** [Stage 76 selected PR #27](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/27), head `d9e0ac05247f2f220423c444d30561645c747c4c` (a draft and unmerged when this dossier was prepared). The inherited [external referee handoff in PR #25](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/25), head `3a5581dd93b7c50bbc55062d032a6ad2acab1fb4c`, contains a two-page body, an appendix, and eight source-linked questions. PR #26 is the retained alternative, not the primary review target. The proposed root [LEDGER.md](../LEDGER.md) is a governance proposal, not an accepted proof registry on `main` until merged.
+**Canonical research version:** [Stage 76 selected PR #27](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/27), head `d9e0ac05247f2f220423c444d30561645c747c4c` (a draft and unmerged when this dossier was prepared). The inherited [external referee handoff in PR #25](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/25), head `3a5581dd93b7c50bbc55062d032a6ad2acab1fb4c`, contains a two-page body, an appendix, and eight source-linked questions. PR #26 is the retained alternative, not the primary review target. The proposed root [LEDGER.md](../LEDGER.md) becomes the canonical governance registry only when PR #28 is merged to `main`.
 
 ## Unaltered problem and what the project does *not* prove
 
@@ -53,4 +53,4 @@ A conditional theorem must not be marked unconditionally proved simply because i
 
 Do not merge PRs or modify historical source claims on receipt. Store reviewer-authored reports (with permission) under a new review-only directory on a separate branch, record version, author consent/attribution, timestamp, hash, and precise scope. Keep an append-only delta in the canonical ledger for accepted conclusions or errata. If reviewers disagree, register the conflict and refrain from promoting either assertion until reconciled.
 
-**Current status:** three independent mathematical reviews **requested by dossier only**, not yet commissioned or delivered. No reviewer is assigned, no invitation was sent, and no review is claimed complete.
+**Dated administrative update (23 November 2026):** Three individualized invitations were sent on 11 November 2026 using the author's Gmail connection, for the R1/R2/R3 review topics. Delivery by the mail provider is not acceptance of an assignment. No signed acceptance, completed review or independent analytical certification is recorded. Contact details and correspondence remain outside this repository.
