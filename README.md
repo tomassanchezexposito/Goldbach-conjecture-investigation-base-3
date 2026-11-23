@@ -6,7 +6,7 @@
 
 ## Latest paper and reproducibility archive
 
-**SSRN preprint v1.2:** *Reflected prime pairs on 3 + 2a: exact sieving, a three-case conjecture and a Type II obstruction* (Tomás Sánchez Expósito; manuscript dated 22 November 2026). The author reports publication on SSRN, but the exact public SSRN URL, DOI and screening status have **not been independently verified** in this repository.
+**SSRN preprint v1.2:** *Reflected prime pairs on 3 + 2a: exact sieving, a three-case conjecture and a Type II obstruction* (Tomás Sánchez Expósito; manuscript dated 22 November 2026). **Submitted to SSRN; currently under SSRN review according to the author's 23 November 2026 confirmation. Not yet publicly published on SSRN.** No public SSRN URL or DOI is assigned or verified here.
 
 - [English preprint PDF](publications/2026-11-23-ssrn-v1.2/Goldbach_v1.2_EN_SSRN.pdf) (11 pages; byte-identical to the file supplied for SSRN).
 - [Spanish PDF](publications/2026-11-23-ssrn-v1.2/Goldbach_v1.2_ES.pdf) (parallel translation).

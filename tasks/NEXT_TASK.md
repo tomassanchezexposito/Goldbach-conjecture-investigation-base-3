@@ -5,7 +5,7 @@
 ## Current publication state
 
 - The English and Spanish v1.2 manuscripts and full reproducibility supplement are deposited in [the publication directory](../publications/2026-11-23-ssrn-v1.2/). The 17 original artifacts passed exact Git object hash checks and the specified deterministic finite checks were rerun.
-- The author reports publishing the English v1.2 on SSRN. **The public SSRN page, ID and DOI have not yet been independently verified**. Add these identifiers only when verified. Preserve the original PDF unchanged; any later mathematical corrections require a new version and an explicit erratum/ledger delta.
+- The author confirms that the English v1.2 was **submitted to SSRN and is still under SSRN review as of 23 November 2026; it has not been published there**. A public SSRN page, ID and DOI are not yet available or verified. Add these identifiers only when verified. Preserve the original PDF unchanged; any later mathematical corrections require a new version and an explicit erratum/ledger delta.
 - The root [LEDGER](../LEDGER.md) is canonical. The Stage 76 mathematical record is [PR #27](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/27), pinned at `d9e0ac05247f2f220423c444d30561645c747c4c`, **open, unmerged, pending independent review**. PR #26 is an archival alternative.
 
 ## First missing theorem (unchanged)

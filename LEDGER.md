@@ -97,3 +97,11 @@ This section preserves all older ledger rows and records the exact v1.2 artifact
 | PUB-V12-SSRN-REPORT | The author reports SSRN publication of the uploaded English v1.2; its exact public SSRN listing/DOI has not been independently checked. | Author-reported event; external identifier verification OPEN | Author message, previous Step-7 screenshot | [Dated submission-status record](publications/2026-11-23-ssrn-v1.2/SUBMISSION_STATUS.md) | Updated separately with Git commit provenance; no false claim of SSRN DOI |
 
 **Unchanged mathematical status:** strong Goldbach OPEN; the author's original universal three-case assertion OPEN; independently justified actual-prime signed Type II pointwise margin OPEN; analytic derivations T73.5/T74.3/T75.1 await human referee verification. An internally reproduced finite computation is not a universal proof. PR #27 and its historical dependencies remain preserved on their original branches pending review.
+
+## Corrective SSRN status entry — 23 November 2026 (append only)
+
+| Registry ID | Correction | Evidence label | Source | Supersedes |
+|---|---|---|---|---|
+| PUB-V12-SSRN-CORRECTION | The author confirms English manuscript v1.2 has been **submitted to SSRN and is under SSRN review/screening; it is NOT yet published on SSRN**. No public SSRN page, DOI or abstract ID is verified. | Author-confirmed administrative status, NOT peer review | Author clarification dated 23 November 2026; [submission status](publications/2026-11-23-ssrn-v1.2/SUBMISSION_STATUS.md) | Earlier `PUB-V12-SSRN-REPORT` and `PUB-V12-SSRN` statements implying publication; retained for audit history |
+
+The exact GitHub-hosted PDFs and supplementary files are unchanged. No analytic proof status is promoted. The original universal three-case assertion and strong Goldbach remain OPEN.
