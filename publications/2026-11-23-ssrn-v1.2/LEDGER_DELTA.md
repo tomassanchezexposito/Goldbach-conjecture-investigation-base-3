@@ -10,4 +10,4 @@ This delta is **not** a revision of any previous theorem statement, and does not
 
 **No-GO/novelty gate:** The first missing actual-prime target-uniform signed Type II bound is unchanged. No new analytic proof is asserted; the present stage is documentation only (L0–L1). Deletion-stable coarse-data obstructions apply only to their enlarged models, not to genuine primes.
 
-**Release gate:** Before the owner makes the entire repository public, audit its full Git history, all branches, PRs, issues and attached artifacts for private material and secrets. No repository visibility mutation or PR merge has occurred in this delta.
+**Dated visibility note (23 November 2026):** The owner has already made the repository **public**. A limited 27-branch tree and selected manifest/metadata audit is recorded in governance PR #28; a full historical privacy/license scan remains open. This publication PR did not change visibility. At the time this delta was written no PR merge had been claimed.
