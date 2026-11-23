@@ -1,6 +1,6 @@
 # Referee invitation and dispatch plan
 
-**Not sent.** The three invitations below are ready-to-edit drafts. The project owner must choose three genuinely independent mathematicians, confirm their willingness, decide whether to grant access to the private repository, and send invitations through an authorized communication channel. This document includes no invented addresses or claims of acceptance.
+**Historical drafts, superseded for dispatch.** Individualized invitations were actually sent by the author on **11 November 2026** through the Gmail connection. The wording below consists of reusable drafts, **not exact copies of the sent messages**. No acceptance, reply or completed review is evidenced. Do not email the same people again without checking whether they replied. The repository is **public** as of 23 November 2026, but do not publish correspondence or personal contact data here. No endorsement is presumed.
 
 ## Brief personalized email for R1 (T73.5)
 
@@ -47,8 +47,8 @@ Kind regards,
 ## Dispatch checklist
 
 1. Confirm referee competence and independence; document conflicts and avoid a three-report single-author exercise.
-2. Share the **pinned** PR #27 version and PR #25 handoff, not an unversioned moving `main` file. Provide temporary read access only after the owner's explicit authorization, or send a redacted self-contained package if needed.
+2. Share the **pinned** PR #27 version and PR #25 handoff, not an unversioned moving `main` file. Share only relevant public, pinned sources; ask permission before sharing any unpublished attachments or nonpublic correspondence.
 3. Send the matching scope request, dossier and report template; ask the reviewer to specify actual statements and line ranges examined.
 4. Collect dated, independently authored reports. Keep private contact information outside the repository unless permission has been granted.
 5. Record reports and amendments in a new review-only branch; append an evidence-status delta to the one canonical ledger after an explicit adoption decision.
-6. Do not merge PR #27, close PR #26, publish private materials, or announce mathematical certification solely because invitations were sent.
+6. Do not merge PR #27, close PR #26, disclose private correspondence, or announce mathematical certification solely because invitations were sent.
