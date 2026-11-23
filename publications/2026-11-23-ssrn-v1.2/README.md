@@ -24,7 +24,7 @@ Define `H={N even >=4: N-1 and N/2 composite}` and `H1={N even >=8: N-1 prime an
 ## Scientific record and verification
 
 - Source analytic chain: [PR #27](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/27), pinned commit `d9e0ac05247f2f220423c444d30561645c747c4c`.
-- Canonical ledger proposal and independent-referee dossier: [PR #28](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/28). The research PR #27 is not represented as externally accepted; governance PR #28 is tracked separately for the canonical ledger.
+- Canonical root ledger and independent-referee dossier, merged into main through [PR #28](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/28). The research PR #27 remains unmerged and is not represented as externally accepted; PR #28 is a merged documentation/governance record, not an analytic proof endorsement.
 - **PDF in English** (`Goldbach_v1.2_EN_SSRN.pdf`, 11 pages), SHA-256: `20b54eb88d5483978462ee07e41c57472a4935e962b9fb4266b7a30a37467547`.
 - **PDF in Spanish** (`Goldbach_v1.2_ES.pdf`), SHA-256: `af30540a6756ea668e4c5867a38659439bfc86e363544fca222311f1fb75653a`.
 - **Reproducibility supplement** (`Goldbach_v1.2_suplemento.zip`), SHA-256: `f884729f17fec5b367b27f842d3a64e44c5966a901b165dd5f280060960f594c`.
