@@ -3,7 +3,7 @@
 **Author:** Tomás Sánchez Expósito (Independent Researcher)  
 **Manuscript date:** 22 November 2026 (PDF title page); **SSRN form date:** 23 November 2026  
 **Submission type:** Preprint; **license selected in SSRN form:** Creative Commons Attribution (CC BY)  
-**Status as of the latest author-supplied screenshot:** SSRN submission form reached **Step 7, Review and Submit**. **No confirmation of pressing Submit, SSRN paper ID, DOI, public posting, or editorial screening result has been supplied.** This GitHub record must NOT be cited as proof of SSRN acceptance or public availability.
+**Status (23 November 2026):** the author now reports that this version has been published on SSRN. The last documentary evidence accessible in this repository shows SSRN **Step 7, Review and Submit**; an actual SSRN paper URL, manuscript/abstract ID, DOI or confirmation email has not been supplied or independently verified. The author report must not be misrepresented as a confirmed SSRN DOI or peer-reviewed acceptance.
 
 ## Title
 
@@ -28,9 +28,12 @@ Define `H={N even >=4: N-1 and N/2 composite}` and `H1={N even >=8: N-1 prime an
 - **PDF in English** (`Goldbach_v1.2_EN_SSRN.pdf`, 11 pages), SHA-256: `20b54eb88d5483978462ee07e41c57472a4935e962b9fb4266b7a30a37467547`.
 - **PDF in Spanish** (`Goldbach_v1.2_ES.pdf`), SHA-256: `af30540a6756ea668e4c5867a38659439bfc86e363544fca222311f1fb75653a`.
 - **Reproducibility supplement** (`Goldbach_v1.2_suplemento.zip`), SHA-256: `f884729f17fec5b367b27f842d3a64e44c5966a901b165dd5f280060960f594c`.
-- These three binary files were checked locally but **are not uploaded to GitHub by this publication-record change**. They must not be presented as GitHub-hosted assets. A verified SSRN paper URL and a public supplementary archive URL may be added later, after upload and confirmation.
+- **All three original files are now uploaded as GitHub binary blobs:** [English PDF](Goldbach_v1.2_EN_SSRN.pdf), [Spanish PDF](Goldbach_v1.2_ES.pdf) and [complete supplement ZIP](Goldbach_v1.2_suplemento.zip). The [supplement/](supplement/) subdirectory contains all 14 extracted original text files for readability and reproduction.
+- Every one of the 17 deposited files matches its local Git blob SHA-1 (17/17); the three binary SHA-256 digests above match the originals. The included `SHA256SUMS` checklist passes.
+- **Independent local rerun:** Python `goldbach_reflected_audit.py 7930` passed; C++ `distinct_witness_audit.cpp` compiled and reproduced all recorded results through 8,000,000 with two exact sieve implementations; `check_printed_prefix.py` verified all 1000 published primes; `antidiagonal_audit.py` reproduced the documented counts. These are finite checks only, not proof of analytic asymptotics.
+- The exact public SSRN landing-page URL/DOI is still **unverified**; add it only when supplied or independently checked.
 - The manuscript includes an explicit disclosure that ChatGPT assisted with comparison, derivation, exposition and code. No independent human analytical acceptance is claimed.
 
 ## Copyright and publication safeguards
 
-The author's SSRN form shows a proposed CC BY license, but the record does not independently confirm completed submission. The repository is **public** as of 23 November 2026; a limited branch/manifest privacy inspection is documented by governance PR #28, and a complete historical/privacy review remains open. CC BY selected for the SSRN paper does not automatically license code, prior commits or third-party materials. Public GitHub visibility is distinct from making the manuscript publicly available on SSRN. No peer-review endorsement is implied.
+The author's SSRN form shows CC BY selected; the author reports publication but has not provided its public landing page or DOI for verification. The repository is **public** as of 23 November 2026; a limited branch/manifest privacy inspection is documented by governance PR #28, and a complete historical/privacy review remains open. CC BY selected for the SSRN paper does not automatically license code, prior commits or third-party materials. Public GitHub visibility is distinct from making the manuscript publicly available on SSRN. No peer-review endorsement is implied.

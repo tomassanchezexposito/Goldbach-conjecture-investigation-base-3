@@ -1,8 +1,20 @@
 # Prime Progressions and Reflected Even-Number Representations
 
-**Private mathematical research workspace** for the author's prime-position study and three-case representation statement. All repository materials are written in English.
+**Public mathematical research repository** for the author's prime-position study and three-case representation statement. All repository materials are written in English.
 
 > **Mathematical status: OPEN.** Universal coverage of every even integer is not proved. This repository distinguishes algebraic identities, established results, computational observations, and open proof obligations.
+
+## Latest paper and reproducibility archive
+
+**SSRN preprint v1.2:** *Reflected prime pairs on 3 + 2a: exact sieving, a three-case conjecture and a Type II obstruction* (Tomás Sánchez Expósito; manuscript dated 22 November 2026). The author reports publication on SSRN, but the exact public SSRN URL, DOI and screening status have **not been independently verified** in this repository.
+
+- [English preprint PDF](publications/2026-11-23-ssrn-v1.2/Goldbach_v1.2_EN_SSRN.pdf) (11 pages; byte-identical to the file supplied for SSRN).
+- [Spanish PDF](publications/2026-11-23-ssrn-v1.2/Goldbach_v1.2_ES.pdf) (parallel translation).
+- [Complete reproducibility ZIP](publications/2026-11-23-ssrn-v1.2/Goldbach_v1.2_suplemento.zip), also extracted under [supplement/](publications/2026-11-23-ssrn-v1.2/supplement/).
+- [Publication record and source hashes](publications/2026-11-23-ssrn-v1.2/README.md).
+- [Canonical research ledger](LEDGER.md) and [independent mathematical referee dossier](review/INDEPENDENT_REFEREE_DOSSIER.md).
+
+All 17 deposited artifacts were matched to their exact Git object IDs. The ZIP's SHA-256 checklist passes, and the deterministic finite tests were run. **Reproducibility does not establish a proof of universal Goldbach.** Internal analytic derivations T73.5, T74.3 and T75.1 still await independent human scrutiny; [Stage 76 PR #27](https://github.com/tomassanchezexposito/Goldbach-conjecture-investigation-base-3/pull/27) remains open, draft and unmerged.
 
 ## The author's three-case statement
 
@@ -56,12 +68,10 @@ These tests check exact calculations on finite examples. **Passing them does not
 
 ## Current research focus
 
-Evaluate whether wheel-normalized prime-pair representation counts can satisfy a **pointwise second-moment bound** strong enough to exclude an isolated zero. This requires control of four-prime correlations and off-diagonal terms for the exact even target; positive averages are not enough.
-
-The variance condition under investigation is sufficient but may be unrealistically strong; its feasibility must be audited before claiming it as a universal route.
+The Stages 56-76 historical branch program has progressed beyond the original Stage 56 second-moment exploratory target. The remaining **first missing theorem** is an independently established target-uniform signed Type II lower bound for the full genuine-prime correlation; then a rigorously effective cutoff and a finite bridge would still be needed. The modeled-subset deletion no-go has a restricted domain and does not refute the actual-prime problem. See [current task status](tasks/NEXT_TASK.md).
 
 ## Provenance and caution
 
-Earlier research stages (1–55), spreadsheet/video source materials, and supporting manuscripts have **not** been automatically imported or revalidated by this initialization. Each source should be brought in with provenance, independently checked, and classified before being treated as a proved result.
+Earlier research stages (1–55), spreadsheet/video source materials, and supporting manuscripts have **not** been automatically imported or revalidated by the initial repository setup. Stages 56–76 are indexed by the canonical ledger using pinned commit references on historical research branches. Each source should be brought in with provenance, independently checked, and classified before being treated as a proved result.
 
 All mathematical writing and commit messages within this repository are in English.

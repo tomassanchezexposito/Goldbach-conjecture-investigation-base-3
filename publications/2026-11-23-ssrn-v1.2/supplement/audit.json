@@ -1,0 +1,112 @@
+{
+  "range": [
+    4,
+    7930,
+    2
+  ],
+  "odd_primes": 1000,
+  "status": "PASS",
+  "stats": {
+    "all": {
+      "targets": 3964,
+      "pairs": 283488,
+      "min_R": 0,
+      "first_min": 4,
+      "zero_targets": 2,
+      "wheel_false_positive_pairs": 538737,
+      "wheel_omitted_prime_pairs": 2992
+    },
+    "H": {
+      "targets": 2503,
+      "pairs": 186315,
+      "min_R": 2,
+      "first_min": 16,
+      "zero_targets": 0,
+      "wheel_false_positive_pairs": 351829,
+      "wheel_omitted_prime_pairs": 1944
+    },
+    "H1": {
+      "targets": 913,
+      "pairs": 72916,
+      "min_R": 1,
+      "first_min": 8,
+      "zero_targets": 0,
+      "wheel_false_positive_pairs": 139347,
+      "wheel_omitted_prime_pairs": 620
+    }
+  },
+  "wheel_examples": {
+    "false_positive": [
+      132,
+      11,
+      121
+    ],
+    "omitted_prime": [
+      8,
+      3,
+      5
+    ]
+  },
+  "selected": {
+    "4": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "6": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "8": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "16": [
+      0,
+      2,
+      0,
+      2
+    ],
+    "28": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "54": [
+      4,
+      5,
+      0,
+      1
+    ],
+    "100": [
+      5,
+      6,
+      0,
+      1
+    ],
+    "210": [
+      23,
+      19,
+      4,
+      0
+    ],
+    "7928": [
+      282,
+      72,
+      210,
+      0
+    ],
+    "7930": [
+      378,
+      133,
+      246,
+      1
+    ]
+  }
+}

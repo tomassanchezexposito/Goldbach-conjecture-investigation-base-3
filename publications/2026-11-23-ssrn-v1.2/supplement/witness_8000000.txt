@@ -1,0 +1,6 @@
+limit=8000000
+no_distinct_pair=4
+no_distinct_pair=6
+H targets=3202369 witnesses=3202369
+H1 targets=514484 witnesses=514484
+prime_midpoint targets=283146 witnesses=283144
