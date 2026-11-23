@@ -22,3 +22,11 @@ This delta is **not** a revision of any previous theorem statement, and does not
 | PUB-V12-SSRN | The author reports having published the v1.2 manuscript on SSRN, but the SSRN public article page and identifier were not independently obtained. | Author-reported administrative event; external verification OPEN | Last examined screenshot: SSRN Step 7. No SSRN DOI or date is invented. | `SUBMISSION_STATUS.md` |
 
 **Review gate unchanged:** T73.5, T74.3 and T75.1 are not independently accepted analytical proofs; no actual-prime signed target-uniform Type II bound is established. Both universal conjectures remain OPEN. The source research PR #27 and prior historical branches remain unmerged, available through pinned SHA references.
+
+## Corrective administrative delta — 23 November 2026 (append only)
+
+| Registry ID | Corrected event | Evidence label | Source | Effect |
+|---|---|---|---|---|
+| PUB-V12-SSRN-CORRECTION | The author confirms that English v1.2 was **submitted to SSRN and remains under SSRN review/screening** as of 23 November 2026; it is **not yet published on SSRN**. | Author-confirmed administrative status; no public listing/DOI verified | Direct author clarification, 23 November 2026 | **Supersedes** the earlier `PUB-V12-SSRN` row and any statement that the paper had already been published. Preserves history; no mathematical label or PDF changes. |
+
+The GitHub manuscript PDFs and reproducibility package remain publicly accessible. SSRN's administrative screening must not be described as independent mathematical peer review.
