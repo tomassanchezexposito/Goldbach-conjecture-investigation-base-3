@@ -32,7 +32,7 @@ The author's three cases are N=p+1, N=2p, and N=p+q for distinct genuine primes 
 ## Version and public status
 
 - GitHub archive: deposited and verified in the public repository.
-- SSRN: the author reports that the English manuscript was published; a public SSRN page, DOI or abstract ID has not been supplied or independently located. [The separate status file](SUBMISSION_STATUS.md) records the distinction.
+- SSRN: the author confirms that the English manuscript has been submitted and is **under SSRN review, not yet publicly published**, as of 23 November 2026. No public SSRN page, DOI or abstract ID has been supplied or independently verified. [The separate status file](SUBMISSION_STATUS.md) records the distinction.
 - The original source ZIP's `supplement/README.md` is preserved unchanged as a historical snapshot, and its sentence describing an earlier pre-submission stage is not the current administrative state. This manifest and `SUBMISSION_STATUS.md` are the dated updates.
 - The manuscript's AI disclosure is retained. Public GitHub access does not imply permission to republish third-party source materials. No independent human peer review or formal certification is claimed.
 
